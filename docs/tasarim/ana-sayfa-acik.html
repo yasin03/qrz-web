@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QR Zaman Ana Sayfa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#1D4ED8;text-decoration:none}a:hover{color:#071A3A}
+h1,h2,h3{font-family:Inter,system-ui,sans-serif;margin:0;letter-spacing:-0.02em}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+.qz-ekran{display:block;width:100%;height:auto;border-radius:32px;opacity:0;animation:qzEkran 12s infinite}
+.qz-ekran+.qz-ekran{position:absolute;left:8px;top:8px;width:calc(100% - 16px)}
+@keyframes qzEkran{0%{opacity:0;transform:translateY(10px)}3%,30%{opacity:1;transform:none}34%,100%{opacity:0}}
+.qz-toast{animation:qzToast 12s infinite both}
+@keyframes qzToast{0%,4%{opacity:0;transform:translateY(14px) scale(.96)}8%,28%{opacity:1;transform:none}32%,100%{opacity:0;transform:translateY(-8px)}}
+.qz-float{animation:qzFloat 6s ease-in-out infinite}
+@keyframes qzFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.qz-marquee{display:flex;gap:12px;width:max-content;animation:qzMarquee 36s linear infinite}
+@keyframes qzMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion: reduce){.qz-ekran,.qz-toast,.qz-float,.qz-marquee{animation:none!important}.qz-ekran:first-child,.qz-toast:first-of-type{opacity:1}}
+.qz-scan{position:absolute;left:6%;right:6%;height:3px;background:#3B82F6;box-shadow:0 0 18px 4px rgba(59,130,246,.65);border-radius:3px;animation:qzScan 2.6s ease-in-out infinite}
+@keyframes qzScan{0%,100%{top:16%}50%{top:80%}}
+.qz-spin{animation:qzSpin 18s linear infinite}
+@keyframes qzSpin{to{transform:rotate(360deg)}}
+.qz-float2{animation:qzFloat 6s ease-in-out -3s infinite}
+@media (prefers-reduced-motion: reduce){.qz-scan,.qz-spin,.qz-float2{animation:none!important}.qz-scan{top:48%}}
+</style>
+<style>
+body{margin:0}
+</style>
+</head>
+<body>
+<div style="font-family: Inter, system-ui, sans-serif; color: #0B1B33; background: #FFFFFF; min-width: 0">
+
+  <!-- HERO + NAVBAR -->
+  <div style="background: radial-gradient(ellipse 60% 70% at 85% 30%, #12336B 0%, #071A3A 60%); overflow: hidden">
+    <header>
+      <a href="#icerik" style="position: absolute; left: -9999px">İçeriğe geç</a>
+      <nav aria-label="Ana menü" style="max-width: 1240px; margin: 0 auto; padding: 0 24px; height: 76px; display: flex; align-items: center; gap: 28px">
+        <a href="#" aria-label="QR Zaman ana sayfa" style="display: flex; flex-shrink: 0"><img src="../images/logos/logo-sec.png" alt="QR Zaman" style="height: 40px; width: auto; display: block"></a>
+        <ul style="display: flex; gap: 2px; flex: 1; flex-wrap: wrap">
+          <li><a href="navbar-menuler.html" aria-expanded="false" style="display: flex; align-items: center; gap: 4px; padding: 10px 12px; font-weight: 500; font-size: 15px; color: #DCE6F5">Ürünler <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a></li>
+          <li><a href="navbar-menuler.html" aria-expanded="false" style="display: flex; align-items: center; gap: 4px; padding: 10px 12px; font-weight: 500; font-size: 15px; color: #DCE6F5">Çözümler <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a></li>
+          <li><a href="#" style="display: block; padding: 10px 12px; font-weight: 500; font-size: 15px; color: #DCE6F5">Fiyatlandırma</a></li>
+          <li><a href="navbar-menuler.html" aria-expanded="false" style="display: flex; align-items: center; gap: 4px; padding: 10px 12px; font-weight: 500; font-size: 15px; color: #DCE6F5">Kaynaklar <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a></li>
+          <li><a href="navbar-menuler.html" aria-expanded="false" style="display: flex; align-items: center; gap: 4px; padding: 10px 12px; font-weight: 500; font-size: 15px; color: #DCE6F5">Kurumsal <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a></li>
+        </ul>
+        <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0">
+          <a href="#" style="display: flex; align-items: center; height: 44px; padding: 0 14px; font-weight: 600; font-size: 15px; color: #FFFFFF">Giriş Yap</a>
+          <a href="#" style="display: flex; align-items: center; height: 44px; padding: 0 20px; background: #1D4ED8; color: #FFFFFF; border-radius: 12px; font-weight: 700; font-size: 15px">Demo Talep Et</a>
+        </div>
+      </nav>
+    </header>
+
+    <section id="icerik" style="max-width: 1240px; margin: 0 auto; padding: 64px 24px 104px; display: flex; flex-wrap: wrap; align-items: center; gap: 48px">
+      <div style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+        <span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; background: #1D4ED8; border-radius: 999px; font-size: 14px; font-weight: 700; color: #FFFFFF"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="5" height="5" x="3" y="3" rx="1"></rect><rect width="5" height="5" x="16" y="3" rx="1"></rect><rect width="5" height="5" x="3" y="16" rx="1"></rect><path d="M21 16h-3a2 2 0 0 0-2 2v3"></path><path d="M16 12h1"></path></svg>QR · PDKS · Bordro · CRM</span>
+        <h1 style="font-size: 64px; line-height: 1.04; font-weight: 800; color: #FFFFFF; font-family: Inter, sans-serif">Personel takibinin<br><span style="color: #7FB0FF">akıllı yolu.</span></h1>
+        <p style="font-size: 19px; line-height: 1.6; color: #B7C6DE; max-width: 540px">Personeliniz QR kodu okutarak giriş-çıkış yapsın; puantaj, izin, avans ve bordro kendiliğinden hazırlansın. Tüm şirket ve şubelerinizi tek panelden yönetin.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px">
+          <a href="#" style="display: inline-flex; align-items: center; gap: 8px; height: 54px; padding: 0 26px; background: #1D4ED8; color: #FFFFFF; border-radius: 14px; font-weight: 700; font-size: 16px">Ücretsiz Demo Talep Et <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+          <a href="#" style="display: inline-flex; align-items: center; height: 54px; padding: 0 26px; background: #FFFFFF; color: #071A3A; border-radius: 14px; font-weight: 700; font-size: 16px">Ürünleri Keşfet</a>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px">
+          <a href="#" aria-label="App Store'dan indirin" style="display: inline-flex; align-items: center; gap: 10px; height: 48px; padding: 0 16px; border: 1px solid #2A4775; color: #FFFFFF; border-radius: 12px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2"></rect><path d="M12 18h.01"></path></svg><span style="display: flex; flex-direction: column; line-height: 1.1"><span style="font-size: 10px; color: #B7C6DE">İndirin</span><span style="font-size: 15px; font-weight: 700">App Store</span></span></a>
+          <a href="#" aria-label="Google Play'den indirin" style="display: inline-flex; align-items: center; gap: 10px; height: 48px; padding: 0 16px; border: 1px solid #2A4775; color: #FFFFFF; border-radius: 12px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3l14 9-14 9V3z"></path></svg><span style="display: flex; flex-direction: column; line-height: 1.1"><span style="font-size: 10px; color: #B7C6DE">Edinin</span><span style="font-size: 15px; font-weight: 700">Google Play</span></span></a>
+          <span style="font-size: 14px; color: #B7C6DE">Web · iOS · Android</span>
+        </div>
+      </div>
+
+      <div style="flex: 1.3 1 560px; min-width: 0; position: relative; padding: 0 0 56px 72px; box-sizing: border-box">
+        <div style="border-radius: 16px; overflow: hidden; border: 1px solid #2A4775; box-shadow: 0 30px 90px -20px rgba(127,176,255,0.35); background: #FFFFFF">
+          <div style="display: flex; align-items: center; gap: 6px; height: 34px; padding: 0 14px; background: #EEF3FA; border-bottom: 1px solid #DCE5F0">
+            <span style="width: 10px; height: 10px; border-radius: 50%; background: #D3DCE8"></span><span style="width: 10px; height: 10px; border-radius: 50%; background: #D3DCE8"></span><span style="width: 10px; height: 10px; border-radius: 50%; background: #D3DCE8"></span>
+            <span style="margin-left: 14px; padding: 3px 12px; background: #FFFFFF; border-radius: 6px; font-size: 11px; color: #4B5B73">app.qrzaman.com.tr</span>
+          </div>
+          <img src="../images/admin-temiz/dashboard.webp" alt="QR Zaman yönetici paneli: aktif personel, bugün gelenler, izindekiler, onay bekleyenler" style="width: 100%; height: auto; display: block">
+        </div>
+        <div class="qz-float" style="position: absolute; left: 0; bottom: 0; width: 210px; padding: 8px; background: #0B1220; border-radius: 40px; box-shadow: 0 30px 60px -15px rgba(0,0,0,0.6); box-sizing: border-box">
+          <img class="qz-ekran" src="../images/mobile-temiz/ana-sayfa.webp" alt="QR Zaman mobil ana sayfası" style="animation-delay: 0s">
+          <img class="qz-ekran" src="../images/mobile-temiz/qr-yon-sec.webp" alt="QR okutma: Giriş veya Çıkış seç" style="animation-delay: 4s">
+          <img class="qz-ekran" src="../images/mobile-temiz/izinler.webp" alt="İzin talepleri" style="animation-delay: 8s">
+        </div>
+        <!-- QR okuma animasyonu -->
+        <div class="qz-float2" style="position: absolute; right: -16px; bottom: -6px; width: 190px; z-index: 2">
+          <div style="background: #FFFFFF; border-radius: 20px; padding: 10px; box-shadow: 0 30px 60px -18px rgba(0,0,0,.6); transform: rotate(5deg)">
+            <div style="position: relative; overflow: hidden; border-radius: 12px">
+              <img src="../images/admin-temiz/qr-a4-cikti.webp" alt="A4 QR afişi örneği" style="display: block; width: 100%; height: auto">
+              <div class="qz-scan" aria-hidden="true"></div>
+            </div>
+            <p style="margin-top: 8px; font-size: 12px; font-weight: 700; text-align: center; color: #071A3A">A4 QR afişi · duvara asın</p>
+          </div>
+          <div aria-hidden="true" style="position: absolute; left: -52px; top: -46px; width: 100px; height: 100px; border-radius: 50%; background: #1D4ED8; display: flex; align-items: center; justify-content: center; box-shadow: 0 16px 30px -12px rgba(0,0,0,.55)">
+            <svg class="qz-spin" width="100" height="100" viewBox="0 0 132 132" style="position: absolute; inset: 0"><defs><path id="qzRing" d="M66 66m-48 0a48 48 0 1 1 96 0a48 48 0 1 1-96 0"></path></defs><text font-family="Inter" font-size="13" font-weight="800" letter-spacing="2.4" fill="#FFFFFF"><textPath href="#qzRing">OKUT · KAYDET · BORDRO HAZIR · </textPath></text></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"></rect><rect x="14" y="3" width="7" height="7" rx="1"></rect><rect x="3" y="14" width="7" height="7" rx="1"></rect><path d="M14 14h3v3h-3zM20 14v.01M14 20h.01M17 20h4v-3"></path></svg>
+          </div>
+        </div>
+        <div class="qz-toast" style="position: absolute; left: 170px; bottom: 120px; display: flex; align-items: center; gap: 12px; padding: 14px 18px 14px 14px; background: #FFFFFF; border-radius: 18px; box-shadow: 0 20px 40px -12px rgba(7,26,58,0.55); animation-delay: 0s">
+          <span style="width: 40px; height: 40px; border-radius: 12px; background: #DBE7FF; color: #1D4ED8; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg></span>
+          <span style="display: flex; flex-direction: column"><span style="font-family: Inter, sans-serif; font-weight: 800; font-size: 17px; color: #071A3A">Mesai başladı</span><span style="font-size: 13px; color: #4B5B73">Bugünkü giriş · 08:57</span></span>
+        </div>
+        <div class="qz-toast" style="position: absolute; left: 170px; bottom: 120px; display: flex; align-items: center; gap: 12px; padding: 14px 18px 14px 14px; background: #FFFFFF; border-radius: 18px; box-shadow: 0 20px 40px -12px rgba(7,26,58,0.55); animation-delay: 4s">
+          <span style="width: 40px; height: 40px; border-radius: 12px; background: #DCFCE7; color: #15803D; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span>
+          <span style="display: flex; flex-direction: column"><span style="font-family: Inter, sans-serif; font-weight: 800; font-size: 17px; color: #071A3A">Konum doğrulandı</span><span style="font-size: 13px; color: #4B5B73">Merkez Giriş · 08:57</span></span>
+        </div>
+        <div class="qz-toast" style="position: absolute; left: 170px; bottom: 120px; display: flex; align-items: center; gap: 12px; padding: 14px 18px 14px 14px; background: #FFFFFF; border-radius: 18px; box-shadow: 0 20px 40px -12px rgba(7,26,58,0.55); animation-delay: 8s">
+          <span style="width: 40px; height: 40px; border-radius: 12px; background: #FEF3C7; color: #B45309; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 22h14M5 2h14M17 22v-4.17a2 2 0 0 0-.59-1.42L12 12l-4.41 4.41A2 2 0 0 0 7 17.83V22M7 2v4.17a2 2 0 0 0 .59 1.42L12 12l4.41-4.41A2 2 0 0 0 17 6.17V2"></path></svg></span>
+          <span style="display: flex; flex-direction: column"><span style="font-family: Inter, sans-serif; font-weight: 800; font-size: 17px; color: #071A3A">Onay bekliyor</span><span style="font-size: 13px; color: #4B5B73">Yıllık izin talebin</span></span>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <main>
+    <!-- KAYAN ŞERİT -->
+    <section aria-label="Özellikler" style="border-bottom: 1px solid #DCE5F0; background: #FFFFFF; padding: 18px 0; overflow: hidden">
+      <div class="qz-marquee">
+        <span style="padding: 9px 16px; border: 1px solid #C9D6E8; border-radius: 999px; font-size: 14px; font-weight: 600; color: #071A3A; white-space: nowrap">QR Kodlu PDKS</span><span style="padding: 9px 16px; border: 1px solid #C9D6E8; border-radius: 999px; font-size: 14px; font-weight: 600; color: #071A3A; white-space: nowrap">Sahte GPS tespiti</span><span style="padding: 9px 16px; border: 1px solid #C9D6E8; border-radius: 999px; font-size: 14px; font-weight: 600; color: #071A3A; white-space: nowrap">Vardiya Yönetimi</span><span style="padding: 9px 16px; border: 1px solid #C9D6E8; border-radius: 999px; font-size: 14px; font-weight: 600; color: #071A3A; white-space: nowrap">Puantaj</span><span style="padding: 9px 16px; border: 1px solid #C9D6E8; border-radius: 999px; font-size: 14px; font-weight: 600; color: #071A3A; white-space: nowrap">Bordro Hesaplama</span><span style="padding: 9px 16px; border: 1px solid #C9D6E8; border-radius: 999px; font-size: 14px; font-weight: 600; color: #071A3A; white-space: nowrap">İzin &amp; Avans</span><span style="padding: 9px 16px; border: 1px solid #C9D6E8; border-radius: 999px; font-size: 14px; font-weight: 600; color: #071A3A; white-space: nowrap">A4 QR Afişi</span><span style="padding: 9px 16px; border: 1px solid #C9D6E8; border-radius: 999px; font-size: 14px; font-weight: 600; color: #071A3A; white-space: nowrap">Excel İçe Aktarım</span><span style="padding: 9px 16px; border: 1px solid #C9D6E8; border-radius: 999px; font-size: 14px; font-weight: 600; color: #071A3A; white-space: nowrap">Çoklu Şirket &amp; Şube</span><span style="padding: 9px 16px; border: 1px solid #C9D6E8; border-radius: 999px; font-size: 14px; font-weight: 600; color: #071A3A; white-space: nowrap">CRM</span>
+        <span aria-hidden="true" style="padding: 9px 16px; border: 1px solid #C9D6E8; border-radius: 999px; font-size: 14px; font-weight: 600; color: #071A3A; white-space: nowrap">QR Kodlu PDKS</span><span aria-hidden="true" style="padding: 9px 16px; border: 1px solid #C9D6E8; border-radius: 999px; font-size: 14px; font-weight: 600; color: #071A3A; white-space: nowrap">Sahte GPS tespiti</span><span aria-hidden="true" style="padding: 9px 16px; border: 1px solid #C9D6E8; border-radius: 999px; font-size: 14px; font-weight: 600; color: #071A3A; white-space: nowrap">Vardiya Yönetimi</span><span aria-hidden="true" style="padding: 9px 16px; border: 1px solid #C9D6E8; border-radius: 999px; font-size: 14px; font-weight: 600; color: #071A3A; white-space: nowrap">Puantaj</span><span aria-hidden="true" style="padding: 9px 16px; border: 1px solid #C9D6E8; border-radius: 999px; font-size: 14px; font-weight: 600; color: #071A3A; white-space: nowrap">Bordro Hesaplama</span><span aria-hidden="true" style="padding: 9px 16px; border: 1px solid #C9D6E8; border-radius: 999px; font-size: 14px; font-weight: 600; color: #071A3A; white-space: nowrap">İzin &amp; Avans</span><span aria-hidden="true" style="padding: 9px 16px; border: 1px solid #C9D6E8; border-radius: 999px; font-size: 14px; font-weight: 600; color: #071A3A; white-space: nowrap">A4 QR Afişi</span><span aria-hidden="true" style="padding: 9px 16px; border: 1px solid #C9D6E8; border-radius: 999px; font-size: 14px; font-weight: 600; color: #071A3A; white-space: nowrap">Excel İçe Aktarım</span><span aria-hidden="true" style="padding: 9px 16px; border: 1px solid #C9D6E8; border-radius: 999px; font-size: 14px; font-weight: 600; color: #071A3A; white-space: nowrap">Çoklu Şirket &amp; Şube</span><span aria-hidden="true" style="padding: 9px 16px; border: 1px solid #C9D6E8; border-radius: 999px; font-size: 14px; font-weight: 600; color: #071A3A; white-space: nowrap">CRM</span>
+      </div>
+    </section>
+
+    <!-- GÜVEN + RAKAMLAR -->
+    <section aria-label="Referanslar ve rakamlar" style="padding: 40px 24px; background: #EAF2FB">
+      <div style="max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 16px 28px">
+          <p style="font-size: 14px; font-weight: 700; color: #4B5B73">Farklı sektörlerden işletmeler QR Zaman kullanıyor</p>
+          <span style="width: 132px; height: 40px; border: 1px dashed #A9BCD6; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #4B5B73">[Logo]</span>
+          <span style="width: 132px; height: 40px; border: 1px dashed #A9BCD6; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #4B5B73">[Logo]</span>
+          <span style="width: 132px; height: 40px; border: 1px dashed #A9BCD6; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #4B5B73">[Logo]</span>
+          <span style="width: 132px; height: 40px; border: 1px dashed #A9BCD6; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #4B5B73">[Logo]</span>
+          <span style="width: 132px; height: 40px; border: 1px dashed #A9BCD6; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #4B5B73">[Logo]</span>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; text-align: center">
+          <div><div style="font-family: Inter, sans-serif; font-size: 36px; font-weight: 800; color: #071A3A">[000+]</div><div style="font-size: 14px; color: #4B5B73">Şirket</div></div>
+          <div><div style="font-family: Inter, sans-serif; font-size: 36px; font-weight: 800; color: #071A3A">[0.000+]</div><div style="font-size: 14px; color: #4B5B73">Personel</div></div>
+          <div><div style="font-family: Inter, sans-serif; font-size: 36px; font-weight: 800; color: #071A3A">[00.000]</div><div style="font-size: 14px; color: #4B5B73">Günlük QR okutma</div></div>
+          <div><div style="font-family: Inter, sans-serif; font-size: 36px; font-weight: 800; color: #071A3A">[00]</div><div style="font-size: 14px; color: #4B5B73">İl</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEK PLATFORM: KATEGORİLER -->
+    <section style="padding: 112px 24px 56px">
+      <div style="max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 44px">
+        <div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px">
+          <span style="align-self: flex-start; padding: 7px 14px; background: #1D4ED8; border-radius: 999px; font-size: 13px; font-weight: 700; color: #FFFFFF">Tek platform</span>
+          <h2 style="font-size: 44px; line-height: 1.1; font-weight: 800; color: #071A3A">Giriş-çıkıştan bordroya,<br><span style="color: #1D4ED8">uçtan uca personel yönetimi.</span></h2>
+          <p style="font-size: 18px; line-height: 1.6; color: #4B5B73">Ayrı ayrı programlar ve Excel tabloları yerine tek bir sistem. Verileriniz bir modülden diğerine kendiliğinden akar.</p>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px">
+          <article style="border: 1px solid #DCE5F0; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 12px">
+            <span style="width: 44px; height: 44px; border-radius: 12px; background: #DBE7FF; color: #1D4ED8; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="5" height="5" x="3" y="3" rx="1"></rect><rect width="5" height="5" x="16" y="3" rx="1"></rect><rect width="5" height="5" x="3" y="16" rx="1"></rect><path d="M21 16h-3a2 2 0 0 0-2 2v3"></path><path d="M16 12h1"></path></svg></span>
+            <h3 style="font-size: 18px; color: #071A3A">Zaman &amp; Devam</h3>
+            <ul style="display: flex; flex-direction: column; gap: 8px; font-size: 14px"><li><a href="#">QR Kodlu PDKS</a></li><li><a href="#">Vardiya Yönetimi</a></li><li><a href="#">Puantaj ve Mesai</a></li><li><a href="#">Lokasyon &amp; QR Noktaları</a></li></ul>
+          </article>
+          <article style="border: 1px solid #DCE5F0; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 12px">
+            <span style="width: 44px; height: 44px; border-radius: 12px; background: #DBE7FF; color: #1D4ED8; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path></svg></span>
+            <h3 style="font-size: 18px; color: #071A3A">İnsan Kaynakları</h3>
+            <ul style="display: flex; flex-direction: column; gap: 8px; font-size: 14px"><li><a href="#">Personel Yönetimi</a></li><li><a href="#">Özlük Dosyası</a></li><li><a href="#">İzin Yönetimi</a></li><li><a href="#">Avans Yönetimi</a></li><li><a href="#">İK Belgeleri</a></li></ul>
+          </article>
+          <article style="border: 1px solid #DCE5F0; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 12px">
+            <span style="width: 44px; height: 44px; border-radius: 12px; background: #DBE7FF; color: #1D4ED8; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="12" x="2" y="6" rx="2"></rect><circle cx="12" cy="12" r="2"></circle><path d="M6 12h.01M18 12h.01"></path></svg></span>
+            <h3 style="font-size: 18px; color: #071A3A">Bordro &amp; Raporlama</h3>
+            <ul style="display: flex; flex-direction: column; gap: 8px; font-size: 14px"><li><a href="#">Bordro Hesaplama</a></li><li><a href="#">Ek Ödeme &amp; Kesintiler</a></li><li><a href="#">Mevzuat Uyumu</a></li><li><a href="#">Raporlama</a></li></ul>
+          </article>
+          <article style="border: 1px solid #DCE5F0; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 12px">
+            <span style="width: 44px; height: 44px; border-radius: 12px; background: #DBE7FF; color: #1D4ED8; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"></path><path d="m19 9-5 5-4-4-3 3"></path></svg></span>
+            <h3 style="font-size: 18px; color: #071A3A">CRM</h3>
+            <ul style="display: flex; flex-direction: column; gap: 8px; font-size: 14px"><li><a href="#">Müşteri &amp; Kişi Yönetimi</a></li><li><a href="#">Satış Takibi</a></li><li><a href="#">Teklif Yönetimi</a></li><li><a href="#">Görev Yönetimi</a></li></ul>
+          </article>
+          <article style="border: 1px solid #DCE5F0; border-radius: 20px; padding: 24px; display: flex; flex-direction: column; gap: 12px">
+            <span style="width: 44px; height: 44px; border-radius: 12px; background: #DBE7FF; color: #1D4ED8; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2"></rect><path d="M12 18h.01"></path></svg></span>
+            <h3 style="font-size: 18px; color: #071A3A">Platform</h3>
+            <ul style="display: flex; flex-direction: column; gap: 8px; font-size: 14px"><li><a href="#">Mobil Uygulama</a></li><li><a href="#">Çoklu Şirket &amp; Şube</a></li><li><a href="#">Rol &amp; Yetki Yönetimi</a></li><li><a href="#">Dashboard &amp; Takvim</a></li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PDKS -->
+    <section style="padding: 56px 24px">
+      <div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 64px">
+        <div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+          <span style="align-self: flex-start; padding: 7px 14px; background: #1D4ED8; border-radius: 999px; font-size: 13px; font-weight: 700; color: #FFFFFF">QR Kodlu PDKS</span>
+          <h2 style="font-size: 44px; line-height: 1.1; font-weight: 800; color: #071A3A">Doğru yerde,<br>doğru kayıt.</h2>
+          <p style="font-size: 17px; line-height: 1.65; color: #4B5B73">Kart ve parmak izi okuyucuya gerek yok, sahte kayda da yer yok. Donanım satın almadan, personelin kendi telefonuyla güvenilir devam takibi.</p>
+          <ul style="display: flex; flex-direction: column; gap: 12px">
+            <li style="display: flex; gap: 12px; font-size: 16px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D4ED8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M20 6 9 17l-5-5"></path></svg>Her okutmada telefon konumu kaydedilir</li>
+            <li style="display: flex; gap: 12px; font-size: 16px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D4ED8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M20 6 9 17l-5-5"></path></svg>Sahte GPS uygulamaları tespit edilir ve engellenir</li>
+            <li style="display: flex; gap: 12px; font-size: 16px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D4ED8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M20 6 9 17l-5-5"></path></svg>Hesap tek cihaza eşlenir, başkası yerine okutulamaz</li>
+            <li style="display: flex; gap: 12px; font-size: 16px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D4ED8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M20 6 9 17l-5-5"></path></svg>Vardiya, gece mesaisi ve mola süreleri otomatik hesaplanır</li>
+          </ul>
+          <a href="FeatureReal.dc.html" style="font-weight: 700; font-size: 16px">QR Kodlu PDKS'yi inceleyin →</a>
+        </div>
+        <div style="flex: 1.6 1 560px; min-width: 0; position: relative; padding-right: 96px; box-sizing: border-box">
+          <div style="border-radius: 16px; overflow: hidden; border: 1px solid #DCE5F0; box-shadow: 0 40px 80px -30px rgba(7,26,58,0.35)">
+            <div style="display: flex; align-items: center; gap: 6px; height: 30px; padding: 0 12px; background: #EEF3FA; border-bottom: 1px solid #DCE5F0"><span style="width: 9px; height: 9px; border-radius: 50%; background: #D3DCE8"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #D3DCE8"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #D3DCE8"></span></div>
+            <img src="../images/admin-temiz/pdks-detay.webp" alt="PDKS Yönetimi ekranı: giriş saatleri, lokasyon ve koordinatlar" style="width: 100%; height: auto; display: block">
+          </div>
+          <div style="position: absolute; right: 0; bottom: -40px; width: 180px; padding: 7px; background: #0B1220; border-radius: 34px; box-shadow: 0 30px 60px -15px rgba(7,26,58,0.5); box-sizing: border-box">
+            <img src="../images/mobile-temiz/qr-yon-sec.webp" alt="Mobil uygulamada Giriş veya Çıkış seçimi" style="width: 100%; height: auto; display: block; border-radius: 28px">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOKASYON & QR -->
+    <section style="padding: 56px 24px">
+      <div style="max-width: 1240px; margin: 0 auto; border-radius: 32px; background: #EAF2FB; padding: 64px 56px 0; display: flex; flex-wrap: wrap-reverse; align-items: flex-end; gap: 56px; box-sizing: border-box; overflow: hidden">
+        <div style="flex: 1.2 1 480px; min-width: 0; display: flex; align-items: flex-end; justify-content: center; gap: 24px">
+          <img src="../images/admin-temiz/qr-a4-cikti.webp" alt="Basılabilir A4 QR afişi" style="width: 300px; max-width: 55%; height: auto; display: block; border-radius: 14px 14px 0 0; box-shadow: 0 30px 60px -20px rgba(7,26,58,0.35)">
+          <img src="../images/admin-temiz/lokasyon-qr.webp" alt="QR kodu indirme seçenekleri: PNG, A4 PDF, A4 Word" style="width: 250px; max-width: 42%; height: auto; display: block; margin-bottom: 40px; border-radius: 16px; border: 1px solid #DCE5F0; box-shadow: 0 30px 60px -20px rgba(7,26,58,0.35)">
+        </div>
+        <div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 20px; padding-bottom: 64px">
+          <span style="align-self: flex-start; padding: 7px 14px; background: #1D4ED8; border-radius: 999px; font-size: 13px; font-weight: 700; color: #FFFFFF">Lokasyon &amp; QR</span>
+          <h2 style="font-size: 44px; line-height: 1.1; font-weight: 800; color: #071A3A">Yazdır, as,<br>okutmaya başla.</h2>
+          <p style="font-size: 17px; line-height: 1.65; color: #4B5B73">Her giriş noktası için koordinatlı bir lokasyon tanımlayın. QR kodu PNG, A4 PDF veya Word olarak indirip duvara asın.</p>
+          <ul style="display: flex; flex-direction: column; gap: 12px">
+            <li style="display: flex; gap: 12px; font-size: 16px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D4ED8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M20 6 9 17l-5-5"></path></svg>Şirket ve lokasyon adıyla hazır A4 afiş</li>
+            <li style="display: flex; gap: 12px; font-size: 16px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D4ED8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M20 6 9 17l-5-5"></path></svg>Sahada mobil uygulamadan tek dokunuşla konum kaydı</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PUANTAJ -->
+    <section style="padding: 56px 24px">
+      <div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap-reverse; align-items: center; gap: 64px">
+        <div style="flex: 1.6 1 560px; min-width: 0; position: relative; padding-left: 96px; box-sizing: border-box">
+          <div style="border-radius: 16px; overflow: hidden; border: 1px solid #DCE5F0; box-shadow: 0 40px 80px -30px rgba(7,26,58,0.35)">
+            <div style="display: flex; align-items: center; gap: 6px; height: 30px; padding: 0 12px; background: #EEF3FA; border-bottom: 1px solid #DCE5F0"><span style="width: 9px; height: 9px; border-radius: 50%; background: #D3DCE8"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #D3DCE8"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #D3DCE8"></span></div>
+            <img src="../images/admin-temiz/puantaj.webp" alt="Aylık puantaj çizelgesi ekranı" style="width: 100%; height: auto; display: block">
+          </div>
+          <div style="position: absolute; left: 0; bottom: -40px; width: 180px; padding: 7px; background: #0B1220; border-radius: 34px; box-shadow: 0 30px 60px -15px rgba(7,26,58,0.5); box-sizing: border-box">
+            <img src="../images/mobile-temiz/puantaj.webp" alt="Mobil uygulamada Puantajım takvimi" style="width: 100%; height: auto; display: block; border-radius: 28px">
+          </div>
+        </div>
+        <div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+          <span style="align-self: flex-start; padding: 7px 14px; background: #1D4ED8; border-radius: 999px; font-size: 13px; font-weight: 700; color: #FFFFFF">Puantaj</span>
+          <h2 style="font-size: 44px; line-height: 1.1; font-weight: 800; color: #071A3A">Ayın tamamı<br>tek çizelgede.</h2>
+          <p style="font-size: 17px; line-height: 1.65; color: #4B5B73">Çalışılan saatler, hafta tatilleri, izinler ve fazla mesailer gün gün işaretlenir. PDKS kayıtları tek tıkla aktarılır, toplu giriş ile yüzlerce personel saniyeler içinde güncellenir.</p>
+          <a href="#" style="font-weight: 700; font-size: 16px">Puantaj ve Mesai →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BORDRO -->
+    <section style="padding: 96px 24px 56px">
+      <div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 64px">
+        <div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+          <span style="align-self: flex-start; padding: 7px 14px; background: #1D4ED8; border-radius: 999px; font-size: 13px; font-weight: 700; color: #FFFFFF">Bordro</span>
+          <h2 style="font-size: 44px; line-height: 1.1; font-weight: 800; color: #071A3A">Bordro,<br>tek tıkla hazır.</h2>
+          <p style="font-size: 17px; line-height: 1.65; color: #4B5B73">Güncel SGK ve vergi parametreleriyle net ücret, kesintiler ve toplam işveren maliyeti otomatik hesaplanır. Eklenti, kesinti ve avans taksitleri bordroya kendiliğinden yansır.</p>
+          <a href="#" style="font-weight: 700; font-size: 16px">Bordro Hesaplama →</a>
+        </div>
+        <div style="flex: 1.6 1 560px; min-width: 0">
+          <div style="border-radius: 16px; overflow: hidden; border: 1px solid #DCE5F0; box-shadow: 0 40px 80px -30px rgba(7,26,58,0.35)">
+            <div style="display: flex; align-items: center; gap: 6px; height: 30px; padding: 0 12px; background: #EEF3FA; border-bottom: 1px solid #DCE5F0"><span style="width: 9px; height: 9px; border-radius: 50%; background: #D3DCE8"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #D3DCE8"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #D3DCE8"></span></div>
+            <img src="../images/admin-temiz/bordro-detay.webp" alt="Personel bordro detayı: net ödenen, kesintiler, toplam maliyet" style="width: 100%; height: auto; display: block">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- İZİN & AVANS -->
+    <section style="padding: 56px 24px">
+      <div style="max-width: 1240px; margin: 0 auto; border-radius: 32px; background: #EAF2FB; padding: 64px 56px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px; box-sizing: border-box">
+        <div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+          <span style="align-self: flex-start; padding: 7px 14px; background: #1D4ED8; border-radius: 999px; font-size: 13px; font-weight: 700; color: #FFFFFF">İzin &amp; Avans</span>
+          <h2 style="font-size: 44px; line-height: 1.1; font-weight: 800; color: #071A3A">Talebin birkaç<br>dokunuş uzakta.</h2>
+          <p style="font-size: 17px; line-height: 1.65; color: #4B5B73">Personel izin ve avans talebini uygulamadan gönderir, durumunu takip eder. Yönetici panelden veya mobilden gerekçesiyle onaylar ya da reddeder. İzin bakiyesi ve avans taksitleri otomatik hesaplanır.</p>
+        </div>
+        <div style="flex: 1.4 1 520px; min-width: 0; display: flex; justify-content: center; align-items: center; gap: 20px">
+          <div style="width: 200px; flex-shrink: 0; padding: 7px; background: #0B1220; border-radius: 36px; box-sizing: border-box; box-shadow: 0 30px 60px -20px rgba(7,26,58,0.4)"><img src="../images/mobile-temiz/izinler.webp" alt="İzinler ve talepler listesi" style="width: 100%; height: auto; display: block; border-radius: 30px"></div>
+          <div style="width: 200px; flex-shrink: 0; padding: 7px; background: #0B1220; border-radius: 36px; box-sizing: border-box; box-shadow: 0 30px 60px -20px rgba(7,26,58,0.4); margin-top: 64px"><img src="../images/mobile-temiz/yeni-avans.webp" alt="Yeni avans talebi formu" style="width: 100%; height: auto; display: block; border-radius: 30px"></div>
+          <img src="../images/admin-temiz/izin-talep.webp" alt="Panelde izin talep detayı ve onay" style="width: 280px; min-width: 0; height: auto; display: block; border-radius: 14px; box-shadow: 0 30px 60px -20px rgba(7,26,58,0.4)">
+        </div>
+      </div>
+    </section>
+
+    <!-- ÇOKLU ŞİRKET -->
+    <section style="padding: 56px 24px 112px">
+      <div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 64px">
+        <div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+          <span style="align-self: flex-start; padding: 7px 14px; background: #1D4ED8; border-radius: 999px; font-size: 13px; font-weight: 700; color: #FFFFFF">Çoklu Şirket &amp; Şube</span>
+          <h2 style="font-size: 44px; line-height: 1.1; font-weight: 800; color: #071A3A">Tüm şirketleriniz,<br>tek panelde.</h2>
+          <p style="font-size: 17px; line-height: 1.65; color: #4B5B73">Grup → Şirket → Şube → Bölüm hiyerarşisi. Her kullanıcıya grup, şirket veya şube bazında ayrı yetki alanı verin; personelin hangi ekranları göreceğini siz belirleyin.</p>
+          <div style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; max-width: 360px">
+            <span style="padding: 10px 14px; border: 1px solid #C9D6E8; border-radius: 10px; font-weight: 600; color: #071A3A">Grup Holding</span>
+            <span style="margin-left: 24px; padding: 10px 14px; border: 1px solid #C9D6E8; border-radius: 10px; font-weight: 600; color: #071A3A">Şirket A · 3 şube</span>
+            <span style="margin-left: 48px; padding: 10px 14px; border: 1px solid #1D4ED8; background: #DBE7FF; border-radius: 10px; font-weight: 600; color: #1D4ED8">İstanbul Şubesi · Fabrika, Depo</span>
+          </div>
+        </div>
+        <div style="flex: 1.6 1 560px; min-width: 0">
+          <div style="border-radius: 16px; overflow: hidden; border: 1px solid #DCE5F0; box-shadow: 0 40px 80px -30px rgba(7,26,58,0.35)">
+            <div style="display: flex; align-items: center; gap: 6px; height: 30px; padding: 0 12px; background: #EEF3FA; border-bottom: 1px solid #DCE5F0"><span style="width: 9px; height: 9px; border-radius: 50%; background: #D3DCE8"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #D3DCE8"></span><span style="width: 9px; height: 9px; border-radius: 50%; background: #D3DCE8"></span></div>
+            <img src="../images/admin-temiz/kurumsal-bolum.webp" alt="Kurumsal yönetim: grup, şirket, şube ve bölüm hiyerarşisi" style="width: 100%; height: auto; display: block">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOBİL UYGULAMA -->
+    <section style="padding: 112px 0; background: #071A3A; overflow: hidden">
+      <div style="max-width: 1240px; margin: 0 auto; padding: 0 24px; display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 32px">
+        <div style="flex: 1 1 520px; display: flex; flex-direction: column; gap: 18px; max-width: 640px">
+          <span style="align-self: flex-start; padding: 7px 14px; background: #1D4ED8; border-radius: 999px; font-size: 13px; font-weight: 700; color: #FFFFFF">Mobil uygulama</span>
+          <h2 style="font-size: 48px; line-height: 1.06; font-weight: 800; color: #FFFFFF">QR okut,<br><span style="color: #7FB0FF">mesain başlasın.</span></h2>
+          <p style="font-size: 18px; line-height: 1.6; color: #B7C6DE">Personeliniz her şeyi cebinden yönetsin. Yöneticiler talepleri sahadan onaylasın.</p>
+          <ul style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; max-width: 480px">
+            <li style="display: flex; align-items: center; gap: 10px; color: #FFFFFF; font-size: 15px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7FB0FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>QR ile giriş-çıkış</li>
+            <li style="display: flex; align-items: center; gap: 10px; color: #FFFFFF; font-size: 15px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7FB0FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>İzin &amp; avans talebi</li>
+            <li style="display: flex; align-items: center; gap: 10px; color: #FFFFFF; font-size: 15px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7FB0FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Bordro, puantaj, PDKS</li>
+            <li style="display: flex; align-items: center; gap: 10px; color: #FFFFFF; font-size: 15px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7FB0FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Eklenti &amp; kesintiler</li>
+          </ul>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px">
+          <a href="#" style="display: inline-flex; align-items: center; height: 52px; padding: 0 20px; background: #FFFFFF; color: #071A3A; border-radius: 12px; font-weight: 700">App Store</a>
+          <a href="#" style="display: inline-flex; align-items: center; height: 52px; padding: 0 20px; background: #FFFFFF; color: #071A3A; border-radius: 12px; font-weight: 700">Google Play</a>
+        </div>
+      </div>
+      <div style="margin-top: 64px; padding: 0 24px; display: flex; gap: 24px; overflow-x: auto; justify-content: center; align-items: flex-start">
+        <div style="width: 196px; flex-shrink: 0; padding: 7px; background: #1A2740; border-radius: 36px; box-sizing: border-box"><img src="../images/mobile-temiz/ana-sayfa.webp" alt="Ana sayfa" style="width: 100%; height: auto; display: block; border-radius: 30px"></div>
+        <div style="width: 196px; flex-shrink: 0; padding: 7px; background: #1A2740; border-radius: 36px; box-sizing: border-box; margin-top: 48px"><img src="../images/mobile-temiz/qr-yon-sec.webp" alt="QR okutma: Giriş veya Çıkış seç" style="width: 100%; height: auto; display: block; border-radius: 30px"></div>
+        <div style="width: 196px; flex-shrink: 0; padding: 7px; background: #1A2740; border-radius: 36px; box-sizing: border-box"><img src="../images/mobile-temiz/pdks.webp" alt="PDKS kayıtlarım" style="width: 100%; height: auto; display: block; border-radius: 30px"></div>
+        <div style="width: 196px; flex-shrink: 0; padding: 7px; background: #1A2740; border-radius: 36px; box-sizing: border-box; margin-top: 48px"><img src="../images/mobile-temiz/avanslar.webp" alt="Avans talepleri" style="width: 100%; height: auto; display: block; border-radius: 30px"></div>
+        <div style="width: 196px; flex-shrink: 0; padding: 7px; background: #1A2740; border-radius: 36px; box-sizing: border-box"><img src="../images/mobile-temiz/eklentiler.webp" alt="Eklentilerim" style="width: 100%; height: auto; display: block; border-radius: 30px"></div>
+        <div style="width: 196px; flex-shrink: 0; padding: 7px; background: #1A2740; border-radius: 36px; box-sizing: border-box; margin-top: 48px"><img src="../images/mobile-temiz/ozluk.webp" alt="Özlük bilgilerim" style="width: 100%; height: auto; display: block; border-radius: 30px"></div>
+      </div>
+    </section>
+
+    <!-- NASIL ÇALIŞIR -->
+    <section style="padding: 112px 24px">
+      <div style="max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 44px">
+        <div style="text-align: center; display: flex; flex-direction: column; gap: 12px; align-items: center">
+          <h2 style="font-size: 48px; line-height: 1.06; font-weight: 800; color: #071A3A">Okut. Kaydet. <span style="color: #1D4ED8">Bordro hazır.</span></h2>
+          <p style="font-size: 18px; color: #4B5B73">4 adımda kağıtsız personel takibi.</p>
+        </div>
+        <ol style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px">
+          <li style="border: 1px solid #DCE5F0; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: Inter, sans-serif; font-size: 40px; font-weight: 800; color: #1D4ED8; line-height: 1">01</span><h3 style="font-size: 19px; color: #071A3A">Şirketinizi kurun</h3><p style="font-size: 15px; line-height: 1.6; color: #4B5B73">Şirket, şube ve bölümlerinizi tanımlayın, personelinizi Excel'den tek seferde aktarın.</p></li>
+          <li style="border: 1px solid #DCE5F0; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: Inter, sans-serif; font-size: 40px; font-weight: 800; color: #1D4ED8; line-height: 1">02</span><h3 style="font-size: 19px; color: #071A3A">QR kodları asın</h3><p style="font-size: 15px; line-height: 1.6; color: #4B5B73">Her lokasyon için QR kod üretin, A4 afiş olarak yazdırıp girişe asın.</p></li>
+          <li style="border: 1px solid #DCE5F0; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 10px"><span style="font-family: Inter, sans-serif; font-size: 40px; font-weight: 800; color: #1D4ED8; line-height: 1">03</span><h3 style="font-size: 19px; color: #071A3A">Personel okutsun</h3><p style="font-size: 15px; line-height: 1.6; color: #4B5B73">Personel mobil uygulamayla QR'ı okutur; konum ve cihaz anında doğrulanır.</p></li>
+          <li style="border: 1px solid #DCE5F0; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 10px; background: #071A3A"><span style="font-family: Inter, sans-serif; font-size: 40px; font-weight: 800; color: #7FB0FF; line-height: 1">04</span><h3 style="font-size: 19px; color: #FFFFFF">Bordro hazır</h3><p style="font-size: 15px; line-height: 1.6; color: #B7C6DE">Kayıtlar puantaja aktarılır, bordro tek tıkla hesaplanır.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- HESAPLAMA + SSS -->
+    <section style="padding: 0 24px 112px">
+      <div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 48px">
+        <div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+          <h2 style="font-size: 32px; font-weight: 800; color: #071A3A">Ücretsiz hesaplama araçları</h2>
+          <p style="font-size: 16px; color: #4B5B73">Güncel mevzuata göre saniyeler içinde hesaplayın.</p>
+          <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+            <a href="#" style="padding: 16px; border-radius: 14px; background: #EAF2FB; font-weight: 700; font-size: 15px; color: #071A3A">Net-Brüt Maaş</a>
+            <a href="#" style="padding: 16px; border-radius: 14px; background: #EAF2FB; font-weight: 700; font-size: 15px; color: #071A3A">Kıdem Tazminatı</a>
+            <a href="#" style="padding: 16px; border-radius: 14px; background: #EAF2FB; font-weight: 700; font-size: 15px; color: #071A3A">İhbar Tazminatı</a>
+            <a href="#" style="padding: 16px; border-radius: 14px; background: #EAF2FB; font-weight: 700; font-size: 15px; color: #071A3A">Fazla Mesai</a>
+            <a href="#" style="padding: 16px; border-radius: 14px; background: #EAF2FB; font-weight: 700; font-size: 15px; color: #071A3A">İşveren Maliyeti</a>
+            <a href="#" style="padding: 16px; border-radius: 14px; background: #EAF2FB; font-weight: 700; font-size: 15px; color: #071A3A">Yıllık İzin</a>
+          </div>
+          <a href="#" style="font-weight: 700">Tüm araçlar →</a>
+        </div>
+        <div style="flex: 1.4 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+          <h2 style="font-size: 32px; font-weight: 800; color: #071A3A; margin-bottom: 4px">Sıkça sorulan sorular</h2>
+          <details open="" style="border: 1px solid #DCE5F0; border-radius: 16px; padding: 18px 22px"><summary style="font-weight: 700; font-size: 16px; color: #071A3A; cursor: pointer">QR Zaman için özel bir donanım gerekiyor mu?</summary><p style="margin-top: 10px; font-size: 15px; line-height: 1.6; color: #4B5B73">Hayır. Panelden ürettiğiniz QR kodu yazdırıp asmanız yeterli. Personel kendi telefonundaki QR Zaman uygulamasıyla okutur.</p></details>
+          <details style="border: 1px solid #DCE5F0; border-radius: 16px; padding: 18px 22px"><summary style="font-weight: 700; font-size: 16px; color: #071A3A; cursor: pointer">Personel başkasının yerine giriş yapabilir mi?</summary><p style="margin-top: 10px; font-size: 15px; line-height: 1.6; color: #4B5B73">Hayır. Hesap tek cihaza eşlenir, okutma anında telefonun konumu alınır ve sahte konum uygulamaları tespit edilir.</p></details>
+          <details style="border: 1px solid #DCE5F0; border-radius: 16px; padding: 18px 22px"><summary style="font-weight: 700; font-size: 16px; color: #071A3A; cursor: pointer">Bordro hesaplaması güncel mevzuata uygun mu?</summary><p style="margin-top: 10px; font-size: 15px; line-height: 1.6; color: #4B5B73">Vergi dilimleri, SGK oranları, asgari ücret istisnaları, kıdem-ihbar tanımları ve resmî tatiller yıl bazında tutulur ve yeni yıla tek tıkla aktarılır.</p></details>
+          <details style="border: 1px solid #DCE5F0; border-radius: 16px; padding: 18px 22px"><summary style="font-weight: 700; font-size: 16px; color: #071A3A; cursor: pointer">Birden fazla şirket ve şubeyi yönetebilir miyim?</summary><p style="margin-top: 10px; font-size: 15px; line-height: 1.6; color: #4B5B73">Evet. Grup, şirket, şube ve bölüm hiyerarşisiyle çalışır; her kullanıcıya ayrı yetki alanı verilir.</p></details>
+          <details style="border: 1px solid #DCE5F0; border-radius: 16px; padding: 18px 22px"><summary style="font-weight: 700; font-size: 16px; color: #071A3A; cursor: pointer">Mevcut personel listemi nasıl aktarırım?</summary><p style="margin-top: 10px; font-size: 15px; line-height: 1.6; color: #4B5B73">Hazır Excel şablonunu indirip doldurun ve tek seferde içe aktarın; her satır için sonuç raporu alırsınız.</p></details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer style="font-family: Inter, system-ui, sans-serif; background: #071A3A; color: #B7C6DE; padding: 72px 24px 28px; min-width: 0">
+  <div style="max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px">
+
+    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; padding: 32px; border-radius: 24px; background: #0D2449; border: 1px solid #1B3560">
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <span style="font-family: Inter, sans-serif; font-size: 28px; font-weight: 800; color: #FFFFFF">Kağıt, Excel ve parmak izi cihazına <span style="color: #7FB0FF">veda edin.</span></span>
+        <span style="font-size: 15px">Personel takibini bugün dijitale taşıyın. Size özel bir demo planlayalım.</span>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 10px">
+        <a href="#" style="display: inline-flex; align-items: center; height: 48px; padding: 0 22px; background: #1D4ED8; color: #FFFFFF; border-radius: 12px; font-weight: 700; font-size: 15px; text-decoration: none">Demo Talep Et</a>
+        <a href="#" style="display: inline-flex; align-items: center; height: 48px; padding: 0 22px; border: 1px solid #2A4775; color: #FFFFFF; border-radius: 12px; font-weight: 600; font-size: 15px; text-decoration: none">Bize Ulaşın</a>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 40px">
+      <div style="flex: 1.4 1 260px; display: flex; flex-direction: column; gap: 18px">
+        <img src="../images/logos/logo-sec.png" alt="QR Zaman" style="width: 180px; height: auto; display: block">
+        <p style="margin: 0; font-size: 14px; line-height: 1.65; max-width: 300px">QR kodlu PDKS, puantaj, bordro, izin, avans ve CRM. İşletmeler için tek platform.</p>
+        <div style="display: flex; flex-direction: column; gap: 8px; font-size: 14px">
+          <span style="display: flex; align-items: center; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7FB0FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>[Adres]</span>
+          <span style="display: flex; align-items: center; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7FB0FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>[Telefon]</span>
+          <span style="display: flex; align-items: center; gap: 10px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7FB0FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-10 5L2 7"/></svg>[E-posta]</span>
+        </div>
+        <div style="display: flex; gap: 8px">
+          <a href="#" aria-label="App Store'dan indirin" style="display: inline-flex; align-items: center; gap: 8px; height: 42px; padding: 0 14px; border: 1px solid #2A4775; border-radius: 10px; color: #FFFFFF; font-size: 13px; font-weight: 700; text-decoration: none"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/></svg>App Store</a>
+          <a href="#" aria-label="Google Play'den indirin" style="display: inline-flex; align-items: center; gap: 8px; height: 42px; padding: 0 14px; border: 1px solid #2A4775; border-radius: 10px; color: #FFFFFF; font-size: 13px; font-weight: 700; text-decoration: none"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3l14 9-14 9V3z"/></svg>Google Play</a>
+        </div>
+      </div>
+
+      <nav aria-label="Ürünler" style="flex: 1 1 150px; display: flex; flex-direction: column; gap: 11px; font-size: 14px">
+        <span style="color: #FFFFFF; font-weight: 700; margin-bottom: 4px">Ürünler</span>
+        <a href="#" style="color: #B7C6DE; text-decoration: none">QR Kodlu PDKS</a><a href="#" style="color: #B7C6DE; text-decoration: none">Vardiya Yönetimi</a><a href="#" style="color: #B7C6DE; text-decoration: none">Puantaj ve Mesai</a><a href="#" style="color: #B7C6DE; text-decoration: none">Bordro Hesaplama</a><a href="#" style="color: #B7C6DE; text-decoration: none">İzin Yönetimi</a><a href="#" style="color: #B7C6DE; text-decoration: none">Avans Yönetimi</a><a href="#" style="color: #B7C6DE; text-decoration: none">Özlük Dosyası</a><a href="#" style="color: #B7C6DE; text-decoration: none">CRM</a><a href="#" style="color: #B7C6DE; text-decoration: none">Mobil Uygulama</a>
+      </nav>
+      <nav aria-label="Çözümler" style="flex: 1 1 150px; display: flex; flex-direction: column; gap: 11px; font-size: 14px">
+        <span style="color: #FFFFFF; font-weight: 700; margin-bottom: 4px">Çözümler</span>
+        <a href="#" style="color: #B7C6DE; text-decoration: none">Yöneticiler</a><a href="#" style="color: #B7C6DE; text-decoration: none">İK &amp; Bordro Ekipleri</a><a href="#" style="color: #B7C6DE; text-decoration: none">Çalışanlar</a><a href="#" style="color: #B7C6DE; text-decoration: none">Perakende</a><a href="#" style="color: #B7C6DE; text-decoration: none">Üretim &amp; Fabrika</a><a href="#" style="color: #B7C6DE; text-decoration: none">İnşaat &amp; Saha</a><a href="#" style="color: #B7C6DE; text-decoration: none">Çok Şubeli İşletmeler</a>
+      </nav>
+      <nav aria-label="Kaynaklar" style="flex: 1 1 150px; display: flex; flex-direction: column; gap: 11px; font-size: 14px">
+        <span style="color: #FFFFFF; font-weight: 700; margin-bottom: 4px">Kaynaklar</span>
+        <a href="#" style="color: #B7C6DE; text-decoration: none">Blog</a><a href="#" style="color: #B7C6DE; text-decoration: none">Hesaplama Araçları</a><a href="#" style="color: #B7C6DE; text-decoration: none">Net-Brüt Maaş</a><a href="#" style="color: #B7C6DE; text-decoration: none">Kıdem Tazminatı</a><a href="#" style="color: #B7C6DE; text-decoration: none">Sıkça Sorulan Sorular</a><a href="#" style="color: #B7C6DE; text-decoration: none">Destek</a>
+      </nav>
+      <nav aria-label="Kurumsal" style="flex: 1 1 150px; display: flex; flex-direction: column; gap: 11px; font-size: 14px">
+        <span style="color: #FFFFFF; font-weight: 700; margin-bottom: 4px">Kurumsal</span>
+        <a href="#" style="color: #B7C6DE; text-decoration: none">Hakkımızda</a><a href="#" style="color: #B7C6DE; text-decoration: none">Fiyatlandırma</a><a href="#" style="color: #B7C6DE; text-decoration: none">İş Ortaklığı</a><a href="#" style="color: #B7C6DE; text-decoration: none">İletişim</a><a href="#" style="color: #B7C6DE; text-decoration: none">Güvenlik &amp; KVKK</a><a href="#" style="color: #B7C6DE; text-decoration: none">Hesap Silme</a>
+      </nav>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding-top: 24px; border-top: 1px solid #1B3560; font-size: 13px">
+      <span>© 2026 QR Zaman. Tüm hakları saklıdır.</span>
+      <span style="display: flex; flex-wrap: wrap; gap: 18px"><a href="#" style="color: #B7C6DE; text-decoration: none">KVKK Aydınlatma Metni</a><a href="#" style="color: #B7C6DE; text-decoration: none">Gizlilik Politikası</a><a href="#" style="color: #B7C6DE; text-decoration: none">Çerez Politikası</a><a href="#" style="color: #B7C6DE; text-decoration: none">Kullanım Şartları</a></span>
+      <span style="display: flex; align-items: center; gap: 8px">
+        <a href="#" aria-label="LinkedIn" style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border: 1px solid #2A4775; border-radius: 10px; color: #FFFFFF"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+        <a href="#" aria-label="Instagram" style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border: 1px solid #2A4775; border-radius: 10px; color: #FFFFFF"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></a>
+        <a href="#" aria-label="YouTube" style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border: 1px solid #2A4775; border-radius: 10px; color: #FFFFFF"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="5" rx="4"/><path d="m10 9 5 3-5 3z"/></svg></a>
+        <button type="button" aria-label="Temayı değiştir (açık / koyu / sistem)" style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; margin-left: 6px; border: 1px solid #2A4775; background: transparent; border-radius: 10px; color: #FFFFFF"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg></button>
+        <button type="button" aria-label="Dil seç" style="height: 36px; padding: 0 12px; margin-left: 6px; border: 1px solid #2A4775; background: transparent; border-radius: 10px; font: 600 13px Inter, sans-serif; color: #FFFFFF">TR · EN</button>
+      </span>
+    </div>
+  </div>
+</footer>
+</div>
+</body>
+</html>
