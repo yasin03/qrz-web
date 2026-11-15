@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "defaultTitle": "QR Kodlu Personel Takip, PDKS ve Bordro Programı | QR Zaman",
+    "defaultDescription": "Personeliniz QR kodu okutarak giriş-çıkış yapsın; puantaj, izin, avans ve bordro kendiliğinden hazırlansın. Tüm şirket ve şubelerinizi tek panelden yönetin."
+  },
+  "home": {
+    "title": "QR Zaman",
+    "description": "Site kurulum aşamasında. Ana sayfa Faz 3'te hazırlanır."
+  },
+  "theme": {
+    "label": "Tema",
+    "light": "Açık",
+    "dark": "Koyu",
+    "system": "Sistem",
+    "toggle": "Temayı değiştir"
+  },
+  "locale": {
+    "label": "Dil",
+    "tr": "Türkçe",
+    "en": "English"
+  },
+  "mockups": {
+    "browserUrl": "app.qrzaman.com.tr",
+    "posterCaption": "A4 QR afişi · duvara asın",
+    "posterBadge": "OKUT · KAYDET · BORDRO HAZIR · ",
+    "toasts": {
+      "shiftStarted": {
+        "title": "Mesai başladı",
+        "description": "Bugünkü giriş · 08:57"
+      },
+      "locationVerified": {
+        "title": "Konum doğrulandı",
+        "description": "Merkez Giriş · 08:57"
+      },
+      "pendingApproval": {
+        "title": "Onay bekliyor",
+        "description": "Yıllık izin talebin"
+      }
+    }
+  },
+  "marquee": {
+    "label": "Özellikler",
+    "items": {
+      "pdks": "QR Kodlu PDKS",
+      "fakeGps": "Sahte GPS tespiti",
+      "shift": "Vardiya Yönetimi",
+      "timesheet": "Puantaj",
+      "payroll": "Bordro Hesaplama",
+      "leaveAdvance": "İzin & Avans",
+      "poster": "A4 QR Afişi",
+      "excel": "Excel İçe Aktarım",
+      "multiCompany": "Çoklu Şirket & Şube",
+      "crm": "CRM"
+    }
+  },
+  "showcase": {
+    "title": "Bileşen vitrini",
+    "description": "Faz 1'de yazılan ortak bileşenler. Bu sayfa yalnızca geliştirme ortamında açılır.",
+    "buttons": "Butonlar",
+    "frames": "Çerçeveler ve kartlar",
+    "marquee": "Kayan şerit",
+    "primary": "Ücretsiz Demo Talep Et",
+    "inverse": "Ürünleri Keşfet",
+    "outline": "İkincil buton",
+    "ghost": "Giriş Yap",
+    "dashboardAlt": "QR Zaman yönetici paneli: aktif personel, bugün gelenler, izindekiler, onay bekleyenler",
+    "phoneHomeAlt": "QR Zaman mobil uygulama ana sayfası",
+    "phoneQrAlt": "Mobil uygulamada QR okutma: giriş veya çıkış seçimi",
+    "phoneLeaveAlt": "Mobil uygulamada izin talepleri listesi",
+    "posterAlt": "Lokasyona asılan A4 QR afişi örneği"
+  }
+}

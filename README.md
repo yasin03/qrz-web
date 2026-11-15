@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# qrz-web
 
-## Getting Started
+`qrzaman.com.tr` tanıtım sitesi. Next.js 16 (App Router) + Tailwind v4 + shadcn/ui + next-intl (TR/EN) + next-themes.
+Proje brifi ve fazlar: [`docs/prompt.md`](docs/prompt.md). Ürün içeriği: [`docs/ozellikler.md`](docs/ozellikler.md).
 
-First, run the development server:
+> Panel (`app.qrzaman.com.tr`, `../qrz-admin`) ayrı bir projedir; bu repo ona dokunmaz.
+
+## Geliştirme
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+cp .env.example .env.local   # NEXT_PUBLIC_SITE_URL vb.
+npm run dev                  # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+| Komut               | Açıklama                                                  |
+| ------------------- | --------------------------------------------------------- |
+| `npm run dev`       | Geliştirme sunucusu                                       |
+| `npm run build`     | Production build (`output: "standalone"`)                 |
+| `npm run start`     | Build'i çalıştırır                                        |
+| `npm run lint`      | ESLint                                                    |
+| `npm run typecheck` | TypeScript kontrolü (önce `npx next typegen` gerekebilir) |
+| `npm run format`    | Prettier (+ Tailwind sınıf sıralaması)                    |
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Geliştirme ortamında `/bilesenler` sayfası ortak bileşenlerin vitrinidir. Production'da 404 döner ve indekslenmez.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Yapı
 
-## Learn More
+```
+app/[locale]/        Sayfalar (TR öneksiz, EN /en)
+components/layout/   Container, Section, ThemeToggle, LocaleSwitcher …
+components/mockups/  BrowserFrame, PhoneFrame, ToastCard, QrPoster
+components/sections/ Marquee …
+components/ui/       shadcn bileşenleri
+config/site.ts       Site URL, panel URL, mağaza linkleri
+i18n/                next-intl routing (pathnames), request, navigation
+messages/            tr.json / en.json (UI metinleri)
+proxy.ts             next-intl locale yönlendirmesi (Next 16'da middleware → proxy)
+public/logos         logo-pri (açık zemin), logo-sec (koyu zemin)
+public/screenshots   Maskeli ekran görüntüleri (admin, mobile)
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Kurallar (özet)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Renkler sadece token:** `app/globals.css` içindeki `:root` / `.dark` değişkenleri. Bileşenlerde hex, `bg-white` vb. kullanılmaz.
+- **Metinler sadece `messages/*.json` veya MDX:** yeni anahtar TR ve EN'e birlikte eklenir.
+- **Linkler `@/i18n/navigation`'daki `Link` ile:** dile özel URL'ler `i18n/routing.ts` → `pathnames`.
+- **Görseller `next/image` + statik import.** Next 16'da `priority` kaldırıldı; ekranın üstündeki görsellerde `loading="eager"` / `fetchPriority="high"` (bileşenlerde `aboveFold` prop'u).
+- **Döngüsel animasyonlar CSS ile**, hepsi `prefers-reduced-motion`'da durur.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## İçerik ekleme
 
-## Deploy on Vercel
+- **Yeni UI metni:** `messages/tr.json` ve `messages/en.json`'a aynı anahtarla ekle (tipler `global.d.ts` ile kontrol edilir).
+- **Yeni sayfa:** `app/[locale]/<tr-yol>/page.tsx` + `i18n/routing.ts` → `pathnames` içine `{ tr, en }` eşlemesi.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Yayın
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+`npm run build` → `.next/standalone` + `.next/static` + `public` sunucuya kopyalanır, pm2 ile `node server.js` (detaylar Faz 9).

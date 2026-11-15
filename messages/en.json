@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "defaultTitle": "QR Code Employee Time Tracking & Payroll Software | QR Zaman",
+    "defaultDescription": "Employees clock in and out by scanning a QR code, and timesheets, leave, advances and payroll are prepared automatically. Manage every company and branch from one panel."
+  },
+  "home": {
+    "title": "QR Zaman",
+    "description": "The site is being set up. The home page is built in Phase 3."
+  },
+  "theme": {
+    "label": "Theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "toggle": "Change theme"
+  },
+  "locale": {
+    "label": "Language",
+    "tr": "Türkçe",
+    "en": "English"
+  },
+  "mockups": {
+    "browserUrl": "app.qrzaman.com.tr",
+    "posterCaption": "A4 QR poster · put it on the wall",
+    "posterBadge": "SCAN · RECORD · PAYROLL READY · ",
+    "toasts": {
+      "shiftStarted": {
+        "title": "Shift started",
+        "description": "Today's check-in · 08:57"
+      },
+      "locationVerified": {
+        "title": "Location verified",
+        "description": "Main Entrance · 08:57"
+      },
+      "pendingApproval": {
+        "title": "Awaiting approval",
+        "description": "Your annual leave request"
+      }
+    }
+  },
+  "marquee": {
+    "label": "Features",
+    "items": {
+      "pdks": "QR Code Attendance",
+      "fakeGps": "Fake GPS detection",
+      "shift": "Shift Management",
+      "timesheet": "Timesheets",
+      "payroll": "Payroll Calculation",
+      "leaveAdvance": "Leave & Advances",
+      "poster": "A4 QR Poster",
+      "excel": "Excel Import",
+      "multiCompany": "Multi-Company & Branch",
+      "crm": "CRM"
+    }
+  },
+  "showcase": {
+    "title": "Component showcase",
+    "description": "Shared components built in Phase 1. This page is only available in development.",
+    "buttons": "Buttons",
+    "frames": "Frames and cards",
+    "marquee": "Marquee",
+    "primary": "Request a Free Demo",
+    "inverse": "Explore Products",
+    "outline": "Secondary button",
+    "ghost": "Log In",
+    "dashboardAlt": "QR Zaman admin dashboard: active employees, today's check-ins, on leave, pending approvals",
+    "phoneHomeAlt": "QR Zaman mobile app home screen",
+    "phoneQrAlt": "Scanning a QR code in the mobile app: choose check-in or check-out",
+    "phoneLeaveAlt": "Leave requests list in the mobile app",
+    "posterAlt": "Example A4 QR poster placed at a location"
+  }
+}

@@ -1,26 +1,402 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Renk token'ları: prompt.md 4.2 (onaylı palet).
+ * Bileşenlerde hex / rgb kullanılmaz; her renk buradaki bir token üzerinden gelir.
+ * Açık tema :root, koyu tema .dark (next-themes, attribute="class").
+ */
 :root {
+  /* Zemin ve metin */
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0b1b33;
+  --surface: #eaf2fb;
+  --card: #ffffff;
+  --card-foreground: #0b1b33;
+  --popover: #ffffff;
+  --popover-foreground: #0b1b33;
+  --border: #dce5f0;
+  --input: #dce5f0;
+  --muted: #eaf2fb;
+  --muted-foreground: #4b5b73;
+
+  /* Marka */
+  --primary: #1d4ed8;
+  --primary-foreground: #ffffff;
+  --secondary: #eaf2fb;
+  --secondary-foreground: #0b1b33;
+  --accent: #7fb0ff;
+  --accent-foreground: #071a3a;
+  --ring: #1d4ed8;
+  --destructive: #dc2626;
+
+  /* Lacivert bantlar (hero, footer, CTA) – iki temada da aynı */
+  --navy: #071a3a;
+  --navy-foreground: #ffffff;
+  --navy-muted: #b7c6de;
+  --navy-link: #dce6f5;
+  --navy-border: #2a4775;
+  --navy-glow: #12336b;
+
+  /* Özellik şeridi çipleri */
+  --chip-border: #c9d6e8;
+  --chip-foreground: #071a3a;
+
+  /* Mockup'lar */
+  --browser-bar: #eef3fa;
+  --browser-dot: #d3dce8;
+  --browser-url: #ffffff;
+  --phone-frame: #0b1220;
+  --toast: #ffffff;
+  --toast-border: transparent;
+  --toast-foreground: #071a3a;
+  --poster: #ffffff;
+  --poster-foreground: #071a3a;
+  --scan: #3b82f6;
+
+  /* Durum renkleri (zemin / ikon) */
+  --info: #dbe7ff;
+  --info-foreground: #1d4ed8;
+  --success: #dcfce7;
+  --success-foreground: #15803d;
+  --warning: #fef3c7;
+  --warning-foreground: #b45309;
+
+  /* Gölgeler */
+  --shadow-browser: 0 30px 90px -20px rgb(127 176 255 / 0.35);
+  --shadow-phone: 0 30px 60px -15px rgb(0 0 0 / 0.6);
+  --shadow-toast: 0 20px 40px -12px rgb(7 26 58 / 0.55);
+  --shadow-poster: 0 30px 60px -18px rgb(0 0 0 / 0.6);
+  --shadow-badge: 0 16px 30px -12px rgb(0 0 0 / 0.55);
+  --shadow-scan: 0 0 18px 4px rgb(59 130 246 / 0.65);
+
+  /* Köşeler: buton 12px (rounded-xl), kart 16–24px, telefon 40px */
+  --radius: 0.75rem;
+
+  /* shadcn uyumluluğu */
+  --chart-1: #1d4ed8;
+  --chart-2: #7fb0ff;
+  --chart-3: #15803d;
+  --chart-4: #b45309;
+  --chart-5: #4b5b73;
+  --sidebar: #eaf2fb;
+  --sidebar-foreground: #0b1b33;
+  --sidebar-primary: #1d4ed8;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #dce5f0;
+  --sidebar-accent-foreground: #0b1b33;
+  --sidebar-border: #dce5f0;
+  --sidebar-ring: #1d4ed8;
+}
+
+.dark {
+  --background: #050e1f;
+  --foreground: #ffffff;
+  --surface: #0a1730;
+  --card: #13243f;
+  --card-foreground: #ffffff;
+  --popover: #13243f;
+  --popover-foreground: #ffffff;
+  --border: #1f3558;
+  --input: #1f3558;
+  --muted: #0a1730;
+  --muted-foreground: #9fb0c8;
+
+  --secondary: #13243f;
+  --secondary-foreground: #ffffff;
+  --ring: #7fb0ff;
+  --destructive: #f87171;
+
+  --chip-border: #1f3558;
+  --chip-foreground: #c9d5e8;
+
+  --browser-bar: #16233a;
+  --browser-dot: #23324d;
+  --browser-url: #0f1e38;
+  --phone-frame: #16233a;
+  --toast: #0f1e38;
+  --toast-border: #23406e;
+  --toast-foreground: #ffffff;
+
+  --info: rgb(29 78 216 / 0.25);
+  --info-foreground: #7fb0ff;
+  --success: rgb(34 197 94 / 0.18);
+  --success-foreground: #4ade80;
+  --warning: rgb(245 158 11 / 0.18);
+  --warning-foreground: #fbbf24;
+
+  --shadow-browser: 0 30px 90px -20px rgb(127 176 255 / 0.25);
+  --shadow-phone: 0 40px 80px -20px rgb(0 0 0 / 0.7);
+  --shadow-toast: 0 20px 40px -12px rgb(0 0 0 / 0.6);
+
+  --sidebar: #0a1730;
+  --sidebar-foreground: #ffffff;
+  --sidebar-accent: #13243f;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #1f3558;
+  --sidebar-ring: #7fb0ff;
 }
 
 @theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-surface: var(--surface);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-ring: var(--ring);
+  --color-destructive: var(--destructive);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  --color-navy: var(--navy);
+  --color-navy-foreground: var(--navy-foreground);
+  --color-navy-muted: var(--navy-muted);
+  --color-navy-link: var(--navy-link);
+  --color-navy-border: var(--navy-border);
+  --color-navy-glow: var(--navy-glow);
+
+  --color-chip-border: var(--chip-border);
+  --color-chip-foreground: var(--chip-foreground);
+
+  --color-browser-bar: var(--browser-bar);
+  --color-browser-dot: var(--browser-dot);
+  --color-browser-url: var(--browser-url);
+  --color-phone-frame: var(--phone-frame);
+  --color-toast: var(--toast);
+  --color-toast-border: var(--toast-border);
+  --color-toast-foreground: var(--toast-foreground);
+  --color-poster: var(--poster);
+  --color-poster-foreground: var(--poster-foreground);
+  --color-scan: var(--scan);
+
+  --color-info: var(--info);
+  --color-info-foreground: var(--info-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  --shadow-browser: var(--shadow-browser);
+  --shadow-phone: var(--shadow-phone);
+  --shadow-toast: var(--shadow-toast);
+  --shadow-poster: var(--shadow-poster);
+  --shadow-badge: var(--shadow-badge);
+  --shadow-scan: var(--shadow-scan);
+
+  --radius-sm: calc(var(--radius) * 0.5);
+  --radius-md: calc(var(--radius) * 0.75);
+  --radius-lg: var(--radius);
+  --radius-xl: var(--radius);
+  --radius-2xl: calc(var(--radius) * 1.333);
+  --radius-3xl: calc(var(--radius) * 2);
+  --radius-4xl: calc(var(--radius) * 2.666);
+
+  /* Döngüsel animasyonlar (prompt.md 4.5) */
+  --animate-qz-float: qz-float 6s ease-in-out infinite;
+  --animate-qz-marquee: qz-marquee 36s linear infinite;
+  --animate-qz-scan: qz-scan 2.6s ease-in-out infinite;
+  --animate-qz-spin: qz-spin 18s linear infinite;
+
+  @keyframes qz-float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  @keyframes qz-marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes qz-scan {
+    0%,
+    100% {
+      top: 16%;
+    }
+    50% {
+      top: 80%;
+    }
+  }
+  @keyframes qz-spin {
+    to {
+      transform: rotate(360deg);
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Lacivert hero zemini (4.2) */
+@utility bg-hero {
+  background-color: var(--navy);
+  background-image: radial-gradient(
+    ellipse 60% 70% at 85% 30%,
+    var(--navy-glow) 0%,
+    var(--navy) 60%
+  );
+}
+
+/*
+ * Telefon ekranı ve bildirim kartı döngüleri.
+ * Her ekran/kart sırayla 4 sn görünür; toplam süre = ekran sayısı × 4 sn.
+ * Bileşen, ekran sayısına göre qz-cycle-2 veya qz-cycle-3 sınıfını kullanır.
+ */
+@keyframes qz-screen-3 {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  3%,
+  30% {
+    opacity: 1;
+    transform: none;
+  }
+  34%,
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes qz-screen-2 {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  4%,
+  45% {
+    opacity: 1;
+    transform: none;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes qz-toast-3 {
+  0%,
+  4% {
+    opacity: 0;
+    transform: translateY(14px) scale(0.96);
+  }
+  8%,
+  28% {
+    opacity: 1;
+    transform: none;
+  }
+  32%,
+  100% {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+}
+@keyframes qz-toast-2 {
+  0%,
+  6% {
+    opacity: 0;
+    transform: translateY(14px) scale(0.96);
+  }
+  12%,
+  42% {
+    opacity: 1;
+    transform: none;
+  }
+  48%,
+  100% {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+}
+.qz-screen-cycle-3 {
+  animation: qz-screen-3 12s infinite both;
+}
+.qz-screen-cycle-2 {
+  animation: qz-screen-2 8s infinite both;
+}
+.qz-toast-cycle-3 {
+  animation: qz-toast-3 12s infinite both;
+}
+.qz-toast-cycle-2 {
+  animation: qz-toast-2 8s infinite both;
+}
+
+/* Hareket azaltma: tüm döngüler durur, ilk ekran ve ilk kart sabit görünür */
+@media (prefers-reduced-motion: reduce) {
+  .qz-screen-cycle-2,
+  .qz-screen-cycle-3,
+  .qz-toast-cycle-2,
+  .qz-toast-cycle-3,
+  .animate-qz-float,
+  .animate-qz-marquee,
+  .animate-qz-scan,
+  .animate-qz-spin {
+    animation: none !important;
+  }
+  .qz-screen-cycle-2,
+  .qz-screen-cycle-3,
+  .qz-toast-cycle-2,
+  .qz-toast-cycle-3 {
+    opacity: 0;
+  }
+  [data-cycle-index="0"] {
+    opacity: 1;
+  }
+  .animate-qz-scan {
+    top: 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply font-sans;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    letter-spacing: -0.02em;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
 }
