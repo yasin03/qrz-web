@@ -2,13 +2,15 @@
 
 import { useParams } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
-import { Link, usePathname } from "@/i18n/navigation";
+import { getPathname, usePathname } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
 
 /**
  * TR · EN seçici. Aynı sayfanın diğer dildeki karşılığına gerçek <a> ile gider
  * (next-intl pathnames). Arama motorları dil sürümlerini hreflang'den bulur.
+ * href doğrudan kanonik adrestir (TR öneksiz: /urunler/bordro, EN: /en/products/payroll);
+ * next-intl Link'in varsayılan /tr önekli yönlendirmeli adresi kullanılmaz.
  */
 export function LocaleSwitcher({
   onDark = false,
@@ -37,11 +39,13 @@ export function LocaleSwitcher({
                   ·
                 </span>
               ) : null}
-              <Link
-                // Dinamik segmentli sayfalarda ([slug]) parametreler korunur
-                // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                href={{ pathname, params } as any}
-                locale={locale}
+              <a
+                href={getPathname({
+                  locale,
+                  // Dinamik segmentli sayfalarda parametreler korunur
+                  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                  href: { pathname, params } as any,
+                })}
                 hrefLang={locale}
                 lang={locale}
                 aria-current={active ? "true" : undefined}
@@ -55,7 +59,7 @@ export function LocaleSwitcher({
                 )}
               >
                 {locale}
-              </Link>
+              </a>
             </li>
           );
         })}

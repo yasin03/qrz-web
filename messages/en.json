@@ -4,8 +4,190 @@
     "defaultDescription": "Employees clock in and out by scanning a QR code, and timesheets, leave, advances and payroll are prepared automatically. Manage every company and branch from one panel."
   },
   "home": {
-    "title": "QR Zaman",
-    "description": "The site is being set up. The home page is built in Phase 3."
+    "hero": {
+      "badge": "QR · Attendance · Payroll · CRM",
+      "primaryCta": "Request a Free Demo",
+      "secondaryCta": "Explore Products",
+      "platforms": "Web · iOS · Android",
+      "dashboardAlt": "QR Zaman admin dashboard: active staff, today's check-ins, people on leave and pending requests",
+      "phoneHomeAlt": "QR Zaman mobile app home screen",
+      "phoneQrAlt": "QR code attendance: choosing check-in or check-out in the mobile app",
+      "phoneLeaveAlt": "Leave requests list in the mobile app",
+      "posterAlt": "Example A4 QR poster placed at a location"
+    },
+    "proof": {
+      "label": "Customers and numbers",
+      "title": "Businesses across industries use QR Zaman",
+      "logoPlaceholder": "[Logo]",
+      "stats": {
+        "companies": {
+          "label": "Companies",
+          "placeholder": "[000+]"
+        },
+        "employees": {
+          "label": "Employees",
+          "placeholder": "[0,000+]"
+        },
+        "dailyScans": {
+          "label": "Daily QR scans",
+          "placeholder": "[00,000]"
+        },
+        "provinces": {
+          "label": "Provinces",
+          "placeholder": "[00]"
+        }
+      }
+    },
+    "platform": {
+      "eyebrow": "One platform",
+      "title": "From clock-in to payroll, <accent>end-to-end workforce management.</accent>",
+      "description": "One system instead of separate programs and spreadsheets. Your data flows from one module to the next on its own.",
+      "categories": {
+        "time": "Time & Attendance",
+        "hr": "Human Resources",
+        "payroll": "Payroll & Reporting",
+        "crm": "CRM",
+        "platform": "Platform"
+      }
+    },
+    "features": {
+      "pdks": {
+        "eyebrow": "QR Code Attendance",
+        "title": "The right place,<br></br>the right record.",
+        "description": "No card or fingerprint readers, and no room for fake entries. Reliable attendance tracking on employees' own phones, without buying any hardware.",
+        "bullets": [
+          "The phone's location is saved with every scan",
+          "Fake GPS apps are detected and blocked",
+          "Each account is bound to one device, so nobody can scan for someone else",
+          "Shift, night work and break times are calculated automatically"
+        ],
+        "link": "Explore QR code attendance",
+        "imageAlt": "QR code attendance screen: check-in times, locations and coordinates",
+        "phoneAlt": "Choosing check-in or check-out after scanning in the mobile app"
+      },
+      "location": {
+        "eyebrow": "Locations & QR",
+        "title": "Print it, hang it,<br></br>start scanning.",
+        "description": "Define a location with coordinates for every entry point. Download its QR code as PNG, A4 PDF or Word and put it on the wall.",
+        "bullets": [
+          "Ready A4 poster with company and location name",
+          "Save a location on site in one tap from the mobile app"
+        ],
+        "posterAlt": "Printable A4 QR poster for location tracking",
+        "downloadAlt": "QR code download options: PNG, A4 PDF and A4 Word"
+      },
+      "timesheet": {
+        "eyebrow": "Timesheets",
+        "title": "The whole month<br></br>on one sheet.",
+        "description": "Hours worked, weekly rest days, leave and overtime are marked day by day. Attendance records are transferred in one click, and bulk entry updates hundreds of employees in seconds.",
+        "link": "Timesheets & Overtime",
+        "imageAlt": "Monthly timesheet screen",
+        "phoneAlt": "My Timesheet calendar in the mobile app"
+      },
+      "payroll": {
+        "eyebrow": "Payroll",
+        "title": "Payroll,<br></br>ready in one click.",
+        "description": "Net pay, deductions and total employer cost are calculated automatically with current social security and tax settings. Earnings, deductions and advance installments flow into payroll on their own.",
+        "link": "Payroll",
+        "imageAlt": "Payroll detail: net pay, deductions and total employer cost"
+      },
+      "leave": {
+        "eyebrow": "Leave & Advances",
+        "title": "Requests, just a few<br></br>taps away.",
+        "description": "Employees send leave and advance requests from the app and follow their status. Managers approve or reject them with a reason, on the panel or on mobile. Leave balances and advance installments are calculated automatically.",
+        "leaveAlt": "Leave requests list in the mobile app",
+        "advanceAlt": "New salary advance request form in the mobile app",
+        "adminAlt": "Leave request details and approval in the management panel"
+      },
+      "multiCompany": {
+        "eyebrow": "Multi-Company & Branch",
+        "title": "All your companies,<br></br>in one panel.",
+        "description": "A Group → Company → Branch → Department hierarchy. Give each user their own access scope by group, company or branch, and decide which screens employees can see.",
+        "treeLabel": "Example company hierarchy",
+        "tree": [
+          "Group Holding",
+          "Company A · 3 branches",
+          "Istanbul Branch · Factory, Warehouse"
+        ],
+        "imageAlt": "Multi-company and branch management: group, company, branch and department hierarchy"
+      }
+    },
+    "mobile": {
+      "eyebrow": "Mobile app",
+      "title": "Scan the QR,<br></br><accent>start your shift.</accent>",
+      "description": "Let your team handle everything from their pocket, and let managers approve requests from the field.",
+      "bullets": [
+        "QR clock-in and clock-out",
+        "Leave & advance requests",
+        "Payslips, timesheets, attendance",
+        "Earnings & deductions"
+      ],
+      "galleryLabel": "Mobile app screens",
+      "screens": [
+        "Mobile app home screen",
+        "QR scan: choose check-in or check-out",
+        "My attendance records screen",
+        "Salary advance requests list",
+        "My earnings screen",
+        "My personnel details screen"
+      ]
+    },
+    "steps": {
+      "title": "Scan. Record. <accent>Payroll ready.</accent>",
+      "description": "Paperless employee time tracking in 4 steps.",
+      "items": [
+        {
+          "title": "Set up your company",
+          "text": "Define your companies, branches and departments, and import your employees from Excel in one go."
+        },
+        {
+          "title": "Put up the QR codes",
+          "text": "Generate a QR code for each location, print it as an A4 poster and hang it at the entrance."
+        },
+        {
+          "title": "Employees scan",
+          "text": "Employees scan the QR with the mobile app; location and device are verified instantly."
+        },
+        {
+          "title": "Payroll is ready",
+          "text": "Records flow into timesheets and payroll is calculated in one click."
+        }
+      ]
+    },
+    "tools": {
+      "title": "Free payroll calculators",
+      "description": "Get results in seconds based on current regulations.",
+      "all": "All calculators"
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "q": "Do I need any special hardware for QR Zaman?",
+          "a": "No. Just print the QR code you generate in the panel and put it on the wall. Employees scan it with the QR Zaman app on their own phones."
+        },
+        {
+          "q": "Can an employee clock in for someone else?",
+          "a": "No. Each account is bound to a single device, the phone's location is captured at the moment of scanning, and fake location apps are detected."
+        },
+        {
+          "q": "Is payroll calculated according to current regulations?",
+          "a": "Tax brackets, social security rates, minimum wage exemptions, severance and notice rules and public holidays are kept per year and copied to the new year in one click."
+        },
+        {
+          "q": "Can I manage more than one company and branch?",
+          "a": "Yes. QR Zaman works with a group, company, branch and department hierarchy, and every user gets their own access scope."
+        },
+        {
+          "q": "How do I import my existing employee list?",
+          "a": "Download the ready Excel template, fill it in and import it in one go; you get a result report for every row."
+        }
+      ]
+    },
+    "storeSub": {
+      "appStore": "Download on the",
+      "googlePlay": "Get it on"
+    }
   },
   "theme": {
     "label": "Theme",
@@ -68,5 +250,511 @@
     "phoneQrAlt": "Scanning a QR code in the mobile app: choose check-in or check-out",
     "phoneLeaveAlt": "Leave requests list in the mobile app",
     "posterAlt": "Example A4 QR poster placed at a location"
+  },
+  "header": {
+    "skipLink": "Skip to content",
+    "mainNav": "Main menu",
+    "homeAria": "QR Zaman home page",
+    "login": "Log In",
+    "demo": "Request a Demo",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mobileNav": "Mobile menu",
+    "promo": {
+      "badge": "Mobile app",
+      "title": "Scan the QR,",
+      "titleAccent": "start your shift.",
+      "text": "Download the mobile app",
+      "imageAlt": "QR Zaman mobile app home screen"
+    },
+    "allProducts": "See all products",
+    "allProductsShort": "All products →",
+    "solutionsAside": {
+      "title": "Let's plan the right setup",
+      "titleAccent": "for your business together."
+    },
+    "corporateAside": {
+      "title": "Contact us",
+      "form": "Contact Form"
+    },
+    "allSolutions": "See all solutions",
+    "allSolutionsShort": "All solutions →",
+    "demoShort": "Demo"
+  },
+  "nav": {
+    "top": {
+      "products": "Products",
+      "solutions": "Solutions",
+      "pricing": "Pricing",
+      "resources": "Resources",
+      "corporate": "Company"
+    },
+    "groups": {
+      "time": "Time & Attendance",
+      "hr": "Human Resources",
+      "payroll": "Payroll & Reporting",
+      "crm": "CRM",
+      "platform": "Platform",
+      "byRole": "By role",
+      "bySector": "By industry",
+      "content": "Content",
+      "calculators": "Calculators",
+      "corporate": "Company"
+    }
+  },
+  "footer": {
+    "ctaTitle": "Say goodbye to paper, spreadsheets and",
+    "ctaTitleAccent": "fingerprint readers.",
+    "ctaText": "Move employee time tracking to digital today. Let's plan a demo tailored to you.",
+    "ctaDemo": "Request a Demo",
+    "ctaContact": "Contact Us",
+    "tagline": "QR code attendance, timesheets, payroll, leave, advances and CRM. One platform for your business.",
+    "copyright": "© {year} QR Zaman. All rights reserved.",
+    "legalNav": "Legal",
+    "socialNav": "Social media",
+    "settings": "Language and theme",
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "appStoreAria": "Download on the App Store",
+    "googlePlayAria": "Get it on Google Play",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "social": {
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram",
+      "youtube": "YouTube"
+    },
+    "placeholders": {
+      "phone": "[Phone]",
+      "email": "[Email]",
+      "address": "[Address]"
+    }
+  },
+  "breadcrumb": {
+    "label": "Breadcrumb"
+  },
+  "notFound": {
+    "code": "404",
+    "title": "Page not found",
+    "h1": "We couldn't find that page",
+    "description": "This address may have moved or never existed. Use the sections below to find what you are looking for.",
+    "home": "Back to home",
+    "demo": "Request a Demo",
+    "sections": "Main sections",
+    "cards": {
+      "products": "Attendance, timesheets, payroll, HR and CRM",
+      "solutions": "By role and industry",
+      "calculators": "Salary, severance, overtime and leave",
+      "contact": "Reach our sales and support team"
+    }
+  },
+  "pages": {
+    "home": {
+      "label": "Home",
+      "description": "QR Zaman home page",
+      "title": "QR Code Employee Time Tracking & Payroll Software",
+      "metaDescription": "Employees clock in and out by scanning a QR code, and timesheets, leave, advances and payroll are prepared automatically. Manage every branch from one panel.",
+      "h1": "The smart way <accent>to track your team.</accent>"
+    },
+    "products": {
+      "label": "Products",
+      "description": "All QR Zaman products",
+      "title": "Products: Attendance, Timesheets, Payroll and CRM",
+      "metaDescription": "Explore every QR Zaman product, from QR code attendance and payroll to leave, salary advances and CRM, on one platform. Pick the modules you need, get a demo.",
+      "h1": "QR Zaman Products"
+    },
+    "qrPdks": {
+      "label": "QR Code Attendance",
+      "description": "Location-verified clock in and out",
+      "title": "QR Code Attendance System with Location Check",
+      "metaDescription": "Employees clock in and out by scanning the QR code at their workplace. Location verification and fake GPS detection keep every attendance record reliable.",
+      "h1": "QR Code Attendance and Time Clock System"
+    },
+    "shiftManagement": {
+      "label": "Shift Management",
+      "description": "Night shifts, breaks, weekly rest",
+      "title": "Shift Management Software: Night Shifts, Breaks",
+      "metaDescription": "Define shifts per branch and department. Working, break and overtime hours are calculated automatically for night shifts, breaks and weekly rest days.",
+      "h1": "Shift Management and Shift Definitions"
+    },
+    "timesheet": {
+      "label": "Timesheets & Overtime",
+      "description": "Monthly sheet, bulk entry",
+      "title": "Timesheet Software: Monthly Timesheets, Overtime",
+      "metaDescription": "Attendance records flow into a monthly timesheet automatically. Day types, bulk timesheet entry and an overtime sheet make month-end payroll prep far easier.",
+      "h1": "Timesheets and Overtime Tracking"
+    },
+    "locationTracking": {
+      "label": "Locations & QR Points",
+      "description": "Printable A4 QR posters",
+      "title": "Employee Location Tracking with QR Check-ins",
+      "metaDescription": "Define each check-in point with latitude and longitude, generate its QR code and print it as an A4 poster. Managers can save new QR points on site in one tap.",
+      "h1": "Location Tracking and QR Check-in Points"
+    },
+    "employeeManagement": {
+      "label": "Employee Management",
+      "description": "Profiles, SSI entries, Excel import",
+      "title": "Employee Management Software: Profiles and SSI",
+      "metaDescription": "Keep identity, pay, contract and social security details in one employee profile. Handle SSI hire and exit records and import staff in bulk from Excel.",
+      "h1": "Employee Management Software"
+    },
+    "employeeRecords": {
+      "label": "Employee Records",
+      "description": "Digital personnel files",
+      "title": "Digital Employee Records and Personnel Files",
+      "metaDescription": "Store identity, education, health, bank and employment details in a digital personnel file. Spot missing fields and let staff view their own records on mobile.",
+      "h1": "Digital Employee Records"
+    },
+    "leaveManagement": {
+      "label": "Leave Management",
+      "description": "Requests, approvals, live balances",
+      "title": "Leave Management System: Requests & Approval",
+      "metaDescription": "Employees request leave from their phone and managers approve in one tap. Annual leave balances are calculated from seniority, and hourly leave is supported.",
+      "h1": "Leave Management and Leave Tracking"
+    },
+    "advanceManagement": {
+      "label": "Salary Advances",
+      "description": "Installments, payroll deductions",
+      "title": "Salary Advance Management with Payroll Deductions",
+      "metaDescription": "Employees request salary advances on mobile and managers approve them. Set installments and monthly amounts; repayments are deducted in payroll automatically.",
+      "h1": "Salary Advance Management"
+    },
+    "hrDocuments": {
+      "label": "HR Documents",
+      "description": "Contracts, forms and reports",
+      "title": "HR Document Templates: Contracts and Forms",
+      "metaDescription": "Search and download ready-made HR templates in one click: employment contracts, hiring forms, leave request forms, monthly timesheets and incident reports.",
+      "h1": "Ready-Made HR Document Templates"
+    },
+    "payroll": {
+      "label": "Payroll",
+      "description": "Bulk payroll in one click",
+      "title": "Payroll Software for Turkey: Automatic Payroll",
+      "metaDescription": "Run payroll automatically from timesheets, overtime, earnings and deductions. Social security, income tax, stamp duty and total employer cost on one screen.",
+      "h1": "Automated Payroll Software"
+    },
+    "earningsDeductions": {
+      "label": "Earnings & Deductions",
+      "description": "Bonuses, overtime, deductions",
+      "title": "Payroll Earnings and Deductions Management",
+      "metaDescription": "Add bonuses, premiums and overtime as extra earnings, and disciplinary or damage deductions, in net or gross terms. Apply one entry to many employees at once.",
+      "h1": "Earnings and Deductions Management"
+    },
+    "compliance": {
+      "label": "Compliance",
+      "description": "Yearly social security and tax rates",
+      "title": "Payroll Compliance: Yearly Tax and SSI Rules",
+      "metaDescription": "Tax brackets, social security rates, severance and notice rules, disability allowances and public holidays are kept per year. Copy them to next year in a click.",
+      "h1": "Payroll Compliance with Turkish Tax and SSI Rules"
+    },
+    "reporting": {
+      "label": "Reporting",
+      "description": "Attendance, leave, advances, payroll",
+      "title": "Workforce Reporting: Attendance and Payroll",
+      "metaDescription": "Report on late arrivals, late departures, absences, leave and salary advances. Export every attendance, leave and payroll report to Excel, PDF or Word.",
+      "h1": "Attendance, Leave and Payroll Reports"
+    },
+    "contactManagement": {
+      "label": "Contact Management",
+      "short": "CRM",
+      "description": "Every customer card in one place",
+      "title": "CRM Contact Management: Customers and Prospects",
+      "metaDescription": "Keep customer and prospect cards with their contact details on one CRM screen, so your sales team and dealers work from the same data. Request a free demo now.",
+      "h1": "CRM Contact Management"
+    },
+    "salesTracking": {
+      "label": "Sales Tracking",
+      "description": "Opportunities and sales pipeline",
+      "title": "Sales Tracking Software: Opportunities, Pipeline",
+      "metaDescription": "Track sales opportunities and your sales process in the CRM. Follow team performance from one place with the CRM dashboard and sales reports. Take a look now.",
+      "h1": "Sales Tracking in the CRM"
+    },
+    "quoteManagement": {
+      "label": "Quote Management",
+      "description": "Create and track quotes",
+      "title": "Quote Management: Create and Track Quotes",
+      "metaDescription": "Prepare customer quotes inside the CRM and follow their status. Quotes live next to customer cards and sales opportunities, so nothing gets lost along the way.",
+      "h1": "Quote Creation and Tracking"
+    },
+    "taskManagement": {
+      "label": "Task Management",
+      "description": "Team tasks and reminders",
+      "title": "Team Task Management Software with Reminders",
+      "metaDescription": "Create team tasks linked to customers and sales, and never miss a follow-up thanks to reminders. Every task sits right next to the related records in the CRM.",
+      "h1": "Team Task Management and Reminders"
+    },
+    "mobileApp": {
+      "label": "Mobile App",
+      "description": "iOS and Android",
+      "title": "Attendance Mobile App for iOS and Android Teams",
+      "metaDescription": "With the QR Zaman app, employees clock in by scanning a QR code, request leave and advances, and view payslips and timesheets. Managers approve on mobile.",
+      "h1": "QR Zaman Attendance Mobile App"
+    },
+    "multiCompany": {
+      "label": "Multi-Company & Branch",
+      "description": "Groups, companies, branches, departments",
+      "title": "Multi-Company and Multi-Branch Management",
+      "metaDescription": "Manage groups, companies, branches and departments from one panel. Switch company, branch and period from the top bar and scope each user to their branches.",
+      "h1": "Multi-Company and Multi-Branch Management"
+    },
+    "rolesPermissions": {
+      "label": "Roles & Permissions",
+      "description": "Access scoped to each user",
+      "title": "Roles and Permissions: User-Based Access Control",
+      "metaDescription": "With admin, manager, employee and dealer roles, everyone sees only the menus they are allowed to. Scope access by group, company and branch to protect data.",
+      "h1": "Roles and Permissions Management"
+    },
+    "dashboard": {
+      "label": "Dashboard & Calendar",
+      "description": "Role-based overview, public holidays",
+      "title": "HR Dashboard and Calendar: Role-Based Overview",
+      "metaDescription": "See active staff, today's check-ins, people on leave and pending requests on one screen. Check public holidays in the calendar with a role-based dashboard.",
+      "h1": "Role-Based HR Dashboard and Calendar"
+    },
+    "solutions": {
+      "label": "Solutions",
+      "description": "Solutions by role and industry",
+      "title": "Solutions by Role and Industry for Every Team",
+      "metaDescription": "QR Zaman solutions for owners and managers, HR and payroll teams, employees, and industries from retail to healthcare. Let's plan the right setup for you.",
+      "h1": "Solutions by Role and Industry"
+    },
+    "managers": {
+      "label": "Business Owners & Managers",
+      "short": "Managers",
+      "description": "Live status, approvals, costs",
+      "title": "Workforce Management for Owners and Managers",
+      "metaDescription": "See who is in, who is on leave and what is waiting for approval in real time. Approve leave and advance requests on mobile and track total employer cost.",
+      "h1": "Workforce Management for Owners and Managers"
+    },
+    "hrTeams": {
+      "label": "HR & Payroll Teams",
+      "description": "Timesheets flow into payroll",
+      "title": "HR and Payroll Software: Timesheets to Payroll",
+      "metaDescription": "Attendance flows into timesheets and timesheets flow into payroll. Speed up month-end with yearly tax and social security settings, bulk actions and exports.",
+      "h1": "Timesheets and Payroll for HR and Payroll Teams"
+    },
+    "employees": {
+      "label": "Employees",
+      "description": "Clock-ins, requests, payslips on mobile",
+      "title": "Employee Self-Service App: Clock-ins and Leave",
+      "metaDescription": "Clock in and out by scanning a QR code and send leave and advance requests from your phone. Check your payslip, timesheet and remaining leave whenever you like.",
+      "h1": "Employee Self-Service: Clock-ins and Requests on Mobile"
+    },
+    "retail": {
+      "label": "Retail & Stores",
+      "short": "Retail",
+      "description": "Store staff and shift tracking",
+      "title": "Retail Time Tracking for Store Staff and Shifts",
+      "metaDescription": "Put a QR point in every store and follow store staff check-ins and shifts from one panel. Branch-level timesheets and payroll make month-end simple for retail.",
+      "h1": "Retail Time Tracking for Stores"
+    },
+    "manufacturing": {
+      "label": "Manufacturing & Factories",
+      "short": "Manufacturing",
+      "description": "Shift-based production and overtime",
+      "title": "Manufacturing Shift Tracking and Attendance",
+      "metaDescription": "Record night shifts, breaks and overtime on the factory floor with QR code attendance. Manage production teams with department-level shifts and overtime sheets.",
+      "h1": "Shift Tracking and Attendance for Manufacturing"
+    },
+    "construction": {
+      "label": "Construction & Field Teams",
+      "short": "Construction & Field",
+      "description": "Location-verified site check-ins",
+      "title": "Construction Time Tracking for Field Teams",
+      "metaDescription": "Site and field crews clock in by scanning a QR code with their location attached. Fake GPS detection keeps records honest; managers add QR points on site.",
+      "h1": "Time Tracking for Construction and Field Teams"
+    },
+    "hospitality": {
+      "label": "Restaurants & Hospitality",
+      "short": "Hospitality",
+      "description": "Variable shifts and hourly pay",
+      "title": "Restaurant Shift Scheduling and Time Tracking",
+      "metaDescription": "Track variable shifts, breaks and overtime in restaurants, cafés and hotels with QR codes. Payroll is prepared for hourly, daily and monthly paid staff alike.",
+      "h1": "Shift Tracking for Restaurants and Hospitality"
+    },
+    "healthcare": {
+      "label": "Healthcare",
+      "description": "Night-shift healthcare teams",
+      "title": "Healthcare Staff Scheduling and Attendance",
+      "metaDescription": "Track night shifts and staff check-ins at hospitals, clinics and care providers with QR code attendance. Leave, timesheets and payroll live in a single panel.",
+      "h1": "Staff Scheduling and Attendance for Healthcare"
+    },
+    "education": {
+      "label": "Education",
+      "description": "Staff attendance for schools",
+      "title": "School Staff Attendance Tracking for Education",
+      "metaDescription": "Track teacher and administrative staff check-ins at schools, training centres and colleges with QR codes. Manage leave, timesheets and payroll for each campus.",
+      "h1": "Staff Attendance Tracking for Schools"
+    },
+    "multiBranch": {
+      "label": "Multi-Branch Businesses",
+      "description": "Every branch in one panel",
+      "title": "Multi-Location Workforce Management for Branches",
+      "metaDescription": "Manage every branch and department from one panel. Give each branch its own QR point, scope access per branch and run timesheets and payroll centrally.",
+      "h1": "Workforce Management for Multi-Branch Businesses"
+    },
+    "pricing": {
+      "label": "Pricing",
+      "description": "Plans and prices",
+      "title": "Pricing: Attendance and Payroll Software Plans",
+      "metaDescription": "Compare QR Zaman plans for attendance, timesheets, payroll and CRM. Request a free demo and a quote to find the plan that fits your headcount and your needs.",
+      "h1": "QR Zaman Pricing and Plans"
+    },
+    "blog": {
+      "label": "Blog",
+      "description": "Attendance, timesheet and payroll guides",
+      "title": "Blog: Attendance, Timesheet and Payroll Guides",
+      "metaDescription": "Practical guides on attendance, timesheets, payroll, leave and Turkish employment rules. Read the QR Zaman blog for tips that make HR and payroll work easier.",
+      "h1": "QR Zaman Blog: Attendance and Payroll Guides"
+    },
+    "faq": {
+      "label": "Frequently Asked Questions",
+      "short": "FAQ",
+      "description": "Setup, security, compliance",
+      "title": "FAQ: QR Code Attendance, Payroll and Mobile App",
+      "metaDescription": "Answers to common questions about QR code attendance setup, location checks, data security, the mobile app and payroll. Can't find your answer? Write to us.",
+      "h1": "Frequently Asked Questions"
+    },
+    "support": {
+      "label": "Support",
+      "description": "In-app tickets and live messaging",
+      "title": "Support: In-App Support Tickets and Live Chat",
+      "metaDescription": "Open a support ticket from the QR Zaman panel, attach files and chat live with our support team. Follow the status of your ticket and get your issue solved.",
+      "h1": "QR Zaman Support"
+    },
+    "calculators": {
+      "label": "Calculators",
+      "description": "Salary, severance, overtime, leave",
+      "title": "Free Payroll Calculators: Salary and Severance",
+      "metaDescription": "Use free calculators for gross-to-net salary, severance and notice pay, overtime, employer cost and annual leave, using current Turkish tax and SSI rules.",
+      "h1": "Free Payroll and HR Calculators"
+    },
+    "salaryCalc": {
+      "label": "Gross to Net Salary Calculator",
+      "short": "Gross to Net Salary",
+      "description": "Gross to net, net to gross",
+      "title": "Gross to Net Salary Calculator: Tax and SSI",
+      "metaDescription": "Convert gross salary to net or net to gross. See social security, unemployment insurance, income tax, stamp duty and the minimum wage exemption in one table.",
+      "h1": "Gross to Net Salary Calculator"
+    },
+    "severanceCalc": {
+      "label": "Severance Pay Calculator",
+      "short": "Severance Pay",
+      "description": "Including ceiling and stamp duty",
+      "title": "Severance Pay Calculator: Ceiling and Stamp Duty",
+      "metaDescription": "Calculate severance pay from your start and end dates and gross salary. The statutory severance pay ceiling and stamp duty deduction are included for you.",
+      "h1": "Severance Pay Calculator"
+    },
+    "noticeCalc": {
+      "label": "Notice Pay Calculator",
+      "short": "Notice Pay",
+      "description": "Notice period and amount",
+      "title": "Notice Pay Calculator: Notice Period and Amount",
+      "metaDescription": "Work out your statutory notice period and notice pay from your length of service. See net notice pay after income tax and stamp duty deductions in a few clicks.",
+      "h1": "Notice Pay Calculator"
+    },
+    "overtimeCalc": {
+      "label": "Overtime Pay Calculator",
+      "short": "Overtime Pay",
+      "description": "Hourly overtime pay",
+      "title": "Overtime Pay Calculator: Hourly Overtime Rates",
+      "metaDescription": "Calculate overtime pay from your gross salary and extra hours worked. Get separate results for weekday overtime, weekly rest day work and public holiday work.",
+      "h1": "Overtime Pay Calculator"
+    },
+    "employerCostCalc": {
+      "label": "Employer Cost Calculator",
+      "short": "Employer Cost",
+      "description": "Total cost of an employee",
+      "title": "Employer Cost Calculator: Total Employee Cost",
+      "metaDescription": "Calculate the total cost of an employee to the employer. See gross pay, the employer social security share, unemployment insurance and incentives in one table.",
+      "h1": "Employer Cost Calculator"
+    },
+    "annualLeaveCalc": {
+      "label": "Annual Leave Calculator",
+      "short": "Annual Leave",
+      "description": "Entitlement by seniority",
+      "title": "Annual Leave Calculator: Entitlement by Seniority",
+      "metaDescription": "Calculate your paid annual leave entitlement from your start date and age. Find out how many days of leave you are entitled to under Turkish labour law.",
+      "h1": "Annual Leave Calculator"
+    },
+    "about": {
+      "label": "About Us",
+      "description": "The QR Zaman story",
+      "title": "About Us: The Team Behind QR Zaman Time Tracking",
+      "metaDescription": "QR Zaman helps businesses run people, time, payroll and customer processes on a single platform. Get to know our story and the approach behind the product.",
+      "h1": "About QR Zaman"
+    },
+    "dealers": {
+      "label": "Our Dealers",
+      "description": "Find the dealer nearest to you",
+      "title": "Our Dealers: QR Zaman Dealer Map by Province",
+      "metaDescription": "Find the QR Zaman dealer nearest to you on the map of Turkey. Get dealer addresses and contact details by province and talk to your dealer about setup.",
+      "h1": "QR Zaman Dealers"
+    },
+    "partners": {
+      "label": "Partner Program",
+      "short": "Partners",
+      "description": "Grow with the dealer panel and CRM",
+      "title": "Partner Program: Become a QR Zaman Dealer Today",
+      "metaDescription": "Become a QR Zaman dealer and manage your customers, quotes and sales with the dealer panel and CRM module. Apply to become our partner in your region today.",
+      "h1": "QR Zaman Partner and Dealer Program"
+    },
+    "contact": {
+      "label": "Contact",
+      "description": "Reach our sales and support team",
+      "title": "Contact Us: QR Zaman Sales and Support Team",
+      "metaDescription": "Get in touch with the QR Zaman sales and support team. Write to us with questions about products, plans and setup, or find the dealer that is nearest to you.",
+      "h1": "Get in Touch with QR Zaman"
+    },
+    "security": {
+      "label": "Security & Data Protection",
+      "description": "How your data is protected",
+      "title": "Security and Data Protection at QR Zaman",
+      "metaDescription": "How does QR Zaman protect employee data? Learn about role-based access, device binding, fake GPS detection, camera images never being stored and KVKK.",
+      "h1": "Security and Data Protection"
+    },
+    "demo": {
+      "label": "Request a Demo",
+      "description": "A free demo tailored to you",
+      "title": "Request a Free Demo: QR Code Attendance & Payroll",
+      "metaDescription": "Meet QR Zaman in a free demo tailored to your business. Walk through QR code attendance, timesheets, payroll and CRM with our team. Just fill in the short form.",
+      "h1": "Request a Free Demo"
+    },
+    "kvkk": {
+      "label": "Data Protection Notice",
+      "description": "Personal data protection (KVKK)",
+      "title": "Data Protection Notice (KVKK): Your Personal Data",
+      "metaDescription": "The QR Zaman data protection notice under KVKK: why we process your personal data, who we share it with and your rights under Turkish Law No. 6698. Read it.",
+      "h1": "Data Protection Notice (KVKK)"
+    },
+    "privacy": {
+      "label": "Privacy Policy",
+      "description": "How we use your information",
+      "title": "Privacy Policy: QR Zaman Website and Mobile App",
+      "metaDescription": "Read our privacy policy to learn what information is collected on the QR Zaman website, management panel and mobile app, and how it is used and protected.",
+      "h1": "Privacy Policy"
+    },
+    "cookies": {
+      "label": "Cookie Policy",
+      "description": "Cookies used on this site",
+      "title": "Cookie Policy: Cookies Used on Our Website",
+      "metaDescription": "Learn which types of cookies the QR Zaman website uses, what they are used for and how you can manage your cookie preferences. Read our cookie policy in full.",
+      "h1": "Cookie Policy"
+    },
+    "terms": {
+      "label": "Terms of Use",
+      "description": "Terms of service",
+      "title": "Terms of Use: QR Zaman Terms of Service and Rules",
+      "metaDescription": "The terms of service that apply when you use the QR Zaman website, management panel and mobile app, including user obligations and limits of responsibility.",
+      "h1": "Terms of Use"
+    },
+    "deleteAccount": {
+      "label": "Delete Account",
+      "description": "Mobile account deletion request",
+      "title": "Delete Your Account: QR Zaman Mobile App Account",
+      "metaDescription": "Learn the steps to delete your QR Zaman mobile app account and the personal data linked to it, and send us your account deletion request in just a few clicks.",
+      "h1": "Account Deletion Request"
+    }
   }
 }

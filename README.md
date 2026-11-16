@@ -27,18 +27,28 @@ Geliştirme ortamında `/bilesenler` sayfası ortak bileşenlerin vitrinidir. Pr
 ## Yapı
 
 ```
-app/[locale]/        Sayfalar (TR öneksiz, EN /en)
-components/layout/   Container, Section, ThemeToggle, LocaleSwitcher …
+app/[locale]/        Sayfalar (TR öneksiz, EN /en). [...rest] → 404
+app/sitemap.ts       config/navigation.ts → PAGES'ten, iki dil + hreflang
+app/robots.ts        Production: izin (/api hariç), staging: Disallow
+components/layout/   Header (server) + DesktopNav/MobileNav (client), Footer, Breadcrumbs, PageHeader …
 components/mockups/  BrowserFrame, PhoneFrame, ToastCard, QrPoster
-components/sections/ Marquee …
-components/ui/       shadcn bileşenleri
-config/site.ts       Site URL, panel URL, mağaza linkleri
-i18n/                next-intl routing (pathnames), request, navigation
-messages/            tr.json / en.json (UI metinleri)
+components/seo/      JsonLd (schema-dts)
+config/navigation.ts Menü, footer, breadcrumb ve sitemap'in tek kaynağı (PAGES, MAIN_NAV, FOOTER_NAV)
+config/products.ts   Ürünler (slug {tr,en}, kategori, ikon, keyword) — aynı yapıda solutions, calculators, legal
+config/site.ts       Site URL, panel URL, mağaza/iletişim/sosyal (bilinmeyenler boş → arayüzde gösterilmez)
+i18n/routing.ts      next-intl pathnames: config'teki slug'lardan üretilir
+lib/seo.ts           buildMetadata / pageMetadata (canonical, hreflang, OG, robots)
+messages/            tr.json / en.json — sayfa metinleri pages.<id>.{label, short?, description, title, metaDescription, h1}
 proxy.ts             next-intl locale yönlendirmesi (Next 16'da middleware → proxy)
 public/logos         logo-pri (açık zemin), logo-sec (koyu zemin)
 public/screenshots   Maskeli ekran görüntüleri (admin, mobile)
 ```
+
+### Dile özel URL'ler
+
+İç yol her zaman TR slug'ıdır (`/urunler/bordro`). `i18n/routing.ts`, config'teki `slug.en` değerinden
+EN adresini üretir (`/en/products/payroll`) ve next-intl gelen EN isteğini iç yola yeniden yazar.
+Bu sayede dil seçici, breadcrumb ve sitemap ek eşleme bilmeden doğru adresi üretir.
 
 ## Kurallar (özet)
 
@@ -51,7 +61,11 @@ public/screenshots   Maskeli ekran görüntüleri (admin, mobile)
 ## İçerik ekleme
 
 - **Yeni UI metni:** `messages/tr.json` ve `messages/en.json`'a aynı anahtarla ekle (tipler `global.d.ts` ile kontrol edilir).
-- **Yeni sayfa:** `app/[locale]/<tr-yol>/page.tsx` + `i18n/routing.ts` → `pathnames` içine `{ tr, en }` eşlemesi.
+- **Yeni ürün / çözüm / hesaplama aracı:** ilgili `config/*.ts` dosyasına kayıt (`id`, `slug: { tr, en }`, `keyword`) +
+  `messages/*.json` → `pages.<id>` metinleri. Menü, footer, breadcrumb, sitemap ve route otomatik güncellenir.
+  Meta kuralları: title (marka eki dahil) 50–60, description 140–160 karakter.
+- **Yeni statik sayfa:** `app/[locale]/<tr-yol>/page.tsx` + `i18n/routing.ts` → `pathnames` + `config/navigation.ts` → `PAGES`.
+- **Staging:** `NEXT_PUBLIC_SITE_ENV=staging` → tüm sayfalar `noindex`, robots.txt `Disallow: /`, sitemap boş.
 
 ## Yayın
 

@@ -40,6 +40,8 @@
   --navy-link: #dce6f5;
   --navy-border: #2a4775;
   --navy-glow: #12336b;
+  --navy-card: #0d2449;
+  --navy-line: #1b3560;
 
   /* Özellik şeridi çipleri */
   --chip-border: #c9d6e8;
@@ -50,6 +52,8 @@
   --browser-dot: #d3dce8;
   --browser-url: #ffffff;
   --phone-frame: #0b1220;
+  /* Lacivert bant üzerindeki telefon çerçevesi (mobil uygulama galerisi) */
+  --phone-frame-navy: #1a2740;
   --toast: #ffffff;
   --toast-border: transparent;
   --toast-foreground: #071a3a;
@@ -72,6 +76,12 @@
   --shadow-poster: 0 30px 60px -18px rgb(0 0 0 / 0.6);
   --shadow-badge: 0 16px 30px -12px rgb(0 0 0 / 0.55);
   --shadow-scan: 0 0 18px 4px rgb(59 130 246 / 0.65);
+  --shadow-menu: 0 30px 60px -24px rgb(7 26 58 / 0.3);
+  /* Özellik bölümlerindeki ekran görüntüleri */
+  --shadow-frame: 0 40px 80px -30px rgb(7 26 58 / 0.35);
+
+  /* Sabit header yüksekliği (CLS yok): mobil 64px, masaüstü 76px */
+  --header-h: 4rem;
 
   /* Köşeler: buton 12px (rounded-xl), kart 16–24px, telefon 40px */
   --radius: 0.75rem;
@@ -131,6 +141,8 @@
   --shadow-browser: 0 30px 90px -20px rgb(127 176 255 / 0.25);
   --shadow-phone: 0 40px 80px -20px rgb(0 0 0 / 0.7);
   --shadow-toast: 0 20px 40px -12px rgb(0 0 0 / 0.6);
+  --shadow-menu: 0 30px 60px -24px rgb(0 0 0 / 0.6);
+  --shadow-frame: 0 40px 80px -30px rgb(0 0 0 / 0.6);
 
   --sidebar: #0a1730;
   --sidebar-foreground: #ffffff;
@@ -170,6 +182,8 @@
   --color-navy-link: var(--navy-link);
   --color-navy-border: var(--navy-border);
   --color-navy-glow: var(--navy-glow);
+  --color-navy-card: var(--navy-card);
+  --color-navy-line: var(--navy-line);
 
   --color-chip-border: var(--chip-border);
   --color-chip-foreground: var(--chip-foreground);
@@ -178,6 +192,7 @@
   --color-browser-dot: var(--browser-dot);
   --color-browser-url: var(--browser-url);
   --color-phone-frame: var(--phone-frame);
+  --color-phone-frame-navy: var(--phone-frame-navy);
   --color-toast: var(--toast);
   --color-toast-border: var(--toast-border);
   --color-toast-foreground: var(--toast-foreground);
@@ -212,6 +227,8 @@
   --shadow-poster: var(--shadow-poster);
   --shadow-badge: var(--shadow-badge);
   --shadow-scan: var(--shadow-scan);
+  --shadow-menu: var(--shadow-menu);
+  --shadow-frame: var(--shadow-frame);
 
   --radius-sm: calc(var(--radius) * 0.5);
   --radius-md: calc(var(--radius) * 0.75);
@@ -268,6 +285,22 @@
     var(--navy-glow) 0%,
     var(--navy) 60%
   );
+}
+
+/* Mega menüdeki mobil uygulama tanıtım kartı */
+@utility bg-promo {
+  background-color: var(--navy);
+  background-image: radial-gradient(
+    ellipse 80% 60% at 80% 100%,
+    var(--primary) 0%,
+    var(--navy) 70%
+  );
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --header-h: 4.75rem;
+  }
 }
 
 /*
@@ -352,6 +385,17 @@
   animation: qz-toast-2 8s infinite both;
 }
 
+/*
+ * Kaydırınca belirme (Reveal, motion). JS kapalıysa (noscript) veya hareket azaltma
+ * açıksa içerik başlangıç durumunda gizli kalmaz.
+ */
+@media (prefers-reduced-motion: reduce) {
+  .qz-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
 /* Hareket azaltma: tüm döngüler durur, ilk ekran ve ilk kart sabit görünür */
 @media (prefers-reduced-motion: reduce) {
   .qz-screen-cycle-2,
@@ -385,6 +429,8 @@
   html {
     @apply font-sans;
     -webkit-text-size-adjust: 100%;
+    /* Sticky header çapa hedeflerini örtmesin */
+    scroll-padding-top: var(--header-h);
   }
   body {
     @apply bg-background text-foreground antialiased;

@@ -4,8 +4,186 @@
     "defaultDescription": "Personeliniz QR kodu okutarak giriş-çıkış yapsın; puantaj, izin, avans ve bordro kendiliğinden hazırlansın. Tüm şirket ve şubelerinizi tek panelden yönetin."
   },
   "home": {
-    "title": "QR Zaman",
-    "description": "Site kurulum aşamasında. Ana sayfa Faz 3'te hazırlanır."
+    "hero": {
+      "badge": "QR · PDKS · Bordro · CRM",
+      "primaryCta": "Ücretsiz Demo Talep Et",
+      "secondaryCta": "Ürünleri Keşfet",
+      "platforms": "Web · iOS · Android",
+      "dashboardAlt": "QR Zaman yönetici paneli: aktif personel, bugün gelenler, izindekiler ve onay bekleyen talepler",
+      "phoneHomeAlt": "QR Zaman mobil uygulama ana sayfası",
+      "phoneQrAlt": "QR kodlu PDKS: mobil uygulamada giriş veya çıkış seçimi",
+      "phoneLeaveAlt": "Mobil uygulamada izin talepleri listesi",
+      "posterAlt": "Lokasyona asılan A4 QR afişi örneği"
+    },
+    "proof": {
+      "label": "Referanslar ve rakamlar",
+      "title": "Farklı sektörlerden işletmeler QR Zaman kullanıyor",
+      "logoPlaceholder": "[Logo]",
+      "stats": {
+        "companies": {
+          "label": "Şirket",
+          "placeholder": "[000+]"
+        },
+        "employees": {
+          "label": "Personel",
+          "placeholder": "[0.000+]"
+        },
+        "dailyScans": {
+          "label": "Günlük QR okutma",
+          "placeholder": "[00.000]"
+        },
+        "provinces": {
+          "label": "İl",
+          "placeholder": "[00]"
+        }
+      }
+    },
+    "platform": {
+      "eyebrow": "Tek platform",
+      "title": "Giriş-çıkıştan bordroya, <accent>uçtan uca personel yönetimi.</accent>",
+      "description": "Ayrı ayrı programlar ve Excel tabloları yerine tek bir sistem. Verileriniz bir modülden diğerine kendiliğinden akar.",
+      "categories": {
+        "time": "Zaman & Devam",
+        "hr": "İnsan Kaynakları",
+        "payroll": "Bordro & Raporlama",
+        "crm": "CRM",
+        "platform": "Platform"
+      }
+    },
+    "features": {
+      "pdks": {
+        "eyebrow": "QR Kodlu PDKS",
+        "title": "Doğru yerde,<br></br>doğru kayıt.",
+        "description": "Kart ve parmak izi okuyucuya gerek yok, sahte kayda da yer yok. Donanım satın almadan, personelin kendi telefonuyla güvenilir devam takibi.",
+        "bullets": [
+          "Her okutmada telefon konumu kaydedilir",
+          "Sahte GPS uygulamaları tespit edilir ve engellenir",
+          "Hesap tek cihaza eşlenir, başkası yerine okutulamaz",
+          "Vardiya, gece mesaisi ve mola süreleri otomatik hesaplanır"
+        ],
+        "link": "QR Kodlu PDKS'yi inceleyin",
+        "imageAlt": "QR kodlu PDKS yönetim ekranı: giriş saatleri, lokasyon ve koordinatlar",
+        "phoneAlt": "Mobil uygulamada QR okutma sonrası giriş veya çıkış seçimi"
+      },
+      "location": {
+        "eyebrow": "Lokasyon & QR",
+        "title": "Yazdır, as,<br></br>okutmaya başla.",
+        "description": "Her giriş noktası için koordinatlı bir lokasyon tanımlayın. QR kodu PNG, A4 PDF veya Word olarak indirip duvara asın.",
+        "bullets": [
+          "Şirket ve lokasyon adıyla hazır A4 afiş",
+          "Sahada mobil uygulamadan tek dokunuşla konum kaydı"
+        ],
+        "posterAlt": "Lokasyon takibi için basılabilir A4 QR afişi",
+        "downloadAlt": "QR kodu indirme seçenekleri: PNG, A4 PDF ve A4 Word"
+      },
+      "timesheet": {
+        "eyebrow": "Puantaj",
+        "title": "Ayın tamamı<br></br>tek çizelgede.",
+        "description": "Çalışılan saatler, hafta tatilleri, izinler ve fazla mesailer gün gün işaretlenir. PDKS kayıtları tek tıkla aktarılır, toplu giriş ile yüzlerce personel saniyeler içinde güncellenir.",
+        "link": "Puantaj ve Mesai",
+        "imageAlt": "Aylık puantaj çizelgesi ekranı",
+        "phoneAlt": "Mobil uygulamada Puantajım takvimi"
+      },
+      "payroll": {
+        "eyebrow": "Bordro",
+        "title": "Bordro,<br></br>tek tıkla hazır.",
+        "description": "Güncel SGK ve vergi parametreleriyle net ücret, kesintiler ve toplam işveren maliyeti otomatik hesaplanır. Eklenti, kesinti ve avans taksitleri bordroya kendiliğinden yansır.",
+        "link": "Bordro Hesaplama",
+        "imageAlt": "Bordro hesaplama detayı: net ödenen, kesintiler ve toplam işveren maliyeti"
+      },
+      "leave": {
+        "eyebrow": "İzin & Avans",
+        "title": "Talebin birkaç<br></br>dokunuş uzakta.",
+        "description": "Personel izin ve avans talebini uygulamadan gönderir, durumunu takip eder. Yönetici panelden veya mobilden gerekçesiyle onaylar ya da reddeder. İzin bakiyesi ve avans taksitleri otomatik hesaplanır.",
+        "leaveAlt": "Mobil uygulamada izin talepleri listesi",
+        "advanceAlt": "Mobil uygulamada yeni avans talebi formu",
+        "adminAlt": "Yönetim panelinde izin talebi detayı ve onay ekranı"
+      },
+      "multiCompany": {
+        "eyebrow": "Çoklu Şirket & Şube",
+        "title": "Tüm şirketleriniz,<br></br>tek panelde.",
+        "description": "Grup → Şirket → Şube → Bölüm hiyerarşisi. Her kullanıcıya grup, şirket veya şube bazında ayrı yetki alanı verin; personelin hangi ekranları göreceğini siz belirleyin.",
+        "treeLabel": "Örnek şirket hiyerarşisi",
+        "tree": ["Grup Holding", "Şirket A · 3 şube", "İstanbul Şubesi · Fabrika, Depo"],
+        "imageAlt": "Çoklu şirket ve şube yönetimi: grup, şirket, şube ve bölüm hiyerarşisi"
+      }
+    },
+    "mobile": {
+      "eyebrow": "Mobil uygulama",
+      "title": "QR okut,<br></br><accent>mesain başlasın.</accent>",
+      "description": "Personeliniz her şeyi cebinden yönetsin. Yöneticiler talepleri sahadan onaylasın.",
+      "bullets": [
+        "QR ile giriş-çıkış",
+        "İzin & avans talebi",
+        "Bordro, puantaj, PDKS",
+        "Eklenti & kesintiler"
+      ],
+      "galleryLabel": "Mobil uygulama ekranları",
+      "screens": [
+        "Mobil uygulama ana sayfası",
+        "QR okutma: giriş veya çıkış seçimi",
+        "PDKS kayıtlarım ekranı",
+        "Avans talepleri listesi",
+        "Eklentilerim ekranı",
+        "Özlük bilgilerim ekranı"
+      ]
+    },
+    "steps": {
+      "title": "Okut. Kaydet. <accent>Bordro hazır.</accent>",
+      "description": "4 adımda kağıtsız personel takibi.",
+      "items": [
+        {
+          "title": "Şirketinizi kurun",
+          "text": "Şirket, şube ve bölümlerinizi tanımlayın, personelinizi Excel'den tek seferde aktarın."
+        },
+        {
+          "title": "QR kodları asın",
+          "text": "Her lokasyon için QR kod üretin, A4 afiş olarak yazdırıp girişe asın."
+        },
+        {
+          "title": "Personel okutsun",
+          "text": "Personel mobil uygulamayla QR'ı okutur; konum ve cihaz anında doğrulanır."
+        },
+        {
+          "title": "Bordro hazır",
+          "text": "Kayıtlar puantaja aktarılır, bordro tek tıkla hesaplanır."
+        }
+      ]
+    },
+    "tools": {
+      "title": "Ücretsiz hesaplama araçları",
+      "description": "Güncel mevzuata göre saniyeler içinde hesaplayın.",
+      "all": "Tüm araçlar"
+    },
+    "faq": {
+      "title": "Sıkça sorulan sorular",
+      "items": [
+        {
+          "q": "QR Zaman için özel bir donanım gerekiyor mu?",
+          "a": "Hayır. Panelden ürettiğiniz QR kodu yazdırıp asmanız yeterli. Personel kendi telefonundaki QR Zaman uygulamasıyla okutur."
+        },
+        {
+          "q": "Personel başkasının yerine giriş yapabilir mi?",
+          "a": "Hayır. Hesap tek cihaza eşlenir, okutma anında telefonun konumu alınır ve sahte konum uygulamaları tespit edilir."
+        },
+        {
+          "q": "Bordro hesaplaması güncel mevzuata uygun mu?",
+          "a": "Vergi dilimleri, SGK oranları, asgari ücret istisnaları, kıdem-ihbar tanımları ve resmî tatiller yıl bazında tutulur ve yeni yıla tek tıkla aktarılır."
+        },
+        {
+          "q": "Birden fazla şirket ve şubeyi yönetebilir miyim?",
+          "a": "Evet. Grup, şirket, şube ve bölüm hiyerarşisiyle çalışır; her kullanıcıya ayrı yetki alanı verilir."
+        },
+        {
+          "q": "Mevcut personel listemi nasıl aktarırım?",
+          "a": "Hazır Excel şablonunu indirip doldurun ve tek seferde içe aktarın; her satır için sonuç raporu alırsınız."
+        }
+      ]
+    },
+    "storeSub": {
+      "appStore": "İndirin",
+      "googlePlay": "Edinin"
+    }
   },
   "theme": {
     "label": "Tema",
@@ -68,5 +246,509 @@
     "phoneQrAlt": "Mobil uygulamada QR okutma: giriş veya çıkış seçimi",
     "phoneLeaveAlt": "Mobil uygulamada izin talepleri listesi",
     "posterAlt": "Lokasyona asılan A4 QR afişi örneği"
+  },
+  "header": {
+    "skipLink": "İçeriğe geç",
+    "mainNav": "Ana menü",
+    "homeAria": "QR Zaman ana sayfa",
+    "login": "Giriş Yap",
+    "demo": "Demo Talep Et",
+    "openMenu": "Menüyü aç",
+    "closeMenu": "Menüyü kapat",
+    "mobileNav": "Mobil menü",
+    "promo": {
+      "badge": "Mobil uygulama",
+      "title": "QR okut,",
+      "titleAccent": "mesain başlasın.",
+      "text": "Mobil uygulamayı indir",
+      "imageAlt": "QR Zaman mobil uygulama ana sayfası"
+    },
+    "allProducts": "Tüm ürünleri görün",
+    "allProductsShort": "Tüm ürünler →",
+    "solutionsAside": {
+      "title": "İşletmenize uygun kurulumu",
+      "titleAccent": "birlikte planlayalım."
+    },
+    "corporateAside": {
+      "title": "Bize ulaşın",
+      "form": "İletişim Formu"
+    },
+    "allSolutions": "Tüm çözümleri görün",
+    "allSolutionsShort": "Tüm çözümler →",
+    "demoShort": "Demo"
+  },
+  "nav": {
+    "top": {
+      "products": "Ürünler",
+      "solutions": "Çözümler",
+      "pricing": "Fiyatlandırma",
+      "resources": "Kaynaklar",
+      "corporate": "Kurumsal"
+    },
+    "groups": {
+      "time": "Zaman & Devam Takibi",
+      "hr": "İnsan Kaynakları",
+      "payroll": "Bordro & Raporlama",
+      "crm": "CRM",
+      "platform": "Platform",
+      "byRole": "Rollere göre",
+      "bySector": "Sektörlere göre",
+      "content": "İçerik",
+      "calculators": "Hesaplama Araçları",
+      "corporate": "Kurumsal"
+    }
+  },
+  "footer": {
+    "ctaTitle": "Kağıt, Excel ve parmak izi cihazına",
+    "ctaTitleAccent": "veda edin.",
+    "ctaText": "Personel takibini bugün dijitale taşıyın. Size özel bir demo planlayalım.",
+    "ctaDemo": "Demo Talep Et",
+    "ctaContact": "Bize Ulaşın",
+    "tagline": "QR kodlu PDKS, puantaj, bordro, izin, avans ve CRM. İşletmeler için tek platform.",
+    "copyright": "© {year} QR Zaman. Tüm hakları saklıdır.",
+    "legalNav": "Yasal",
+    "socialNav": "Sosyal medya",
+    "settings": "Dil ve tema",
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "appStoreAria": "App Store'dan indirin",
+    "googlePlayAria": "Google Play'den edinin",
+    "address": "Adres",
+    "phone": "Telefon",
+    "email": "E-posta",
+    "social": {
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram",
+      "youtube": "YouTube"
+    },
+    "placeholders": {
+      "phone": "[Telefon]",
+      "email": "[E-posta]",
+      "address": "[Adres]"
+    }
+  },
+  "breadcrumb": {
+    "label": "Sayfa konumu"
+  },
+  "notFound": {
+    "code": "404",
+    "title": "Sayfa bulunamadı",
+    "h1": "Aradığınız sayfa bulunamadı",
+    "description": "Bu adres taşınmış ya da hiç var olmamış olabilir. Aşağıdaki bölümlerden aradığınıza ulaşabilirsiniz.",
+    "home": "Ana sayfaya dön",
+    "demo": "Demo Talep Et",
+    "sections": "Ana bölümler",
+    "cards": {
+      "products": "PDKS, puantaj, bordro, İK ve CRM",
+      "solutions": "Rollere ve sektörlere göre",
+      "calculators": "Maaş, tazminat, mesai ve izin",
+      "contact": "Satış ve destek ekibine ulaşın"
+    }
+  },
+  "pages": {
+    "home": {
+      "label": "Ana Sayfa",
+      "description": "QR Zaman ana sayfa",
+      "title": "QR Kodlu Personel Takip, PDKS ve Bordro Programı",
+      "metaDescription": "Personeliniz QR kodu okutarak giriş-çıkış yapsın; puantaj, izin, avans ve bordro kendiliğinden hazırlansın. Tüm şirket ve şubelerinizi tek panelden yönetin.",
+      "h1": "Personel takibinin <accent>akıllı yolu.</accent>"
+    },
+    "products": {
+      "label": "Ürünler",
+      "description": "Tüm QR Zaman ürünleri",
+      "title": "Ürünler: PDKS, Puantaj, Bordro, İK ve CRM",
+      "metaDescription": "QR kodlu PDKS'den bordroya, izin ve avanstan CRM'e kadar tüm QR Zaman ürünleri tek platformda. İşletmenize uygun modülleri inceleyin, ücretsiz demo isteyin.",
+      "h1": "QR Zaman Ürünleri"
+    },
+    "qrPdks": {
+      "label": "QR Kodlu PDKS",
+      "description": "Konum doğrulamalı giriş-çıkış",
+      "title": "QR Kodlu PDKS: Konum Doğrulamalı Giriş-Çıkış",
+      "metaDescription": "Personel, lokasyondaki QR kodu telefonundan okutarak giriş-çıkış yapsın. Konum doğrulama ve sahte GPS tespitiyle güvenilir PDKS kayıtları için demo isteyin.",
+      "h1": "QR Kodlu PDKS ile Personel Giriş-Çıkış Takibi"
+    },
+    "shiftManagement": {
+      "label": "Vardiya Yönetimi",
+      "description": "Gece vardiyası, mola, hafta tatili",
+      "title": "Vardiya Yönetimi: Gece Vardiyası ve Mola Takibi",
+      "metaDescription": "Şube ve bölüm bazında vardiya tanımlayın; gece vardiyası, mola ve hafta tatiline göre çalışma ve mesai süreleri otomatik hesaplansın. Hemen inceleyin.",
+      "h1": "Vardiya Yönetimi ve Vardiya Tanımları"
+    },
+    "timesheet": {
+      "label": "Puantaj ve Mesai",
+      "description": "Aylık çizelge, toplu giriş",
+      "title": "Puantaj ve Mesai Takibi: Aylık Puantaj Çizelgesi",
+      "metaDescription": "PDKS kayıtları aylık puantaj çizelgesine otomatik aktarılsın. Gün tipleri, toplu puantaj girişi ve mesai çizelgesiyle ay sonu hesaplarını kolaylaştırın.",
+      "h1": "Puantaj ve Mesai Takibi"
+    },
+    "locationTracking": {
+      "label": "Lokasyon & QR Noktaları",
+      "description": "Basılabilir A4 QR afişleri",
+      "title": "Lokasyon Takibi ve QR Noktaları: A4 QR Afişi",
+      "metaDescription": "Her giriş-çıkış noktası için enlem ve boylamla lokasyon tanımlayın, QR kod üretin ve A4 afiş olarak basın. Yeni QR noktasını sahadan tek dokunuşla kaydedin.",
+      "h1": "Lokasyon Takibi ve QR Noktaları"
+    },
+    "employeeManagement": {
+      "label": "Personel Yönetimi",
+      "description": "Kart, SGK giriş-çıkış, Excel aktarım",
+      "title": "Personel Yönetimi: Personel Kartı ve SGK Girişi",
+      "metaDescription": "Kimlik, ücret, sözleşme ve SGK parametrelerini tek personel kartında toplayın. SGK giriş-çıkış işlemleri ve Excel ile toplu personel aktarımı için demo isteyin.",
+      "h1": "Personel Yönetimi Programı"
+    },
+    "employeeRecords": {
+      "label": "Özlük Dosyası",
+      "description": "Dijital personel dosyası",
+      "title": "Dijital Özlük Dosyası: Personel Bilgileri",
+      "metaDescription": "Kimlik, eğitim, sağlık, banka ve çalışma bilgilerini dijital özlük dosyasında saklayın. Eksik alanları görün, personel kendi özlük bilgilerine mobilden ulaşsın.",
+      "h1": "Dijital Özlük Dosyası"
+    },
+    "leaveManagement": {
+      "label": "İzin Yönetimi",
+      "description": "Talep, onay, otomatik bakiye",
+      "title": "İzin Yönetimi: Mobil İzin Talebi ve Onay Akışı",
+      "metaDescription": "Personel izin talebini mobilden göndersin, yönetici tek dokunuşla onaylasın. Kıdeme göre yıllık izin bakiyesi otomatik hesaplanır, saatlik izin desteklenir.",
+      "h1": "İzin Yönetimi ve İzin Takip Programı"
+    },
+    "advanceManagement": {
+      "label": "Avans Yönetimi",
+      "description": "Taksitli avans, bordroya kesinti",
+      "title": "Avans Yönetimi: Taksitli Avans ve Bordro Kesinti",
+      "metaDescription": "Personel avans talebini mobilden iletsin, yönetici onaylasın. Taksit sayısı ve aylık tutar belirlensin, taksitler bordroya otomatik kesinti olarak yansısın.",
+      "h1": "Avans Yönetimi ve Avans Takibi"
+    },
+    "hrDocuments": {
+      "label": "İK Belgeleri",
+      "description": "Sözleşme, form ve tutanaklar",
+      "title": "İK Belgeleri: İş Sözleşmesi ve Form Şablonları",
+      "metaDescription": "İş sözleşmesi, işe alım formu, izin istek formu, puantaj cetveli ve tutanak gibi hazır İK belge şablonlarını arayın, tek tıkla indirin. Ücretsiz demo isteyin.",
+      "h1": "Hazır İK Belgeleri ve Şablonları"
+    },
+    "payroll": {
+      "label": "Bordro Hesaplama",
+      "description": "Tek tıkla toplu hesaplama",
+      "title": "Bordro Hesaplama Programı: Otomatik Toplu Bordro",
+      "metaDescription": "Puantaj, mesai, ek ödeme ve kesintilerden bordroyu otomatik hesaplayın. SGK primi, gelir ve damga vergisi, asgari ücret istisnası ve işveren maliyeti bir arada.",
+      "h1": "Otomatik Bordro Hesaplama Programı"
+    },
+    "earningsDeductions": {
+      "label": "Ek Ödeme & Kesintiler",
+      "description": "Prim, mesai, kesinti tanımları",
+      "title": "Ek Ödeme ve Kesintiler: Prim, Mesai ve Kesinti",
+      "metaDescription": "Prim, ikramiye ve mesai gibi ek ödemeleri, disiplin veya hasar gibi kesintileri net ya da brüt olarak tanımlayın. Tek kayıtta birden fazla personele ekleyin.",
+      "h1": "Ek Ödeme ve Kesinti Yönetimi"
+    },
+    "compliance": {
+      "label": "Mevzuat Uyumu",
+      "description": "Yıl bazlı SGK ve vergi oranları",
+      "title": "Mevzuat Uyumu: Yıl Bazlı SGK ve Vergi Oranları",
+      "metaDescription": "Vergi dilimleri, SGK katsayıları, kıdem ve ihbar tanımları, engelli indirimi ve resmî tatiller yıl bazında tutulsun; parametreleri tek tıkla yeni yıla aktarın.",
+      "h1": "SGK ve Vergi Mevzuatına Uyumlu Bordro"
+    },
+    "reporting": {
+      "label": "Raporlama",
+      "description": "PDKS, izin, avans, bordro",
+      "title": "Personel Raporlama: PDKS, İzin, Bordro Raporu",
+      "metaDescription": "Geç gelen, geç çıkan ve devamsız personeli, izin ve avans kullanımlarını raporlayın. Tüm PDKS, izin ve bordro raporlarını Excel, PDF veya Word olarak alın.",
+      "h1": "PDKS, İzin ve Bordro Raporlama"
+    },
+    "contactManagement": {
+      "label": "Müşteri & Kişi Yönetimi",
+      "short": "CRM",
+      "description": "Tüm müşteri kartları tek yerde",
+      "title": "CRM Müşteri ve Kişi Yönetimi: Müşteri Kartları",
+      "metaDescription": "Müşteri ve potansiyel müşteri kartlarını, iletişim bilgilerini tek CRM ekranında toplayın. Satış ekipleri ve bayiler aynı müşteri verisiyle çalışsın.",
+      "h1": "CRM ile Müşteri ve Kişi Yönetimi"
+    },
+    "salesTracking": {
+      "label": "Satış Takibi",
+      "description": "Fırsatlar ve satış süreci",
+      "title": "Satış Takibi: Satış Fırsatları ve Süreç Yönetimi",
+      "metaDescription": "Satış fırsatlarını ve satış sürecini CRM üzerinden takip edin. CRM dashboard ve satış raporlarıyla ekibinizin performansını tek yerden izleyin. Hemen inceleyin.",
+      "h1": "CRM ile Satış Takibi"
+    },
+    "quoteManagement": {
+      "label": "Teklif Yönetimi",
+      "description": "Teklif hazırlama ve takibi",
+      "title": "Teklif Yönetimi: Teklif Hazırlama ve Takibi",
+      "metaDescription": "Müşterilerinize gönderdiğiniz teklifleri CRM içinde hazırlayın ve durumlarını takip edin. Teklifler, müşteri kartları ve satış fırsatlarıyla birlikte dursun.",
+      "h1": "Teklif Hazırlama ve Teklif Takibi"
+    },
+    "taskManagement": {
+      "label": "Görev Yönetimi",
+      "description": "Ekip görevleri ve hatırlatmalar",
+      "title": "Görev Yönetimi: Ekip Görevleri ve Hatırlatmalar",
+      "metaDescription": "Satış ve müşteri işlerine bağlı ekip görevlerini oluşturun, hatırlatmalarla hiçbir takibi kaçırmayın. Görevleriniz CRM'deki müşteri kayıtlarıyla birlikte durur.",
+      "h1": "Ekip Görev Yönetimi ve Hatırlatmalar"
+    },
+    "mobileApp": {
+      "label": "Mobil Uygulama",
+      "description": "iOS ve Android",
+      "title": "PDKS Mobil Uygulaması: QR Zaman iOS ve Android",
+      "metaDescription": "QR Zaman mobil uygulamasıyla QR okutarak giriş-çıkış yapın; izin ve avans talep edin, bordro ve puantajınızı görün. Yöneticiler talepleri mobilden onaylasın.",
+      "h1": "QR Zaman PDKS Mobil Uygulaması"
+    },
+    "multiCompany": {
+      "label": "Çoklu Şirket & Şube",
+      "description": "Grup, şirket, şube, bölüm",
+      "title": "Çoklu Şirket ve Şube Yönetimi: Tek Panel",
+      "metaDescription": "Grup, şirket, şube ve bölümlerinizi tek panelden yönetin. Üst bardan şirket, şube ve dönem seçin; her kullanıcıya şirket ve şube bazlı yetki alanı tanımlayın.",
+      "h1": "Çoklu Şirket ve Şube Yönetimi"
+    },
+    "rolesPermissions": {
+      "label": "Rol & Yetki Yönetimi",
+      "description": "Kullanıcıya özel yetki alanı",
+      "title": "Rol ve Yetki Yönetimi: Kullanıcı Bazlı Erişim",
+      "metaDescription": "Admin, yönetici, personel ve bayi rolleriyle herkes yalnızca yetkili olduğu menüyü görsün. Grup, şirket ve şube bazlı yetki alanlarıyla verilerinizi koruyun.",
+      "h1": "Rol ve Yetki Yönetimi"
+    },
+    "dashboard": {
+      "label": "Dashboard & Takvim",
+      "description": "Rol bazlı özet, resmî tatiller",
+      "title": "Yönetici Dashboard ve Takvim: Rol Bazlı Özet",
+      "metaDescription": "Aktif personel, bugün gelenler, izindekiler ve onay bekleyen talepler tek ekranda. Takvimde resmî tatilleri ve arifeleri görün, rol bazlı dashboard ile çalışın.",
+      "h1": "Rol Bazlı Yönetici Dashboard ve Takvim"
+    },
+    "solutions": {
+      "label": "Çözümler",
+      "description": "Rollere ve sektörlere göre çözümler",
+      "title": "Çözümler: Rollere ve Sektörlere Göre QR Zaman",
+      "metaDescription": "Yöneticiler, İK ve bordro ekipleri, çalışanlar ve perakendeden sağlığa farklı sektörler için QR Zaman çözümleri. Size uygun kurulumu birlikte planlayalım.",
+      "h1": "Rollere ve Sektörlere Göre Çözümler"
+    },
+    "managers": {
+      "label": "İşletme Sahipleri & Yöneticiler",
+      "short": "Yöneticiler",
+      "description": "Anlık durum, onaylar, maliyet",
+      "title": "Yöneticiler İçin Personel Takibi ve Onay Yönetimi",
+      "metaDescription": "Kimin geldiğini, kimin izinde olduğunu ve bekleyen onayları anlık görün. İzin ve avans taleplerini mobilden onaylayın, toplam işveren maliyetini takip edin.",
+      "h1": "İşletme Sahipleri ve Yöneticiler İçin Personel Takibi"
+    },
+    "hrTeams": {
+      "label": "İK & Bordro Ekipleri",
+      "description": "Puantajdan bordroya otomatik akış",
+      "title": "İK ve Bordro Ekipleri İçin Puantaj ve Bordro",
+      "metaDescription": "PDKS kayıtları puantaja, puantaj bordroya otomatik aksın. Yıl bazlı SGK ve vergi parametreleri, toplu işlemler ve Excel çıktılarıyla ay sonunu hızlandırın.",
+      "h1": "İK ve Bordro Ekipleri İçin Puantaj ve Bordro"
+    },
+    "employees": {
+      "label": "Çalışanlar",
+      "description": "Giriş-çıkış, talepler, bordro cepte",
+      "title": "Çalışanlar İçin Mobil Giriş-Çıkış ve İzin Talebi",
+      "metaDescription": "QR kodu okutarak giriş-çıkış yapın; izin ve avans talebinizi mobilden gönderin. Bordronuzu, puantajınızı ve kalan izninizi istediğiniz an telefonunuzdan görün.",
+      "h1": "Çalışanlar İçin Mobil Giriş-Çıkış ve Talepler"
+    },
+    "retail": {
+      "label": "Perakende & Mağazacılık",
+      "short": "Perakende",
+      "description": "Mağaza personeli ve vardiya takibi",
+      "title": "Perakende ve Mağazalar İçin Personel Takibi",
+      "metaDescription": "Her mağazaya QR noktası asın, mağaza personelinin giriş-çıkışını ve vardiyalarını tek panelden izleyin. Şube bazlı puantaj ve bordroyla ay sonunu kolaylaştırın.",
+      "h1": "Perakende ve Mağazacılık İçin Personel Takibi"
+    },
+    "manufacturing": {
+      "label": "Üretim & Fabrika",
+      "description": "Vardiyalı üretim ve mesai takibi",
+      "title": "Üretim ve Fabrikalar İçin Vardiya ve PDKS Takibi",
+      "metaDescription": "Fabrikada gece vardiyasını, molaları ve fazla mesaiyi QR kodlu PDKS ile kayıt altına alın. Bölüm bazlı vardiya ve mesai çizelgesiyle üretim ekibinizi yönetin.",
+      "h1": "Üretim ve Fabrikalar İçin Vardiya ve PDKS"
+    },
+    "construction": {
+      "label": "İnşaat & Saha Ekipleri",
+      "short": "İnşaat & Saha",
+      "description": "Şantiyede konumlu giriş-çıkış",
+      "title": "İnşaat ve Saha Ekipleri İçin Konumlu PDKS",
+      "metaDescription": "Şantiyede ve sahada çalışan ekipler QR okutarak konumlu giriş-çıkış yapsın. Sahte GPS tespitiyle güvenilir kayıt; yönetici yeni QR noktasını sahadan kaydetsin.",
+      "h1": "İnşaat ve Saha Ekipleri İçin Personel Takibi"
+    },
+    "hospitality": {
+      "label": "Restoran & Hizmet",
+      "description": "Değişken vardiya ve saatlik ücret",
+      "title": "Restoran ve Hizmet Sektörü İçin Vardiya Takibi",
+      "metaDescription": "Restoran, kafe ve otellerde değişken vardiyaları, molaları ve fazla mesaiyi QR ile takip edin. Saatlik, günlük veya aylık ücretli personelin bordrosu hazır.",
+      "h1": "Restoran ve Hizmet Sektörü İçin Vardiya Takibi"
+    },
+    "healthcare": {
+      "label": "Sağlık",
+      "description": "Gece vardiyalı sağlık ekipleri",
+      "title": "Sağlık Kuruluşları İçin Vardiya ve PDKS Takibi",
+      "metaDescription": "Hastane, klinik ve sağlık kuruluşlarında gece vardiyalarını ve personel giriş-çıkışını QR kodlu PDKS ile takip edin. İzin, puantaj ve bordro tek panelde.",
+      "h1": "Sağlık Kuruluşları İçin Vardiya ve PDKS Takibi"
+    },
+    "education": {
+      "label": "Eğitim",
+      "description": "Okul ve kurumlarda personel takibi",
+      "title": "Eğitim Kurumları İçin Personel Devam Takibi",
+      "metaDescription": "Okul, kurs ve eğitim kurumlarında öğretmen ve idari personelin giriş-çıkışını QR ile takip edin. İzin, puantaj ve bordroyu şube bazında tek panelde yönetin.",
+      "h1": "Eğitim Kurumları İçin Personel Devam Takibi"
+    },
+    "multiBranch": {
+      "label": "Çok Şubeli İşletmeler",
+      "description": "Tüm şubeler tek panelde",
+      "title": "Çok Şubeli İşletmeler İçin Merkezi PDKS",
+      "metaDescription": "Tüm şube ve bölümlerinizi tek panelden yönetin. Her şubeye QR noktası tanımlayın, şube bazlı yetki verin, puantaj ve bordroyu merkezden hesaplayın. Hemen bakın.",
+      "h1": "Çok Şubeli İşletmeler İçin Merkezi PDKS ve Bordro"
+    },
+    "pricing": {
+      "label": "Fiyatlandırma",
+      "description": "Paketler ve fiyatlar",
+      "title": "Fiyatlandırma: PDKS ve Bordro Programı Paketleri",
+      "metaDescription": "QR Zaman PDKS, puantaj, bordro ve CRM paketlerini karşılaştırın. Personel sayınıza ve ihtiyacınıza uygun paketi seçmek için ücretsiz demo ve teklif isteyin.",
+      "h1": "QR Zaman Fiyatlandırma ve Paketler"
+    },
+    "blog": {
+      "label": "Blog",
+      "description": "PDKS, puantaj ve bordro rehberleri",
+      "title": "Blog: PDKS, Puantaj, Bordro ve İK Rehberleri",
+      "metaDescription": "PDKS, puantaj, bordro, izin ve SGK mevzuatı üzerine pratik rehberler. İK ve bordro süreçlerinizi kolaylaştıracak güncel yazıları QR Zaman blogda okuyun.",
+      "h1": "QR Zaman Blog: PDKS ve Bordro Rehberleri"
+    },
+    "faq": {
+      "label": "Sıkça Sorulan Sorular",
+      "short": "SSS",
+      "description": "Kurulum, güvenlik, mevzuat",
+      "title": "Sıkça Sorulan Sorular: QR Kodlu PDKS ve Bordro",
+      "metaDescription": "QR kodlu PDKS kurulumu, konum doğrulama, veri güvenliği, mobil uygulama ve bordro hesaplama hakkında sık sorulan soruların yanıtları. Bulamazsanız bize yazın.",
+      "h1": "Sıkça Sorulan Sorular"
+    },
+    "support": {
+      "label": "Destek",
+      "description": "Panel içinden talep ve mesajlaşma",
+      "title": "Destek: Panel İçinden Destek Talebi ve Mesajlaşma",
+      "metaDescription": "QR Zaman panelinden destek talebi oluşturun, dosya ekleyin ve destek ekibiyle canlı mesajlaşın. Talebinizin durumunu panelden izleyin, sorununuzu hızla çözelim.",
+      "h1": "QR Zaman Destek"
+    },
+    "calculators": {
+      "label": "Hesaplama Araçları",
+      "description": "Maaş, tazminat, mesai ve izin",
+      "title": "Hesaplama Araçları: Maaş, Tazminat, Mesai ve İzin",
+      "metaDescription": "Net-brüt maaş, kıdem ve ihbar tazminatı, fazla mesai, işveren maliyeti ve yıllık izin hesaplama araçlarını ücretsiz kullanın. Güncel SGK ve vergi oranlarıyla.",
+      "h1": "Ücretsiz Bordro ve İK Hesaplama Araçları"
+    },
+    "salaryCalc": {
+      "label": "Net-Brüt Maaş Hesaplama",
+      "short": "Net-Brüt Maaş",
+      "description": "Brütten nete, netten brüte",
+      "title": "Net Brüt Maaş Hesaplama: SGK ve Vergi Kesintileri",
+      "metaDescription": "Brüt maaştan nete veya netten brüte hesaplama yapın. SGK primi, işsizlik sigortası, gelir vergisi, damga vergisi ve asgari ücret istisnasını tek tabloda görün.",
+      "h1": "Net-Brüt Maaş Hesaplama"
+    },
+    "severanceCalc": {
+      "label": "Kıdem Tazminatı Hesaplama",
+      "short": "Kıdem Tazminatı",
+      "description": "Tavan ve damga vergisi dahil",
+      "title": "Kıdem Tazminatı Hesaplama: Tavan ve Damga Vergisi",
+      "metaDescription": "İşe giriş ve çıkış tarihinize, brüt ücretinize göre kıdem tazminatınızı hesaplayın. Kıdem tazminatı tavanı ve damga vergisi kesintisi hesaba dahil edilir.",
+      "h1": "Kıdem Tazminatı Hesaplama"
+    },
+    "noticeCalc": {
+      "label": "İhbar Tazminatı Hesaplama",
+      "short": "İhbar Tazminatı",
+      "description": "İhbar süresi ve tutarı",
+      "title": "İhbar Tazminatı Hesaplama: İhbar Süresi ve Tutarı",
+      "metaDescription": "Çalışma sürenize göre yasal ihbar süresini ve ihbar tazminatı tutarını hesaplayın. Gelir vergisi ve damga vergisi kesintileriyle net ihbar tazminatını öğrenin.",
+      "h1": "İhbar Tazminatı Hesaplama"
+    },
+    "overtimeCalc": {
+      "label": "Fazla Mesai Hesaplama",
+      "short": "Fazla Mesai",
+      "description": "Saatlik fazla mesai ücreti",
+      "title": "Fazla Mesai Hesaplama: Saatlik Fazla Mesai Ücreti",
+      "metaDescription": "Brüt maaşınıza ve fazla çalışma saatinize göre fazla mesai ücretinizi hesaplayın. Hafta içi, hafta tatili ve resmî tatil mesaileri için ayrı ayrı sonuç alın.",
+      "h1": "Fazla Mesai Ücreti Hesaplama"
+    },
+    "employerCostCalc": {
+      "label": "İşveren Maliyeti Hesaplama",
+      "short": "İşveren Maliyeti",
+      "description": "Çalışanın toplam maliyeti",
+      "title": "İşveren Maliyeti Hesaplama: SGK İşveren Payı",
+      "metaDescription": "Bir çalışanın işverene toplam maliyetini hesaplayın. Brüt ücret, SGK işveren payı, işsizlik sigortası işveren payı ve teşvik indirimlerini tek tabloda görün.",
+      "h1": "İşveren Maliyeti Hesaplama"
+    },
+    "annualLeaveCalc": {
+      "label": "Yıllık İzin Hesaplama",
+      "short": "Yıllık İzin",
+      "description": "Kıdeme göre izin hakkı",
+      "title": "Yıllık İzin Hesaplama: Kıdeme Göre İzin Hakkı",
+      "metaDescription": "İşe giriş tarihinize ve yaşınıza göre yıllık ücretli izin hakkınızı hesaplayın. Kıdem yılınıza göre kaç gün izin hakkınız olduğunu İş Kanunu'na göre öğrenin.",
+      "h1": "Yıllık İzin Hesaplama"
+    },
+    "about": {
+      "label": "Hakkımızda",
+      "description": "QR Zaman'ın hikayesi",
+      "title": "Hakkımızda: QR Zaman Personel Takip Platformu",
+      "metaDescription": "QR Zaman, işletmelerin personel, zaman, bordro ve müşteri süreçlerini tek platformda yönetmesini sağlar. Hikayemizi ve yaklaşımımızı tanıyın.",
+      "h1": "QR Zaman Hakkında"
+    },
+    "dealers": {
+      "label": "Bayilerimiz",
+      "description": "Size en yakın bayiyi bulun",
+      "title": "Bayilerimiz: İl İl QR Zaman Bayileri ve Haritası",
+      "metaDescription": "Türkiye haritası üzerinde size en yakın QR Zaman bayisini bulun. İl bazında bayi adres ve iletişim bilgilerine ulaşın, kurulum ve destek için bayinizle görüşün.",
+      "h1": "QR Zaman Bayileri"
+    },
+    "partners": {
+      "label": "İş Ortaklığı (Bayilik)",
+      "short": "İş Ortaklığı",
+      "description": "Bayi paneli ve CRM ile birlikte büyüyün",
+      "title": "İş Ortaklığı ve Bayilik: QR Zaman Bayisi Olun",
+      "metaDescription": "QR Zaman bayisi olun; bayi paneli ve CRM modülüyle müşterilerinizi, tekliflerinizi ve satışlarınızı yönetin. Bölgenizde iş ortağımız olmak için hemen başvurun.",
+      "h1": "QR Zaman İş Ortaklığı ve Bayilik"
+    },
+    "contact": {
+      "label": "İletişim",
+      "description": "Satış ve destek ekibine ulaşın",
+      "title": "İletişim: QR Zaman Satış ve Destek Ekibine Ulaşın",
+      "metaDescription": "QR Zaman satış ve destek ekibiyle iletişime geçin. Ürünler, paketler ve kurulum hakkındaki sorularınız için bize yazın ya da size en yakın bayiyi bulun.",
+      "h1": "QR Zaman ile İletişime Geçin"
+    },
+    "security": {
+      "label": "Güvenlik & KVKK",
+      "description": "Verileriniz nasıl korunuyor",
+      "title": "Güvenlik ve KVKK: Personel Verileri Nasıl Korunur",
+      "metaDescription": "Personel verileriniz QR Zaman'da nasıl korunuyor? Rol bazlı yetki, cihaz eşleştirme, sahte GPS tespiti, kamera görüntüsünün saklanmaması ve KVKK uyumu.",
+      "h1": "Güvenlik ve KVKK"
+    },
+    "demo": {
+      "label": "Demo Talep Et",
+      "description": "Size özel ücretsiz demo",
+      "title": "Ücretsiz Demo Talep Et: QR Kodlu PDKS ve Bordro",
+      "metaDescription": "QR Zaman'ı işletmenize özel ücretsiz bir demoyla tanıyın. QR kodlu PDKS, puantaj, bordro ve CRM modüllerini ekibimizle birlikte inceleyin, formu doldurun.",
+      "h1": "Ücretsiz Demo Talep Edin"
+    },
+    "kvkk": {
+      "label": "KVKK Aydınlatma Metni",
+      "description": "Kişisel verilerin korunması",
+      "title": "KVKK Aydınlatma Metni ve Kişisel Verileriniz",
+      "metaDescription": "QR Zaman KVKK aydınlatma metni: kişisel verilerinizin hangi amaçlarla işlendiği, kimlerle paylaşıldığı ve 6698 sayılı Kanun kapsamındaki haklarınız.",
+      "h1": "KVKK Aydınlatma Metni"
+    },
+    "privacy": {
+      "label": "Gizlilik Politikası",
+      "description": "Bilgilerinizin kullanımı",
+      "title": "Gizlilik Politikası: Web Sitesi ve Mobil Uygulama",
+      "metaDescription": "QR Zaman web sitesi, yönetim paneli ve mobil uygulamasında toplanan bilgiler, bu bilgilerin nasıl kullanıldığı ve korunduğu hakkındaki gizlilik politikamız.",
+      "h1": "Gizlilik Politikası"
+    },
+    "cookies": {
+      "label": "Çerez Politikası",
+      "description": "Sitede kullanılan çerezler",
+      "title": "Çerez Politikası: Sitede Kullanılan Çerezler",
+      "metaDescription": "QR Zaman web sitesinde kullanılan çerezlerin türleri, kullanım amaçları ve çerez tercihlerinizi nasıl yönetebileceğiniz hakkında bilgi edinin. Hemen okuyun.",
+      "h1": "Çerez Politikası"
+    },
+    "terms": {
+      "label": "Kullanım Şartları",
+      "description": "Hizmet koşulları",
+      "title": "Kullanım Şartları: QR Zaman Hizmet Koşulları",
+      "metaDescription": "QR Zaman web sitesi, yönetim paneli ve mobil uygulamasını kullanırken geçerli olan hizmet koşulları, kullanıcı yükümlülükleri ve sorumluluklar hakkında.",
+      "h1": "Kullanım Şartları"
+    },
+    "deleteAccount": {
+      "label": "Hesap Silme",
+      "description": "Mobil hesap silme talebi",
+      "title": "Hesap Silme Talebi: Mobil Uygulama Hesabı",
+      "metaDescription": "QR Zaman mobil uygulama hesabınızı ve ilişkili kişisel verilerinizi silmek için izlemeniz gereken adımları öğrenin, hesap silme talebinizi kolayca bize iletin.",
+      "h1": "Hesap Silme Talebi"
+    }
   }
 }

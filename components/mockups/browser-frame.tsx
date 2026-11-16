@@ -3,16 +3,16 @@ import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
 type BrowserFrameProps = {
-  /** Adres çubuğunda görünen metin */
-  url?: string;
+  /** Adres çubuğunda görünen metin. null ise adres alanı gösterilmez (özellik bölümleri). */
+  url?: string | null;
   /** Tek görsel verilirse çerçeve içine yerleştirilir */
   image?: Pick<ImageProps, "src" | "alt" | "sizes" | "quality">;
   /** Koyu tema için ayrı ekran görüntüsü (ör. dashboard-koyu) */
   darkImage?: Pick<ImageProps, "src" | "alt">;
   /**
    * Ekranın üst kısmındaysa (hero / LCP) true. Next 16'da `priority` kaldırıldı:
-   * tek görselde loading="eager", açık/koyu çiftinde sadece fetchPriority="high"
-   * kullanılır (aksi halde iki görsel birden indirilir).
+   * loading="eager" + fetchPriority="high". Açık/koyu çiftinde ikisi de eager yüklenir
+   * (tema sunucuda bilinmez; lazy yüklenen LCP görseli daha maliyetlidir).
    */
   aboveFold?: boolean;
   /** Lacivert zemin üzerinde (hero) kenar rengi */
@@ -21,11 +21,9 @@ type BrowserFrameProps = {
   children?: ReactNode;
 };
 
-function lcpProps(aboveFold: boolean, paired: boolean) {
+function lcpProps(aboveFold: boolean) {
   if (!aboveFold) return {};
-  return paired
-    ? ({ fetchPriority: "high" } as const)
-    : ({ loading: "eager", fetchPriority: "high" } as const);
+  return { loading: "eager", fetchPriority: "high" } as const;
 }
 
 /** Admin ekran görüntüleri için tarayıcı çerçevesi. */
@@ -47,15 +45,26 @@ export function BrowserFrame({
       )}
     >
       <div
-        className="flex h-[34px] items-center gap-1.5 border-b border-border bg-browser-bar px-3.5"
+        className={cn(
+          "flex items-center gap-1.5 border-b border-border bg-browser-bar",
+          url === null ? "h-[30px] px-3" : "h-[34px] px-3.5",
+        )}
         aria-hidden="true"
       >
-        <span className="size-2.5 rounded-full bg-browser-dot" />
-        <span className="size-2.5 rounded-full bg-browser-dot" />
-        <span className="size-2.5 rounded-full bg-browser-dot" />
-        <span className="ml-3.5 truncate rounded-md bg-browser-url px-3 py-[3px] text-[11px] text-muted-foreground">
-          {url}
-        </span>
+        {[0, 1, 2].map((dot) => (
+          <span
+            key={dot}
+            className={cn(
+              "rounded-full bg-browser-dot",
+              url === null ? "size-[9px]" : "size-2.5",
+            )}
+          />
+        ))}
+        {url !== null ? (
+          <span className="ml-3.5 truncate rounded-md bg-browser-url px-3 py-[3px] text-[11px] text-muted-foreground">
+            {url}
+          </span>
+        ) : null}
       </div>
 
       {image ? (
@@ -63,14 +72,14 @@ export function BrowserFrame({
           <Image
             {...image}
             alt={image.alt}
-            {...lcpProps(aboveFold, Boolean(darkImage))}
+            {...lcpProps(aboveFold)}
             sizes={image.sizes ?? "(min-width: 1024px) 720px, 100vw"}
             className={cn("block h-auto w-full", darkImage && "dark:hidden")}
           />
           {darkImage ? (
             <Image
               {...image}
-              {...lcpProps(aboveFold, true)}
+              {...lcpProps(aboveFold)}
               src={darkImage.src}
               alt={darkImage.alt}
               sizes={image.sizes ?? "(min-width: 1024px) 720px, 100vw"}
