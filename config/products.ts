@@ -26,6 +26,7 @@ import {
   Wallet,
   type LucideIcon,
 } from "lucide-react";
+import type { SolutionId } from "./solutions";
 
 export const PRODUCT_CATEGORIES = ["time", "hr", "payroll", "crm", "platform"] as const;
 export type ProductCategory = (typeof PRODUCT_CATEGORIES)[number];
@@ -197,8 +198,115 @@ export const PRODUCTS = [
 ] as const satisfies readonly ProductDef[];
 
 export type Product = (typeof PRODUCTS)[number];
+export type ProductId = Product["id"];
 export type ProductSlug = Product["slug"]["tr"];
 
 export function getProductBySlug(slug: string) {
   return PRODUCTS.find((p) => p.slug.tr === slug);
 }
+
+export function getProductById(id: ProductId) {
+  return PRODUCTS.find((p) => p.id === id)!;
+}
+
+/**
+ * /urunler sayfasındaki kategori bölümlerinin çapa id'leri (dile özel).
+ * Ürün sayfası breadcrumb'ındaki kategori adımı bu çapalara gider.
+ */
+export const PRODUCT_CATEGORY_ANCHORS: Record<
+  ProductCategory,
+  { tr: string; en: string }
+> = {
+  time: { tr: "zaman-ve-devam-takibi", en: "time-and-attendance" },
+  hr: { tr: "insan-kaynaklari", en: "human-resources" },
+  payroll: { tr: "bordro-ve-raporlama", en: "payroll-and-reporting" },
+  crm: { tr: "crm", en: "crm" },
+  platform: { tr: "platform", en: "platform" },
+};
+
+/**
+ * İç linkleme (6.4): her ürün sayfası 3 ilgili ürüne ve 1 çözüm sayfasına link verir.
+ */
+export const PRODUCT_LINKS: Record<
+  ProductId,
+  { related: readonly [ProductId, ProductId, ProductId]; solution: SolutionId }
+> = {
+  qrPdks: {
+    related: ["locationTracking", "timesheet", "mobileApp"],
+    solution: "construction",
+  },
+  shiftManagement: {
+    related: ["timesheet", "qrPdks", "payroll"],
+    solution: "manufacturing",
+  },
+  timesheet: { related: ["qrPdks", "shiftManagement", "payroll"], solution: "hrTeams" },
+  locationTracking: {
+    related: ["qrPdks", "mobileApp", "multiCompany"],
+    solution: "construction",
+  },
+  employeeManagement: {
+    related: ["employeeRecords", "payroll", "hrDocuments"],
+    solution: "hrTeams",
+  },
+  employeeRecords: {
+    related: ["employeeManagement", "hrDocuments", "leaveManagement"],
+    solution: "hrTeams",
+  },
+  leaveManagement: {
+    related: ["advanceManagement", "timesheet", "mobileApp"],
+    solution: "employees",
+  },
+  advanceManagement: {
+    related: ["payroll", "earningsDeductions", "leaveManagement"],
+    solution: "employees",
+  },
+  hrDocuments: {
+    related: ["employeeRecords", "employeeManagement", "leaveManagement"],
+    solution: "hrTeams",
+  },
+  payroll: {
+    related: ["timesheet", "earningsDeductions", "compliance"],
+    solution: "hrTeams",
+  },
+  earningsDeductions: {
+    related: ["payroll", "advanceManagement", "timesheet"],
+    solution: "hrTeams",
+  },
+  compliance: {
+    related: ["payroll", "earningsDeductions", "reporting"],
+    solution: "hrTeams",
+  },
+  reporting: { related: ["qrPdks", "leaveManagement", "payroll"], solution: "managers" },
+  contactManagement: {
+    related: ["salesTracking", "quoteManagement", "taskManagement"],
+    solution: "managers",
+  },
+  salesTracking: {
+    related: ["contactManagement", "quoteManagement", "taskManagement"],
+    solution: "managers",
+  },
+  quoteManagement: {
+    related: ["salesTracking", "contactManagement", "taskManagement"],
+    solution: "managers",
+  },
+  taskManagement: {
+    related: ["contactManagement", "salesTracking", "dashboard"],
+    solution: "managers",
+  },
+  mobileApp: {
+    related: ["qrPdks", "leaveManagement", "advanceManagement"],
+    solution: "employees",
+  },
+  multiCompany: {
+    related: ["rolesPermissions", "dashboard", "locationTracking"],
+    solution: "multiBranch",
+  },
+  rolesPermissions: {
+    related: ["multiCompany", "dashboard", "employeeManagement"],
+    solution: "multiBranch",
+  },
+  dashboard: {
+    related: ["reporting", "leaveManagement", "multiCompany"],
+    solution: "managers",
+  },
+};

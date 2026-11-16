@@ -183,10 +183,6 @@
           "a": "Download the ready Excel template, fill it in and import it in one go; you get a result report for every row."
         }
       ]
-    },
-    "storeSub": {
-      "appStore": "Download on the",
-      "googlePlay": "Get it on"
     }
   },
   "theme": {
@@ -369,91 +365,91 @@
       "description": "Location-verified clock in and out",
       "title": "QR Code Attendance System with Location Check",
       "metaDescription": "Employees clock in and out by scanning the QR code at their workplace. Location verification and fake GPS detection keep every attendance record reliable.",
-      "h1": "QR Code Attendance and Time Clock System"
+      "h1": "QR code attendance <accent>with no hardware.</accent>"
     },
     "shiftManagement": {
       "label": "Shift Management",
       "description": "Night shifts, breaks, weekly rest",
       "title": "Shift Management Software: Night Shifts, Breaks",
       "metaDescription": "Define shifts per branch and department. Working, break and overtime hours are calculated automatically for night shifts, breaks and weekly rest days.",
-      "h1": "Shift Management and Shift Definitions"
+      "h1": "Shift management <accent>by branch and department.</accent>"
     },
     "timesheet": {
       "label": "Timesheets & Overtime",
       "description": "Monthly sheet, bulk entry",
       "title": "Timesheet Software: Monthly Timesheets, Overtime",
       "metaDescription": "Attendance records flow into a monthly timesheet automatically. Day types, bulk timesheet entry and an overtime sheet make month-end payroll prep far easier.",
-      "h1": "Timesheets and Overtime Tracking"
+      "h1": "Timesheets <accent>without the month-end rush.</accent>"
     },
     "locationTracking": {
       "label": "Locations & QR Points",
       "description": "Printable A4 QR posters",
       "title": "Employee Location Tracking with QR Check-ins",
       "metaDescription": "Define each check-in point with latitude and longitude, generate its QR code and print it as an A4 poster. Managers can save new QR points on site in one tap.",
-      "h1": "Location Tracking and QR Check-in Points"
+      "h1": "Employee location tracking <accent>at every QR point.</accent>"
     },
     "employeeManagement": {
       "label": "Employee Management",
       "description": "Profiles, SSI entries, Excel import",
       "title": "Employee Management Software: Profiles and SSI",
       "metaDescription": "Keep identity, pay, contract and social security details in one employee profile. Handle SSI hire and exit records and import staff in bulk from Excel.",
-      "h1": "Employee Management Software"
+      "h1": "Employee management <accent>in a single profile.</accent>"
     },
     "employeeRecords": {
       "label": "Employee Records",
       "description": "Digital personnel files",
       "title": "Digital Employee Records and Personnel Files",
       "metaDescription": "Store identity, education, health, bank and employment details in a digital personnel file. Spot missing fields and let staff view their own records on mobile.",
-      "h1": "Digital Employee Records"
+      "h1": "Digital employee records <accent>always up to date.</accent>"
     },
     "leaveManagement": {
       "label": "Leave Management",
       "description": "Requests, approvals, live balances",
       "title": "Leave Management System: Requests & Approval",
       "metaDescription": "Employees request leave from their phone and managers approve in one tap. Annual leave balances are calculated from seniority, and hourly leave is supported.",
-      "h1": "Leave Management and Leave Tracking"
+      "h1": "Leave management <accent>from request to approval.</accent>"
     },
     "advanceManagement": {
       "label": "Salary Advances",
       "description": "Installments, payroll deductions",
       "title": "Salary Advance Management with Payroll Deductions",
       "metaDescription": "Employees request salary advances on mobile and managers approve them. Set installments and monthly amounts; repayments are deducted in payroll automatically.",
-      "h1": "Salary Advance Management"
+      "h1": "Salary advances <accent>in installments, tied to payroll.</accent>"
     },
     "hrDocuments": {
       "label": "HR Documents",
       "description": "Contracts, forms and reports",
       "title": "HR Document Templates: Contracts and Forms",
       "metaDescription": "Search and download ready-made HR templates in one click: employment contracts, hiring forms, leave request forms, monthly timesheets and incident reports.",
-      "h1": "Ready-Made HR Document Templates"
+      "h1": "HR document templates <accent>ready in one click.</accent>"
     },
     "payroll": {
       "label": "Payroll",
       "description": "Bulk payroll in one click",
       "title": "Payroll Software for Turkey: Automatic Payroll",
       "metaDescription": "Run payroll automatically from timesheets, overtime, earnings and deductions. Social security, income tax, stamp duty and total employer cost on one screen.",
-      "h1": "Automated Payroll Software"
+      "h1": "Payroll software <accent>straight from timesheets.</accent>"
     },
     "earningsDeductions": {
       "label": "Earnings & Deductions",
       "description": "Bonuses, overtime, deductions",
       "title": "Payroll Earnings and Deductions Management",
       "metaDescription": "Add bonuses, premiums and overtime as extra earnings, and disciplinary or damage deductions, in net or gross terms. Apply one entry to many employees at once.",
-      "h1": "Earnings and Deductions Management"
+      "h1": "Earnings and deductions <accent>for everyone in one entry.</accent>"
     },
     "compliance": {
       "label": "Compliance",
       "description": "Yearly social security and tax rates",
       "title": "Payroll Compliance: Yearly Tax and SSI Rules",
       "metaDescription": "Tax brackets, social security rates, severance and notice rules, disability allowances and public holidays are kept per year. Copy them to next year in a click.",
-      "h1": "Payroll Compliance with Turkish Tax and SSI Rules"
+      "h1": "Payroll compliance <accent>updated every year.</accent>"
     },
     "reporting": {
       "label": "Reporting",
       "description": "Attendance, leave, advances, payroll",
       "title": "Workforce Reporting: Attendance and Payroll",
       "metaDescription": "Report on late arrivals, late departures, absences, leave and salary advances. Export every attendance, leave and payroll report to Excel, PDF or Word.",
-      "h1": "Attendance, Leave and Payroll Reports"
+      "h1": "Workforce reporting <accent>exported in one click.</accent>"
     },
     "contactManagement": {
       "label": "Contact Management",
@@ -461,56 +457,56 @@
       "description": "Every customer card in one place",
       "title": "CRM Contact Management: Customers and Prospects",
       "metaDescription": "Keep customer and prospect cards with their contact details on one CRM screen, so your sales team and dealers work from the same data. Request a free demo now.",
-      "h1": "CRM Contact Management"
+      "h1": "CRM contact management <accent>in one card.</accent>"
     },
     "salesTracking": {
       "label": "Sales Tracking",
       "description": "Opportunities and sales pipeline",
       "title": "Sales Tracking Software: Opportunities, Pipeline",
       "metaDescription": "Track sales opportunities and your sales process in the CRM. Follow team performance from one place with the CRM dashboard and sales reports. Take a look now.",
-      "h1": "Sales Tracking in the CRM"
+      "h1": "Sales tracking <accent>for every opportunity.</accent>"
     },
     "quoteManagement": {
       "label": "Quote Management",
       "description": "Create and track quotes",
       "title": "Quote Management: Create and Track Quotes",
       "metaDescription": "Prepare customer quotes inside the CRM and follow their status. Quotes live next to customer cards and sales opportunities, so nothing gets lost along the way.",
-      "h1": "Quote Creation and Tracking"
+      "h1": "Quote management <accent>from draft to follow-up.</accent>"
     },
     "taskManagement": {
       "label": "Task Management",
       "description": "Team tasks and reminders",
       "title": "Team Task Management Software with Reminders",
       "metaDescription": "Create team tasks linked to customers and sales, and never miss a follow-up thanks to reminders. Every task sits right next to the related records in the CRM.",
-      "h1": "Team Task Management and Reminders"
+      "h1": "Team task management <accent>with reminders.</accent>"
     },
     "mobileApp": {
       "label": "Mobile App",
       "description": "iOS and Android",
       "title": "Attendance Mobile App for iOS and Android Teams",
       "metaDescription": "With the QR Zaman app, employees clock in by scanning a QR code, request leave and advances, and view payslips and timesheets. Managers approve on mobile.",
-      "h1": "QR Zaman Attendance Mobile App"
+      "h1": "Attendance mobile app <accent>for iOS and Android.</accent>"
     },
     "multiCompany": {
       "label": "Multi-Company & Branch",
       "description": "Groups, companies, branches, departments",
       "title": "Multi-Company and Multi-Branch Management",
       "metaDescription": "Manage groups, companies, branches and departments from one panel. Switch company, branch and period from the top bar and scope each user to their branches.",
-      "h1": "Multi-Company and Multi-Branch Management"
+      "h1": "Multi-company management <accent>in one panel.</accent>"
     },
     "rolesPermissions": {
       "label": "Roles & Permissions",
       "description": "Access scoped to each user",
       "title": "Roles and Permissions: User-Based Access Control",
       "metaDescription": "With admin, manager, employee and dealer roles, everyone sees only the menus they are allowed to. Scope access by group, company and branch to protect data.",
-      "h1": "Roles and Permissions Management"
+      "h1": "Roles and permissions <accent>everyone in their lane.</accent>"
     },
     "dashboard": {
       "label": "Dashboard & Calendar",
       "description": "Role-based overview, public holidays",
       "title": "HR Dashboard and Calendar: Role-Based Overview",
       "metaDescription": "See active staff, today's check-ins, people on leave and pending requests on one screen. Check public holidays in the calendar with a role-based dashboard.",
-      "h1": "Role-Based HR Dashboard and Calendar"
+      "h1": "HR dashboard <accent>your day at a glance.</accent>"
     },
     "solutions": {
       "label": "Solutions",
@@ -755,6 +751,1197 @@
       "title": "Delete Your Account: QR Zaman Mobile App Account",
       "metaDescription": "Learn the steps to delete your QR Zaman mobile app account and the personal data linked to it, and send us your account deletion request in just a few clicks.",
       "h1": "Account Deletion Request"
+    }
+  },
+  "productPage": {
+    "demo": "Request a Demo",
+    "pricing": "See Pricing",
+    "highlights": "Highlights",
+    "capabilitiesTitle": "What can you do?",
+    "relatedTitle": "Related features",
+    "relatedText": "Every QR Zaman module shares the same data, so {product} works hand in hand with these products.",
+    "explore": "Explore",
+    "solution": "Explore QR Zaman for {solution}"
+  },
+  "productsIndex": {
+    "jumpLabel": "Product categories",
+    "categories": {
+      "time": "QR code clock-ins, shift definitions, monthly timesheets and QR check-in points record working time on their own.",
+      "hr": "Everything about your people, from employee profiles and personnel files to leave and salary advance requests and ready-made HR documents.",
+      "payroll": "Automatic payroll from timesheets, earnings and deductions, yearly tax and social security parameters, and exportable reports.",
+      "crm": "Customer cards, sales opportunities, quotes and team tasks for sales teams and dealers.",
+      "platform": "iOS and Android app, multi-company and multi-branch structure, role-based permissions and a dashboard for every role."
+    },
+    "mobile": {
+      "badge": "Mobile app",
+      "title": "Scan the QR,<br></br><accent>start your shift.</accent>",
+      "text": "Employees clock in and out by scanning a QR code, send leave and advance requests, and check their payslips and timesheets on their phone. Managers approve requests on the go.",
+      "link": "Explore the mobile app",
+      "imageAlt": "QR Zaman mobile app home screen: today's clock-in and leave summary"
+    },
+    "cta": "Let's pick the right<br></br><accent>modules together.</accent>"
+  },
+  "productContent": {
+    "qrPdks": {
+      "intro": "With QR code attendance, employees clock in and out by scanning the QR code at their workplace with their own phone. Their location is captured at the moment of the scan, fake GPS is detected and each account is paired to a single device. Records reach the panel instantly and move to the timesheet daily or monthly.",
+      "toast": {
+        "title": "Location verified",
+        "description": "Main entrance · 08:57"
+      },
+      "benefits": [
+        {
+          "eyebrow": "No hardware",
+          "title": "Start without card readers",
+          "text": "A printable A4 QR poster and your employees' own phones are all you need. No fingerprint scanners, badges or installation crew."
+        },
+        {
+          "eyebrow": "Fraud-resistant",
+          "title": "Location and device checks",
+          "text": "The scan location is stored with each record, clock-ins from fake GPS are blocked and an account cannot be used from another phone."
+        },
+        {
+          "eyebrow": "Automatic flow",
+          "title": "From clock-in to timesheet",
+          "text": "Transfer attendance records to the timesheet daily or monthly, so nobody adds up hours by hand at month end."
+        }
+      ],
+      "showcase": {
+        "title": "Every punch,<br></br><accent>on the record.</accent>",
+        "text": "Clock-in and clock-out times, regular hours, overtime and leave appear on one screen. Open any record to see which location it was scanned at, down to the latitude and longitude. Filter by department and date range, correct a wrong time or clear a record, and employees get a warning on duplicate entries such as a second clock-in on the same day."
+      },
+      "steps": {
+        "title": "Set up in<br></br><accent>three steps.</accent>",
+        "items": [
+          "Define a location for each department with latitude and longitude in the panel, or save your current spot in one tap from the mobile app on site.",
+          "Download the location's QR code as a PNG or as a print-ready A4 PDF poster and put it up at the entrance.",
+          "Employees choose Clock in or Clock out in the app and scan the code; the location is verified and the record lands in the panel."
+        ]
+      },
+      "capabilitiesText": "QR code attendance shares its data with shift definitions and timesheets. When allowed, employees view their own attendance records on mobile, while managers follow late arrivals, absences and overtime in the reports. Because every record keeps its clock-in, clock-out, regular hours and overtime, month end brings a ready timesheet instead of a debate.",
+      "capabilities": [
+        "Shift definitions per branch and department",
+        "Night shift, break and overtime calculations",
+        "Late arrival, late departure and absence reports",
+        "Time corrections and record cleanup",
+        "Duplicate clock-in checks and warnings",
+        "Employees can view their own attendance records",
+        "Scanning without storing camera images",
+        "Export to Excel, PDF and Word"
+      ],
+      "cta": "See QR code attendance<br></br><accent>in your business.</accent>",
+      "alts": {
+        "hero": [
+          "Choosing Clock in or Clock out in the QR code attendance app",
+          "My attendance records in the mobile app: daily clock-ins and clock-outs"
+        ],
+        "showcase": "QR code attendance screen: employee clock-in records and punch details",
+        "steps": [
+          "Printable A4 QR poster on the wall",
+          "Download options for a location QR code as PNG and A4 PDF"
+        ]
+      }
+    },
+    "shiftManagement": {
+      "intro": "Shift management software lets you set up shift definitions for each branch and department. Once night shifts, break times and weekly rest days are defined, total working, break and overtime hours are calculated automatically, and QR code attendance records flow into the timesheet according to those rules.",
+      "toast": {
+        "title": "Shift started",
+        "description": "Night shift · 22:00"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Flexible rules",
+          "title": "Shifts per branch and department",
+          "text": "If your store, production line and office work different hours, give each its own shift; shift work and the weekly rest day are set on the employee profile."
+        },
+        {
+          "eyebrow": "Night shifts",
+          "title": "Hours past midnight",
+          "text": "The night shift option covers work that runs past midnight, and working and break times are calculated against the shift."
+        },
+        {
+          "eyebrow": "Automatic math",
+          "title": "Breaks and overtime handled",
+          "text": "Total working, break and overtime hours come straight from the shift definition, with daily and monthly totals on the overtime sheet."
+        }
+      ],
+      "showcase": {
+        "title": "Overtime,<br></br><accent>accounted for.</accent>",
+        "text": "The overtime sheet shows every employee's daily overtime and monthly totals in one table. Filter by branch, department and month to focus on a team; overtime calculated from the shift rules moves into the timesheet and from there into payroll. The attendance report also lists late arrivals, late departures, absences and who worked overtime."
+      },
+      "steps": {
+        "title": "Shifts ready in<br></br><accent>three steps.</accent>",
+        "items": [
+          "Pick a branch and department, then enter the shift's working hours, break time and, if needed, the night shift option.",
+          "Mark shift work and the weekly rest day on each employee profile.",
+          "As employees scan in, working, break and overtime hours are calculated against the shift and moved to the timesheet."
+        ]
+      },
+      "capabilitiesText": "Shift definitions are the foundation of attendance and timesheets. Since everyone's shift, break time and weekly rest day are known up front, overtime is calculated the same way for every employee. Create separate rules for production lines, stores or night teams and compare the results on the overtime sheet and in the attendance report. Every output exports to Excel, PDF or Word.",
+      "capabilities": [
+        "Shift definitions per branch and department",
+        "Night shifts and break times",
+        "Weekly rest day settings",
+        "Automatic working, break and overtime totals",
+        "Daily overtime and overtime totals sheet",
+        "Daily or monthly transfer of attendance to timesheets",
+        "Overtime and absence reports",
+        "Export to Excel, PDF and Word"
+      ],
+      "cta": "Try shift management<br></br><accent>with your team.</accent>",
+      "alts": {
+        "hero": ["QR code attendance records: employee clock-in times by shift"],
+        "showcase": "Shift management overtime sheet: daily overtime hours per employee",
+        "steps": [
+          "Attendance records in the mobile app: regular hours and overtime",
+          "Mobile timesheet: days worked, hours and overtime summary"
+        ]
+      }
+    },
+    "timesheet": {
+      "intro": "With QR Zaman's timesheet software you no longer wait for month end. QR code attendance records move into the monthly timesheet daily or monthly, and working days, weekly rest days, public holidays and leave show up in a single table. Mark missing days from the toolbar and fill in timesheets for many employees at once.",
+      "toast": {
+        "title": "Moved to timesheet",
+        "description": "November 2026 · Monthly transfer"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Automatic transfer",
+          "title": "From attendance to timesheet",
+          "text": "No copying clock-ins by hand: a daily or monthly transfer fills in the timesheet on its own."
+        },
+        {
+          "eyebrow": "Fast edits",
+          "title": "Bulk timesheet entry",
+          "text": "Pick a day type in the toolbar and click; select several employees or the whole calendar to finish a month in minutes."
+        },
+        {
+          "eyebrow": "Visible to staff",
+          "title": "My Timesheet calendar",
+          "text": "When you allow it, employees see their own timesheet as a monthly calendar in the mobile app, with a summary of the month."
+        }
+      ],
+      "showcase": {
+        "title": "The whole month<br></br><accent>on one sheet.</accent>",
+        "text": "The monthly timesheet lines up every employee against every day of the month. Day types such as annual leave, excused absence, maternity, marriage and bereavement leave each have their own code. Open an employee to see their daily timesheet, monthly summary and other totals, while the overtime sheet lists daily overtime and totals by branch, department and month."
+      },
+      "steps": {
+        "title": "Timesheets in<br></br><accent>three steps.</accent>",
+        "items": [
+          "Transfer attendance records to the timesheet for the day or month you choose in one click.",
+          "Mark public holidays, leave or excused absences from the toolbar, or use bulk entry when needed.",
+          "Check the monthly summary on the employee detail page and use the finished timesheet as the basis for payroll."
+        ]
+      },
+      "capabilitiesText": "The timesheet is the bridge between attendance and payroll. Clock-ins flow into the timesheet and the timesheet flows into payroll, so you never keep the same data in three different spreadsheets. Day types separate public holidays, annual leave and excused absences, and employees with access check their own days worked, hours and overtime on the My Timesheet screen.",
+      "capabilities": [
+        "Monthly timesheet (employees × days)",
+        "Working day, weekly rest, public holiday and leave day types",
+        "Quick day marking from the toolbar",
+        "Bulk entry for several employees or the whole calendar",
+        "Daily timesheet, monthly summary and other totals",
+        "Overtime sheet filtered by branch, department and month",
+        "My Timesheet calendar view for employees",
+        "Export to Excel, PDF and Word"
+      ],
+      "cta": "Put your timesheets<br></br><accent>on autopilot.</accent>",
+      "alts": {
+        "hero": [
+          "Mobile timesheet: days worked, hours worked and monthly calendar",
+          "QR Zaman mobile app home screen: today's clock-in card"
+        ],
+        "showcase": "Timesheet software: monthly timesheet for all employees",
+        "steps": ["Employee timesheet detail: daily entries and monthly summary"]
+      }
+    },
+    "locationTracking": {
+      "intro": "Employee location tracking makes every place where staff clock in a defined, verifiable check-in point. You define locations linked to departments with latitude and longitude and generate a QR code for each one. When an employee scans, the phone's location is added to the record, so the panel shows exactly which point each record came from.",
+      "toast": {
+        "title": "QR point saved",
+        "description": "North entrance · Active"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Set up on site",
+          "title": "Save a spot in one tap",
+          "text": "Managers pick a department in the mobile app and save their current position in one tap, so new QR points are set up right where they are needed."
+        },
+        {
+          "eyebrow": "Ready to hang",
+          "title": "Printable A4 QR poster",
+          "text": "Download each location's QR code as a PNG or as a printable A4 PDF poster and put it up by the door."
+        },
+        {
+          "eyebrow": "Full control",
+          "title": "Active and inactive points",
+          "text": "Deactivate a check-in point that is no longer used, and decide in the permission settings whether staff may scan at any location."
+        }
+      ],
+      "showcase": {
+        "title": "Every point with<br></br><accent>its own QR code.</accent>",
+        "text": "The location list shows each check-in point's department, latitude and longitude and status. Open a location to preview its QR code and download it as a PNG or A4 PDF. When an employee scans, the record keeps both the location name and the coordinates of the scan, so there is never any doubt about who worked at which branch."
+      },
+      "steps": {
+        "title": "New points<br></br><accent>in minutes.</accent>",
+        "items": [
+          "Pick a department in the panel and add a new location, or save your current position from the mobile app on site.",
+          "Print the location's QR code as an A4 poster and put it up at the entrance.",
+          "When employees scan the code, their location is verified and they see the result on the confirmation screen."
+        ]
+      },
+      "capabilitiesText": "Because locations belong to departments, every branch and department has its own check-in points. When you open a new branch, a manager saves the spot from the mobile app on site, prints the QR poster and puts it up, and employees can start scanning the same day. Deactivate a point you no longer use, while past records keep their location and coordinates.",
+      "capabilities": [
+        "Locations linked to departments",
+        "Latitude and longitude for every point",
+        "A QR code for each location",
+        "PNG and printable A4 PDF posters",
+        "One-tap location capture on mobile",
+        "Location editing and active/inactive status",
+        "Scan coordinates stored on each record",
+        "Permission to clock in from any location"
+      ],
+      "cta": "Set up location tracking<br></br><accent>across your branches.</accent>",
+      "alts": {
+        "hero": [
+          "Location tracking screen: QR check-in points by department with coordinates"
+        ],
+        "showcase": "Location QR point: QR code preview and download options",
+        "steps": [
+          "Printable A4 QR poster ready for the wall",
+          "QR scan confirmation and device pairing in the mobile app"
+        ]
+      }
+    },
+    "employeeManagement": {
+      "intro": "QR Zaman's employee management software brings identity, contact, education, health, bank, pay and contract details together in one employee profile. Every payroll-related parameter, from social security status and incentive rates to private pension and disability allowances, sits on the same profile, and social security hire and exit records are handled from there too.",
+      "toast": {
+        "title": "Import complete",
+        "description": "Excel · Row-by-row result report"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Quick start",
+          "title": "Bulk import from Excel",
+          "text": "Download the template, fill in your staff list and import it in one go; the result report shows which rows went through."
+        },
+        {
+          "eyebrow": "Payroll-ready",
+          "title": "Social security and pay fields",
+          "text": "Document type, law number, occupation code, pay type and cumulative tax base feed straight into payroll."
+        },
+        {
+          "eyebrow": "Secure sign-in",
+          "title": "One device per employee",
+          "text": "Set a phone number and password for mobile sign-in; each account pairs to one device, and you can reset activation when a phone changes."
+        }
+      ],
+      "showcase": {
+        "title": "Your whole team<br></br><accent>in one list.</accent>",
+        "text": "Search the employee list by staff number, national ID or name. Filter by branch, department, status, employment status, gender, marital status, pay type and employee group. Show or hide columns, act on many people at once with bulk selection and export the list to Excel, PDF or Word. Pay can be monthly, daily or hourly, net or gross, and in different currencies."
+      },
+      "steps": {
+        "title": "Move your team over<br></br><accent>in three steps.</accent>",
+        "items": [
+          "Download the Excel template and fill in your employee details.",
+          "Import the file and fix any missing records using the row-by-row result report.",
+          "Set a phone number and password for mobile sign-in; the employee's device pairs to their account at first login."
+        ]
+      },
+      "capabilitiesText": "The employee profile is the shared source for attendance, timesheets, leave, advances and payroll. Pay type, weekly rest day and shift work are entered once and used by every other module. When someone leaves, you record the social security exit with its reason code and keep their record and past payrolls in the system.",
+      "capabilities": [
+        "Identity, contact, education, health and bank details",
+        "Pay and contract details",
+        "Social security hire and exit records with exit reason codes",
+        "Incentive, private pension, union and disability parameters",
+        "Monthly, daily or hourly pay, net or gross",
+        "Weekly rest day and employee groups",
+        "Device pairing and phone activation reset",
+        "Advanced filters, bulk actions and exports"
+      ],
+      "cta": "Bring employee management<br></br><accent>into one panel.</accent>",
+      "alts": {
+        "hero": [
+          "Mobile app profile screen: personal, employment and payroll details",
+          "My employee record on mobile: staff number, start date and identity details"
+        ],
+        "showcase": "Employee management list with search, filters and bulk actions",
+        "steps": [
+          "QR Zaman mobile app sign-in with username or phone number",
+          "Device pairing confirmation in the mobile app"
+        ]
+      }
+    },
+    "employeeRecords": {
+      "intro": "Digital employee records keep each person's identity, education, health, bank, payroll parameters and employment details on one screen. Instead of paper folders where information gets lost, you keep a searchable personnel file, and employees can view their own records in the mobile app.",
+      "toast": {
+        "title": "Personnel file updated",
+        "description": "No empty fields left"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Spot the gaps",
+          "title": "Show empty fields",
+          "text": "List every unfilled field with one option and complete missing onboarding details before an audit does it for you."
+        },
+        {
+          "eyebrow": "Quick switching",
+          "title": "Fast employee picker",
+          "text": "Jump from one file to the next with the employee picker, without going back to the list to search again."
+        },
+        {
+          "eyebrow": "Transparency",
+          "title": "Staff see their own file",
+          "text": "Employees view their personnel record in the mobile app, and managers can open their team's records and details on mobile."
+        }
+      ],
+      "showcase": {
+        "title": "Everything in<br></br><accent>one personnel file.</accent>",
+        "text": "Below a summary of staff number, start date, seniority and pay, the record screen groups identity, contact, education, health and bank details into sections. Payroll parameters such as social security status, document type and law number sit in the same file along with employment details. Because the file shares its data with the employee profile, every change flows straight into payroll."
+      },
+      "steps": {
+        "title": "Complete files in<br></br><accent>three steps.</accent>",
+        "items": [
+          "Open an employee from the list or the quick picker.",
+          "Turn on Show empty fields and fill in whatever is missing.",
+          "Employees see their up-to-date details on the My Records screen of the mobile app."
+        ]
+      },
+      "capabilitiesText": "The personnel file is one of the screens HR opens most: whatever an insurance notice, a bank change or an audit calls for is in one place. Identity, education, health and bank details are split into sections, so you never get lost in a long form, and the Show empty fields option gathers every gap into one list. Managers can open their team's records on mobile, and employees see their own details on the My Records screen and can flag anything that looks wrong to HR.",
+      "capabilities": [
+        "Identity and contact details",
+        "Education and health details (blood type, height, weight)",
+        "Bank details (IBAN, branch)",
+        "Payroll parameters and employment details",
+        "Show empty fields option",
+        "Fast employee picker",
+        "Employees can view their own records",
+        "Mobile record list and details for managers"
+      ],
+      "cta": "Move personnel files<br></br><accent>to digital.</accent>",
+      "alts": {
+        "hero": [
+          "My employee record on mobile: staff number, seniority and identity details",
+          "Mobile profile screen: personal and device details"
+        ],
+        "showcase": "Digital employee record: identity, contact and employment details",
+        "steps": ["Employee list: choosing an employee to open their record"]
+      }
+    },
+    "leaveManagement": {
+      "intro": "With QR Zaman's leave management system, employees send leave requests from the mobile app and managers approve them in one tap or reject them with a reason. The request screen calculates total entitlement, used leave and remaining days from seniority, and hourly leave, a leave address and attachments such as medical notes are supported.",
+      "toast": {
+        "title": "Awaiting approval",
+        "description": "Annual leave request · 5 days"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Mobile requests",
+          "title": "No paper forms",
+          "text": "Employees enter the leave type, dates, address and a message on their phone, then follow the status and any rejection reason in real time."
+        },
+        {
+          "eyebrow": "Automatic balance",
+          "title": "Based on seniority",
+          "text": "Years of service, total entitlement, leave used this year and in past years, and the remaining balance are ready on the request."
+        },
+        {
+          "eyebrow": "Fast approval",
+          "title": "Approve from anywhere",
+          "text": "Pending requests show on the dashboard, and managers approve or reject them with a reason from the panel or the app."
+        }
+      ],
+      "showcase": {
+        "title": "Every request<br></br><accent>with its balance.</accent>",
+        "text": "The request detail shows the employee, leave type, dates and message right next to an automatically calculated leave balance, so you never open a separate spreadsheet to decide. The All leave and All requests tabs keep a full history, and you can record leave yourself by selecting several employees and a date range."
+      },
+      "steps": {
+        "title": "Leave handled in<br></br><accent>three steps.</accent>",
+        "items": [
+          "The employee picks a leave type and dates in the mobile app and sends the request.",
+          "The manager sees the remaining balance on the request and approves it or rejects it with a reason.",
+          "The result appears in the employee's request list, and leave usage is tracked by year in the reports."
+        ]
+      },
+      "capabilitiesText": "Leave management shares its data with timesheets and reports. Annual leave entitlement is calculated from seniority, so you never update a balance spreadsheet by hand each year. Managers see pending requests on the dashboard and in the mobile app, while HR reports general and annual leave usage with entitlement, used and remaining days and seniority. Every list exports to Excel, PDF or Word.",
+      "capabilities": [
+        "Mobile leave requests with status tracking",
+        "Approval and rejection with a reason",
+        "Automatic leave balance by seniority",
+        "Hourly leave",
+        "Leave address, message and attachments",
+        "Recording leave for several employees and dates",
+        "All leave and All requests tabs",
+        "General and annual leave usage reports"
+      ],
+      "cta": "Take leave management<br></br><accent>mobile.</accent>",
+      "alts": {
+        "hero": [
+          "Mobile leave requests list with request statuses",
+          "Mobile leave detail: leave type, dates and number of days"
+        ],
+        "showcase": "Leave management: request detail with automatically calculated balance",
+        "steps": ["Leave management screen: all leave and all requests"]
+      }
+    },
+    "advanceManagement": {
+      "intro": "With salary advance management, employees request an advance from the mobile app with the amount, number of installments, monthly repayment and start date. Managers approve it or reject it with a reason. Installments of approved advances are deducted in payroll automatically, so nobody keeps a separate deduction spreadsheet at month end.",
+      "toast": {
+        "title": "Advance request",
+        "description": "Awaiting approval · 3 installments"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Clear requests",
+          "title": "Amount and installments up front",
+          "text": "Employees enter the amount, number of installments and monthly repayment themselves, and the request shows when repayment starts."
+        },
+        {
+          "eyebrow": "Status tracking",
+          "title": "Pending, approved, rejected",
+          "text": "Each request's status shows in the panel and the app at the same time, so employees never have to chase their manager for an answer."
+        },
+        {
+          "eyebrow": "Automatic deductions",
+          "title": "Installments in payroll",
+          "text": "Installments of approved advances are calculated as advance deductions in payroll and reduce the net pay automatically."
+        }
+      ],
+      "showcase": {
+        "title": "Advance deductions,<br></br><accent>ready in payroll.</accent>",
+        "text": "When payroll runs, the employee's advance deduction appears in the payroll detail alongside social security, taxes and other deductions. The advance report lists the payroll deduction amount, deduction date and document number. Managers can also set up an advance directly in the panel without waiting for a request, and its installment plan links to payroll the same way."
+      },
+      "steps": {
+        "title": "Advances in<br></br><accent>three steps.</accent>",
+        "items": [
+          "The employee enters the amount, installments, monthly repayment and start date in the app and sends the request.",
+          "The manager approves it from the panel or the app, or rejects it with a reason.",
+          "Installments of the approved advance are deducted in payroll automatically every month."
+        ]
+      },
+      "capabilitiesText": "In many businesses, advance requests arrive by phone, chat or paper, and installments are tracked in a separate spreadsheet. In QR Zaman, request, approval and deduction are one flow. Employees follow their request as pending, approved or rejected in the mobile app, and managers keep an eye on pending requests from the dashboard. The advance report shows which deduction was made in which payroll, with its document number, ready for audits or reconciliation with staff.",
+      "capabilities": [
+        "Salary advance requests on mobile",
+        "Amount, installments and monthly repayment",
+        "Repayment start date",
+        "Approval and rejection with a reason",
+        "Pending, approved and rejected statuses",
+        "Advances set up directly by managers",
+        "Installments deducted in payroll automatically",
+        "Advance report: deduction amount, date and document no."
+      ],
+      "cta": "Link salary advances<br></br><accent>to payroll.</accent>",
+      "alts": {
+        "hero": [
+          "New salary advance request on mobile: amount, installments and monthly repayment",
+          "Mobile advance list: requested amounts and statuses"
+        ],
+        "showcase": "Payroll detail: advance deduction alongside other payroll items",
+        "steps": ["Mobile quick menu: leave, advances, earnings and deductions"]
+      }
+    },
+    "hrDocuments": {
+      "intro": "QR Zaman's HR document templates put every form you need, from employment contracts to incident reports, in one place. Search a document by name and download it in one click. Because employee details, personnel files and leave records live on the same platform, the information you need to fill in a document is always at hand.",
+      "toast": {
+        "title": "Document downloaded",
+        "description": "Permanent employment contract"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Ready-made templates",
+          "title": "Skip the blank page",
+          "text": "Fixed-term and permanent employment contracts, hiring forms and job offer forms come ready to use."
+        },
+        {
+          "eyebrow": "Quick access",
+          "title": "Search and download",
+          "text": "Find the template you need in seconds with document search instead of digging through folders."
+        },
+        {
+          "eyebrow": "Branded output",
+          "title": "Documents with your letterhead",
+          "text": "Lists and reports export to Excel, PDF or Word with your company header, so your files look consistent."
+        }
+      ],
+      "showcase": {
+        "title": "Paperwork that<br></br><accent>looks professional.</accent>",
+        "text": "Leave lists, timesheets and payroll reports from the panel are produced in PDF, Excel or Word with a header carrying your company name. Combined with the ready-made HR templates, your employee paperwork follows one consistent format from hiring and annual leave to timesheet records and incident reports, and the personnel file checklist makes sure nothing is missing."
+      },
+      "steps": {
+        "title": "Paperwork in<br></br><accent>three steps.</accent>",
+        "items": [
+          "Search for the template you need by name in the Documents section.",
+          "Download it in one click and fill it in with the employee's details.",
+          "Use the personnel file checklist to confirm the employee's paperwork is complete."
+        ]
+      },
+      "capabilitiesText": "HR paperwork comes up at every stage of employment: contracts and hiring forms when someone joins, paid leave request forms and monthly timesheet registers while they work, and absence or lateness reports when problems arise. All of these templates sit in one searchable section. Since employee details and leave records are already in QR Zaman, you never gather information from different files to fill in a form, and the personnel file checklist keeps every employee's paperwork in the same order.",
+      "capabilities": [
+        "Fixed-term and permanent employment contracts",
+        "Hiring, job application and job offer forms",
+        "Interview invitation letter",
+        "Paid leave request form and annual paid leave register",
+        "Monthly timesheet register and family allowance notice",
+        "Absence and lateness incident reports",
+        "Notary notice and tax deduction declaration",
+        "Personnel file checklist"
+      ],
+      "cta": "Every HR document<br></br><accent>in one place.</accent>",
+      "alts": {
+        "hero": ["Digital employee record: personal and employment details"],
+        "showcase": "Leave list exported as a PDF with company header",
+        "steps": ["Employee list: choosing the employee for a document"]
+      }
+    },
+    "payroll": {
+      "intro": "QR Zaman's payroll software calculates payroll automatically from timesheets, overtime, earnings, deductions and salary advances. Run payroll for everyone or for selected employees in one click, then approve it once you have checked it. Social security and unemployment contributions, income tax, stamp duty, minimum wage exemptions and total employer cost are all on one screen.",
+      "toast": {
+        "title": "Payroll calculated",
+        "description": "November 2026 · All employees"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Bulk runs",
+          "title": "Everyone or a selection",
+          "text": "Run payroll for all employees or just the ones you choose; clear a wrong calculation and run it again."
+        },
+        {
+          "eyebrow": "Controlled process",
+          "title": "Approvals and history",
+          "text": "Approve a calculated payroll or withdraw the approval, and follow the full history in the payroll log."
+        },
+        {
+          "eyebrow": "Compliant",
+          "title": "Yearly parameters",
+          "text": "Tax brackets, social security rates and the minimum wage exemption come from yearly parameters, so you never type rates by hand."
+        }
+      ],
+      "showcase": {
+        "title": "Every item<br></br><accent>on one screen.</accent>",
+        "text": "The payroll detail breaks out gross and net pay, daily and hourly payments, regular, night, public holiday and collective agreement overtime, travel and meal allowances, and benefits such as family, child, childcare and holiday pay. On the deductions side you see social security and unemployment contributions, income tax, stamp duty, union and pension deductions and advance repayments, with total employer cost and net pay at the bottom."
+      },
+      "steps": {
+        "title": "Payroll ready in<br></br><accent>three steps.</accent>",
+        "items": [
+          "Transfer attendance to the timesheet and review earnings, deductions and advances.",
+          "Run payroll for all or selected employees in one click.",
+          "Approve the payroll and export the per-employee payroll report to Excel, PDF or Word."
+        ]
+      },
+      "capabilitiesText": "Payroll is where every QR Zaman module comes together. Timesheets from attendance, overtime calculated against shifts, earnings and deductions, approved advance installments and the social security parameters on the employee profile all feed the calculation automatically. When allowed, employees see their payroll on the My Payslip screen and can hide or show the salary amount on screen.",
+      "capabilities": [
+        "Automatic payroll for all or selected employees",
+        "Approve and withdraw payroll approval",
+        "Regular, night, public holiday and collective agreement overtime",
+        "Social security, unemployment, income tax and stamp duty",
+        "Minimum wage exemptions",
+        "Union, private pension and advance deductions",
+        "Total employer cost and net pay",
+        "Payroll log and a My Payslip view for employees"
+      ],
+      "cta": "Put payroll<br></br><accent>on autopilot.</accent>",
+      "alts": {
+        "hero": [
+          "Mobile app home screen: pay and payments summary",
+          "Mobile timesheet: days and hours that feed payroll"
+        ],
+        "showcase": "Payroll software: payroll detail per employee with employer cost",
+        "steps": ["Monthly timesheet: the basis of every payroll run"]
+      }
+    },
+    "earningsDeductions": {
+      "intro": "The earnings and deductions screen is where you record extra earnings such as bonuses and premiums, deductions such as disciplinary, damage, overpayment, training or childcare deductions, and overtime entries, in net or gross terms. Add one entry for many employees at once and let the amounts flow into payroll automatically.",
+      "toast": {
+        "title": "Earning added",
+        "description": "Bonus payment · Gross"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Bulk entry",
+          "title": "One entry, many employees",
+          "text": "Add payments that everyone receives at the same time, such as a holiday bonus, to all selected employees with a single entry."
+        },
+        {
+          "eyebrow": "Net or gross",
+          "title": "The right tax effect",
+          "text": "Each earning and deduction is entered net or gross, and payment coefficients decide how social security, income tax and stamp duty apply."
+        },
+        {
+          "eyebrow": "Overtime entries",
+          "title": "Hours or amount",
+          "text": "Enter overtime by days and hours or as a fixed amount, and it lands on the matching overtime line in payroll."
+        }
+      ],
+      "showcase": {
+        "title": "Earnings, deductions<br></br><accent>and overtime together.</accent>",
+        "text": "Earnings, deductions and overtime are listed in tabs on the same screen. Each row shows the employee, department, date, item type, amount and whether it is net or gross, and the payment date decides which payroll it goes into. Employees can list and filter their own earnings and deductions in the mobile app, and authorized users can add entries from mobile too."
+      },
+      "steps": {
+        "title": "Into payroll in<br></br><accent>three steps.</accent>",
+        "items": [
+          "Choose the item type in the Earnings, Deductions or Overtime tab and enter the amount net or gross.",
+          "Apply the entry to one or more employees and set the payment date.",
+          "When payroll runs, the amounts appear on the right payroll lines automatically."
+        ]
+      },
+      "capabilitiesText": "Extra pay and deductions often surface right before payday. In QR Zaman they are recorded with their dates throughout the year and go into the right payroll based on the payment date. Deductions are labeled as disciplinary, damage, overpayment, training or childcare, so reports always show why each deduction was made.",
+      "capabilities": [
+        "Earnings such as bonuses and premiums",
+        "Disciplinary, damage, overpayment, training and childcare deductions",
+        "Overtime by days/hours or by amount",
+        "Net or gross amounts with payment dates",
+        "One entry for several employees",
+        "Payment coefficients for social security, tax and stamp duty",
+        "Mobile earnings and deductions list for employees",
+        "Mobile entry for authorized users"
+      ],
+      "cta": "Connect extra pay<br></br><accent>to payroll automatically.</accent>",
+      "alts": {
+        "hero": [
+          "My earnings on mobile: bonus, family allowance and extra lesson pay",
+          "My deductions on mobile: disciplinary and other deductions"
+        ],
+        "showcase": "Earnings, deductions and overtime management screen",
+        "steps": ["Payroll detail: earnings and deductions reflected in payroll"]
+      }
+    },
+    "compliance": {
+      "intro": "Turkish tax and social security rules change every year, and QR Zaman handles payroll compliance with yearly system parameters. Tax brackets, coefficient rates, severance and notice rules, disability allowance rates, leave limits, occupation codes and public holidays are kept separately for each year, and payroll is calculated with the parameters of the selected period.",
+      "toast": {
+        "title": "Parameters copied",
+        "description": "Carried over to next year"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Year by year",
+          "title": "Each period, its own rules",
+          "text": "Go back to an earlier payroll and that year's rates are used; new parameters never change past calculations."
+        },
+        {
+          "eyebrow": "One-click carry-over",
+          "title": "Copy to next year",
+          "text": "At year end, copy the parameters to the new year in one click and update only the rates that changed."
+        },
+        {
+          "eyebrow": "Calendar-aware",
+          "title": "Public holidays and eves",
+          "text": "Public holidays and half-day eves are defined per year and shown in the panel calendar in year, month and week views."
+        }
+      ],
+      "showcase": {
+        "title": "Right rates,<br></br><accent>right payroll.</accent>",
+        "text": "The social security contribution, unemployment insurance, income tax, stamp duty and minimum wage exemption in each payroll detail are calculated from that year's system parameters. Disability allowances, incentive rates and the cumulative tax base on the employee profile work together with these parameters. Accounting and employee accrual parameters are managed in the same place, so a rule change is updated once."
+      },
+      "steps": {
+        "title": "New year in<br></br><accent>three steps.</accent>",
+        "items": [
+          "Select the current year in system parameters and create the new one with Copy to next year.",
+          "Update the tax brackets, coefficient rates and public holidays that changed.",
+          "The new period's payroll uses the current rates while earlier periods keep their own."
+        ]
+      },
+      "capabilitiesText": "Compliance affects more than payroll math: it shapes leave and severance rules too. Leave limits set annual leave entitlement, severance and notice definitions set termination rules, disability allowance rates shape the tax calculation, and occupation codes are used for social security details on the employee profile. These parameters are managed once for the whole system, so every company and branch runs on the same current rules and all of them move to the new year together.",
+      "capabilities": [
+        "Yearly tax brackets and rates",
+        "Coefficient rates",
+        "Severance and notice pay rules",
+        "Disability allowance rates",
+        "Leave limits and occupation codes",
+        "Public holidays and half-day eves",
+        "One-click copy of parameters to next year",
+        "Accounting and employee accrual parameters"
+      ],
+      "cta": "See compliant payroll<br></br><accent>up close.</accent>",
+      "alts": {
+        "hero": ["HR calendar: public holidays, eves and special days"],
+        "showcase": "Payroll detail: social security and taxes calculated from yearly parameters",
+        "steps": []
+      }
+    },
+    "reporting": {
+      "intro": "QR Zaman's workforce reporting keeps attendance, leave, advance and payroll reports in one menu. Filter and review late arrivals, late departures, absences and overtime, leave usage and advance deductions, then export any report to Excel, PDF or Word.",
+      "toast": {
+        "title": "Report ready",
+        "description": "Excel · PDF · Word"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Attendance report",
+          "title": "Late, absent, overtime",
+          "text": "See regular, overtime, leave and total hours per employee and catch attendance issues before month end."
+        },
+        {
+          "eyebrow": "Leave reports",
+          "title": "Entitled, used, remaining",
+          "text": "Report general leave usage and annual leave totals together with each employee's seniority."
+        },
+        {
+          "eyebrow": "Advances and payroll",
+          "title": "Deductions on record",
+          "text": "The advance report shows the payroll deduction amount, date and document number, and the payroll report shows every item."
+        }
+      ],
+      "showcase": {
+        "title": "Reports ready<br></br><accent>to share.</accent>",
+        "text": "Every report exports to Excel, PDF or Word as a document with your company header. Search the tables, narrow down branches, departments and date ranges with advanced filters, and hide the columns you do not need. The file you send to your manager, accountant or auditor looks exactly like what you see on screen."
+      },
+      "steps": {
+        "title": "Reports in<br></br><accent>three steps.</accent>",
+        "items": [
+          "Choose the attendance, leave, advance or payroll report from the Reports menu.",
+          "Filter by branch, department, employee and date range, and arrange the columns you need.",
+          "Download the report as Excel, PDF or Word. Employees can also check their own hours on mobile."
+        ]
+      },
+      "capabilitiesText": "Reports summarize the daily records in QR Zaman. The attendance report shows each employee's regular, overtime, leave and total hours, so attendance issues surface before month end. Leave reports list annual entitlement, used and remaining days with seniority, the advance report shows deductions with dates and document numbers, and the payroll report shows every item per employee. Hide fields with no balance in the payroll report to work only with the items that matter.",
+      "capabilities": [
+        "Late arrival and late departure report",
+        "Absence and overtime report",
+        "Regular, overtime, leave and total hours",
+        "General and annual leave usage reports",
+        "Advance report: deduction amount, date and document no.",
+        "Payroll report per employee",
+        "Advanced filters and show/hide columns",
+        "Excel, PDF and Word exports with company header"
+      ],
+      "cta": "Get your reports<br></br><accent>in minutes.</accent>",
+      "alts": {
+        "hero": ["Leave reports screen: leave usage per employee"],
+        "showcase": "Leave list report exported as a PDF with company header",
+        "steps": [
+          "My attendance records on mobile: daily regular, overtime and total hours"
+        ]
+      }
+    },
+    "contactManagement": {
+      "intro": "CRM contact management keeps customer and prospect cards together with their contact details in one place. Your sales team and partners (dealers) work from the same customer data, so who talked to which customer never gets lost in scattered spreadsheets and phone books.",
+      "toast": {
+        "title": "Contact card created",
+        "description": "Prospect"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Single source",
+          "title": "Customers and prospects",
+          "text": "Customers and contacts sit in separate tabs with their details, and everyone on the team sees the same card."
+        },
+        {
+          "eyebrow": "Dealer-friendly",
+          "title": "Role-based access",
+          "text": "Partners with the dealer role see only the menus they are allowed to, so your customer data stays under control."
+        },
+        {
+          "eyebrow": "One platform",
+          "title": "Same panel as payroll",
+          "text": "Switch to the CRM from the top menu in one click; people, payroll and customer work run in the same panel with the same account."
+        }
+      ],
+      "showcase": {
+        "title": "Contacts you can<br></br><accent>search and filter.</accent>",
+        "text": "Like every table in QR Zaman, the contact list comes with search, advanced filters, show/hide columns and bulk actions on selected rows. Export the list to Excel, PDF or Word with your company header. The group, company and branch structure applies in the CRM as well, and user permissions are set by group, company and branch."
+      },
+      "steps": {
+        "title": "Start the CRM in<br></br><accent>three steps.</accent>",
+        "items": [
+          "Switch to the CRM module from the top menu in one click.",
+          "Create customer and prospect cards with their contact details.",
+          "Add users for your sales team and dealers so everyone works with the records they are allowed to see."
+        ]
+      },
+      "capabilitiesText": "The CRM module is built for sales teams and partners (dealers). Customers and contacts sit in separate tabs in the Contacts section, while sales opportunities, quotes and tasks move forward in the same module. The CRM dashboard shows sales and customer summaries, reports cover sales and performance, and module-specific settings live in the CRM settings. Because it all runs in the same panel as payroll and people management, you need no separate CRM tool, user list or permission setup.",
+      "capabilities": [
+        "Customer and prospect cards",
+        "Contacts and their details",
+        "Customers and contacts tabs",
+        "Same module as sales, quotes and tasks",
+        "Customer summary on the CRM dashboard",
+        "Partner access with the dealer role",
+        "Search, advanced filters and bulk actions",
+        "Export to Excel, PDF and Word"
+      ],
+      "cta": "See CRM contact management<br></br><accent>up close.</accent>",
+      "alts": {
+        "hero": ["QR Zaman panel: role-based dashboard and summary indicators"],
+        "showcase": "QR Zaman list screen: search, advanced filters and bulk actions",
+        "steps": ["User management: roles and permission scopes"]
+      }
+    },
+    "salesTracking": {
+      "intro": "Sales tracking in QR Zaman lets you follow your sales opportunities and sales process in one place inside the CRM. Opportunities live in the same module as customer cards, the CRM dashboard shows sales and customer summaries, and sales reports show how your team is performing. Sales teams and dealers follow the same process from the same screen.",
+      "toast": {
+        "title": "New sales opportunity",
+        "description": "CRM · Sales"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Visible pipeline",
+          "title": "No lost opportunities",
+          "text": "Every sales opportunity is recorded in the CRM, so nobody has to guess where a conversation was left."
+        },
+        {
+          "eyebrow": "Instant overview",
+          "title": "CRM dashboard",
+          "text": "Sales and customer summaries are on the first screen of the CRM, so you see the state of the day at a glance."
+        },
+        {
+          "eyebrow": "Performance",
+          "title": "Sales reports",
+          "text": "Share sales and performance reports with your team and export them to Excel, PDF or Word."
+        }
+      ],
+      "showcase": {
+        "title": "Sales and performance<br></br><accent>in your reports.</accent>",
+        "text": "CRM reports present your sales and performance data in tables. Like every other report on the platform, they can be filtered, their columns arranged and exported to Excel, PDF or Word with your company header. The group, company and branch structure applies in the CRM too, and dealers sign in with their own role and see only the menus they are allowed to."
+      },
+      "steps": {
+        "title": "Track sales in<br></br><accent>three steps.</accent>",
+        "items": [
+          "Create your customer cards in the Contacts section.",
+          "Record every opportunity in the Sales section and keep it updated along the way.",
+          "Follow your team's performance with the CRM dashboard and sales reports."
+        ]
+      },
+      "capabilitiesText": "In many teams, the sales process is scattered across notebooks, chats and personal spreadsheets. In the QR Zaman CRM, sales opportunities are kept in the same module as customer cards, with quotes and team tasks alongside. Managers see the state of the day from the summary indicators on the CRM dashboard and follow results with sales and performance reports. Dealers sign in with their own users and see only the menus they are allowed to, CRM-specific settings are managed in one place, and every list exports to Excel, PDF or Word.",
+      "capabilities": [
+        "Sales opportunity records",
+        "Sales process tracking",
+        "Same module as customer cards",
+        "Sales summary on the CRM dashboard",
+        "Sales and performance reports",
+        "Follow-up together with quotes and tasks",
+        "Partner access with the dealer role",
+        "Export to Excel, PDF and Word"
+      ],
+      "cta": "Start tracking sales<br></br><accent>with your team.</accent>",
+      "alts": {
+        "hero": ["QR Zaman panel: role-based dashboard indicators"],
+        "showcase": "QR Zaman report screen: filterable report table",
+        "steps": ["Corporate structure: group, company and branch hierarchy"]
+      }
+    },
+    "quoteManagement": {
+      "intro": "Quote management lets you prepare the quotes you offer customers inside the CRM and follow their status. Because quotes sit in the same module as customer cards and sales opportunities, which customer received which quote never gets lost in inboxes or desktop folders.",
+      "toast": {
+        "title": "Quote prepared",
+        "description": "CRM · Quotes"
+      },
+      "benefits": [
+        {
+          "eyebrow": "One place",
+          "title": "Quotes stay together",
+          "text": "Every quote is listed in the CRM's Quotes section, so you never search through files to find an old one."
+        },
+        {
+          "eyebrow": "Follow-up",
+          "title": "Status at a glance",
+          "text": "Track each quote's status and create tasks and reminders for your team on the ones still waiting for an answer."
+        },
+        {
+          "eyebrow": "Branded output",
+          "title": "Lists with your letterhead",
+          "text": "Like every list on the platform, the quote list exports to Excel, PDF or Word with your company header."
+        }
+      ],
+      "showcase": {
+        "title": "Every export<br></br><accent>with your letterhead.</accent>",
+        "text": "In QR Zaman, lists and reports are produced in PDF, Excel or Word with a header carrying your company name. Your quote lists export the same way, so the file you send to your manager or accountant matches what you see on screen. Since quotes live next to the related customer card and sales opportunity, looking back through past deals is easy too."
+      },
+      "steps": {
+        "title": "Quotes in<br></br><accent>three steps.</accent>",
+        "items": [
+          "Open the customer card in Contacts or create a new one.",
+          "Prepare your quote in the Quotes section.",
+          "Follow the quote's status and create a task or reminder for your team when needed."
+        ]
+      },
+      "capabilitiesText": "Quotes are the most visible step of the sales process for your customers, and opportunities slip away when nobody knows when a quote was prepared or where it stands. In the QR Zaman CRM, quotes sit in the same module as the related customer card and sales opportunity. Create tasks and reminders for quotes still waiting for an answer, and follow the big picture on the CRM dashboard and in sales and performance reports. Your dealers use the same structure with their own permissions, and since the CRM runs in the same panel as payroll, no extra user list or tool is needed.",
+      "capabilities": [
+        "Quote preparation",
+        "Quote status tracking",
+        "Same module as customer cards and opportunities",
+        "Tasks and reminders for follow-up",
+        "Search, filters and bulk actions",
+        "Excel, PDF and Word exports with company header",
+        "Sales and performance reports",
+        "Partner access with the dealer role"
+      ],
+      "cta": "Move quote management<br></br><accent>into your CRM.</accent>",
+      "alts": {
+        "hero": ["QR Zaman panel: role-based dashboard"],
+        "showcase": "List exported as a PDF with company header",
+        "steps": ["Request list screen: status, priority and date columns"]
+      }
+    },
+    "taskManagement": {
+      "intro": "Team task management in QR Zaman collects the tasks that come out of your sales and customer work inside the CRM. Create tasks, share them with your team and never miss a follow-up thanks to reminders. Since tasks sit in the same module as customer cards, sales and quotes, the reason behind every job is always clear.",
+      "toast": {
+        "title": "Reminder",
+        "description": "Today · Customer call"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Teamwork",
+          "title": "Tasks in plain sight",
+          "text": "Team tasks live in one list, so everyone can see who is working on what without asking in a meeting."
+        },
+        {
+          "eyebrow": "Reminders",
+          "title": "No forgotten follow-ups",
+          "text": "Add reminders to tasks so quote follow-ups and customer calls happen on time."
+        },
+        {
+          "eyebrow": "Connected",
+          "title": "Right next to the customer",
+          "text": "Tasks share a module with the CRM's Contacts, Sales and Quotes sections, so you never switch tools for context."
+        }
+      ],
+      "showcase": {
+        "title": "Every job<br></br><accent>on the record.</accent>",
+        "text": "In QR Zaman, support requests run on live messaging with attachments and read receipts, and open, closed and unread requests are counted for you. CRM tasks follow the same idea: team tasks and reminders are kept in one module, who is handling what is on the record, and no job disappears into an email thread."
+      },
+      "steps": {
+        "title": "Track tasks in<br></br><accent>three steps.</accent>",
+        "items": [
+          "Open the Tasks section in the CRM and create a new task.",
+          "Share the task with the right person on your team and add a reminder.",
+          "Update tasks as they are completed and follow team performance in CRM reports."
+        ]
+      },
+      "capabilitiesText": "The most common slip in sales and customer work is a promised call or quote follow-up that gets forgotten. In the QR Zaman CRM, team tasks and reminders are kept in the same module as customer cards, sales opportunities and quotes, so whoever opens a task never has to look elsewhere for the customer or the deal. Managers follow the team's workload with the CRM dashboard and sales and performance reports. Role-based access means dealers see only the menus they are allowed to, and every list supports search, filters and bulk actions and exports to Excel, PDF or Word.",
+      "capabilities": [
+        "Team tasks",
+        "Task reminders",
+        "Same module as customers, sales and quotes",
+        "Summary indicators on the CRM dashboard",
+        "Sales and performance reports",
+        "Role-based access",
+        "Search, filters and bulk actions",
+        "Export to Excel, PDF and Word"
+      ],
+      "cta": "Open task management<br></br><accent>to your team.</accent>",
+      "alts": {
+        "hero": ["HR calendar: monthly view with special days"],
+        "showcase": "Support request screen: live messaging per request",
+        "steps": ["User management: users and permission scopes"]
+      }
+    },
+    "mobileApp": {
+      "intro": "With the QR Zaman attendance mobile app, employees clock in and out by scanning the QR code at work, send leave and salary advance requests from their phone, and check their payslips, timesheets and attendance records. Managers approve requests on mobile, open their team lists and save new QR points on site.",
+      "toast": {
+        "title": "Clock-in saved",
+        "description": "Today's clock-in · 08:57"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Secure scanning",
+          "title": "Location and device checks",
+          "text": "Location is captured at the moment of the scan, fake GPS is detected and each account pairs to one device; camera images are never stored."
+        },
+        {
+          "eyebrow": "Self-service",
+          "title": "Requests in your pocket",
+          "text": "Leave and advance requests, remaining leave, the latest payslip and earnings and deductions summaries are on the employee's home screen."
+        },
+        {
+          "eyebrow": "Manager mode",
+          "title": "Approvals and field setup",
+          "text": "Managers approve or reject requests, view employee lists and save their current spot as a QR point in one tap."
+        }
+      ],
+      "showcase": {
+        "title": "Scanned on the phone,<br></br><accent>live in the panel.</accent>",
+        "text": "When an employee clocks in or out in the app, the record reaches the admin panel together with the latitude and longitude of the scan. Duplicate entries are checked, and employees are warned when they try to clock in twice on the same day. If location services are off, the app sends the user to settings. Sessions are protected with encrypted device storage, and users sign in with a username or phone number."
+      },
+      "steps": {
+        "title": "Get started in<br></br><accent>three steps.</accent>",
+        "items": [
+          "Download the app from the App Store or Google Play and sign in with your username or phone number.",
+          "Your phone pairs to your account at first sign-in, so the account cannot be used from another device.",
+          "Choose Clock in or Clock out, scan the QR code and see the confirmation on screen."
+        ]
+      },
+      "capabilitiesText": "The mobile app brings the daily work of employees and managers into one place. On their home screen, employees see today's clock-in and clock-out, live working time, remaining leave and their latest payslip, and can hide or show their salary. The manager home screen shows active employees, today's arrivals, people on leave, pending requests and upcoming birthdays. What employees see depends on the company's permission settings.",
+      "capabilities": [
+        "QR clock-in and clock-out with direction choice",
+        "Fake GPS detection",
+        "Today's clock-in card with live working time",
+        "Leave and advance requests with status tracking",
+        "My Payslip, My Timesheet and My Attendance",
+        "Earnings, deductions and personnel details",
+        "Request approvals and employee lists for managers",
+        "Light and dark theme"
+      ],
+      "cta": "Try the mobile app<br></br><accent>with your team.</accent>",
+      "alts": {
+        "hero": [
+          "QR Zaman mobile app home screen: today's clock-in and leave summary",
+          "Choosing Clock in or Clock out before scanning in the attendance app"
+        ],
+        "showcase": "Attendance record scanned on mobile: location and coordinate details",
+        "steps": [
+          "QR Zaman mobile app sign-in screen",
+          "Device pairing and scan confirmation in the mobile app"
+        ]
+      }
+    },
+    "multiCompany": {
+      "intro": "Multi-company management brings your groups, companies, branches and departments together in one hierarchy. You work by picking the group, company, branch and period (year/month) from the top bar, and each user gets a permission scope by group, company or branch. Groups with several companies and multi-branch businesses no longer need separate systems.",
+      "toast": {
+        "title": "Branch selected",
+        "description": "Period · November 2026"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Hierarchy",
+          "title": "Group → Company → Branch → Department",
+          "text": "Set up your organization on four levels and switch each level active or inactive on its own."
+        },
+        {
+          "eyebrow": "Fast switching",
+          "title": "Pick from the top bar",
+          "text": "Group, company, branch and period selection is in the top bar on every screen, so you never sign out to switch branches."
+        },
+        {
+          "eyebrow": "Official records",
+          "title": "Registration details on file",
+          "text": "Tax office and number, MERSIS, trade registry, İŞKUR and workplace social security numbers are kept on company and branch cards."
+        }
+      ],
+      "showcase": {
+        "title": "From company to department<br></br><accent>in one tree.</accent>",
+        "text": "The corporate management screen lists groups, companies, branches and departments nested inside each other. Company and branch cards hold the activity code, opening and closing dates, ownership type and province and district. Department cards store the location, the person in charge and working hours, and QR points and shifts are defined by branch and department as well."
+      },
+      "steps": {
+        "title": "Set up your structure<br></br><accent>in three steps.</accent>",
+        "items": [
+          "Define the group and its companies with their official details.",
+          "Add the branches and departments under each company and assign a location and person in charge to each department.",
+          "Give users a permission scope by group, company or branch."
+        ]
+      },
+      "capabilitiesText": "A multi-company structure matters for daily work, not just for corporate records. Shift definitions, QR points and reports work per branch and department, so head office sees every company while a regional lead sees only their own branches. With the period picker, you never hunt for an archive screen to go back to an earlier month's timesheet or payroll.",
+      "capabilities": [
+        "Group, company, branch and department management",
+        "Active/inactive status at every level",
+        "Group, company, branch and period picker in the top bar",
+        "Tax, MERSIS, trade registry, İŞKUR and social security numbers",
+        "Location, person in charge and hours on department cards",
+        "Shifts and QR points by branch and department",
+        "User permissions by group, company and branch",
+        "Reports filtered by branch and department"
+      ],
+      "cta": "See all your companies<br></br><accent>in one panel.</accent>",
+      "alts": {
+        "hero": ["Corporate management: group, company and branch hierarchy"],
+        "showcase": "Company and department management: departments under a branch",
+        "steps": ["User management: permission scopes by group, company and branch"]
+      }
+    },
+    "rolesPermissions": {
+      "intro": "With roles and permissions in QR Zaman, admin, manager, employee, dealer and support users see only the menus they are allowed to. Add users, track their last sign-in and give each one a permission scope by group, company or branch. You also decide whether employees can see their own attendance, timesheet and payslip.",
+      "toast": {
+        "title": "Permission scope updated",
+        "description": "Branch-level access"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Role-based menus",
+          "title": "No unnecessary screens",
+          "text": "Each role sees only the menus it is allowed to, so people stay focused on their work and your data is not exposed without reason."
+        },
+        {
+          "eyebrow": "Permission scope",
+          "title": "Group, company, branch",
+          "text": "Open only their own branches to a regional lead and every company to head office, with the scope set per user."
+        },
+        {
+          "eyebrow": "Employee settings",
+          "title": "You decide what they see",
+          "text": "Turn on or off whether employees see their own attendance, timesheet and payslip, and whether they can clock in at any location."
+        }
+      ],
+      "showcase": {
+        "title": "A dashboard<br></br><accent>for every role.</accent>",
+        "text": "Managers see active employees, today's arrivals, people on leave, pending requests and a payroll summary. Employees see their own clock-ins, latest payslip, remaining leave and advance and deduction totals. The same panel opens a different home screen depending on the signed-in user's role, and last sign-in tracking in user management shows who logged in and when."
+      },
+      "steps": {
+        "title": "Grant access in<br></br><accent>three steps.</accent>",
+        "items": [
+          "Add a new user in user management and choose their role.",
+          "Define the groups, companies or branches the user works with as their permission scope.",
+          "Set in company settings what employees may see of their own records."
+        ]
+      },
+      "capabilitiesText": "Permission management lets different teams use QR Zaman at the same time, safely. HR and payroll work with all employee data, branch managers see only their team, employees see only their own records and dealers see only the menus they are allowed to. In the mobile app, sessions are protected with encrypted device storage, and each account pairs to one device, so it cannot be used from another phone.",
+      "capabilities": [
+        "Admin, manager, employee, dealer and support roles",
+        "Role-based menu visibility",
+        "Adding users and last sign-in tracking",
+        "Permission scopes by group, company and branch",
+        "Employee access to their own attendance, timesheet and payslip",
+        "Permission to clock in at any location",
+        "Role-based dashboards",
+        "Secure mobile sessions with encrypted device storage"
+      ],
+      "cta": "Hand out access<br></br><accent>with confidence.</accent>",
+      "alts": {
+        "hero": ["User management: user types and permission scopes"],
+        "showcase": "Manager dashboard: role-based home screen indicators",
+        "steps": ["Mobile home screen: the employee's own clock-ins and leave summary"]
+      }
+    },
+    "dashboard": {
+      "intro": "The QR Zaman HR dashboard shows active employees, today's arrivals, people on leave today and pending requests on the very first screen of the panel. A payroll summary, upcoming birthdays and gender and employee group charts sit on the same page. The calendar shows public holidays and eves so you can plan around them.",
+      "toast": {
+        "title": "Pending requests",
+        "description": "Leave and advances"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Live status",
+          "title": "Who is in, who is off",
+          "text": "First thing in the morning, see who has arrived and who is on leave at a glance, without calling anyone."
+        },
+        {
+          "eyebrow": "Open items",
+          "title": "No missed approvals",
+          "text": "Pending requests show on the dashboard with their counts, and the same summary appears on the manager's mobile home screen."
+        },
+        {
+          "eyebrow": "Role-based",
+          "title": "For employees too",
+          "text": "Employees see today's clock-in, their latest payslip, remaining leave and length of service on their own dashboard."
+        }
+      ],
+      "showcase": {
+        "title": "A calendar with<br></br><accent>holidays built in.</accent>",
+        "text": "Switch between year, month and week views in the calendar. Public holidays, half-day eves and special days are marked for you, with estimated dates shown for religious holidays. The header calendar lets you check holidays from any screen, so you can plan shifts and leave ahead of time."
+      },
+      "steps": {
+        "title": "Start your day in<br></br><accent>three steps.</accent>",
+        "items": [
+          "Sign in to the panel and your role's dashboard opens.",
+          "Check today's arrivals, people on leave and pending requests.",
+          "On the move? See the same summary on the manager home screen of the mobile app."
+        ]
+      },
+      "capabilitiesText": "The dashboard is the first screen everyone sees in QR Zaman, and it changes with the user's role. The manager dashboard puts active employees, today's arrivals, people on leave today and pending requests at the top, with a payroll summary, upcoming birthdays and gender and employee group charts below. The employee dashboard shows today's clock-in, the latest payslip, remaining annual leave, next leave, this year's advance, earnings and deduction totals and length of service. The header calendar shows public holidays and eves from any screen in one click.",
+      "capabilities": [
+        "Active employees and today's arrivals",
+        "People on leave today",
+        "Pending requests",
+        "Payroll summary",
+        "Upcoming birthdays",
+        "Gender and employee group charts",
+        "Calendar with year, month and week views",
+        "Public holidays and eves"
+      ],
+      "cta": "See the HR dashboard<br></br><accent>with your own data.</accent>",
+      "alts": {
+        "hero": [
+          "QR Zaman HR dashboard: active employees, today's arrivals and pending requests"
+        ],
+        "showcase": "HR calendar: public holidays, eves and special days",
+        "steps": ["QR Zaman mobile app home screen: summary of the day"]
+      }
     }
   }
 }

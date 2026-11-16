@@ -109,6 +109,7 @@ export const SOLUTIONS = [
 ] as const satisfies readonly SolutionDef[];
 
 export type Solution = (typeof SOLUTIONS)[number];
+export type SolutionId = Solution["id"];
 export type SolutionSlug = Solution["slug"]["tr"];
 
 export function getSolutionBySlug(slug: string) {

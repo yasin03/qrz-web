@@ -297,6 +297,16 @@
   );
 }
 
+/* Ürün sayfası alt CTA bandı (urun-sayfasi.html) */
+@utility bg-cta {
+  background-color: var(--navy);
+  background-image: radial-gradient(
+    ellipse 50% 90% at 90% 100%,
+    var(--primary) 0%,
+    var(--navy) 70%
+  );
+}
+
 @media (min-width: 1024px) {
   :root {
     --header-h: 4.75rem;

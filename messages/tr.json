@@ -179,10 +179,6 @@
           "a": "Hazır Excel şablonunu indirip doldurun ve tek seferde içe aktarın; her satır için sonuç raporu alırsınız."
         }
       ]
-    },
-    "storeSub": {
-      "appStore": "İndirin",
-      "googlePlay": "Edinin"
     }
   },
   "theme": {
@@ -365,91 +361,91 @@
       "description": "Konum doğrulamalı giriş-çıkış",
       "title": "QR Kodlu PDKS: Konum Doğrulamalı Giriş-Çıkış",
       "metaDescription": "Personel, lokasyondaki QR kodu telefonundan okutarak giriş-çıkış yapsın. Konum doğrulama ve sahte GPS tespitiyle güvenilir PDKS kayıtları için demo isteyin.",
-      "h1": "QR Kodlu PDKS ile Personel Giriş-Çıkış Takibi"
+      "h1": "QR Kodlu PDKS <accent>donanımsız, güvenilir.</accent>"
     },
     "shiftManagement": {
       "label": "Vardiya Yönetimi",
       "description": "Gece vardiyası, mola, hafta tatili",
       "title": "Vardiya Yönetimi: Gece Vardiyası ve Mola Takibi",
       "metaDescription": "Şube ve bölüm bazında vardiya tanımlayın; gece vardiyası, mola ve hafta tatiline göre çalışma ve mesai süreleri otomatik hesaplansın. Hemen inceleyin.",
-      "h1": "Vardiya Yönetimi ve Vardiya Tanımları"
+      "h1": "Vardiya yönetimi <accent>şubeye ve bölüme göre.</accent>"
     },
     "timesheet": {
       "label": "Puantaj ve Mesai",
       "description": "Aylık çizelge, toplu giriş",
       "title": "Puantaj ve Mesai Takibi: Aylık Puantaj Çizelgesi",
       "metaDescription": "PDKS kayıtları aylık puantaj çizelgesine otomatik aktarılsın. Gün tipleri, toplu puantaj girişi ve mesai çizelgesiyle ay sonu hesaplarını kolaylaştırın.",
-      "h1": "Puantaj ve Mesai Takibi"
+      "h1": "Puantaj takibi <accent>ay sonunu beklemeden.</accent>"
     },
     "locationTracking": {
       "label": "Lokasyon & QR Noktaları",
       "description": "Basılabilir A4 QR afişleri",
       "title": "Lokasyon Takibi ve QR Noktaları: A4 QR Afişi",
       "metaDescription": "Her giriş-çıkış noktası için enlem ve boylamla lokasyon tanımlayın, QR kod üretin ve A4 afiş olarak basın. Yeni QR noktasını sahadan tek dokunuşla kaydedin.",
-      "h1": "Lokasyon Takibi ve QR Noktaları"
+      "h1": "Lokasyon takibi <accent>her QR noktasında.</accent>"
     },
     "employeeManagement": {
       "label": "Personel Yönetimi",
       "description": "Kart, SGK giriş-çıkış, Excel aktarım",
       "title": "Personel Yönetimi: Personel Kartı ve SGK Girişi",
       "metaDescription": "Kimlik, ücret, sözleşme ve SGK parametrelerini tek personel kartında toplayın. SGK giriş-çıkış işlemleri ve Excel ile toplu personel aktarımı için demo isteyin.",
-      "h1": "Personel Yönetimi Programı"
+      "h1": "Personel yönetimi <accent>tek kartta.</accent>"
     },
     "employeeRecords": {
       "label": "Özlük Dosyası",
       "description": "Dijital personel dosyası",
       "title": "Dijital Özlük Dosyası: Personel Bilgileri",
       "metaDescription": "Kimlik, eğitim, sağlık, banka ve çalışma bilgilerini dijital özlük dosyasında saklayın. Eksik alanları görün, personel kendi özlük bilgilerine mobilden ulaşsın.",
-      "h1": "Dijital Özlük Dosyası"
+      "h1": "Dijital özlük dosyası <accent>her zaman güncel.</accent>"
     },
     "leaveManagement": {
       "label": "İzin Yönetimi",
       "description": "Talep, onay, otomatik bakiye",
       "title": "İzin Yönetimi: Mobil İzin Talebi ve Onay Akışı",
       "metaDescription": "Personel izin talebini mobilden göndersin, yönetici tek dokunuşla onaylasın. Kıdeme göre yıllık izin bakiyesi otomatik hesaplanır, saatlik izin desteklenir.",
-      "h1": "İzin Yönetimi ve İzin Takip Programı"
+      "h1": "İzin yönetimi <accent>talepten onaya.</accent>"
     },
     "advanceManagement": {
       "label": "Avans Yönetimi",
       "description": "Taksitli avans, bordroya kesinti",
       "title": "Avans Yönetimi: Taksitli Avans ve Bordro Kesinti",
       "metaDescription": "Personel avans talebini mobilden iletsin, yönetici onaylasın. Taksit sayısı ve aylık tutar belirlensin, taksitler bordroya otomatik kesinti olarak yansısın.",
-      "h1": "Avans Yönetimi ve Avans Takibi"
+      "h1": "Avans yönetimi <accent>taksitle, bordroya bağlı.</accent>"
     },
     "hrDocuments": {
       "label": "İK Belgeleri",
       "description": "Sözleşme, form ve tutanaklar",
       "title": "İK Belgeleri: İş Sözleşmesi ve Form Şablonları",
       "metaDescription": "İş sözleşmesi, işe alım formu, izin istek formu, puantaj cetveli ve tutanak gibi hazır İK belge şablonlarını arayın, tek tıkla indirin. Ücretsiz demo isteyin.",
-      "h1": "Hazır İK Belgeleri ve Şablonları"
+      "h1": "Hazır İK belgeleri <accent>tek tıkla indirin.</accent>"
     },
     "payroll": {
       "label": "Bordro Hesaplama",
       "description": "Tek tıkla toplu hesaplama",
       "title": "Bordro Hesaplama Programı: Otomatik Toplu Bordro",
       "metaDescription": "Puantaj, mesai, ek ödeme ve kesintilerden bordroyu otomatik hesaplayın. SGK primi, gelir ve damga vergisi, asgari ücret istisnası ve işveren maliyeti bir arada.",
-      "h1": "Otomatik Bordro Hesaplama Programı"
+      "h1": "Bordro hesaplama programı <accent>puantajdan otomatik.</accent>"
     },
     "earningsDeductions": {
       "label": "Ek Ödeme & Kesintiler",
       "description": "Prim, mesai, kesinti tanımları",
       "title": "Ek Ödeme ve Kesintiler: Prim, Mesai ve Kesinti",
       "metaDescription": "Prim, ikramiye ve mesai gibi ek ödemeleri, disiplin veya hasar gibi kesintileri net ya da brüt olarak tanımlayın. Tek kayıtta birden fazla personele ekleyin.",
-      "h1": "Ek Ödeme ve Kesinti Yönetimi"
+      "h1": "Ek ödeme ve kesinti <accent>tek kayıtta, herkese.</accent>"
     },
     "compliance": {
       "label": "Mevzuat Uyumu",
       "description": "Yıl bazlı SGK ve vergi oranları",
       "title": "Mevzuat Uyumu: Yıl Bazlı SGK ve Vergi Oranları",
       "metaDescription": "Vergi dilimleri, SGK katsayıları, kıdem ve ihbar tanımları, engelli indirimi ve resmî tatiller yıl bazında tutulsun; parametreleri tek tıkla yeni yıla aktarın.",
-      "h1": "SGK ve Vergi Mevzuatına Uyumlu Bordro"
+      "h1": "SGK ve vergi mevzuatı <accent>her yıl güncel.</accent>"
     },
     "reporting": {
       "label": "Raporlama",
       "description": "PDKS, izin, avans, bordro",
       "title": "Personel Raporlama: PDKS, İzin, Bordro Raporu",
       "metaDescription": "Geç gelen, geç çıkan ve devamsız personeli, izin ve avans kullanımlarını raporlayın. Tüm PDKS, izin ve bordro raporlarını Excel, PDF veya Word olarak alın.",
-      "h1": "PDKS, İzin ve Bordro Raporlama"
+      "h1": "Personel raporlama <accent>tek tıkla dışa aktarın.</accent>"
     },
     "contactManagement": {
       "label": "Müşteri & Kişi Yönetimi",
@@ -457,56 +453,56 @@
       "description": "Tüm müşteri kartları tek yerde",
       "title": "CRM Müşteri ve Kişi Yönetimi: Müşteri Kartları",
       "metaDescription": "Müşteri ve potansiyel müşteri kartlarını, iletişim bilgilerini tek CRM ekranında toplayın. Satış ekipleri ve bayiler aynı müşteri verisiyle çalışsın.",
-      "h1": "CRM ile Müşteri ve Kişi Yönetimi"
+      "h1": "CRM müşteri yönetimi <accent>tek kartta.</accent>"
     },
     "salesTracking": {
       "label": "Satış Takibi",
       "description": "Fırsatlar ve satış süreci",
       "title": "Satış Takibi: Satış Fırsatları ve Süreç Yönetimi",
       "metaDescription": "Satış fırsatlarını ve satış sürecini CRM üzerinden takip edin. CRM dashboard ve satış raporlarıyla ekibinizin performansını tek yerden izleyin. Hemen inceleyin.",
-      "h1": "CRM ile Satış Takibi"
+      "h1": "Satış takibi <accent>her fırsat için.</accent>"
     },
     "quoteManagement": {
       "label": "Teklif Yönetimi",
       "description": "Teklif hazırlama ve takibi",
       "title": "Teklif Yönetimi: Teklif Hazırlama ve Takibi",
       "metaDescription": "Müşterilerinize gönderdiğiniz teklifleri CRM içinde hazırlayın ve durumlarını takip edin. Teklifler, müşteri kartları ve satış fırsatlarıyla birlikte dursun.",
-      "h1": "Teklif Hazırlama ve Teklif Takibi"
+      "h1": "Teklif yönetimi <accent>hazırlıktan takibe.</accent>"
     },
     "taskManagement": {
       "label": "Görev Yönetimi",
       "description": "Ekip görevleri ve hatırlatmalar",
       "title": "Görev Yönetimi: Ekip Görevleri ve Hatırlatmalar",
       "metaDescription": "Satış ve müşteri işlerine bağlı ekip görevlerini oluşturun, hatırlatmalarla hiçbir takibi kaçırmayın. Görevleriniz CRM'deki müşteri kayıtlarıyla birlikte durur.",
-      "h1": "Ekip Görev Yönetimi ve Hatırlatmalar"
+      "h1": "Görev yönetimi <accent>hatırlatmalarla.</accent>"
     },
     "mobileApp": {
       "label": "Mobil Uygulama",
       "description": "iOS ve Android",
       "title": "PDKS Mobil Uygulaması: QR Zaman iOS ve Android",
       "metaDescription": "QR Zaman mobil uygulamasıyla QR okutarak giriş-çıkış yapın; izin ve avans talep edin, bordro ve puantajınızı görün. Yöneticiler talepleri mobilden onaylasın.",
-      "h1": "QR Zaman PDKS Mobil Uygulaması"
+      "h1": "PDKS mobil uygulama <accent>iOS ve Android'de.</accent>"
     },
     "multiCompany": {
       "label": "Çoklu Şirket & Şube",
       "description": "Grup, şirket, şube, bölüm",
       "title": "Çoklu Şirket ve Şube Yönetimi: Tek Panel",
       "metaDescription": "Grup, şirket, şube ve bölümlerinizi tek panelden yönetin. Üst bardan şirket, şube ve dönem seçin; her kullanıcıya şirket ve şube bazlı yetki alanı tanımlayın.",
-      "h1": "Çoklu Şirket ve Şube Yönetimi"
+      "h1": "Çoklu şirket ve şube yönetimi <accent>tek panelde.</accent>"
     },
     "rolesPermissions": {
       "label": "Rol & Yetki Yönetimi",
       "description": "Kullanıcıya özel yetki alanı",
       "title": "Rol ve Yetki Yönetimi: Kullanıcı Bazlı Erişim",
       "metaDescription": "Admin, yönetici, personel ve bayi rolleriyle herkes yalnızca yetkili olduğu menüyü görsün. Grup, şirket ve şube bazlı yetki alanlarıyla verilerinizi koruyun.",
-      "h1": "Rol ve Yetki Yönetimi"
+      "h1": "Rol ve yetki yönetimi <accent>herkes kendi alanında.</accent>"
     },
     "dashboard": {
       "label": "Dashboard & Takvim",
       "description": "Rol bazlı özet, resmî tatiller",
       "title": "Yönetici Dashboard ve Takvim: Rol Bazlı Özet",
       "metaDescription": "Aktif personel, bugün gelenler, izindekiler ve onay bekleyen talepler tek ekranda. Takvimde resmî tatilleri ve arifeleri görün, rol bazlı dashboard ile çalışın.",
-      "h1": "Rol Bazlı Yönetici Dashboard ve Takvim"
+      "h1": "Yönetici dashboard <accent>günün özeti tek ekranda.</accent>"
     },
     "solutions": {
       "label": "Çözümler",
@@ -749,6 +745,1195 @@
       "title": "Hesap Silme Talebi: Mobil Uygulama Hesabı",
       "metaDescription": "QR Zaman mobil uygulama hesabınızı ve ilişkili kişisel verilerinizi silmek için izlemeniz gereken adımları öğrenin, hesap silme talebinizi kolayca bize iletin.",
       "h1": "Hesap Silme Talebi"
+    }
+  },
+  "productPage": {
+    "demo": "Demo Talep Et",
+    "pricing": "Fiyatları Gör",
+    "highlights": "Öne çıkanlar",
+    "capabilitiesTitle": "Neler yapabilirsiniz?",
+    "relatedTitle": "İlgili özellikler",
+    "relatedText": "QR Zaman'daki tüm modüller aynı veriyi paylaşır; {product} bu ürünlerle birlikte çalışır.",
+    "explore": "İncele",
+    "solution": "{solution} için QR Zaman çözümünü inceleyin"
+  },
+  "productsIndex": {
+    "jumpLabel": "Ürün kategorileri",
+    "categories": {
+      "time": "QR kodla giriş-çıkış, vardiya tanımları, aylık puantaj ve QR noktalarıyla çalışma süreleri kendiliğinden kayda geçer.",
+      "hr": "Personel kartından özlük dosyasına, izin ve avans taleplerinden hazır İK belgelerine kadar tüm personel işleri.",
+      "payroll": "Puantajdan otomatik bordro, ek ödeme ve kesintiler, yıl bazlı SGK ve vergi parametreleri ve dışa aktarılabilir raporlar.",
+      "crm": "Satış ekipleri ve bayiler için müşteri kartları, satış fırsatları, teklifler ve ekip görevleri.",
+      "platform": "iOS ve Android uygulaması, çoklu şirket ve şube yapısı, rol bazlı yetkiler ve her role özel dashboard."
+    },
+    "mobile": {
+      "badge": "Mobil uygulama",
+      "title": "QR okut,<br></br><accent>mesain başlasın.</accent>",
+      "text": "Personel QR kodu okutarak giriş-çıkış yapar; izin ve avans talebini gönderir, bordrosunu ve puantajını telefonundan görür. Yöneticiler talepleri mobilden onaylar.",
+      "link": "Mobil uygulamayı inceleyin",
+      "imageAlt": "QR Zaman mobil uygulama ana sayfası: bugünkü giriş-çıkış ve izin özeti"
+    },
+    "cta": "Size uygun modülleri<br></br><accent>birlikte seçelim.</accent>"
+  },
+  "productContent": {
+    "qrPdks": {
+      "intro": "QR kodlu PDKS ile personel, iş yerindeki QR kodu kendi telefonundan okutarak giriş-çıkış yapar. Okutma anında konum alınır, sahte GPS tespit edilir ve hesap tek cihaza eşlenir. Kayıt anında panele düşer; günlük veya aylık olarak puantaja aktarılır.",
+      "toast": {
+        "title": "Konum doğrulandı",
+        "description": "Merkez Giriş · 08:57"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Donanım yok",
+          "title": "Kart okuyucu almadan başlayın",
+          "text": "Basılabilir A4 QR afişi ve personelin kendi telefonu yeterli. Parmak izi cihazı, kart ya da kurulum ekibi gerekmez."
+        },
+        {
+          "eyebrow": "Sahte kayda kapalı",
+          "title": "Konum + cihaz doğrulaması",
+          "text": "Okutma anındaki konum kayda eklenir, sahte GPS ile yapılan kayıt engellenir ve hesap başka bir telefondan kullanılamaz."
+        },
+        {
+          "eyebrow": "Otomatik akış",
+          "title": "Kayıttan puantaja tek tık",
+          "text": "PDKS kayıtlarını günlük veya aylık olarak puantaja aktarın; ay sonunda saatleri elle toplamaya gerek kalmaz."
+        }
+      ],
+      "showcase": {
+        "title": "Her hareketin<br></br><accent>kayıt altında.</accent>",
+        "text": "Giriş-çıkış saatleri, normal süre, mesai ve izin süreleri tek ekranda. Bir kaydı açtığınızda hangi lokasyondan ve hangi enlem-boylamdan okutulduğunu görürsünüz. Bölüm ve tarih aralığına göre filtreleyin, hatalı bir saati düzeltin ya da kaydı temizleyin; aynı gün ikinci giriş gibi mükerrer kayıtlarda personel uyarılır."
+      },
+      "steps": {
+        "title": "Kurulum<br></br><accent>üç adım.</accent>",
+        "items": [
+          "Panelde bölüme bağlı lokasyonu enlem ve boylamla tanımlayın ya da sahada mobil uygulamadan bulunduğunuz noktayı tek dokunuşla kaydedin.",
+          "Lokasyonun QR kodunu PNG olarak ya da duvara asmaya hazır A4 PDF afiş olarak indirip girişe asın.",
+          "Personel uygulamada Giriş veya Çıkış'ı seçip QR kodu okutur; konum doğrulanır ve kayıt panele düşer."
+        ]
+      },
+      "capabilitiesText": "QR kodlu PDKS, vardiya tanımları ve puantajla aynı veriyi kullanır. Personelin yetkisi açıksa kendi PDKS kayıtlarını mobilde görür; yönetici geç kalanları, devamsızları ve mesai yapanları raporlardan izler. Kayıtlar giriş, çıkış, normal süre ve mesai süresiyle saklandığı için ay sonunda tartışma değil, hazır bir puantaj çıkar.",
+      "capabilities": [
+        "Şube ve bölüm bazlı vardiya tanımları",
+        "Gece vardiyası, mola ve mesai süresi hesabı",
+        "Geç gelen, geç çıkan ve devamsız raporları",
+        "Saat düzeltme ve kayıt temizleme",
+        "Mükerrer giriş kontrolü ve uyarısı",
+        "Personelin kendi PDKS kayıtlarını görmesi",
+        "Kamera görüntüsü kaydedilmeden okutma",
+        "Excel, PDF ve Word dışa aktarma"
+      ],
+      "cta": "QR Kodlu PDKS'yi<br></br><accent>işletmenizde görün.</accent>",
+      "alts": {
+        "hero": [
+          "QR kodlu PDKS mobil uygulamasında Giriş veya Çıkış seçimi",
+          "Mobil uygulamada PDKS kayıtlarım: günlük giriş-çıkış hareketleri"
+        ],
+        "showcase": "QR kodlu PDKS yönetim ekranı: personel giriş-çıkış kayıtları ve hareket detayı",
+        "steps": [
+          "Duvara asılan basılabilir A4 QR afişi",
+          "Lokasyon QR kodunu PNG ve A4 PDF olarak indirme seçenekleri"
+        ]
+      }
+    },
+    "shiftManagement": {
+      "intro": "Vardiya yönetimi ile her şube ve bölüm için kendi vardiya tanımlarınızı yaparsınız. Gece vardiyası, mola süresi ve hafta tatili tanımlandığında toplam çalışma, mola ve mesai süreleri otomatik hesaplanır; QR kodlu PDKS kayıtları bu tanımlara göre puantaja aktarılır.",
+      "toast": {
+        "title": "Vardiya başladı",
+        "description": "Gece vardiyası · 22:00"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Esnek tanım",
+          "title": "Şube ve bölüm bazında vardiya",
+          "text": "Mağazanın, üretim hattının veya ofisin çalışma düzeni farklıysa her biri için ayrı vardiya tanımlayın; personel kartında vardiyalı çalışma ve hafta tatili günü belirlenir."
+        },
+        {
+          "eyebrow": "Gece vardiyası",
+          "title": "Gece yarısını geçen mesailer",
+          "text": "Gece vardiyası seçeneğiyle gece yarısını geçen çalışmalar da tanımlanır; çalışma ve mola süreleri vardiyaya göre hesaplanır."
+        },
+        {
+          "eyebrow": "Otomatik hesap",
+          "title": "Mola ve mesai kendiliğinden",
+          "text": "Toplam çalışma, mola ve mesai süresi vardiya tanımından otomatik hesaplanır; mesai çizelgesinde günlük ve aylık toplamları görürsünüz."
+        }
+      ],
+      "showcase": {
+        "title": "Mesainin<br></br><accent>tam karşılığı.</accent>",
+        "text": "Mesai çizelgesi her personelin günlük mesai sürelerini ve ay toplamlarını tek tabloda gösterir. Şube, bölüm ve ay filtresiyle istediğiniz ekibi seçin; vardiya tanımına göre hesaplanan mesailer puantaja, oradan bordroya taşınır. Geç gelen, geç çıkan, devamsız ve mesai yapan personeli PDKS raporundan ayrıca izleyebilirsiniz."
+      },
+      "steps": {
+        "title": "Vardiyalar<br></br><accent>üç adımda hazır.</accent>",
+        "items": [
+          "Şube ve bölüm seçip vardiyanın çalışma saatlerini, mola süresini ve gerekiyorsa gece vardiyası seçeneğini girin.",
+          "Personel kartında vardiyalı çalışmayı ve hafta tatili gününü işaretleyin.",
+          "Personel QR kodu okuttukça çalışma, mola ve mesai süreleri vardiyaya göre hesaplanır ve puantaja aktarılır."
+        ]
+      },
+      "capabilitiesText": "Vardiya tanımları PDKS ve puantajın temelidir. Hangi personelin hangi vardiyada çalıştığı, mola süresi ve hafta tatili baştan belli olduğu için mesai hesabı kişiden kişiye değişmez. Üretim hattı, mağaza ya da gece çalışan ekipler için ayrı tanımlar yapabilir, sonuçları mesai çizelgesinde ve PDKS raporunda karşılaştırabilirsiniz. Tüm çıktılar Excel, PDF veya Word olarak alınır.",
+      "capabilities": [
+        "Şube ve bölüm bazlı vardiya tanımları",
+        "Gece vardiyası ve mola süresi",
+        "Hafta tatili tanımı",
+        "Toplam çalışma, mola ve mesai süresinin otomatik hesabı",
+        "Günlük mesai ve mesai toplamları çizelgesi",
+        "PDKS kayıtlarının günlük veya aylık puantaja aktarımı",
+        "Mesai yapan ve devamsız personel raporları",
+        "Excel, PDF ve Word çıktısı"
+      ],
+      "cta": "Vardiya yönetimini<br></br><accent>ekibinizle deneyin.</accent>",
+      "alts": {
+        "hero": [
+          "QR kodlu PDKS kayıtları: personelin vardiyaya göre giriş-çıkış saatleri"
+        ],
+        "showcase": "Vardiya yönetimi mesai çizelgesi: personel bazında günlük fazla mesai süreleri",
+        "steps": [
+          "Mobil uygulamada PDKS kayıtları: normal süre ve mesai",
+          "Mobil puantaj: çalışılan gün, saat ve fazla mesai özeti"
+        ]
+      }
+    },
+    "timesheet": {
+      "intro": "Puantaj takibi için ay sonunu beklemenize gerek yok. QR kodlu PDKS kayıtları günlük veya aylık olarak puantaj çizelgesine aktarılır; iş günü, hafta tatili, genel tatil ve izin günleri tek tabloda görünür. Eksik günleri toolbar ile hızlıca işaretler, birden fazla personele toplu puantaj girersiniz.",
+      "toast": {
+        "title": "Puantaja aktarıldı",
+        "description": "Kasım 2026 · Aylık aktarım"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Otomatik aktarım",
+          "title": "PDKS'den puantaja",
+          "text": "Giriş-çıkış kayıtları elle taşınmaz; günlük veya aylık aktarımla puantaj çizelgesi kendiliğinden dolar."
+        },
+        {
+          "eyebrow": "Hızlı düzenleme",
+          "title": "Toplu puantaj girişi",
+          "text": "Toolbar ile gün tipini seçip tıklayın; çoklu personel veya tüm takvim seçimiyle bir ayı dakikalar içinde tamamlayın."
+        },
+        {
+          "eyebrow": "Personel de görür",
+          "title": "Puantajım takvimi",
+          "text": "Yetki verdiğinizde personel kendi puantajını mobil uygulamada aylık takvim olarak görür ve ay özetini takip eder."
+        }
+      ],
+      "showcase": {
+        "title": "Bütün ay<br></br><accent>tek çizelgede.</accent>",
+        "text": "Aylık puantaj çizelgesinde tüm personel ve ayın her günü yan yana durur. Yıllık izin, mazeret, doğum, evlilik ve cenaze izni gibi gün tipleri kodlarla ayrılır. Bir personeli açtığınızda günlük puantajını, ay özetini ve diğer toplamları görürsünüz; mesai çizelgesi ise günlük mesaileri ve toplamlarını şube, bölüm ve ay bazında listeler."
+      },
+      "steps": {
+        "title": "Puantaj<br></br><accent>üç adımda hazır.</accent>",
+        "items": [
+          "PDKS kayıtlarını seçtiğiniz gün veya ay için tek tıkla puantaja aktarın.",
+          "Resmî tatil, izin ya da mazeret gibi günleri toolbar ile işaretleyin; gerekirse toplu puantaj girişi yapın.",
+          "Personel detayından ay özetini kontrol edin; hazır puantaj bordro hesabına temel olsun."
+        ]
+      },
+      "capabilitiesText": "Puantaj, PDKS ile bordro arasındaki köprüdür. Giriş-çıkış kayıtları puantaja, puantaj da bordroya aktığı için aynı bilgiyi üç farklı tabloda tutmazsınız. Gün tipleri resmî tatil, yıllık izin ve mazeret gibi durumları birbirinden ayırır; personel ise yetkisi varsa Puantajım ekranında çalışılan gününü, çalışılan saatini ve fazla mesaisini kendisi kontrol eder.",
+      "capabilities": [
+        "Aylık puantaj çizelgesi (personel × gün)",
+        "İş günü, hafta tatili, genel tatil ve izin gün tipleri",
+        "Toolbar ile hızlı gün işaretleme",
+        "Çoklu personel ve tüm takvim seçimiyle toplu giriş",
+        "Günlük puantaj, ay özeti ve diğer toplamlar",
+        "Şube, bölüm ve ay filtreli mesai çizelgesi",
+        "Personel için Puantajım takvim görünümü",
+        "Excel, PDF ve Word çıktısı"
+      ],
+      "cta": "Puantaj takibini<br></br><accent>otomatiğe alın.</accent>",
+      "alts": {
+        "hero": [
+          "Mobil puantaj ekranı: çalışılan gün, çalışılan saat ve aylık takvim",
+          "QR Zaman mobil uygulama ana sayfası: bugünkü giriş-çıkış kartı"
+        ],
+        "showcase": "Puantaj takibi: tüm personelin aylık puantaj çizelgesi",
+        "steps": ["Personel puantaj detayı: günlük puantaj ve ay özeti"]
+      }
+    },
+    "locationTracking": {
+      "intro": "Lokasyon takibi, personelin giriş-çıkış yaptığı her noktayı tanımlı ve doğrulanabilir hale getirir. Bölümlere bağlı lokasyonları enlem ve boylamla tanımlar, her biri için QR kod üretirsiniz. Personel okuttuğunda telefonun konumu kayda eklenir; hangi kaydın hangi noktadan yapıldığını panelden görürsünüz.",
+      "toast": {
+        "title": "QR noktası kaydedildi",
+        "description": "Esentepe Girişi · Aktif"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Sahadan kurulum",
+          "title": "Konumu tek dokunuşla kaydedin",
+          "text": "Yönetici mobil uygulamada bölümü seçer, bulunduğu noktanın konumunu tek dokunuşla kaydeder; QR noktası kurulumu sahada biter."
+        },
+        {
+          "eyebrow": "Duvara hazır",
+          "title": "Basılabilir A4 QR afişi",
+          "text": "Her lokasyonun QR kodunu PNG olarak ya da basılabilir A4 PDF afiş olarak indirin, giriş kapısına asın."
+        },
+        {
+          "eyebrow": "Tam kontrol",
+          "title": "Aktif ve pasif noktalar",
+          "text": "Kapanan bir giriş noktasını pasife alın; personelin her lokasyondan mı yoksa yalnızca kendi noktalarından mı okutacağını yetki ayarından belirleyin."
+        }
+      ],
+      "showcase": {
+        "title": "Her nokta<br></br><accent>kendi QR koduyla.</accent>",
+        "text": "Lokasyon listesinde her giriş-çıkış noktasının bağlı olduğu bölüm, enlem-boylam bilgisi ve durumu görünür. Bir lokasyonu açtığınızda QR kodunu önizler, PNG veya A4 PDF olarak indirirsiniz. Personel okutma yaptığında kayıt detayında lokasyon adı ve okutulan konumun koordinatı birlikte saklanır; böylece hangi şubede kimin çalıştığı tartışma konusu olmaz."
+      },
+      "steps": {
+        "title": "Yeni nokta<br></br><accent>dakikalar içinde.</accent>",
+        "items": [
+          "Panelde bölümü seçip yeni lokasyon ekleyin ya da sahada mobil uygulamadan bulunduğunuz konumu kaydedin.",
+          "Lokasyonun QR kodunu A4 afiş olarak yazdırıp girişe asın.",
+          "Personel QR kodu okuttuğunda konum doğrulanır ve sonucu kayıt onayı ekranında görür."
+        ]
+      },
+      "capabilitiesText": "Lokasyonlar bölümlere bağlı olduğu için her şube ve bölümün kendi giriş-çıkış noktaları olur. Yeni bir şube açtığınızda yönetici sahaya gidip mobil uygulamadan konumu kaydeder, QR afişini yazdırıp asar; personel aynı gün okutmaya başlar. Kullanılmayan bir noktayı pasife alırsınız; geçmiş kayıtlar ise lokasyon ve koordinat bilgisiyle saklanmaya devam eder.",
+      "capabilities": [
+        "Bölümlere bağlı lokasyon tanımı",
+        "Enlem ve boylamla konum kaydı",
+        "Lokasyon başına QR kod üretimi",
+        "PNG ve basılabilir A4 PDF afiş",
+        "Mobilden tek dokunuşla konum kaydetme",
+        "Lokasyon düzenleme ve aktif/pasif yönetimi",
+        "Okutulan konumun kayıt detayında saklanması",
+        "Her lokasyondan giriş-çıkış yetkisi ayarı"
+      ],
+      "cta": "Lokasyon takibini<br></br><accent>şubelerinizde kurun.</accent>",
+      "alts": {
+        "hero": ["Lokasyon takibi ekranı: bölümlere bağlı QR noktaları ve koordinatları"],
+        "showcase": "Lokasyon QR noktası: QR kod önizleme ve indirme seçenekleri",
+        "steps": [
+          "Duvara asmaya hazır basılabilir A4 QR afişi",
+          "Mobil uygulamada QR kayıt onayı ve cihaz eşleşme bilgisi"
+        ]
+      }
+    },
+    "employeeManagement": {
+      "intro": "Personel yönetimi ekranında kimlik, iletişim, eğitim, sağlık, banka, ücret ve sözleşme bilgileri tek personel kartında toplanır. SGK durumundan teşvik oranına, BES'ten engellilik indirimine kadar bordroyu etkileyen tüm parametreler aynı kartta durur; SGK giriş ve çıkış işlemleri de buradan yapılır.",
+      "toast": {
+        "title": "İçe aktarma tamamlandı",
+        "description": "Excel · Satır bazlı sonuç raporu"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Hızlı başlangıç",
+          "title": "Excel ile toplu aktarım",
+          "text": "Hazır şablonu indirin, personel listenizi doldurun ve tek seferde içe aktarın; hangi satırın aktarıldığını sonuç raporunda görün."
+        },
+        {
+          "eyebrow": "Bordroya hazır",
+          "title": "SGK ve ücret parametreleri",
+          "text": "Belge türü, kanun no, meslek kodu, ücret tipi ve kümülatif matrah gibi alanlar bordro hesabına doğrudan girer."
+        },
+        {
+          "eyebrow": "Güvenli giriş",
+          "title": "Tek cihazla eşleşme",
+          "text": "Personel için mobil giriş telefonu ve şifre belirleyin; hesap tek cihaza eşlenir, telefon değişince aktivasyonu sıfırlayın."
+        }
+      ],
+      "showcase": {
+        "title": "Tüm ekibiniz<br></br><accent>tek listede.</accent>",
+        "text": "Personel listesinde sicil no, TC kimlik no veya ad soyad ile arama yapın. Şube, bölüm, durum, çalışma durumu, cinsiyet, medeni durum, ücret tipi ve personel grubuna göre filtreleyin. Kolonları gösterip gizleyin, toplu seçimle işlemleri tek seferde yapın, listeyi Excel, PDF veya Word olarak dışa aktarın. Ücret aylık, günlük veya saatlik; net ya da brüt ve farklı para birimlerinde tanımlanabilir."
+      },
+      "steps": {
+        "title": "Personeli<br></br><accent>üç adımda taşıyın.</accent>",
+        "items": [
+          "Hazır Excel şablonunu indirip personel bilgilerinizi doldurun.",
+          "Dosyayı içe aktarın, satır bazlı sonuç raporundan eksik kayıtları düzeltin.",
+          "Mobil giriş için telefon ve şifre belirleyin; personel uygulamaya giriş yaptığında cihazı hesabına eşlenir."
+        ]
+      },
+      "capabilitiesText": "Personel kartı; PDKS, puantaj, izin, avans ve bordronun ortak kaynağıdır. Ücret tipi, hafta tatili ve vardiyalı çalışma bilgisi bir kez girilir, diğer tüm modüller bu bilgiyi kullanır. Çalışan ayrıldığında SGK çıkışını çıkış nedeni koduyla yapar, personelin kaydını ve geçmiş bordrolarını sistemde korursunuz.",
+      "capabilities": [
+        "Kimlik, iletişim, eğitim, sağlık ve banka bilgileri",
+        "Ücret ve sözleşme bilgileri",
+        "SGK giriş ve çıkış işlemleri (çıkış nedeni kodlarıyla)",
+        "Teşvik, BES, sendika ve engellilik indirimi parametreleri",
+        "Aylık, günlük veya saatlik ücret; net ya da brüt",
+        "Hafta tatili günü ve personel grubu tanımı",
+        "Cihaz eşleştirme ve telefon aktivasyonunu sıfırlama",
+        "Gelişmiş filtreler, toplu işlemler ve dışa aktarma"
+      ],
+      "cta": "Personel yönetimini<br></br><accent>tek panelde toplayın.</accent>",
+      "alts": {
+        "hero": [
+          "Mobil uygulama profil ekranı: personel, çalışma ve bordro bilgileri",
+          "Mobil özlük bilgilerim: sicil no, işe giriş tarihi ve kimlik bilgileri"
+        ],
+        "showcase": "Personel yönetimi listesi: arama, filtre ve toplu işlemler",
+        "steps": [
+          "QR Zaman mobil uygulama giriş ekranı: kullanıcı adı veya telefonla giriş",
+          "Mobil uygulamada cihaz eşleşme onayı"
+        ]
+      }
+    },
+    "employeeRecords": {
+      "intro": "Dijital özlük dosyası, personelin kimlik, eğitim, sağlık, banka, bordro parametreleri ve çalışma bilgilerini tek ekranda toplar. Kâğıt klasörlerde kaybolan bilgiler yerine aranabilir bir kayıt tutarsınız; personel de kendi özlük bilgilerini mobil uygulamadan görür.",
+      "toast": {
+        "title": "Özlük dosyası güncellendi",
+        "description": "Eksik alan kalmadı"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Eksikleri görün",
+          "title": "Boş alanları göster",
+          "text": "Tek seçenekle doldurulmamış alanları listeleyin; işe girişte eksik kalan bilgiyi denetimden önce tamamlayın."
+        },
+        {
+          "eyebrow": "Hızlı geçiş",
+          "title": "Hızlı personel seçici",
+          "text": "Personel seçiciyle bir dosyadan diğerine geçin; listeye dönüp yeniden arama yapmanız gerekmez."
+        },
+        {
+          "eyebrow": "Şeffaflık",
+          "title": "Personel kendi dosyasını görür",
+          "text": "Çalışan özlük bilgilerini mobil uygulamada görür; yönetici ise ekibinin özlük listesine ve detaylarına mobilden ulaşır."
+        }
+      ],
+      "showcase": {
+        "title": "Bütün bilgiler<br></br><accent>tek dosyada.</accent>",
+        "text": "Özlük ekranında sicil no, işe giriş tarihi, kıdem ve ücret özetinin altında kimlik, iletişim, eğitim, sağlık ve banka bilgileri bölümler halinde durur. SGK durumu, belge türü ve kanun no gibi bordro parametreleri ile çalışma bilgileri de aynı dosyadadır. Özlük dosyası personel kartıyla aynı veriyi kullandığı için yapılan değişiklik bordro hesabına doğrudan yansır."
+      },
+      "steps": {
+        "title": "Özlük dosyası<br></br><accent>üç adımda tamam.</accent>",
+        "items": [
+          "Personel listesinden ya da hızlı seçiciden personeli açın.",
+          "Boş alanları göster seçeneğiyle eksik bilgileri tamamlayın.",
+          "Personel güncel özlük bilgilerini mobil uygulamadaki Özlük Bilgilerim ekranından görsün."
+        ]
+      },
+      "capabilitiesText": "Özlük dosyası, İK ekibinin en sık açtığı ekranlardan biridir: bir sigorta bildirimi, banka değişikliği ya da denetim için aranan bilgi tek yerde durur. Kimlik, eğitim, sağlık ve banka bilgileri bölüm bölüm ayrıldığı için uzun bir formda kaybolmazsınız. Boş alanları göster seçeneği eksik bilgileri tek listede toplar. Yönetici ekibinin özlük listesine ve detaylarına mobil uygulamadan da ulaşır; personel ise kendi bilgilerini Özlük Bilgilerim ekranında görür ve bir yanlışlık fark ettiğinde İK ekibinizi uyarabilir.",
+      "capabilities": [
+        "Kimlik ve iletişim bilgileri",
+        "Eğitim ve sağlık bilgileri (kan grubu, boy, kilo)",
+        "Banka bilgileri (IBAN, şube)",
+        "Bordro parametreleri ve çalışma bilgileri",
+        "Boş alanları gösterme seçeneği",
+        "Hızlı personel seçici",
+        "Personelin kendi özlük bilgilerini görmesi",
+        "Yönetici için mobil özlük listesi ve detayları"
+      ],
+      "cta": "Özlük dosyalarınızı<br></br><accent>dijitale taşıyın.</accent>",
+      "alts": {
+        "hero": [
+          "Mobil özlük bilgilerim ekranı: sicil no, kıdem ve kimlik bilgileri",
+          "Mobil profil ekranı: kişisel bilgiler ve cihaz bilgileri"
+        ],
+        "showcase": "Dijital özlük dosyası: personel kimlik, iletişim ve iş bilgileri",
+        "steps": ["Personel listesi: özlük dosyasını açmak için personel seçimi"]
+      }
+    },
+    "leaveManagement": {
+      "intro": "İzin yönetimi ile personel izin talebini mobil uygulamadan gönderir, yönetici talebi tek dokunuşla onaylar veya gerekçesiyle reddeder. Talep ekranında kıdem yılına göre toplam izin hakkı, kullanılan ve kalan izin otomatik hesaplanır; saatlik izin, izin adresi ve rapor gibi dosya ekleri desteklenir.",
+      "toast": {
+        "title": "Onay bekliyor",
+        "description": "Yıllık izin talebi · 5 gün"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Mobil talep",
+          "title": "Kâğıt form yok",
+          "text": "Personel izin tipini, tarih aralığını, adresini ve mesajını telefondan girer; talebin durumunu ve varsa red gerekçesini anında görür."
+        },
+        {
+          "eyebrow": "Otomatik bakiye",
+          "title": "Kıdeme göre hesap",
+          "text": "Kıdem yılı, toplam hak, bu yıl ve geçmiş yıllarda kullanılan izin ile kalan izin talep detayında hazır gelir."
+        },
+        {
+          "eyebrow": "Hızlı onay",
+          "title": "Yönetici her yerden onaylar",
+          "text": "Onay bekleyen talepler dashboard'da görünür; yönetici panelden ya da mobilden onaylar veya gerekçeli reddeder."
+        }
+      ],
+      "showcase": {
+        "title": "Her talep<br></br><accent>bakiyesiyle birlikte.</accent>",
+        "text": "Talep detayında personelin bilgileri, izin tipi, tarih aralığı ve mesajının yanında otomatik hesaplanan izin bakiyesi görünür; karar vermek için ayrı bir tablo açmanız gerekmez. Tüm izinler ve tüm talepler sekmeleriyle geçmişe dönük kayıtları izler, çoklu personel ve tarih aralığı seçerek izin kaydını doğrudan siz de ekleyebilirsiniz."
+      },
+      "steps": {
+        "title": "İzin süreci<br></br><accent>üç adımda.</accent>",
+        "items": [
+          "Personel mobil uygulamada izin tipini ve tarih aralığını seçip talebini gönderir.",
+          "Yönetici talep detayında kalan izni görür, onaylar ya da gerekçesini yazarak reddeder.",
+          "Sonuç personelin talepler listesine düşer; izin kullanımları raporlarda yıl bazında izlenir."
+        ]
+      },
+      "capabilitiesText": "İzin yönetimi puantaj ve raporlarla aynı veriyi kullanır. Yıllık izin hakkı kıdem yılına göre hesaplandığı için her yıl elle bakiye tablosu güncellemezsiniz. Yönetici onay bekleyen talepleri dashboard'da ve mobil uygulamada görür; İK ekibi ise genel ve yıllık toplam izin kullanımlarını hak, kullanılan, kalan ve kıdem bilgisiyle raporlar. Tüm listeler Excel, PDF veya Word olarak alınır.",
+      "capabilities": [
+        "Mobil izin talebi ve durum takibi",
+        "Gerekçeli onay ve red akışı",
+        "Kıdem yılına göre otomatik izin bakiyesi",
+        "Saatlik izin desteği",
+        "İzin adresi, mesaj ve dosya eki",
+        "Çoklu personel ve tarih aralığıyla izin kaydı",
+        "Tüm izinler ve tüm talepler sekmeleri",
+        "Genel ve yıllık izin kullanım raporları"
+      ],
+      "cta": "İzin yönetimini<br></br><accent>mobile taşıyın.</accent>",
+      "alts": {
+        "hero": [
+          "Mobil izin talepleri listesi ve talep durumları",
+          "Mobil izin detayı: izin tipi, tarih aralığı ve gün sayısı"
+        ],
+        "showcase": "İzin yönetimi: izin talebi detayı ve otomatik hesaplanan izin bakiyesi",
+        "steps": ["İzin yönetimi ekranı: tüm izinler ve tüm talepler"]
+      }
+    },
+    "advanceManagement": {
+      "intro": "Avans yönetimi ile personel avans talebini tutar, taksit sayısı, aylık ödeme tutarı ve başlangıç tarihiyle mobil uygulamadan gönderir. Yönetici talebi onaylar ya da gerekçesiyle reddeder. Onaylanan avansın taksitleri bordroda otomatik kesinti olarak yer alır; ay sonunda ayrı bir kesinti tablosu tutmazsınız.",
+      "toast": {
+        "title": "Avans talebi",
+        "description": "Onay bekliyor · 3 taksit"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Net talep",
+          "title": "Tutar ve taksit baştan belli",
+          "text": "Personel talep ederken tutarı, taksit sayısını ve aylık ödeme tutarını girer; ödemenin hangi tarihte başlayacağı da talepte yazar."
+        },
+        {
+          "eyebrow": "Durum takibi",
+          "title": "Bekliyor, onaylandı, reddedildi",
+          "text": "Her talebin durumu panelde ve mobilde aynı anda görünür; personel sonucu öğrenmek için yöneticisini aramaz."
+        },
+        {
+          "eyebrow": "Otomatik kesinti",
+          "title": "Taksitler bordroda",
+          "text": "Onaylı avansların taksitleri bordroda avans kesintisi olarak hesaplanır ve net ödenen tutara yansır."
+        }
+      ],
+      "showcase": {
+        "title": "Avans kesintisi<br></br><accent>bordroda hazır.</accent>",
+        "text": "Bordro hesaplandığında personelin avans kesintisi; SGK primleri, vergiler ve diğer kesintilerle birlikte bordro detayında yer alır. Avans raporunda ise bordro kesinti tutarını, kesinti tarihini ve evrak numarasını görürsünüz. Yönetici avansı talep beklemeden panelden doğrudan da tanımlayabilir; taksit planı aynı şekilde bordroya bağlanır."
+      },
+      "steps": {
+        "title": "Avans süreci<br></br><accent>üç adımda.</accent>",
+        "items": [
+          "Personel mobil uygulamada tutarı, taksit sayısını, aylık ödemeyi ve başlangıç tarihini girip talebi gönderir.",
+          "Yönetici talebi panelden veya mobilden onaylar ya da gerekçesiyle reddeder.",
+          "Onaylanan avansın taksitleri her ay bordroya otomatik kesinti olarak yansır."
+        ]
+      },
+      "capabilitiesText": "Avans talepleri çoğu işletmede telefonla, mesajla ya da kâğıt dilekçeyle gelir; taksitlerin takibi de ayrı bir tabloda yürür. QR Zaman'da talep, onay ve kesinti aynı akıştadır. Personel talebinin durumunu mobil uygulamada bekliyor, onaylandı veya reddedildi olarak görür; yönetici onay bekleyen talepleri dashboard'da takip eder. Avans raporu hangi kesintinin hangi bordroda yapıldığını evrak numarasıyla gösterir; denetimde ya da personelle mutabakatta aradığınız bilgi hazırdır.",
+      "capabilities": [
+        "Mobil avans talebi",
+        "Tutar, taksit sayısı ve aylık ödeme tutarı",
+        "Ödeme başlangıç tarihi",
+        "Gerekçeli onay ve red akışı",
+        "Bekliyor, onaylandı ve reddedildi durumları",
+        "Yöneticinin panelden doğrudan avans tanımlaması",
+        "Taksitlerin bordroya otomatik kesinti olarak yansıması",
+        "Avans raporu: kesinti tutarı, tarihi ve evrak no"
+      ],
+      "cta": "Avans takibini<br></br><accent>bordroya bağlayın.</accent>",
+      "alts": {
+        "hero": [
+          "Mobil yeni avans talebi formu: tutar, taksit sayısı ve aylık ödeme",
+          "Mobil avans listesi: talep tutarları ve durumları"
+        ],
+        "showcase": "Bordro hesaplama detayı: avans kesintisi ve diğer bordro kalemleri",
+        "steps": ["Mobil hızlı menü: izinler, avanslar, eklentiler ve kesintiler"]
+      }
+    },
+    "hrDocuments": {
+      "intro": "İK belgeleri bölümünde iş sözleşmesinden tutanaklara kadar ihtiyaç duyduğunuz hazır şablonlar tek yerde durur. Belgeyi adıyla arar, tek tıkla indirirsiniz. Personel bilgileri, özlük dosyası ve izin kayıtları aynı platformda olduğu için belgeyi hazırlarken ihtiyacınız olan bilgi de elinizin altındadır.",
+      "toast": {
+        "title": "Belge indirildi",
+        "description": "Belirsiz süreli iş sözleşmesi"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Hazır şablonlar",
+          "title": "Sıfırdan yazmayın",
+          "text": "Belirli ve belirsiz süreli iş sözleşmesi, işe alım formu ve iş teklif formu gibi şablonlar kullanıma hazır gelir."
+        },
+        {
+          "eyebrow": "Hızlı erişim",
+          "title": "Arayın ve indirin",
+          "text": "Belge arama ile ihtiyacınız olan şablonu saniyeler içinde bulun; klasörler arasında dosya aramayın."
+        },
+        {
+          "eyebrow": "Kurumsal çıktı",
+          "title": "Başlıklı belgeler",
+          "text": "Listeler ve raporlar kurumsal başlıkla Excel, PDF veya Word olarak alınır; dosyalarınız düzenli ve tutarlı görünür."
+        }
+      ],
+      "showcase": {
+        "title": "Belgeleriniz<br></br><accent>kurumsal görünsün.</accent>",
+        "text": "Panelden aldığınız izin listeleri, puantaj ve bordro raporları şirket adınızın yer aldığı kurumsal başlıkla PDF, Excel veya Word olarak hazırlanır. Hazır İK şablonlarıyla birlikte kullanıldığında işe alımdan yıllık izne, puantaj cetvelinden tutanaklara kadar personel evrakınız tek bir düzende ilerler; özlük dosyası kontrol listesiyle eksik evrak da kalmaz."
+      },
+      "steps": {
+        "title": "Belge hazırlamak<br></br><accent>üç adım.</accent>",
+        "items": [
+          "Belgeler bölümünde ihtiyacınız olan şablonu adıyla arayın.",
+          "Şablonu tek tıkla indirin ve personel bilgileriyle doldurun.",
+          "Özlük dosyası kontrol listesiyle personelin evrakının tamam olduğunu doğrulayın."
+        ]
+      },
+      "capabilitiesText": "İK belgeleri personel süreçlerinin her aşamasında gerekir: işe alımda sözleşme ve işe alım formu, çalışma süresince ücretli izin istek formu ve aylık puantaj cetveli, sorun yaşandığında işe gelmeme veya geç gelme tutanağı. Bu şablonların hepsi aynı bölümde, aranabilir biçimde durur. Personel bilgileri ve izin kayıtları da QR Zaman'da olduğu için belgeyi doldururken farklı dosyalardan bilgi toplamazsınız; özlük dosyası kontrol listesiyle her personelin evrakını aynı düzende tamamlarsınız.",
+      "capabilities": [
+        "Belirli ve belirsiz süreli iş sözleşmesi",
+        "İşe alım, iş başvuru ve iş teklif formu",
+        "İşe davet yazısı",
+        "Ücretli izin istek formu ve yıllık ücretli izin cetveli",
+        "Aylık puantaj cetveli ve aile yardım bildirimi",
+        "İşe gelmeme ve geç gelme tutanakları",
+        "Noter tebligatı ve vergi indirimi taahhütnamesi",
+        "Özlük dosyası kontrol listesi"
+      ],
+      "cta": "İK belgelerinize<br></br><accent>tek yerden ulaşın.</accent>",
+      "alts": {
+        "hero": ["Dijital özlük dosyası: personel bilgileri ve iş bilgileri"],
+        "showcase": "Kurumsal başlıklı izin listesi PDF çıktısı",
+        "steps": ["Personel listesi: belge hazırlanacak personelin seçimi"]
+      }
+    },
+    "payroll": {
+      "intro": "Bordro hesaplama programı; puantaj, mesai, ek ödeme, kesinti ve avans kayıtlarından bordroyu otomatik hesaplar. Tüm personelin ya da seçtiğiniz kişilerin bordrosunu tek tıkla hesaplar, kontrol ettikten sonra onaylarsınız. SGK ve işsizlik primleri, gelir ve damga vergisi, asgari ücret istisnaları ve toplam işveren maliyeti aynı ekranda hazırdır.",
+      "toast": {
+        "title": "Bordro hesaplandı",
+        "description": "Kasım 2026 · Tüm personel"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Toplu hesap",
+          "title": "Tümü ya da seçilenler",
+          "text": "Bordroyu tüm personel için veya seçtiğiniz kişiler için hesaplayın; hatalı bir hesabı temizleyip yeniden çalıştırın."
+        },
+        {
+          "eyebrow": "Kontrollü süreç",
+          "title": "Onay ve işlem geçmişi",
+          "text": "Hesaplanan bordroyu onaylayın veya onayı kaldırın; bordro log kayıtlarıyla tüm işlem geçmişini izleyin."
+        },
+        {
+          "eyebrow": "Mevzuata uygun",
+          "title": "Yıl bazlı parametreler",
+          "text": "Vergi dilimleri, SGK oranları ve asgari ücret istisnası yıl bazında tanımlı parametrelerden gelir; oranları elle girmezsiniz."
+        }
+      ],
+      "showcase": {
+        "title": "Her kalem<br></br><accent>tek ekranda.</accent>",
+        "text": "Bordro detayında brüt ve net ücret, gün ve saat ödemeleri; normal, gece, resmî tatil ve TİS mesaileri; yol, yemek ve aile, çocuk, kreş, bayram gibi yardımlar ayrı ayrı görünür. Kesintiler tarafında SGK ve işsizlik primleri, gelir ve damga vergisi, sendika ve BES kesintileri ile avans kesintisi yer alır. En altta toplam işveren maliyeti ve net ödenen tutar hazırdır."
+      },
+      "steps": {
+        "title": "Bordro<br></br><accent>üç adımda hazır.</accent>",
+        "items": [
+          "PDKS kayıtlarını puantaja aktarın; ek ödeme, kesinti ve avansları kontrol edin.",
+          "Tüm personel ya da seçtiğiniz kişiler için bordroyu tek tıkla hesaplayın.",
+          "Bordroyu onaylayın; personel bazlı bordro raporunu Excel, PDF veya Word olarak alın."
+        ]
+      },
+      "capabilitiesText": "Bordro, QR Zaman'daki tüm modüllerin buluştuğu yerdir. PDKS'den gelen puantaj, vardiyaya göre hesaplanan mesailer, eklenti ve kesintiler, onaylı avans taksitleri ve personel kartındaki SGK parametreleri hesaba kendiliğinden girer. Personelin yetkisi açıksa bordrosunu Bordrom ekranında görür; maaşı gizle/göster seçeneğiyle ekranda görünmesini istemediği tutarı saklar.",
+      "capabilities": [
+        "Tüm personel veya seçilenler için otomatik hesap",
+        "Bordro onaylama ve onayı kaldırma",
+        "Normal, gece, resmî tatil ve TİS mesaileri",
+        "SGK, işsizlik primi, gelir ve damga vergisi",
+        "Asgari ücret istisnaları",
+        "Sendika, BES ve avans kesintileri",
+        "Toplam işveren maliyeti ve net ödenen",
+        "Bordro log kayıtları ve personel için Bordrom görünümü"
+      ],
+      "cta": "Bordro hesaplamayı<br></br><accent>otomatiğe alın.</accent>",
+      "alts": {
+        "hero": [
+          "Mobil uygulama ana sayfası: maaş ve ödemeler özeti",
+          "Mobil puantaj: bordroya temel olan çalışılan gün ve saatler"
+        ],
+        "showcase": "Bordro hesaplama programı: personel bazında bordro detayı ve işveren maliyeti",
+        "steps": ["Aylık puantaj çizelgesi: bordro hesabının temeli"]
+      }
+    },
+    "earningsDeductions": {
+      "intro": "Ek ödeme ve kesinti ekranında prim ve ikramiye gibi eklentileri; disiplin, hasar, fazla ödeme, eğitim veya kreş gibi kesintileri ve mesai kayıtlarını net ya da brüt olarak tanımlarsınız. Tek kayıtla birden fazla personele ekleme yapar, tutarların bordro hesabına otomatik girmesini sağlarsınız.",
+      "toast": {
+        "title": "Eklenti eklendi",
+        "description": "Prim ödemesi · Brüt"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Toplu ekleme",
+          "title": "Bir kayıt, çok personel",
+          "text": "Bayram primi gibi herkese aynı anda yapılan ödemeleri tek kayıtla seçtiğiniz tüm personele ekleyin."
+        },
+        {
+          "eyebrow": "Net veya brüt",
+          "title": "Doğru vergi etkisi",
+          "text": "Her eklenti ve kesinti net ya da brüt girilir; ödeme katsayıları SGK, vergi ve damga uygulamasını belirler."
+        },
+        {
+          "eyebrow": "Mesai kaydı",
+          "title": "Saat ya da tutar",
+          "text": "Mesaiyi gün ve saat bazında veya doğrudan tutar olarak girin; bordroda ilgili mesai kalemine yazılır."
+        }
+      ],
+      "showcase": {
+        "title": "Eklenti, kesinti<br></br><accent>ve mesai bir arada.</accent>",
+        "text": "Eklenti, kesinti ve mesai kayıtları sekmeler halinde aynı ekranda listelenir. Her satırda personel, bölüm, tarih, kalem türü, miktar ve net/brüt bilgisi görünür; ödeme tarihiyle kaydın hangi bordroya gireceğini belirlersiniz. Personel kendi eklenti ve kesinti kayıtlarını mobil uygulamada listeler ve filtreler; yetkili kullanıcılar mobilden de kayıt ekleyebilir."
+      },
+      "steps": {
+        "title": "Ek ödeme<br></br><accent>üç adımda bordroda.</accent>",
+        "items": [
+          "Eklenti, kesinti veya mesai sekmesinden kalem türünü seçin, tutarı net ya da brüt girin.",
+          "Kaydı bir veya birden fazla personele ekleyin, ödeme tarihini belirleyin.",
+          "Bordroyu hesapladığınızda tutarlar ilgili kalemlere otomatik yansır."
+        ]
+      },
+      "capabilitiesText": "Ek ödemeler ve kesintiler çoğu zaman bordro gününden hemen önce ortaya çıkar. QR Zaman'da bu kalemler yıl boyunca tarihleriyle kaydedilir ve ödeme tarihine göre ilgili bordroya girer. Kesintiler disiplin, hasar, fazla ödeme, eğitim ve kreş gibi başlıklarla ayrıldığı için raporlarda hangi kesintinin neden yapıldığı açıkça görünür.",
+      "capabilities": [
+        "Prim ve ikramiye gibi eklentiler",
+        "Disiplin, hasar, fazla ödeme, eğitim ve kreş kesintileri",
+        "Gün/saat veya tutar bazlı mesai",
+        "Net veya brüt tutar ve ödeme tarihi",
+        "Tek kayıtta birden fazla personele ekleme",
+        "SGK, vergi ve damga uygulamasını belirleyen ödeme katsayıları",
+        "Personel için mobil eklenti ve kesinti listesi",
+        "Yetkili kullanıcı için mobilden kayıt ekleme"
+      ],
+      "cta": "Ek ödemeleri<br></br><accent>bordroya otomatik bağlayın.</accent>",
+      "alts": {
+        "hero": [
+          "Mobil eklentilerim: prim, aile yardımı ve ek ders ücreti",
+          "Mobil kesintilerim: disiplin ve diğer kesintiler"
+        ],
+        "showcase": "Eklenti, kesinti ve mesai yönetimi ekranı",
+        "steps": ["Bordro hesaplama detayı: eklenti ve kesintilerin bordroya yansıması"]
+      }
+    },
+    "compliance": {
+      "intro": "SGK ve vergi mevzuatı her yıl değişir; QR Zaman bu değişiklikleri yıl bazlı sistem parametreleriyle yönetir. Vergi dilimleri, katsayı oranları, kıdem ve ihbar tanımları, engelli indirim oranları, izin limitleri, meslek kodları ve resmî tatiller her yıl için ayrı tutulur. Bordro, seçili dönemin parametreleriyle hesaplanır.",
+      "toast": {
+        "title": "Parametreler aktarıldı",
+        "description": "Sonraki yıla kopyalandı"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Yıl bazlı",
+          "title": "Her dönem kendi kuralıyla",
+          "text": "Geçmiş bir dönemin bordrosuna döndüğünüzde o yılın oranları kullanılır; yeni yıl parametreleri eski hesapları değiştirmez."
+        },
+        {
+          "eyebrow": "Tek tıkla aktar",
+          "title": "Sonraki yıla kopyalama",
+          "text": "Yıl sonunda parametreleri tek tıkla yeni yıla kopyalayın, yalnızca değişen oranları güncelleyin."
+        },
+        {
+          "eyebrow": "Takvime bağlı",
+          "title": "Resmî tatil ve arifeler",
+          "text": "Resmî tatiller ve arifeler yıl bazında tanımlıdır; panel takviminde yıl, ay ve hafta görünümünde izlenir."
+        }
+      ],
+      "showcase": {
+        "title": "Oranlar doğru,<br></br><accent>bordro doğru.</accent>",
+        "text": "Bordro detayında gördüğünüz SGK primi, işsizlik primi, gelir vergisi, damga vergisi ve asgari ücret istisnası, ilgili yılın sistem parametrelerinden hesaplanır. Personel kartındaki engellilik indirimi, teşvik oranı ve kümülatif matrah bu parametrelerle birlikte çalışır. Muhasebe ve personel tahakkuk parametreleri de aynı yerden yönetilir; mevzuat değiştiğinde güncellemeyi tek noktadan yaparsınız."
+      },
+      "steps": {
+        "title": "Yeni yıla<br></br><accent>üç adımda geçin.</accent>",
+        "items": [
+          "Sistem parametrelerinde mevcut yılı seçip Sonraki yıla aktar ile yeni yılı oluşturun.",
+          "Değişen vergi dilimlerini, katsayı oranlarını ve resmî tatilleri güncelleyin.",
+          "Yeni dönemin bordrosu güncel oranlarla hesaplansın; geçmiş dönemler kendi yılının oranlarını korusun."
+        ]
+      },
+      "capabilitiesText": "Mevzuat uyumu yalnızca bordro hesabını değil, izin ve tazminat tanımlarını da etkiler. İzin limitleri yıllık izin hakkını, kıdem ve ihbar tanımları tazminat kurallarını, engelli indirim oranları vergi hesabını belirler; meslek kodları personel kartındaki SGK bilgileri için kullanılır. Bu parametreler sistem genelinde tek yerden yönetildiği için tüm şirketleriniz ve şubeleriniz aynı güncel kurallarla çalışır ve parametreleri yeni yıla aktardığınızda hepsi birlikte yeni döneme geçer.",
+      "capabilities": [
+        "Yıl bazlı vergi dilimleri ve oranları",
+        "Katsayı oranları",
+        "Kıdem ve ihbar tanımları",
+        "Engelli indirim oranları",
+        "İzin limitleri ve meslek kodları",
+        "Resmî tatiller ve arifeler",
+        "Parametreleri sonraki yıla tek tıkla aktarma",
+        "Muhasebe ve personel tahakkuk parametreleri"
+      ],
+      "cta": "Mevzuata uyumlu bordroyu<br></br><accent>yakından görün.</accent>",
+      "alts": {
+        "hero": ["İK takvimi: resmî tatiller, arifeler ve özel günler"],
+        "showcase": "Bordro detayı: yıl bazlı parametrelerle hesaplanan SGK primi ve vergiler",
+        "steps": []
+      }
+    },
+    "reporting": {
+      "intro": "Personel raporlama ekranında PDKS, izin, avans ve bordro raporları tek menüde durur. Geç giriş yapanları, geç çıkanları, devamsızlık yapanları ve mesai yapanları; izin kullanımlarını ve avans kesintilerini filtreleyip inceler, her raporu Excel, PDF veya Word olarak alırsınız.",
+      "toast": {
+        "title": "Rapor hazır",
+        "description": "Excel · PDF · Word"
+      },
+      "benefits": [
+        {
+          "eyebrow": "PDKS raporu",
+          "title": "Geç gelen, devamsız, mesai yapan",
+          "text": "Normal, mesai, izin ve toplam süreleri personel bazında görün; devam sorunlarını ay sonu gelmeden fark edin."
+        },
+        {
+          "eyebrow": "İzin raporları",
+          "title": "Hak, kullanılan, kalan",
+          "text": "Genel izin kullanımlarını ve yıllık toplam izin kullanımlarını kıdem bilgisiyle birlikte raporlayın."
+        },
+        {
+          "eyebrow": "Avans ve bordro",
+          "title": "Kesintiler kayıt altında",
+          "text": "Avans raporunda bordro kesinti tutarını, kesinti tarihini ve evrak numarasını; bordro raporunda tüm kalemleri görün."
+        }
+      ],
+      "showcase": {
+        "title": "Raporlar<br></br><accent>paylaşmaya hazır.</accent>",
+        "text": "Her rapor kurumsal başlıklı belge olarak Excel, PDF veya Word biçiminde dışa aktarılır. Tablolarda arama yapar, gelişmiş filtrelerle şube, bölüm ve tarih aralığını daraltır, ihtiyacınız olmayan kolonları gizlersiniz. Yöneticinize, muhasebecinize ya da denetime göndereceğiniz dosya ekranda gördüğünüzle aynı düzende hazırlanır."
+      },
+      "steps": {
+        "title": "Rapor almak<br></br><accent>üç adım.</accent>",
+        "items": [
+          "Raporlar menüsünden PDKS, izin, avans veya bordro raporunu seçin.",
+          "Şube, bölüm, personel ve tarih aralığına göre filtreleyin; kolonları ihtiyacınıza göre düzenleyin.",
+          "Raporu Excel, PDF veya Word olarak indirin. Personel de kendi PDKS sürelerini mobilde görür."
+        ]
+      },
+      "capabilitiesText": "Raporlar, QR Zaman'daki günlük kayıtların özetidir. PDKS raporu her personelin normal, mesai, izin ve toplam süresini gösterdiği için devam sorunları ay sonunu beklemeden görünür. İzin raporları yıllık hak, kullanılan ve kalan izni kıdemle birlikte listeler; avans raporu kesintileri tarih ve evrak numarasıyla, bordro raporu ise personel bazında tüm kalemleri gösterir. Bordro raporunda bakiyesi olmayan alanları gizleyerek yalnızca dolu kalemlerle çalışabilirsiniz.",
+      "capabilities": [
+        "Geç giriş ve geç çıkış raporu",
+        "Devamsızlık ve mesai raporu",
+        "Normal, mesai, izin ve toplam süre",
+        "Genel ve yıllık izin kullanım raporları",
+        "Avans raporu: kesinti tutarı, tarihi ve evrak no",
+        "Personel bazlı bordro raporu",
+        "Gelişmiş filtreler ve kolon göster/gizle",
+        "Kurumsal başlıklı Excel, PDF ve Word çıktısı"
+      ],
+      "cta": "Raporlarınızı<br></br><accent>dakikalar içinde alın.</accent>",
+      "alts": {
+        "hero": ["İzin raporları ekranı: personel bazında izin kullanımları"],
+        "showcase": "Kurumsal başlıklı izin listesi raporu PDF çıktısı",
+        "steps": ["Mobil PDKS kayıtlarım: günlük normal süre, mesai ve toplam süre"]
+      }
+    },
+    "contactManagement": {
+      "intro": "CRM müşteri yönetimi, müşteri ve potansiyel müşteri kartlarını iletişim bilgileriyle birlikte tek yerde toplar. Satış ekibiniz ve iş ortaklarınız (bayiler) aynı müşteri verisiyle çalışır; kimin hangi müşteriyle görüştüğü dağınık Excel dosyalarında ve telefon rehberlerinde kaybolmaz.",
+      "toast": {
+        "title": "Kişi kartı oluşturuldu",
+        "description": "Potansiyel müşteri"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Tek kaynak",
+          "title": "Müşteri ve potansiyel müşteri",
+          "text": "Müşteriler ve kontaklar ayrı sekmelerde, iletişim bilgileriyle birlikte tutulur; ekipteki herkes aynı kartı görür."
+        },
+        {
+          "eyebrow": "Bayilerle uyumlu",
+          "title": "Rol bazlı erişim",
+          "text": "Bayi rolündeki iş ortakları yalnızca yetkili oldukları menüyü görür; müşteri verileriniz kontrol altında kalır."
+        },
+        {
+          "eyebrow": "Tek platform",
+          "title": "Bordroyla aynı panel",
+          "text": "CRM'e üst menüden tek tıkla geçilir; personel, bordro ve müşteri işleri aynı hesapla, aynı panelde yürür."
+        }
+      ],
+      "showcase": {
+        "title": "Kişileriniz<br></br><accent>aranabilir, filtrelenebilir.</accent>",
+        "text": "QR Zaman'daki her tablo gibi kişi listesinde de arama, gelişmiş filtreler, kolon göster/gizle ve toplu seçimle toplu işlemler bulunur. Listeyi kurumsal başlıkla Excel, PDF veya Word olarak dışa aktarabilirsiniz. Grup, şirket ve şube hiyerarşisi CRM'de de geçerlidir; kullanıcı yetkileri grup, şirket ve şube bazında tanımlanır."
+      },
+      "steps": {
+        "title": "CRM'e geçmek<br></br><accent>üç adım.</accent>",
+        "items": [
+          "Üst menüden tek tıkla CRM modülüne geçin.",
+          "Müşteri ve potansiyel müşteri kartlarını iletişim bilgileriyle oluşturun.",
+          "Satış ekibinize ve bayilerinize kullanıcı tanımlayın; herkes yetkili olduğu kayıtlarla çalışsın."
+        ]
+      },
+      "capabilitiesText": "CRM modülü satış ekipleri ve iş ortakları (bayiler) için tasarlandı. Kişiler bölümünde müşteriler ve kontaklar ayrı sekmelerde durur; satış fırsatları, teklifler ve görevler aynı modülde ilerler. CRM dashboard'u satış ve müşteri özet göstergelerini, raporlar ise satış ve performans verilerini sunar; modüle özel tanımlamalar CRM ayarlarından yapılır. Hepsi bordro ve personel yönetimiyle aynı panelde çalıştığı için ayrı bir CRM yazılımına, ayrı bir kullanıcı listesine ve ayrı bir yetki düzenine ihtiyacınız kalmaz. Kişi listesi de diğer tablolar gibi aranır, filtrelenir ve dışa aktarılır.",
+      "capabilities": [
+        "Müşteri ve potansiyel müşteri kartları",
+        "Kişi ve iletişim bilgileri",
+        "Müşteriler ve kontaklar sekmeleri",
+        "Satışlar, teklifler ve görevlerle aynı modülde",
+        "CRM dashboard'unda müşteri özet göstergeleri",
+        "Bayi rolüyle iş ortağı erişimi",
+        "Arama, gelişmiş filtre ve toplu işlemler",
+        "Excel, PDF ve Word dışa aktarma"
+      ],
+      "cta": "CRM müşteri yönetimini<br></br><accent>yakından görün.</accent>",
+      "alts": {
+        "hero": ["QR Zaman yönetim paneli: rol bazlı dashboard ve özet göstergeler"],
+        "showcase": "QR Zaman liste ekranı: arama, gelişmiş filtre ve toplu işlemler",
+        "steps": ["Kullanıcı yönetimi: rol ve yetki alanı tanımları"]
+      }
+    },
+    "salesTracking": {
+      "intro": "Satış takibi, satış fırsatlarınızı ve satış sürecinizi CRM içinde tek yerde izlemenizi sağlar. Fırsatlar müşteri kartlarıyla aynı modülde durur; CRM dashboard'u satış ve müşteri özet göstergelerini, satış raporları ise ekibinizin performansını gösterir. Satış ekipleri ve bayiler aynı süreci aynı ekrandan takip eder.",
+      "toast": {
+        "title": "Yeni satış fırsatı",
+        "description": "CRM · Satışlar"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Görünür süreç",
+          "title": "Fırsatlar kaybolmaz",
+          "text": "Her satış fırsatı CRM'de kayıtlı olduğu için hangi görüşmenin nerede kaldığını tahmin etmek zorunda kalmazsınız."
+        },
+        {
+          "eyebrow": "Anlık özet",
+          "title": "CRM dashboard",
+          "text": "Satış ve müşteri özet göstergeleri CRM'e girdiğiniz ilk ekranda; günün durumunu tek bakışta görün."
+        },
+        {
+          "eyebrow": "Performans",
+          "title": "Satış raporları",
+          "text": "Satış ve performans raporlarını ekibinizle paylaşın; raporları Excel, PDF veya Word olarak dışa aktarın."
+        }
+      ],
+      "showcase": {
+        "title": "Satış ve performans<br></br><accent>raporlarda.</accent>",
+        "text": "CRM raporları satış ve performans verilerinizi tablolar halinde sunar. Platformdaki diğer raporlar gibi filtrelenir, kolonları düzenlenir ve kurumsal başlıkla Excel, PDF veya Word olarak dışa aktarılır. Grup, şirket ve şube yapısı CRM'de de geçerlidir; bayileriniz sisteme kendi rolleriyle girer ve yalnızca yetkili oldukları menüleri görür."
+      },
+      "steps": {
+        "title": "Satış takibi<br></br><accent>üç adımda.</accent>",
+        "items": [
+          "Müşteri kartlarınızı Kişiler bölümünde oluşturun.",
+          "Satışlar bölümünde her fırsatı kaydedin ve süreç boyunca güncelleyin.",
+          "CRM dashboard'u ve satış raporlarıyla ekibinizin performansını izleyin."
+        ]
+      },
+      "capabilitiesText": "Satış süreci çoğu ekipte not defterleri, mesajlar ve kişisel Excel dosyaları arasında dağılır. QR Zaman CRM'de satış fırsatları müşteri kartlarıyla aynı modülde tutulur; teklifler ve ekip görevleri de aynı yerde ilerler. Yönetici CRM dashboard'undaki özet göstergelerle günün durumunu görür, satış ve performans raporlarıyla ekibin sonuçlarını takip eder. Bayi rolündeki iş ortakları sisteme kendi kullanıcılarıyla girer ve yalnızca yetkili oldukları menüleri görür. CRM'e özel tanımlamalar ayarlar bölümünden yapılır; tüm listeler Excel, PDF veya Word olarak dışa aktarılır. Satış ekibiniz, bayileriniz ve yöneticileriniz tek panelde, tek hesapla çalışır.",
+      "capabilities": [
+        "Satış fırsatları kaydı",
+        "Satış süreci takibi",
+        "Müşteri kartlarıyla aynı modülde çalışma",
+        "CRM dashboard'unda satış özet göstergeleri",
+        "Satış ve performans raporları",
+        "Teklif ve görevlerle birlikte takip",
+        "Bayi rolüyle iş ortağı erişimi",
+        "Excel, PDF ve Word dışa aktarma"
+      ],
+      "cta": "Satış takibini<br></br><accent>ekibinizle başlatın.</accent>",
+      "alts": {
+        "hero": ["QR Zaman yönetim paneli: rol bazlı dashboard göstergeleri"],
+        "showcase": "QR Zaman rapor ekranı: filtrelenebilir rapor tablosu",
+        "steps": ["Kurumsal yönetim: grup, şirket ve şube hiyerarşisi"]
+      }
+    },
+    "quoteManagement": {
+      "intro": "Teklif yönetimi ile müşterilerinize sunduğunuz teklifleri CRM içinde hazırlar ve durumlarını takip edersiniz. Teklifler müşteri kartları ve satış fırsatlarıyla aynı modülde durduğu için hangi müşteriye hangi teklifin verildiği e-posta kutularında ve masaüstü klasörlerinde kaybolmaz.",
+      "toast": {
+        "title": "Teklif hazırlandı",
+        "description": "CRM · Teklifler"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Tek yerde",
+          "title": "Teklifler dağılmaz",
+          "text": "Tüm teklifler CRM'deki Teklifler bölümünde listelenir; eski bir teklifi bulmak için dosya aramanız gerekmez."
+        },
+        {
+          "eyebrow": "Takip",
+          "title": "Durum bir bakışta",
+          "text": "Her teklifin durumunu takip edin; bekleyen teklifler için ekibinize görev ve hatırlatma oluşturun."
+        },
+        {
+          "eyebrow": "Kurumsal çıktı",
+          "title": "Başlıklı listeler",
+          "text": "Platformdaki tüm listeler gibi teklif listesi de kurumsal başlıkla Excel, PDF veya Word olarak alınır."
+        }
+      ],
+      "showcase": {
+        "title": "Her çıktı<br></br><accent>kurumsal başlıkla.</accent>",
+        "text": "QR Zaman'da listeler ve raporlar şirket adınızın yer aldığı kurumsal başlıkla PDF, Excel veya Word olarak hazırlanır. Teklif listeleriniz de aynı düzenle dışa aktarılır; yöneticinize ya da muhasebenize göndereceğiniz dosya ekranda gördüğünüzle aynıdır. Teklifler ilgili müşteri kartı ve satış fırsatıyla aynı modülde durduğu için geçmişe dönük takip de kolaylaşır."
+      },
+      "steps": {
+        "title": "Teklif süreci<br></br><accent>üç adımda.</accent>",
+        "items": [
+          "Müşteri kartını Kişiler bölümünde açın ya da yeni kart oluşturun.",
+          "Teklifler bölümünde teklifinizi hazırlayın.",
+          "Teklifin durumunu takip edin, gerekirse ekibinize görev ve hatırlatma oluşturun."
+        ]
+      },
+      "capabilitiesText": "Teklifler satış sürecinin müşteriye en görünür adımıdır; hangi teklifin ne zaman hazırlandığı ve ne durumda olduğu bilinmediğinde fırsatlar kaçar. QR Zaman CRM'de teklifler, ilgili müşteri kartı ve satış fırsatıyla aynı modülde durur. Bekleyen teklifler için ekibinize görev ve hatırlatma oluşturabilir, CRM dashboard'u ile satış ve performans raporlarında genel durumu izleyebilirsiniz. Bayi rolündeki iş ortaklarınız da aynı yapıyı kendi yetkileriyle kullanır. CRM bordro ve personel yönetimiyle aynı panelde çalıştığı için ayrı bir kullanıcı listesi ya da ayrı bir yazılım gerekmez. Teklif listesi de diğer tablolar gibi aranır, filtrelenir ve dışa aktarılır.",
+      "capabilities": [
+        "Teklif hazırlama",
+        "Teklif durum takibi",
+        "Müşteri kartları ve satış fırsatlarıyla aynı modülde",
+        "Takip için görev ve hatırlatmalar",
+        "Arama, filtre ve toplu işlemler",
+        "Kurumsal başlıklı Excel, PDF ve Word çıktısı",
+        "Satış ve performans raporları",
+        "Bayi rolüyle iş ortağı erişimi"
+      ],
+      "cta": "Teklif yönetimini<br></br><accent>CRM'e taşıyın.</accent>",
+      "alts": {
+        "hero": ["QR Zaman yönetim paneli: rol bazlı dashboard"],
+        "showcase": "Kurumsal başlıklı PDF liste çıktısı",
+        "steps": ["Talep listesi ekranı: durum, öncelik ve tarih kolonları"]
+      }
+    },
+    "taskManagement": {
+      "intro": "Görev yönetimi, satış ve müşteri işlerinizden doğan ekip görevlerini CRM içinde toplar. Görevleri oluşturur, ekibinizle paylaşır ve hatırlatmalarla hiçbir takibi kaçırmazsınız. Görevler müşteri kartları, satışlar ve tekliflerle aynı modülde durduğu için hangi işin neden yapıldığı her zaman bellidir.",
+      "toast": {
+        "title": "Hatırlatma",
+        "description": "Bugün · Müşteri araması"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Ekip işi",
+          "title": "Görevler görünür",
+          "text": "Ekip görevleri tek listede durur; kimin hangi işle ilgilendiği toplantıda sorulmadan görülür."
+        },
+        {
+          "eyebrow": "Hatırlatma",
+          "title": "Takip unutulmaz",
+          "text": "Görevlere hatırlatma ekleyin; teklif dönüşü veya müşteri araması gibi işler zamanında hatırlansın."
+        },
+        {
+          "eyebrow": "Bağlantılı",
+          "title": "Müşteriyle aynı yerde",
+          "text": "Görevler CRM'in Kişiler, Satışlar ve Teklifler bölümleriyle aynı modülde; bağlam için başka bir yazılıma geçmezsiniz."
+        }
+      ],
+      "showcase": {
+        "title": "Her iş<br></br><accent>kayıt altında.</accent>",
+        "text": "QR Zaman'da destek talepleri canlı mesajlaşma, dosya ekleri ve okundu bilgisiyle yürür; açık, kapalı ve okunmamış talepler sayaçlarla izlenir. CRM görevleri de aynı anlayışla çalışır: ekip görevleri ve hatırlatmalar tek modülde tutulur, kimin neyle ilgilendiği kayıt altında olur ve hiçbir iş e-posta zincirlerinde kaybolmaz."
+      },
+      "steps": {
+        "title": "Görev takibi<br></br><accent>üç adımda.</accent>",
+        "items": [
+          "CRM'de Görevler bölümünü açın ve yeni görev oluşturun.",
+          "Görevi ekibinizden ilgili kişiyle paylaşın, hatırlatma ekleyin.",
+          "Görevleri tamamlandıkça güncelleyin; CRM raporlarında ekip performansını izleyin."
+        ]
+      },
+      "capabilitiesText": "Satış ve müşteri işlerinde en sık yaşanan sorun, söz verilen bir aramanın ya da teklif dönüşünün unutulmasıdır. QR Zaman CRM'de ekip görevleri ve hatırlatmalar müşteri kartları, satış fırsatları ve tekliflerle aynı modülde tutulur; böylece bir görevi açan kişi ilgili müşteriyi ve satışı aramak için başka bir yere bakmaz. Yönetici CRM dashboard'undaki özet göstergeler ile satış ve performans raporlarıyla ekibin iş yükünü izler. Rol bazlı erişim sayesinde bayi rolündeki iş ortakları yalnızca yetkili oldukları menüleri görür. Tüm listeler arama, filtre ve toplu işlemlerle yönetilir; Excel, PDF veya Word olarak dışa aktarılır. Böylece hiçbir takip e-posta zincirlerinde kaybolmaz.",
+      "capabilities": [
+        "Ekip görevleri",
+        "Görev hatırlatmaları",
+        "Müşteri, satış ve tekliflerle aynı modülde",
+        "CRM dashboard'unda özet göstergeler",
+        "Satış ve performans raporları",
+        "Rol bazlı erişim",
+        "Arama, filtre ve toplu işlemler",
+        "Excel, PDF ve Word dışa aktarma"
+      ],
+      "cta": "Görev yönetimini<br></br><accent>ekibinize açın.</accent>",
+      "alts": {
+        "hero": ["İK takvimi: aylık görünüm ve özel günler"],
+        "showcase": "Destek talebi ekranı: talep bazlı canlı mesajlaşma",
+        "steps": ["Kullanıcı yönetimi: kullanıcılar ve yetki alanları"]
+      }
+    },
+    "mobileApp": {
+      "intro": "QR Zaman PDKS mobil uygulaması ile personel iş yerindeki QR kodu okutarak giriş-çıkış yapar; izin ve avans talebini telefondan gönderir, bordrosunu, puantajını ve PDKS kayıtlarını görür. Yöneticiler talepleri mobilden onaylar, ekiplerinin listelerine ulaşır ve sahada yeni QR noktası kaydeder.",
+      "toast": {
+        "title": "Giriş kaydedildi",
+        "description": "Bugünkü giriş · 08:57"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Güvenli okutma",
+          "title": "Konum ve cihaz doğrulaması",
+          "text": "Okutma anında konum alınır, sahte GPS tespit edilir ve hesap tek cihaza eşlenir; kamera görüntüsü kaydedilmez."
+        },
+        {
+          "eyebrow": "Self servis",
+          "title": "Talepler cepte",
+          "text": "İzin ve avans talebi, kalan izin, son bordro ve eklenti-kesinti özetleri personelin ana sayfasında."
+        },
+        {
+          "eyebrow": "Yönetici modu",
+          "title": "Onay ve saha kurulumu",
+          "text": "Yönetici talepleri onaylar veya reddeder, personel listelerini görür ve bulunduğu noktayı tek dokunuşla QR noktası olarak kaydeder."
+        }
+      ],
+      "showcase": {
+        "title": "Telefondaki kayıt<br></br><accent>anında panelde.</accent>",
+        "text": "Personel uygulamadan giriş veya çıkış yaptığında kayıt, okutulan konumun enlem ve boylamıyla birlikte yönetim paneline düşer. Mükerrer kayıtlar kontrol edilir; aynı gün ikinci giriş denemesinde personel uyarılır. Konum kapalıysa uygulama kullanıcıyı ayarlara yönlendirir. Oturum şifreli cihaz depolamasıyla korunur, giriş kullanıcı adı veya telefon numarasıyla yapılır."
+      },
+      "steps": {
+        "title": "Uygulamayı<br></br><accent>üç adımda kullanın.</accent>",
+        "items": [
+          "Uygulamayı App Store veya Google Play'den indirin; kullanıcı adınız ya da telefon numaranızla giriş yapın.",
+          "İlk girişte telefonunuz hesabınıza eşlenir; hesabınız başka bir cihazdan kullanılamaz.",
+          "Giriş veya Çıkış'ı seçip QR kodu okutun; kaydın onayını ekranda görün."
+        ]
+      },
+      "capabilitiesText": "Mobil uygulama personelin ve yöneticinin günlük işlerini tek uygulamada toplar. Personel ana sayfasında bugünkü giriş ve çıkış saatini, anlık mesai süresini, kalan iznini ve son bordrosunu görür; maaş bilgisini gizleyip gösterebilir. Yönetici ana sayfasında aktif personel, bugün gelenler, izindekiler, onay bekleyen talepler ve yaklaşan doğum günleri yer alır. Görünürlük şirketin yetki ayarlarına bağlıdır; personel yalnızca şirketin açtığı bilgileri görür.",
+      "capabilities": [
+        "QR ile giriş-çıkış ve yön seçimi",
+        "Sahte konum (fake GPS) tespiti",
+        "Bugünkü giriş-çıkış kartı ve anlık mesai süresi",
+        "İzin ve avans talebi, durum takibi",
+        "Bordrom, Puantajım ve PDKS Kayıtlarım",
+        "Eklenti, kesinti ve özlük bilgileri",
+        "Yönetici için talep onayı ve personel listeleri",
+        "Açık ve koyu tema"
+      ],
+      "cta": "Mobil uygulamayı<br></br><accent>ekibinizle deneyin.</accent>",
+      "alts": {
+        "hero": [
+          "QR Zaman mobil uygulama ana sayfası: bugünkü giriş-çıkış ve izin özeti",
+          "PDKS mobil uygulamada QR okutmadan önce Giriş veya Çıkış seçimi"
+        ],
+        "showcase": "Mobilden okutulan PDKS kaydı: lokasyon ve koordinat detayı",
+        "steps": [
+          "QR Zaman mobil uygulama giriş ekranı",
+          "Mobil uygulamada cihaz eşleşme ve kayıt onayı"
+        ]
+      }
+    },
+    "multiCompany": {
+      "intro": "Çoklu şirket ve şube yönetimi, grup, şirket, şube ve bölümlerinizi tek bir hiyerarşide toplar. Üst bardan grup, şirket, şube ve dönem (yıl/ay) seçerek çalışırsınız; her kullanıcıya grup, şirket veya şube bazında yetki alanı tanımlanır. Birden çok şirketi olan gruplar ve çok şubeli işletmeler ayrı sistemler kullanmaz.",
+      "toast": {
+        "title": "Şube seçildi",
+        "description": "Dönem · Kasım 2026"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Hiyerarşi",
+          "title": "Grup → Şirket → Şube → Bölüm",
+          "text": "Organizasyonunuzu dört seviyede kurun; her seviyeyi ayrı ayrı aktif veya pasif yapın."
+        },
+        {
+          "eyebrow": "Hızlı geçiş",
+          "title": "Üst bardan seçim",
+          "text": "Grup, şirket, şube ve dönem seçimi her ekranda üst barda; başka bir şubeye geçmek için oturumu kapatmazsınız."
+        },
+        {
+          "eyebrow": "Kurumsal kayıtlar",
+          "title": "Resmî bilgiler hazır",
+          "text": "Vergi dairesi ve no, MERSİS, ticaret sicil, İŞKUR ve işyeri SGK sicil no gibi bilgiler şirket ve şube kartında durur."
+        }
+      ],
+      "showcase": {
+        "title": "Şirketten bölüme<br></br><accent>tek ağaçta.</accent>",
+        "text": "Kurumsal yönetim ekranında gruplar, şirketler, şubeler ve bölümler iç içe listelenir. Şirket ve şube kartında faaliyet kodu, açılış ve kapanış tarihleri, mülkiyet türü ve il/ilçe bilgileri bulunur. Bölüm kartında lokasyon, sorumlu ve çalışma saati bilgileri tutulur; QR noktaları ve vardiyalar da şube ve bölümlere göre tanımlanır."
+      },
+      "steps": {
+        "title": "Yapınızı<br></br><accent>üç adımda kurun.</accent>",
+        "items": [
+          "Grubu ve şirketleri resmî bilgileriyle tanımlayın.",
+          "Şirketlere bağlı şubeleri ve bölümleri ekleyin; bölümlere lokasyon ve sorumlu atayın.",
+          "Kullanıcılara grup, şirket veya şube bazında yetki alanı verin."
+        ]
+      },
+      "capabilitiesText": "Çoklu şirket yapısı yalnızca kurumsal kayıtlar için değil, günlük işler için de önemlidir. Vardiya tanımları, QR noktaları ve raporlar şube ve bölüm bazında çalışır; merkez ekibi tüm şirketleri, bölge sorumlusu yalnızca kendi şubelerini görür. Dönem seçimi sayesinde geçmiş bir ayın puantajına ve bordrosuna dönmek için ayrı bir arşiv ekranı aramazsınız.",
+      "capabilities": [
+        "Grup, şirket, şube ve bölüm yönetimi",
+        "Her seviye için aktif/pasif yönetimi",
+        "Üst bardan grup, şirket, şube ve dönem seçimi",
+        "Vergi, MERSİS, ticaret sicil, İŞKUR ve SGK sicil bilgileri",
+        "Bölüm kartında lokasyon, sorumlu ve çalışma saati",
+        "Şube ve bölüm bazlı vardiya ve QR noktaları",
+        "Grup, şirket ve şube bazlı kullanıcı yetkileri",
+        "Şube ve bölüm filtreli raporlar"
+      ],
+      "cta": "Tüm şirketlerinizi<br></br><accent>tek panelde görün.</accent>",
+      "alts": {
+        "hero": ["Kurumsal yönetim: grup, şirket ve şube hiyerarşisi"],
+        "showcase": "Şirket ve bölüm yönetimi: şubeye bağlı bölüm listesi",
+        "steps": ["Kullanıcı yönetimi: grup, şirket ve şube bazlı yetki alanları"]
+      }
+    },
+    "rolesPermissions": {
+      "intro": "Rol ve yetki yönetimi ile admin, yönetici, personel, bayi ve destek kullanıcı tipleri yalnızca yetkili oldukları menüyü görür. Kullanıcıları ekler, son giriş zamanlarını takip eder ve her birine grup, şirket veya şube bazında yetki alanı tanımlarsınız. Personelin kendi PDKS, puantaj ve bordrosunu görüp göremeyeceğine de siz karar verirsiniz.",
+      "toast": {
+        "title": "Yetki alanı güncellendi",
+        "description": "Şube bazlı erişim"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Rol bazlı menü",
+          "title": "Gereksiz ekran yok",
+          "text": "Her rol yalnızca yetkili olduğu menüyü görür; kullanıcılar kendi işine odaklanır, verileriniz gereksiz yere açılmaz."
+        },
+        {
+          "eyebrow": "Yetki alanı",
+          "title": "Grup, şirket, şube",
+          "text": "Bölge sorumlusuna yalnızca kendi şubelerini, merkez ekibine tüm şirketleri açın; yetki alanını kullanıcı bazında belirleyin."
+        },
+        {
+          "eyebrow": "Personel ayarları",
+          "title": "Görünürlük sizin elinizde",
+          "text": "Personelin kendi PDKS, puantaj ve bordrosunu görmesini ve her lokasyondan giriş-çıkış yapmasını şirket ayarlarından açıp kapatın."
+        }
+      ],
+      "showcase": {
+        "title": "Her role<br></br><accent>kendi dashboard'u.</accent>",
+        "text": "Yönetici aktif personeli, bugün gelenleri, izindekileri, onay bekleyen talepleri ve bordro özetini görür. Personel ise kendi giriş-çıkışını, son bordrosunu, kalan iznini ve avans-kesinti toplamlarını görür. Aynı panel, giriş yapan kullanıcının rolüne göre farklı bir ana sayfa açar; kullanıcı yönetimindeki son giriş takibiyle kimin sisteme ne zaman girdiğini de izlersiniz."
+      },
+      "steps": {
+        "title": "Yetkileri<br></br><accent>üç adımda verin.</accent>",
+        "items": [
+          "Kullanıcı yönetiminden yeni kullanıcı ekleyin ve rolünü seçin.",
+          "Kullanıcının çalışacağı grup, şirket veya şubeleri yetki alanı olarak tanımlayın.",
+          "Şirket ayarlarında personelin kendi kayıtlarını görme yetkilerini belirleyin."
+        ]
+      },
+      "capabilitiesText": "Yetki yönetimi, QR Zaman'ı farklı ekiplerin aynı anda güvenle kullanabilmesini sağlar. İK ve bordro ekibi tüm personel verisiyle çalışırken şube yöneticisi yalnızca kendi ekibini, personel yalnızca kendi kayıtlarını, bayi ise yalnızca yetkili olduğu menüleri görür. Mobil uygulamada oturum şifreli cihaz depolamasıyla korunur; hesap tek cihaza eşlendiği için başka bir telefondan kullanılamaz.",
+      "capabilities": [
+        "Admin, yönetici, personel, bayi ve destek rolleri",
+        "Rol bazlı menü görünürlüğü",
+        "Kullanıcı ekleme ve son giriş takibi",
+        "Grup, şirket ve şube bazlı yetki alanları",
+        "Personelin kendi PDKS, puantaj ve bordrosunu görme ayarı",
+        "Her lokasyondan giriş-çıkış yetkisi",
+        "Rol bazlı dashboard",
+        "Mobilde şifreli cihaz depolamalı güvenli oturum"
+      ],
+      "cta": "Yetkileri<br></br><accent>güvenle dağıtın.</accent>",
+      "alts": {
+        "hero": ["Kullanıcı yönetimi: kullanıcı tipleri ve yetki alanları"],
+        "showcase": "Yönetici dashboard'u: rol bazlı ana sayfa göstergeleri",
+        "steps": ["Mobil ana sayfa: personelin kendi giriş-çıkışı ve izin özeti"]
+      }
+    },
+    "dashboard": {
+      "intro": "Yönetici dashboard'u aktif personeli, bugün gelenleri, bugün izinde olanları ve onay bekleyen talepleri panele girdiğiniz ilk ekranda gösterir. Bordro özeti, yaklaşan doğum günleri, cinsiyet ve personel grubu dağılım grafikleri de aynı sayfadadır. Takvimde resmî tatilleri ve arifeleri görür, planlamanızı buna göre yaparsınız.",
+      "toast": {
+        "title": "Onay bekleyen talepler",
+        "description": "İzin ve avans"
+      },
+      "benefits": [
+        {
+          "eyebrow": "Anlık durum",
+          "title": "Kim geldi, kim izinde",
+          "text": "Sabah ilk iş, bugün gelen ve izinde olan personeli tek bakışta görün; kimseyi aramanız gerekmez."
+        },
+        {
+          "eyebrow": "Bekleyen işler",
+          "title": "Onaylar gözden kaçmaz",
+          "text": "Onay bekleyen talepler dashboard'da sayılarıyla durur; aynı özet yöneticinin mobil ana sayfasında da görünür."
+        },
+        {
+          "eyebrow": "Rol bazlı",
+          "title": "Personel için de",
+          "text": "Personel kendi dashboard'unda bugünkü giriş-çıkışını, son bordrosunu, kalan iznini ve çalışma süresini görür."
+        }
+      ],
+      "showcase": {
+        "title": "Takvim<br></br><accent>tatillerle hazır.</accent>",
+        "text": "Takvimde yıl, ay ve hafta görünümleri arasında geçiş yapın. Resmî tatiller, yarım gün arifeler ve özel günler işaretli gelir; dini bayramlar için tahmini tarihler gösterilir. Header takvimiyle herhangi bir ekrandan tatilleri hızlıca kontrol eder, vardiya ve izin planlamasını önceden yaparsınız."
+      },
+      "steps": {
+        "title": "Güne<br></br><accent>üç adımda başlayın.</accent>",
+        "items": [
+          "Panele girin; rolünüze özel dashboard açılsın.",
+          "Bugün gelenleri, izindekileri ve onay bekleyen talepleri kontrol edin.",
+          "Sahadaysanız aynı özeti mobil uygulamanın yönetici ana sayfasında görün."
+        ]
+      },
+      "capabilitiesText": "Dashboard, QR Zaman'a giren herkesin ilk gördüğü ekrandır ve role göre değişir. Yönetici dashboard'unda aktif personel sayısı, bugün gelenler, bugün izinde olanlar ve onay bekleyen talepler üstte yer alır; altında bordro özeti, yaklaşan doğum günleri ile cinsiyet ve personel grubu dağılım grafikleri bulunur. Personel dashboard'u ise bugünkü giriş-çıkışı, son bordroyu, kalan yıllık izni, sonraki izni, bu yılki avans, eklenti ve kesinti toplamlarını ve çalışma süresini gösterir. Header takvimi de resmî tatil ve arifeleri her ekrandan bir tıkla gösterir. Böylece güne hazırlıksız başlamazsınız.",
+      "capabilities": [
+        "Aktif personel ve bugün gelenler",
+        "Bugün izinde olanlar",
+        "Onay bekleyen talepler",
+        "Bordro özeti",
+        "Yaklaşan doğum günleri",
+        "Cinsiyet ve personel grubu dağılım grafikleri",
+        "Yıl, ay ve hafta görünümlü takvim",
+        "Resmî tatil ve arife gösterimi"
+      ],
+      "cta": "Yönetici dashboard'unu<br></br><accent>kendi verinizle görün.</accent>",
+      "alts": {
+        "hero": [
+          "QR Zaman yönetici dashboard: aktif personel, bugün gelenler ve onay bekleyenler"
+        ],
+        "showcase": "İK takvimi: resmî tatiller, arifeler ve özel günler",
+        "steps": ["QR Zaman mobil uygulama ana sayfası: günün özeti"]
+      }
     }
   }
 }

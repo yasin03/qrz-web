@@ -1,24 +1,45 @@
+import type { ReactNode } from "react";
 import { Mail, MapPin, Phone, type LucideIcon } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { CONTACT } from "@/config/site";
 import { cn } from "@/lib/utils";
 
 /**
- * İletişim satırları (telefon, e-posta, adres).
- * TODO: Gerçek bilgiler config/site.ts → CONTACT'a girilene kadar yer tutucu metin gösterilir
- * ve link verilmez. Değer girilince tel: / mailto: linkine otomatik döner.
+ * İletişim satırları (telefon, e-posta, adres). Bilgiler config/site.ts → CONTACT'tan gelir.
+ * Bir değer boş bırakılırsa yer tutucu metin gösterilir ve link verilmez.
  */
 export async function ContactLines({ className }: { className?: string }) {
   const t = await getTranslations("footer");
+  const phone: string = CONTACT.phone;
+  const email: string = CONTACT.email;
+  const addressLines: readonly string[] = CONTACT.address.lines;
+
   const lines: {
     key: "phone" | "email" | "address";
     icon: LucideIcon;
-    value: string;
+    value: ReactNode;
     href?: string;
   }[] = [
-    { key: "phone", icon: Phone, value: CONTACT.phone, href: `tel:${CONTACT.phone}` },
-    { key: "email", icon: Mail, value: CONTACT.email, href: `mailto:${CONTACT.email}` },
-    { key: "address", icon: MapPin, value: CONTACT.address },
+    {
+      key: "phone",
+      icon: Phone,
+      value: phone ? CONTACT.phoneDisplay : null,
+      href: `tel:${phone}`,
+    },
+    { key: "email", icon: Mail, value: email || null, href: `mailto:${email}` },
+    {
+      key: "address",
+      icon: MapPin,
+      value: addressLines.length ? (
+        <address className="not-italic">
+          {addressLines.map((line, index) => (
+            <span key={index} className="block">
+              {line}
+            </span>
+          ))}
+        </address>
+      ) : null,
+    },
   ];
 
   return (
@@ -30,10 +51,10 @@ export async function ContactLines({ className }: { className?: string }) {
             <a href={href} className="font-semibold text-navy-foreground hover:underline">
               {value}
             </a>
+          ) : value ? (
+            value
           ) : (
-            <span aria-label={value ? undefined : t(key)}>
-              {value || t(`placeholders.${key}`)}
-            </span>
+            <span aria-label={t(key)}>{t(`placeholders.${key}`)}</span>
           )}
         </li>
       ))}

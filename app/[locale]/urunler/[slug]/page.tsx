@@ -1,12 +1,11 @@
 import { notFound } from "next/navigation";
 import type { Locale } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
-import { PageHeader } from "@/components/layout/page-header";
+import { ProductPage } from "@/components/sections/product/product-page";
 import { PRODUCTS, getProductBySlug } from "@/config/products";
 import { pageMetadata } from "@/lib/seo";
 
-// İç yol her zaman TR slug'ıdır; EN adresi (ör. /en/...) next-intl tarafından buraya yeniden yazılır.
-// Faz 2 iskeleti: başlık + açıklama + breadcrumb. Gövde ilgili fazda eklenir.
+// İç yol her zaman TR slug'ıdır; EN adresi (ör. /en/products/...) next-intl tarafından buraya yeniden yazılır.
 
 export const dynamicParams = false;
 
@@ -23,12 +22,12 @@ export async function generateMetadata({
   return pageMetadata(locale as Locale, item.id);
 }
 
-export default async function ProductPage({
+export default async function ProductRoute({
   params,
 }: PageProps<"/[locale]/urunler/[slug]">) {
   const { locale, slug } = await params;
   const item = getProductBySlug(slug);
   if (!item) notFound();
   setRequestLocale(locale as Locale);
-  return <PageHeader id={item.id} locale={locale as Locale} />;
+  return <ProductPage product={item} locale={locale as Locale} />;
 }

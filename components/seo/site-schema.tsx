@@ -15,6 +15,7 @@ export async function SiteSchema({ locale }: { locale: Locale }) {
   const t = await getTranslations({ locale, namespace: "footer" });
   const phone: string = CONTACT.phone;
   const email: string = CONTACT.email;
+  const street: string = CONTACT.address.street;
   const sameAs = defined(Object.values(SOCIAL_LINKS));
 
   return (
@@ -29,6 +30,17 @@ export async function SiteSchema({ locale }: { locale: Locale }) {
           logo: `${SITE_URL}/logos/logo-pri.png`,
           description: t("tagline"),
           ...(sameAs.length ? { sameAs } : {}),
+          ...(street
+            ? {
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: street,
+                  addressLocality: CONTACT.address.locality,
+                  addressRegion: CONTACT.address.region,
+                  addressCountry: CONTACT.address.country,
+                },
+              }
+            : {}),
           ...(phone || email
             ? {
                 contactPoint: {
@@ -63,9 +75,15 @@ export async function SiteSchema({ locale }: { locale: Locale }) {
 export async function SoftwareAppSchema({
   locale,
   description,
+  url,
+  featureList,
 }: {
   locale: Locale;
   description: string;
+  /** Ürün sayfalarında sayfanın mutlak URL'si (varsayılan: ana sayfa) */
+  url?: string;
+  /** Ürün sayfasındaki "Neler yapabilirsiniz?" maddeleri */
+  featureList?: string[];
 }) {
   const downloadUrls = defined([STORE_LINKS.appStore, STORE_LINKS.googlePlay]);
   return (
@@ -76,8 +94,9 @@ export async function SoftwareAppSchema({
         name: SITE_NAME,
         applicationCategory: "BusinessApplication",
         operatingSystem: "Web, iOS, Android",
-        url: absoluteUrl(locale, "/"),
+        url: url ?? absoluteUrl(locale, "/"),
         description,
+        ...(featureList?.length ? { featureList } : {}),
         inLanguage: locale,
         publisher: { "@id": ORG_ID },
         ...(downloadUrls.length ? { downloadUrl: downloadUrls } : {}),

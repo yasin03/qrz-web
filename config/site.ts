@@ -14,14 +14,31 @@ export const PANEL_URL = "https://app.qrzaman.com.tr";
 export const PANEL_LOGIN_URL = `${PANEL_URL}/login`;
 
 export const STORE_LINKS = {
-  appStore: "", // TODO: App Store linki
-  googlePlay: "", // TODO: Google Play linki
+  appStore: "https://apps.apple.com/pe/app/qr-zaman/id6824048395?l=en-GB",
+  googlePlay:
+    "https://play.google.com/store/apps/details?id=com.qrzaman.qrzmobile&pcampaignid=web_share",
 } as const;
 
 export const CONTACT = {
-  phone: "", // TODO: telefon (E.164, ör. +90...)
-  email: "", // TODO: e-posta
-  address: "", // TODO: adres
+  /** E.164 (tel: linki ve JSON-LD) */
+  phone: "+902722121505",
+  /** Ekranda gösterilen biçim */
+  phoneDisplay: "0272 212 15 05",
+  email: "info@qrzaman.com.tr",
+  address: {
+    /** Ekranda satır satır gösterilir */
+    lines: [
+      "Ar-Ge Tasarım Merkezi",
+      "Osmangazi Mah. C. Dudayev Cad. No: 10 Kat: 2 Ofis: 11",
+      "Merkez/Afyonkarahisar",
+    ],
+    // JSON-LD PostalAddress alanları (posta kodu bilinmiyor, eklenmedi)
+    street:
+      "Ar-Ge Tasarım Merkezi, Osmangazi Mah. C. Dudayev Cad. No: 10 Kat: 2 Ofis: 11",
+    locality: "Merkez",
+    region: "Afyonkarahisar",
+    country: "TR",
+  },
 } as const;
 
 export const SOCIAL_LINKS = {
