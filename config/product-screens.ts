@@ -37,7 +37,9 @@ import timesheetDetail from "@/public/screenshots/admin/puantaj-detayi.webp";
 import pdksList from "@/public/screenshots/admin/qr-kodlu-pdks-kayitlari.webp";
 import dashboardDark from "@/public/screenshots/admin/qr-zaman-yonetici-paneli-koyu.webp";
 import dashboard from "@/public/screenshots/admin/qr-zaman-yonetici-paneli.webp";
-import users from "@/public/screenshots/admin/rol-ve-yetki-yonetimi-koyu.webp";
+import usersDark from "@/public/screenshots/admin/rol-ve-yetki-yonetimi-koyu.webp";
+import users from "@/public/screenshots/admin/rol-ve-yetki-yonetimi.webp";
+import userScopes from "@/public/screenshots/admin/kullanici-yetki-alanlari.webp";
 import departments from "@/public/screenshots/admin/sirket-bolum-yonetimi.webp";
 import mAdvances from "@/public/screenshots/mobile/mobil-avans-listesi.webp";
 import mAdvanceRequest from "@/public/screenshots/mobile/mobil-avans-talebi.webp";
@@ -82,6 +84,7 @@ const browser = (src: StaticImageData, path: string, dark?: StaticImageData) =>
   ({ kind: "browser", shot: { src, dark, path } }) as const;
 
 const PAYROLL: BrowserShot = { src: payroll, dark: payrollDark, path: "/bordro" };
+const USERS: Shot = { src: users, dark: usersDark };
 const DASHBOARD: BrowserShot = { src: dashboard, dark: dashboardDark, path: "/" };
 
 export const PRODUCT_SCREENS: Record<ProductId, ProductScreens> = {
@@ -186,7 +189,7 @@ export const PRODUCT_SCREENS: Record<ProductId, ProductScreens> = {
     hero: browser(dashboard, "/", dashboardDark),
     toast: { icon: CircleCheck, tone: "success" },
     showcase: { src: employees, path: "/personel" },
-    steps: [{ kind: "browser", shot: { src: users } }],
+    steps: [{ kind: "browser", shot: USERS }],
   },
   salesTracking: {
     hero: browser(dashboard, "/", dashboardDark),
@@ -204,7 +207,7 @@ export const PRODUCT_SCREENS: Record<ProductId, ProductScreens> = {
     hero: browser(calendar, "/takvim"),
     toast: { icon: Clock, tone: "warning" },
     showcase: { src: supportChat, path: "/destek" },
-    steps: [{ kind: "browser", shot: { src: users } }],
+    steps: [{ kind: "browser", shot: USERS }],
   },
 
   // Platform
@@ -221,13 +224,13 @@ export const PRODUCT_SCREENS: Record<ProductId, ProductScreens> = {
     hero: browser(companyTree, "/kurumsal/sirketler"),
     toast: { icon: CircleCheck, tone: "info" },
     showcase: { src: departments, path: "/kurumsal/bolumler" },
-    steps: [{ kind: "browser", shot: { src: users } }],
+    steps: [{ kind: "browser", shot: { src: userScopes } }],
   },
   rolesPermissions: {
-    hero: browser(users, "/kurumsal/kullanici-yonetimi"),
+    hero: browser(users, "/kurumsal/kullanici-yonetimi", usersDark),
     toast: { icon: ShieldCheck, tone: "success" },
     showcase: DASHBOARD,
-    steps: [{ kind: "phone", shot: { src: mHome } }],
+    steps: [{ kind: "browser", shot: { src: userScopes } }],
   },
   dashboard: {
     hero: browser(dashboard, "/", dashboardDark),

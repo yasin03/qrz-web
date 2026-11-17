@@ -48,7 +48,7 @@ import timesheet from "@/public/screenshots/admin/puantaj-cizelgesi.webp";
 import pdksList from "@/public/screenshots/admin/qr-kodlu-pdks-kayitlari.webp";
 import dashboardDark from "@/public/screenshots/admin/qr-zaman-yonetici-paneli-koyu.webp";
 import dashboard from "@/public/screenshots/admin/qr-zaman-yonetici-paneli.webp";
-import users from "@/public/screenshots/admin/rol-ve-yetki-yonetimi-koyu.webp";
+import userScopes from "@/public/screenshots/admin/kullanici-yetki-alanlari.webp";
 import departments from "@/public/screenshots/admin/sirket-bolum-yonetimi.webp";
 import mAdvanceRequest from "@/public/screenshots/mobile/mobil-avans-talebi.webp";
 import mLeave from "@/public/screenshots/mobile/mobil-izin-talepleri.webp";
@@ -149,7 +149,7 @@ export const SOLUTION_SCREENS: Record<SolutionId, SolutionScreens> = {
     hero: { ...browser(companyTree, "/kurumsal/sirketler"), phone: mHome },
     toast: { icon: MapPin, tone: "success" },
     splits: [
-      browser(users, "/kurumsal/kullanici-yonetimi"),
+      browser(userScopes, "/kurumsal/kullanici-yonetimi"),
       browser(locationQr, "/lokasyon"),
     ],
   },

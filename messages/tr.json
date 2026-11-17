@@ -1824,7 +1824,7 @@
       "alts": {
         "hero": ["Kurumsal yönetim: grup, şirket ve şube hiyerarşisi"],
         "showcase": "Şirket ve bölüm yönetimi: şubeye bağlı bölüm listesi",
-        "steps": ["Kullanıcı yönetimi: grup, şirket ve şube bazlı yetki alanları"]
+        "steps": ["Kullanıcıyı düzenle: grup, şirket ve şube bazlı yetki alanları"]
       }
     },
     "rolesPermissions": {
@@ -1877,7 +1877,9 @@
       "alts": {
         "hero": ["Kullanıcı yönetimi: kullanıcı tipleri ve yetki alanları"],
         "showcase": "Yönetici dashboard'u: rol bazlı ana sayfa göstergeleri",
-        "steps": ["Mobil ana sayfa: personelin kendi giriş-çıkışı ve izin özeti"]
+        "steps": [
+          "Kullanıcı yetki alanları formu: grup, şirket ve şube seçerek yetki tanımlama"
+        ]
       }
     },
     "dashboard": {
@@ -2862,7 +2864,9 @@
           "Mobil uygulama ana sayfası: şube yöneticisi için günlük özet"
         ],
         "splits": [
-          ["Kullanıcı yönetimi: şube bazlı yetki alanları ve son giriş bilgileri"],
+          [
+            "Kullanıcı yetki alanları: şube yöneticisine grup, şirket ve şube bazlı erişim tanımı"
+          ],
           ["Lokasyon QR noktası tanımı: şube girişi için QR kod ve konum"]
         ]
       }

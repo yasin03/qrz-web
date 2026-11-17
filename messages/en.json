@@ -1832,7 +1832,7 @@
       "alts": {
         "hero": ["Corporate management: group, company and branch hierarchy"],
         "showcase": "Company and department management: departments under a branch",
-        "steps": ["User management: permission scopes by group, company and branch"]
+        "steps": ["Edit user: access scopes by group, company and branch"]
       }
     },
     "rolesPermissions": {
@@ -1885,7 +1885,9 @@
       "alts": {
         "hero": ["User management: user types and permission scopes"],
         "showcase": "Manager dashboard: role-based home screen indicators",
-        "steps": ["Mobile home screen: the employee's own clock-ins and leave summary"]
+        "steps": [
+          "User access scope form: assigning permissions by group, company and branch"
+        ]
       }
     },
     "dashboard": {
@@ -2876,7 +2878,9 @@
           "Mobile app home screen: daily summary for a branch manager"
         ],
         "splits": [
-          ["User management: branch-level access scopes and last sign-in details"],
+          [
+            "User access scopes: giving a branch manager access by group, company and branch"
+          ],
           ["Location QR point setup: QR code and coordinates for a branch entrance"]
         ]
       }
