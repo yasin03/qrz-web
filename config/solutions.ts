@@ -1,5 +1,5 @@
 // Çözüm sayfaları (/cozumler/[slug] ↔ /en/solutions/[slug]).
-// Sektör listesi Faz 2 öncesinde onaylandı.
+// Sektör listesi Faz 2 öncesinde onaylandı, Faz 5'te aynen teyit edildi.
 
 import {
   Briefcase,
@@ -14,9 +14,19 @@ import {
   UtensilsCrossed,
   type LucideIcon,
 } from "lucide-react";
+import type { ProductId } from "./products";
 
 export const SOLUTION_GROUPS = ["role", "sector"] as const;
 export type SolutionGroup = (typeof SOLUTION_GROUPS)[number];
+
+/** /cozumler sayfasındaki grup bölümlerinin çapa adları (breadcrumb ara adımı da buraya gider). */
+export const SOLUTION_GROUP_ANCHORS: Record<SolutionGroup, { tr: string; en: string }> = {
+  role: { tr: "rollere-gore", en: "by-role" },
+  sector: { tr: "sektorlere-gore", en: "by-industry" },
+};
+
+/** Gruba karşılık gelen menü kolon başlığı (messages → nav.groups.<id>) */
+export const SOLUTION_GROUP_NAV = { role: "byRole", sector: "bySector" } as const;
 
 type SolutionDef = {
   /** messages: pages.<id> */
@@ -115,3 +125,121 @@ export type SolutionSlug = Solution["slug"]["tr"];
 export function getSolutionBySlug(slug: string) {
   return SOLUTIONS.find((s) => s.slug.tr === slug);
 }
+
+export function getSolutionById(id: SolutionId): Solution {
+  return SOLUTIONS.find((s) => s.id === id)!;
+}
+
+/**
+ * İç linkleme (6.4): her çözüm sayfası o role/sektöre uygun ürünleri ("Uygun özellikler")
+ * ve 3 ilgili çözümü gösterir. Ürün açıklamaları: messages → solutionContent.<id>.features.items.<productId>.
+ */
+export const SOLUTION_LINKS: Record<
+  SolutionId,
+  {
+    products: readonly ProductId[];
+    related: readonly [SolutionId, SolutionId, SolutionId];
+  }
+> = {
+  managers: {
+    products: [
+      "dashboard",
+      "leaveManagement",
+      "advanceManagement",
+      "payroll",
+      "reporting",
+      "multiCompany",
+    ],
+    related: ["hrTeams", "employees", "multiBranch"],
+  },
+  hrTeams: {
+    products: [
+      "timesheet",
+      "payroll",
+      "earningsDeductions",
+      "compliance",
+      "employeeManagement",
+      "hrDocuments",
+    ],
+    related: ["managers", "employees", "manufacturing"],
+  },
+  employees: {
+    products: [
+      "mobileApp",
+      "qrPdks",
+      "leaveManagement",
+      "advanceManagement",
+      "employeeRecords",
+    ],
+    related: ["managers", "hrTeams", "retail"],
+  },
+  retail: {
+    products: [
+      "qrPdks",
+      "locationTracking",
+      "shiftManagement",
+      "timesheet",
+      "multiCompany",
+    ],
+    related: ["multiBranch", "hospitality", "managers"],
+  },
+  manufacturing: {
+    products: [
+      "shiftManagement",
+      "qrPdks",
+      "timesheet",
+      "payroll",
+      "earningsDeductions",
+      "reporting",
+    ],
+    related: ["hrTeams", "construction", "multiBranch"],
+  },
+  construction: {
+    products: ["qrPdks", "locationTracking", "mobileApp", "timesheet", "payroll"],
+    related: ["manufacturing", "multiBranch", "managers"],
+  },
+  hospitality: {
+    products: [
+      "shiftManagement",
+      "qrPdks",
+      "timesheet",
+      "payroll",
+      "earningsDeductions",
+      "leaveManagement",
+    ],
+    related: ["retail", "multiBranch", "employees"],
+  },
+  healthcare: {
+    products: [
+      "shiftManagement",
+      "qrPdks",
+      "leaveManagement",
+      "timesheet",
+      "employeeRecords",
+      "payroll",
+    ],
+    related: ["manufacturing", "hrTeams", "multiBranch"],
+  },
+  education: {
+    products: [
+      "qrPdks",
+      "leaveManagement",
+      "timesheet",
+      "payroll",
+      "multiCompany",
+      "hrDocuments",
+    ],
+    related: ["multiBranch", "hrTeams", "managers"],
+  },
+  multiBranch: {
+    products: [
+      "multiCompany",
+      "rolesPermissions",
+      "locationTracking",
+      "dashboard",
+      "reporting",
+      "payroll",
+    ],
+    related: ["retail", "managers", "hospitality"],
+  },
+};

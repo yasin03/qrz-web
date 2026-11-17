@@ -1943,5 +1943,943 @@
         "steps": ["QR Zaman mobile app home screen: summary of the day"]
       }
     }
+  },
+  "solutionPage": {
+    "demo": "Request a Demo",
+    "pricing": "See Pricing",
+    "faqTitle": "Frequently asked questions",
+    "faqText": "The questions we hear most about QR Zaman for {solution}. If yours is not here, let us go through it together in a demo.",
+    "relatedTitle": "Related solutions",
+    "relatedText": "QR Zaman is one platform, so the same setup works across other roles and industries too.",
+    "explore": "Explore"
+  },
+  "solutionsIndex": {
+    "jumpLabel": "Solution groups",
+    "groups": {
+      "role": "One platform, a different screen for every role. Managers approve, HR runs payroll and employees check their own records on their phone.",
+      "sector": "QR check-in points, shift definitions and branch structure are set up around the way each industry works. See how QR Zaman fits yours."
+    },
+    "points": {
+      "managers": [
+        "Who's in and who's on leave, on one screen",
+        "Approve leave and advances on mobile",
+        "Total employer cost in every payroll"
+      ],
+      "hrTeams": [
+        "Attendance flows into timesheets automatically",
+        "Yearly tax and social security settings",
+        "Excel, PDF and Word exports"
+      ],
+      "employees": [
+        "Clock in and out with a QR scan",
+        "Request leave and advances from your phone",
+        "Payslip, timesheet and leave balance on mobile"
+      ]
+    },
+    "other": {
+      "title": "Don't see your industry?",
+      "text": "QR Zaman isn't tied to any one industry. Wherever people arrive at a workplace and work fixed hours or shifts, the same modules apply: QR check-in points, shift definitions, timesheets, leave, salary advances and payroll. Your group, company, branch and department structure is set up to match your organisation. Tell us how your teams work and we'll plan the setup with you.",
+      "products": "Browse all products",
+      "demo": "Plan your setup with us"
+    },
+    "cta": "Let's plan the right setup<br></br><accent>for your business.</accent>"
+  },
+  "solutionContent": {
+    "managers": {
+      "intro": "Workforce management for owners and managers starts with seeing the day at a glance. With QR Zaman you see who has clocked in, who is on leave and which requests are waiting for you, in real time. Approve leave and salary advance requests from your phone and see total employer cost in every payroll run.",
+      "toast": {
+        "title": "Awaiting approval",
+        "description": "2 leave · 1 advance request"
+      },
+      "problems": {
+        "title": "What are you missing<br></br><accent>as a manager?</accent>",
+        "text": "A manager's time shouldn't go into chasing scattered information. These are the three problems we see most often in businesses that still track their people by hand.",
+        "items": [
+          {
+            "title": "No clear picture of today",
+            "text": "If you have to make phone calls every morning to find out who showed up, who is late and who is off, the information you need to make decisions is always one step behind. Every new branch makes the picture blurrier."
+          },
+          {
+            "title": "Approvals stuck in a pile",
+            "text": "Leave and advance requests sent on paper or by text get lost, approved late or approved without a record of who said yes. Employees wait for an answer while you can't tell which requests are still open."
+          },
+          {
+            "title": "Costs show up at month end",
+            "text": "When overtime, bonuses and deductions only become visible once payroll is done, you learn your labour cost instead of managing it. Total employer cost usually lives in a separate spreadsheet."
+          }
+        ]
+      },
+      "features": {
+        "title": "Key features<br></br><accent>for managers</accent>",
+        "text": "Every role sees only the menus it is allowed to. For managers, the dashboard, approval flows and reports work together.",
+        "items": {
+          "dashboard": "Active staff, today's clock-ins, people on leave and pending requests are waiting for you when you log in.",
+          "leaveManagement": "Approve leave with the remaining balance in front of you, or decline with a reason.",
+          "advanceManagement": "Review salary advance requests with amount and instalments; instalments are deducted in payroll automatically.",
+          "payroll": "See total employer cost next to net pay for every employee in the payroll.",
+          "reporting": "Follow late arrivals, absences and overtime in reports and export them to Excel or PDF.",
+          "multiCompany": "Running several companies or branches? Switch between them from the top bar in one panel."
+        }
+      },
+      "splits": [
+        {
+          "eyebrow": "Approvals",
+          "title": "Requests in your pocket,<br></br><accent>not on your desk.</accent>",
+          "text": "Employees send leave or advance requests from the mobile app and they land in your approval list straight away. Leave requests arrive with seniority, total entitlement, used and remaining days already calculated. Approve, or decline with a reason, and the employee sees the outcome on their own phone.",
+          "points": [
+            "Approve leave and advances on mobile",
+            "Automatic leave balance on every request",
+            "Decline with a reason, keep the history"
+          ]
+        },
+        {
+          "eyebrow": "Cost visibility",
+          "title": "Total employer cost<br></br><accent>in every payroll.</accent>",
+          "text": "Payroll is calculated automatically from the timesheet. Gross and net pay, overtime, allowances, social security and unemployment contributions, taxes and deductions are listed line by line, with total employer cost for each employee at the bottom. Approve the payroll, or withdraw the approval if something needs another look.",
+          "points": [
+            "Total employer cost per employee",
+            "Approve and un-approve payroll",
+            "Payroll log for a full audit trail"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "What employee information can a manager see?",
+          "a": "Managers see the staff list, attendance records, timesheets, leave and advance requests and the payroll summary for the groups, companies and branches in their scope. Each user's scope is set in user management at group, company or branch level."
+        },
+        {
+          "q": "Do I need to be at my computer to approve requests?",
+          "a": "No. You can approve leave and advance requests in the QR Zaman mobile app, or decline them with a reason. The manager dashboard on mobile also shows today's clock-ins, people on leave and pending requests."
+        },
+        {
+          "q": "I have several companies and branches. Can I see them all in one place?",
+          "a": "Yes. QR Zaman is built on a Group, Company, Branch and Department hierarchy. Pick the group, company, branch and period from the top bar to switch to the unit you need."
+        },
+        {
+          "q": "How do I keep track of labour costs?",
+          "a": "Once payroll is calculated, you see gross and net pay, contributions, taxes and total employer cost for each employee. The payroll report can be exported to Excel, PDF or Word."
+        }
+      ],
+      "cta": "Run your whole team<br></br><accent>from one screen.</accent>",
+      "alts": {
+        "hero": [
+          "QR Zaman manager dashboard: active staff, today's clock-ins and pending requests",
+          "QR Zaman mobile app home screen: daily staff summary for managers"
+        ],
+        "splits": [
+          [
+            "Manager leave approval screen with remaining leave balance and approve/decline options"
+          ],
+          [
+            "Payroll calculation detail: gross and net pay, deductions and total employer cost"
+          ]
+        ]
+      }
+    },
+    "hrTeams": {
+      "intro": "For HR and payroll teams, QR Zaman turns month end from data collection into a quick review. Attendance flows into timesheets and timesheets flow into payroll automatically. With yearly tax and social security settings, bulk actions and Excel, PDF and Word exports, payroll needs far less manual work.",
+      "toast": {
+        "title": "Payroll calculated",
+        "description": "Selected employees · This month"
+      },
+      "problems": {
+        "title": "Why is month end<br></br><accent>so exhausting?</accent>",
+        "text": "Most of a payroll team's time goes into collecting and checking data, not into the calculation itself. QR Zaman shortens the work in three places.",
+        "items": [
+          {
+            "title": "Hours added up by hand",
+            "text": "When clock-in times are gathered from paper sheets, different devices or messages and typed into a timesheet, it costs time and invites mistakes. Overtime and leave days still have to be checked separately."
+          },
+          {
+            "title": "Rules change every year",
+            "text": "Tax brackets, social security rates, minimum wage exemptions, severance and notice rules are updated every year. If those values live in spreadsheets outside your payroll software, the risk of using the wrong rate never goes away."
+          },
+          {
+            "title": "The same data, entered again and again",
+            "text": "Bonuses, advance deductions and leave arrive from different people in different formats. Moving each one into payroll separately becomes a serious workload across a large headcount."
+          }
+        ]
+      },
+      "features": {
+        "title": "Key features for<br></br><accent>HR and payroll</accent>",
+        "text": "Every module, from the employee profile to the payroll report, shares the same data. You enter something once.",
+        "items": {
+          "timesheet": "Transfer attendance into the timesheet daily or monthly and fill gaps with bulk entry.",
+          "payroll": "Calculate payroll for everyone or a selection in one click, then review and approve.",
+          "earningsDeductions": "Add bonuses, overtime and deductions to many employees in a single entry.",
+          "compliance": "Tax brackets, coefficients, severance and notice rules are kept per year and carried to the next year in one click.",
+          "employeeManagement": "Bulk import staff from an Excel template and keep tax and social security settings on each profile.",
+          "hrDocuments": "Download ready-made HR templates such as employment contracts, timesheet forms and incident reports."
+        }
+      },
+      "splits": [
+        {
+          "eyebrow": "Automatic payroll",
+          "title": "From timesheet to payroll<br></br><accent>in one flow.</accent>",
+          "text": "When the timesheet is complete, calculate payroll for all staff or for selected employees. Regular, night, public holiday and collective agreement overtime, travel and meal pay, family and child allowances, social security contributions, income tax, stamp duty, minimum wage exemptions and pension deductions are all calculated line by line.",
+          "points": [
+            "Calculate all or selected, clear a calculation",
+            "Approve and un-approve payroll",
+            "Payroll log for a full audit trail"
+          ]
+        },
+        {
+          "eyebrow": "Earnings and deductions",
+          "title": "Bonuses and deductions<br></br><accent>in bulk.</accent>",
+          "text": "Define bonuses and other extra earnings as net or gross amounts with a payment date. Enter deductions such as disciplinary, damage, overpayment or childcare, and overtime by day, hour or amount, from the same screen. One entry can cover many employees at once.",
+          "points": [
+            "Net or gross extra earnings",
+            "Overtime by day, hour or amount",
+            "Advance instalments deducted automatically"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "How do attendance records get into the timesheet?",
+          "a": "QR clock-ins are split into regular hours, breaks and overtime based on the shift definitions. You transfer them to the timesheet daily or monthly, then adjust day types or use bulk entry on the timesheet grid."
+        },
+        {
+          "q": "How do we update tax and social security settings for a new year?",
+          "a": "Tax brackets, coefficients, severance and notice rules, disability allowance rates, leave limits and public holidays are stored per year. The carry-to-next-year option copies the current settings to the new year so you only change what's different."
+        },
+        {
+          "q": "How do we bring our existing staff list into the system?",
+          "a": "Download the Excel template, fill in your employees and import the file. You get a row-by-row report showing which lines succeeded and which need fixing."
+        },
+        {
+          "q": "Which formats can we export payroll and reports to?",
+          "a": "Lists and reports export to Excel (xlsx), PDF and Word (docx). Document exports come with your company header."
+        },
+        {
+          "q": "Can employees see their own payslips?",
+          "a": "If you allow it in company settings, employees see their own payslip, timesheet and attendance records in the mobile app, so many payroll questions are answered before they ever reach HR."
+        }
+      ],
+      "cta": "Cut month end down<br></br><accent>to a few clicks.</accent>",
+      "alts": {
+        "hero": [
+          "Monthly timesheet grid: all employees by day, with day types and totals",
+          "Employee's monthly timesheet calendar in the QR Zaman mobile app"
+        ],
+        "splits": [
+          [
+            "Payroll calculation detail: overtime, social security contributions, taxes and net pay"
+          ],
+          ["Earnings and overtime screen: bulk entry of bonuses and deductions"]
+        ]
+      }
+    },
+    "employees": {
+      "intro": "For employees, QR Zaman puts most workplace admin on their phone. Clock in and out by scanning a QR code, and send leave and salary advance requests from the mobile app. Check your payslip, timesheet and remaining leave whenever you want.",
+      "toast": {
+        "title": "Shift started",
+        "description": "Clock-in recorded · 08:54"
+      },
+      "problems": {
+        "title": "What slows you down<br></br><accent>as an employee?</accent>",
+        "text": "A simple leave request or pay question usually involves several people and several days. QR Zaman puts the answers on the employee's own phone.",
+        "items": [
+          {
+            "title": "Queueing to clock in",
+            "text": "Waiting in line at the card reader or sign-in sheet, or having your hours fixed by hand because you forgot your badge, are small problems that repeat every single day."
+          },
+          {
+            "title": "Requests that disappear",
+            "text": "When a leave form or advance request goes in on paper or by text, it's rarely clear where it's waiting, whether it was approved, or why it was turned down."
+          },
+          {
+            "title": "Hard-to-reach information",
+            "text": "Finding out how many leave days you have left, how much overtime you did this month or which deduction hit your payslip means asking HR and waiting for a reply."
+          }
+        ]
+      },
+      "features": {
+        "title": "Key features<br></br><accent>for employees</accent>",
+        "text": "The QR Zaman mobile app runs on iOS and Android. Sign in with your username or phone number.",
+        "items": {
+          "mobileApp": "Today's clock-in, live working time, latest payslip and remaining leave right on the home screen.",
+          "qrPdks": "Choose Clock in or Clock out and scan the code; your location is verified and the record is created instantly.",
+          "leaveManagement": "Pick the leave type and dates and see your remaining balance on the request screen.",
+          "advanceManagement": "Set the advance amount and number of instalments and follow the status of your request.",
+          "employeeRecords": "See your personal, address, bank and employment details on the employee file screen."
+        }
+      },
+      "splits": [
+        {
+          "eyebrow": "Requests",
+          "title": "Leave and advance requests<br></br><accent>in a few taps.</accent>",
+          "text": "For leave, choose the type, dates, the address where you'll be and add a message; your seniority, entitlement, used and remaining days are shown on the screen. For an advance, set the amount, number of instalments, monthly payment and start date. Track every request as pending, approved or declined, including the reason if it was turned down.",
+          "points": [
+            "Live leave balance on the request screen",
+            "Salary advances in instalments",
+            "Status tracking with decline reasons"
+          ]
+        },
+        {
+          "eyebrow": "My records",
+          "title": "Your timesheet and overtime,<br></br><accent>always at hand.</accent>",
+          "text": "The timesheet screen shows your month as a calendar, with days and hours worked, overtime, leave and holidays added up in a monthly summary. My Attendance lists every clock-in and clock-out with regular, overtime, leave and total time for each day. What you can see depends on your company's permission settings.",
+          "points": [
+            "Monthly timesheet calendar and summary",
+            "Daily regular, overtime and total time",
+            "Detailed payslip breakdown"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Which phones can I use to clock in?",
+          "a": "The QR Zaman app runs on iOS and Android phones. For security your account is paired with a single device; if you change phones, your manager resets the pairing from the panel."
+        },
+        {
+          "q": "Does the camera record anything when I scan?",
+          "a": "No. The camera is only used to read the QR code and no image is saved. Your phone's location is captured at the moment of the scan and added to the record."
+        },
+        {
+          "q": "What happens if my location is turned off?",
+          "a": "The app needs your location to record a clock-in. If it's off, the app takes you to your phone's settings. Clock-ins made with fake GPS apps are detected and blocked."
+        },
+        {
+          "q": "Where can I see my payslip and remaining leave?",
+          "a": "The home screen shows your latest payslip (you can hide or show the amount), remaining leave and next leave. My Payslip shows the full breakdown. These screens are available according to your company's permission settings."
+        }
+      ],
+      "cta": "Put clock-ins and requests<br></br><accent>on every phone.</accent>",
+      "alts": {
+        "hero": [
+          "QR Zaman mobile app: choosing Clock in or Clock out and scanning the QR code",
+          "QR Zaman mobile app home screen: today's clock-in and remaining leave"
+        ],
+        "splits": [
+          [
+            "Leave requests list and request status in the mobile app",
+            "Salary advance request form with instalments in the mobile app"
+          ],
+          [
+            "Monthly timesheet calendar and summary in the mobile app",
+            "My Attendance in the mobile app: daily clock-in and clock-out history"
+          ]
+        ]
+      }
+    },
+    "retail": {
+      "intro": "Retail time tracking starts at the door of each store. With QR Zaman you put a QR check-in point in every store and staff clock in and out by scanning it with their own phone. Follow shifts, late arrivals and overtime for all stores from one panel, and run timesheets and payroll per branch.",
+      "toast": {
+        "title": "Location verified",
+        "description": "Store entrance · 09:58"
+      },
+      "problems": {
+        "title": "Why is tracking store staff<br></br><accent>so hard?</accent>",
+        "text": "In retail, working hours follow store opening times, promotions and weekend peaks. That rhythm breaks traditional time tracking in three places.",
+        "items": [
+          {
+            "title": "Every store is an island",
+            "text": "When each store manager tracks hours their own way, head office HR collects spreadsheets in a different format every month. Who was late or short on hours in which store only becomes clear at month end."
+          },
+          {
+            "title": "Staff move between stores",
+            "text": "On busy days, staff from one store help out at another. If clock-ins are tied to a fixed device, that time is either lost or fixed by hand. Allowing employees to clock in at any location in company settings solves this."
+          },
+          {
+            "title": "Long and split shifts",
+            "text": "Opening, closing and mid shifts, weekend work and rotating days off are normal in retail. If breaks and overtime aren't calculated correctly for each shift, timesheets and payroll turn into arguments."
+          }
+        ]
+      },
+      "features": {
+        "title": "Key features<br></br><accent>for retail</accent>",
+        "text": "No hardware needed: a printable A4 QR poster in each store and your employees' own phones are enough.",
+        "items": {
+          "qrPdks": "Store staff scan with their own phones; location is verified and fake GPS clock-ins are blocked.",
+          "locationTracking": "Set up each store as its own location and put its QR code up at the entrance as an A4 poster.",
+          "shiftManagement": "Define opening, closing and mid shifts with breaks and days off for each branch.",
+          "timesheet": "See monthly timesheets and overtime per store, filtered by branch, department and month.",
+          "multiCompany": "Bring every store into one panel as a branch and give store managers access to their own store only."
+        }
+      },
+      "splits": [
+        {
+          "eyebrow": "Store check-in points",
+          "title": "Every store gets<br></br><accent>its own QR point.</accent>",
+          "text": "Set up each store as a location with its latitude and longitude in the panel, or let the store manager save their current spot in one tap from the mobile app. Download the location's QR code as a PNG or a print-ready A4 PDF poster. When a store closes or is being refurbished, simply set it to inactive.",
+          "points": [
+            "QR code and A4 poster for every store",
+            "Save locations on site from the mobile app",
+            "Set locations active or inactive"
+          ]
+        },
+        {
+          "eyebrow": "Overtime tracking",
+          "title": "Overtime under control<br></br><accent>during peak season.</accent>",
+          "text": "The overtime sheet shows each employee's daily overtime and monthly total, filtered by branch, department and month. See how much overtime each store is running during busy periods and move it into the timesheet, and from there into payroll, automatically.",
+          "points": [
+            "Overtime sheet by branch and department",
+            "Late arrival and absence reports",
+            "Excel, PDF and Word exports"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Do we need a card reader or device in every store?",
+          "a": "No. Generate a QR code for each store in the panel and print it as an A4 poster. Staff clock in and out with the QR Zaman app on their own phones."
+        },
+        {
+          "q": "How do we record staff who cover at another store?",
+          "a": "In company settings you can allow employees to clock in at any location. They then scan the QR code of the store they're helping out at, and the record shows which location was scanned."
+        },
+        {
+          "q": "Can a store manager see only their own store?",
+          "a": "Yes. In user management each user gets a scope at group, company or branch level. A store manager sees only the staff, records and requests of their own branch."
+        },
+        {
+          "q": "Could someone take a photo of the QR code and scan it from home?",
+          "a": "The phone's location is captured at the moment of the scan and stored with the record, down to latitude and longitude. Clock-ins from fake GPS apps are blocked, and because each account is paired to one device, it can't be used from another phone."
+        }
+      ],
+      "cta": "See every store<br></br><accent>from one panel.</accent>",
+      "alts": {
+        "hero": [
+          "QR code attendance records for store staff clock-ins and clock-outs",
+          "QR clock-in confirmation at a store entrance in the mobile app"
+        ],
+        "splits": [
+          ["Location tracking screen: QR check-in points and coordinates for each store"],
+          ["Overtime sheet: employees' daily overtime and monthly totals"]
+        ]
+      }
+    },
+    "manufacturing": {
+      "intro": "Manufacturing shift tracking starts at shift change and ends in payroll. With QR Zaman, employees scan the QR code at the factory entrance and their hours are calculated against their shift. Night shifts, breaks and overtime are separated automatically, and department-level overtime sheets and timesheets are ready at month end.",
+      "toast": {
+        "title": "Night shift",
+        "description": "Production · 22:00 – 06:00"
+      },
+      "problems": {
+        "title": "The hard part of<br></br><accent>factory time tracking</accent>",
+        "text": "Manufacturing runs on round-the-clock shifts and large teams. Small time-tracking errors turn into big payroll differences across hundreds of employees.",
+        "items": [
+          {
+            "title": "Night shifts across midnight",
+            "text": "When a shift starts at night and ends the next morning, deciding which day the hours belong to, whether the break was deducted and how night overtime is paid becomes a constant source of errors if done by hand."
+          },
+          {
+            "title": "Rush at shift change",
+            "text": "When dozens of people clock in and out at the same moment, a single terminal creates a queue and records that have to be corrected afterwards."
+          },
+          {
+            "title": "Overtime disputes",
+            "text": "When overtime during busy order periods is tracked through supervisors' notes, month end inevitably brings arguments between employees and HR over missing hours."
+          }
+        ]
+      },
+      "features": {
+        "title": "Key features<br></br><accent>for manufacturing</accent>",
+        "text": "Shift definitions, attendance, timesheets and payroll share the same data, so supervisors and HR look at the same numbers.",
+        "items": {
+          "shiftManagement": "Define shifts per department with night shifts, breaks and days off; hours are calculated automatically.",
+          "qrPdks": "Everyone scans with their own phone, so there's no queue at a single terminal at shift change.",
+          "timesheet": "View monthly timesheets and overtime sheets by department and month, with bulk timesheet entry.",
+          "payroll": "Regular, night, public holiday and collective agreement overtime are calculated as separate payroll lines.",
+          "earningsDeductions": "Add production bonuses or damage deductions to many employees in a single entry.",
+          "reporting": "Follow late arrivals, late departures, absences and overtime in the attendance report."
+        }
+      },
+      "splits": [
+        {
+          "eyebrow": "Attendance records",
+          "title": "Every shift,<br></br><accent>to the minute.</accent>",
+          "text": "Each clock-in and clock-out stores the time, the location and the latitude and longitude of the scan. Records are split into regular hours, breaks and overtime according to the shift. Filter by department and date range, correct a wrong time or clear a record; employees get a warning on duplicates such as a second clock-in on the same day.",
+          "points": [
+            "Automatic hours for night shifts",
+            "Time corrections and record clean-up",
+            "Duplicate clock-in checks"
+          ]
+        },
+        {
+          "eyebrow": "Timesheets",
+          "title": "Department timesheets,<br></br><accent>ready at month end.</accent>",
+          "text": "Attendance is transferred to the timesheet daily or monthly. The timesheet grid shows every employee by day, and the toolbar lets you mark weekly rest days, public holidays and leave quickly. Use bulk entry for many employees at once, and review each person's daily timesheet and monthly summary.",
+          "points": [
+            "Daily or monthly transfer from attendance",
+            "Bulk timesheet entry",
+            "Monthly summary per employee"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "How are hours calculated on night shifts?",
+          "a": "In the shift definition you set the night shift, break length and weekly rest day. QR Zaman then calculates total working time, breaks and overtime from the clock-in and clock-out records automatically."
+        },
+        {
+          "q": "Can it handle large crews at shift change?",
+          "a": "Every employee clocks in from their own phone, so nobody queues at a single device. You can put a QR point at the factory gate or a separate one for each department."
+        },
+        {
+          "q": "Can different departments have different shifts?",
+          "a": "Yes. Shifts are defined per branch and department, so production, warehouse and office teams can each have their own hours and break lengths."
+        },
+        {
+          "q": "How does overtime reach payroll?",
+          "a": "Overtime moves into the timesheet and is calculated in payroll as separate regular, night, public holiday and collective agreement overtime lines. Extra overtime by day, hour or amount can also be added on the earnings screen."
+        }
+      ],
+      "cta": "Build one flow<br></br><accent>from shift to payroll.</accent>",
+      "alts": {
+        "hero": [
+          "Overtime sheet for factory staff: daily overtime by department",
+          "Attendance records of shift workers in the mobile app"
+        ],
+        "splits": [
+          ["Attendance record detail: time, location and scan latitude and longitude"],
+          ["Monthly timesheet grid for production staff with day types and totals"]
+        ]
+      }
+    },
+    "construction": {
+      "intro": "Construction time tracking has to work without a fixed front door. With QR Zaman, crews scan the QR code posted on site and their location is added to the record, while clock-ins made with fake GPS are blocked. Managers set up the QR point for a new job site from the mobile app, in one tap, right where they stand.",
+      "toast": {
+        "title": "Location verified",
+        "description": "Site entrance · 07:42"
+      },
+      "problems": {
+        "title": "Who worked where,<br></br><accent>on site and in the field?</accent>",
+        "text": "Construction and field crews move often, job sites are temporary and managers are rarely on site. That makes reliable attendance records hard to keep.",
+        "items": [
+          {
+            "title": "Work locations keep changing",
+            "text": "One site finishes, another starts, and field crews may work at several spots in a day. Installing a device or running cables at every new location is slow and expensive."
+          },
+          {
+            "title": "Records you can't trust",
+            "text": "Paper sign-in sheets and foremen's notes don't prove someone was actually on site. Buddy punching and hours fixed after the fact go straight into payroll as cost."
+          },
+          {
+            "title": "Remote crews, late information",
+            "text": "If attendance from the field reaches the office days later, you can't see in time which crew worked how many hours at which site, or close the timesheet accurately."
+          }
+        ]
+      },
+      "features": {
+        "title": "Key features for<br></br><accent>construction and field teams</accent>",
+        "text": "Start without hardware or cabling: all you need is a QR poster and your crew's phones.",
+        "items": {
+          "qrPdks": "The scan location is stored with its accuracy, and clock-ins made with fake GPS are blocked.",
+          "locationTracking": "Set up each job site as a location linked to a department and deactivate it when work is done.",
+          "mobileApp": "Managers create a new QR point on site by saving their current location in one tap.",
+          "timesheet": "Field records move into the timesheet, so every crew's monthly hours and overtime are in one grid.",
+          "payroll": "Payroll for daily or hourly paid field staff is calculated automatically from the timesheet."
+        }
+      },
+      "splits": [
+        {
+          "eyebrow": "GPS-verified clock-ins",
+          "title": "Scan on site,<br></br><accent>location on record.</accent>",
+          "text": "Crew members choose Clock in or Clock out in the app and scan the QR code on site. The phone's location is added to the record with its accuracy, and if location is off the app sends them to settings. Each account is paired to one device so it can't be used from another phone, and no camera image is ever saved.",
+          "points": [
+            "Fake GPS detection",
+            "Device pairing: one account, one phone",
+            "Duplicate clock-in warnings"
+          ]
+        },
+        {
+          "eyebrow": "Record detail",
+          "title": "Latitude and longitude<br></br><accent>on every record.</accent>",
+          "text": "Open any clock-in in the panel to see the time, the location and the latitude and longitude where the QR code was scanned. Filter by department and date range to review each site separately, and correct a time or clear a record when needed.",
+          "points": [
+            "Scan latitude and longitude",
+            "Department and date range filters",
+            "Time corrections and record clean-up"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "How do we add a new job site?",
+          "a": "When a manager arrives on site, they pick the department in the mobile app and save their current location in one tap. They then download the location's QR code as a PNG or A4 PDF poster and put it up at the site entrance."
+        },
+        {
+          "q": "Can someone clock in when they're not on site?",
+          "a": "The phone's location is captured at the moment of the scan and stored with the record, including latitude and longitude. Clock-ins from fake GPS apps are detected and blocked, and because each account is paired to one device, nobody can scan on someone else's behalf."
+        },
+        {
+          "q": "What happens to the QR code when a site is finished?",
+          "a": "Instead of deleting the location, you set it to inactive. That way the clock-ins already recorded at that site stay in your attendance records and reports."
+        },
+        {
+          "q": "Our field crews are paid daily. Does payroll support that?",
+          "a": "Yes. On each employee profile you choose monthly, daily or hourly pay, as net or gross. Payroll is calculated from the days and hours in the timesheet."
+        }
+      ],
+      "cta": "Track field crews<br></br><accent>with confidence.</accent>",
+      "alts": {
+        "hero": [
+          "Location tracking: list of job site and field QR check-in points with coordinates",
+          "Choosing Clock in or Clock out and scanning the QR code at a site entrance in the mobile app"
+        ],
+        "splits": [
+          [
+            "Location-verified QR clock-in confirmation in the mobile app",
+            "Field worker's attendance records in the mobile app"
+          ],
+          ["Attendance record detail: latitude and longitude of the scan"]
+        ]
+      }
+    },
+    "hospitality": {
+      "intro": "Restaurant shift scheduling has to keep up with hours that never stay the same. With QR Zaman, staff in restaurants, cafés and hotels start their shift by scanning a QR code, and breaks and overtime are calculated against the shift. Timesheets and payroll for hourly, daily and monthly paid staff are prepared in the same panel.",
+      "toast": {
+        "title": "Shift started",
+        "description": "Evening shift · 16:00"
+      },
+      "problems": {
+        "title": "Why restaurant shifts<br></br><accent>never stand still</accent>",
+        "text": "In restaurants, cafés and hotels, the workload changes by the hour, the day and the season. Staffing follows, but time tracking often can't keep up.",
+        "items": [
+          {
+            "title": "Variable and split shifts",
+            "text": "Split shifts for lunch and dinner service, busy weekends and rotating days off quickly break any tracking method built around fixed office hours."
+          },
+          {
+            "title": "Overtime down to the minute",
+            "text": "When service runs late, closing time slips. If overtime and breaks aren't recorded properly, staff feel short-changed and the business can't see its real labour cost."
+          },
+          {
+            "title": "Mixed pay types",
+            "text": "Salaried staff work alongside daily or hourly paid helpers in the same venue. Calculating each group's pay in a different spreadsheet drags out month end."
+          }
+        ]
+      },
+      "features": {
+        "title": "Key features for<br></br><accent>restaurants and hospitality</accent>",
+        "text": "Define separate shifts for kitchen, floor and housekeeping, and bring them all together in one timesheet.",
+        "items": {
+          "shiftManagement": "Set shifts, break lengths and days off per department; working time and overtime are calculated automatically.",
+          "qrPdks": "Staff scan the QR code at the staff entrance with their own phone; no cards or devices needed.",
+          "timesheet": "See daily overtime and monthly totals per department on the overtime sheet.",
+          "payroll": "Payroll for monthly, daily and hourly paid staff is calculated automatically from the timesheet on one screen.",
+          "earningsDeductions": "Add bonuses and deductions as net or gross amounts to many employees in one entry.",
+          "leaveManagement": "Staff request leave on mobile and managers approve with the remaining balance in view."
+        }
+      },
+      "splits": [
+        {
+          "eyebrow": "Overtime sheet",
+          "title": "Late service,<br></br><accent>no lost overtime.</accent>",
+          "text": "QR clock-ins are split into regular hours, breaks and overtime according to the shift and appear on the overtime sheet. Filter by branch, department and month to see where the overtime is going, then move the records into the timesheet.",
+          "points": [
+            "Breaks and overtime per shift",
+            "Overtime sheet by department and month",
+            "Late arrival and absence reports"
+          ]
+        },
+        {
+          "eyebrow": "Extra earnings",
+          "title": "Bonuses and extras,<br></br><accent>ready in payroll.</accent>",
+          "text": "Define bonuses and other extra earnings as net or gross amounts with a payment date, and enter deductions and overtime by day, hour or amount on the same screen. One entry can cover many employees, and everything flows into payroll automatically.",
+          "points": [
+            "Net or gross extra earnings",
+            "Bulk entry",
+            "Flows into payroll automatically"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can we track split shifts?",
+          "a": "Staff scan the QR code at the start and end of each shift. Records are calculated as regular hours, breaks and overtime according to your shift definitions and transferred to the timesheet."
+        },
+        {
+          "q": "Does payroll work for hourly paid staff?",
+          "a": "Yes. On each employee profile you choose monthly, daily or hourly pay, as net or gross. Payroll is calculated automatically from the day and hour payments in the timesheet."
+        },
+        {
+          "q": "We run several restaurants. Can we manage them all in one place?",
+          "a": "Yes. Set up each restaurant as a branch and areas such as kitchen and floor as departments. Switch between restaurants from the top bar and run reports per branch."
+        },
+        {
+          "q": "Can staff see their own hours?",
+          "a": "If you allow it in company settings, staff see their attendance records and timesheet in the mobile app. The today card on the home screen also shows their live working time."
+        }
+      ],
+      "cta": "Handle changing shifts<br></br><accent>with ease.</accent>",
+      "alts": {
+        "hero": [
+          "QR code attendance records for restaurant staff",
+          "Mobile app home screen: today's shift and live working time"
+        ],
+        "splits": [
+          ["Overtime sheet: daily overtime and totals by department"],
+          ["Earnings and overtime screen: bonus and deduction entries"]
+        ]
+      }
+    },
+    "healthcare": {
+      "intro": "Healthcare staff scheduling and attendance have to be reliable around the clock. With QR Zaman, staff at hospitals, clinics and care providers clock in and out by scanning a QR code with their own phone. Night shifts, leave, timesheets and payroll are all managed together in one panel.",
+      "toast": {
+        "title": "Night shift",
+        "description": "Emergency department · 20:00"
+      },
+      "problems": {
+        "title": "Why healthcare<br></br><accent>is different</accent>",
+        "text": "Healthcare providers never close. Shift patterns, leave planning and staff records need more care here than in most industries.",
+        "items": [
+          {
+            "title": "Round-the-clock rotas",
+            "text": "Night, weekend and public holiday shifts are routine in healthcare. When working time, breaks and overtime for shifts that run past midnight are calculated by hand, timesheets stop adding up."
+          },
+          {
+            "title": "Leave that needs paperwork",
+            "text": "When sick leave and other documented absences are requested, evidenced and approved through different channels, documents get lost and leave balances end up wrong."
+          },
+          {
+            "title": "Many units, many teams",
+            "text": "Emergency, outpatient, laboratory and administrative units all keep different hours. Collecting attendance from each one separately delays the overall picture for management."
+          }
+        ]
+      },
+      "features": {
+        "title": "Key features for<br></br><accent>healthcare providers</accent>",
+        "text": "Set up units as departments, each with its own shifts and QR check-in point. Everything comes together in one timesheet and payroll.",
+        "items": {
+          "shiftManagement": "Define shifts per unit with night shifts, breaks and days off; hours are calculated automatically.",
+          "qrPdks": "Staff scan the QR code at their unit; location and device checks keep every record reliable.",
+          "leaveManagement": "Attach files such as medical certificates to leave requests; managers approve with the balance in view.",
+          "timesheet": "Keep monthly timesheets per unit with day types such as public holiday, annual leave and excused absence.",
+          "employeeRecords": "Keep each employee's file, including identity, education and health details, in one place.",
+          "payroll": "Night and public holiday overtime are calculated automatically as separate payroll lines."
+        }
+      },
+      "splits": [
+        {
+          "eyebrow": "Leave management",
+          "title": "Documented leave<br></br><accent>in one flow.</accent>",
+          "text": "Staff send leave requests from mobile and can add hourly leave, a leave address, a message and attachments such as medical certificates. Seniority, entitlement, used and remaining leave are calculated automatically on the request. Managers approve, or decline with a reason, and all leave and requests are listed on separate tabs.",
+          "points": [
+            "File attachments on leave requests",
+            "Hourly leave",
+            "Automatic leave balance"
+          ]
+        },
+        {
+          "eyebrow": "Timesheets",
+          "title": "Unit timesheets,<br></br><accent>ready every month.</accent>",
+          "text": "Attendance is transferred to the timesheet daily or monthly. The timesheet grid shows day types such as working day, weekly rest, public holiday, annual leave and excused absence, which you can mark quickly from the toolbar. The overtime sheet shows daily overtime by unit and month.",
+          "points": [
+            "Monthly timesheet with day types",
+            "Bulk timesheet entry",
+            "Overtime sheet by unit and month"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "How are on-call and night shifts calculated?",
+          "a": "In the shift definition you set the night shift, break length and weekly rest day. Total working time, breaks and overtime are calculated automatically from QR clock-ins, and payroll shows night and public holiday overtime as separate lines."
+        },
+        {
+          "q": "Can medical certificates be attached to leave requests?",
+          "a": "Yes. Files can be attached to leave requests. The manager sees the attachment while reviewing the request and approves it or declines it with a reason."
+        },
+        {
+          "q": "Can each unit have its own QR point?",
+          "a": "Yes. Locations are linked to departments, so you can create a separate QR point for each unit, such as the emergency department, outpatient clinic or laboratory, and put it up at its entrance."
+        },
+        {
+          "q": "How is staff information protected?",
+          "a": "Each user sees only the menus and data defined for their role and scope. In the mobile app, session data is kept in encrypted device storage, and no camera image is saved when scanning a QR code."
+        }
+      ],
+      "cta": "Run round-the-clock shifts<br></br><accent>with confidence.</accent>",
+      "alts": {
+        "hero": [
+          "QR code attendance records for healthcare staff",
+          "Monthly timesheet calendar for shift workers in the mobile app"
+        ],
+        "splits": [
+          ["Leave management screen: all leave and leave requests"],
+          ["Monthly timesheet grid by unit with day types and totals"]
+        ]
+      }
+    },
+    "education": {
+      "intro": "School staff attendance tracking has to follow the academic calendar. With QR Zaman, teachers and administrative staff at schools, training centres and colleges clock in and out by scanning a QR code. Manage leave, timesheets and payroll for each campus as a branch, all in one panel.",
+      "toast": {
+        "title": "Clock-in recorded",
+        "description": "Main building · 08:12"
+      },
+      "problems": {
+        "title": "What makes school<br></br><accent>staff tracking different</accent>",
+        "text": "In education, the working pattern follows the timetable, terms and holidays. Staff attendance tracking has to fit that rhythm.",
+        "items": [
+          {
+            "title": "Work tied to the calendar",
+            "text": "Public holidays, half days and term breaks change the working days of teachers and office staff. If those days aren't marked correctly in the timesheet, the number of days worked never adds up."
+          },
+          {
+            "title": "Different staff groups",
+            "text": "Teachers, administrative staff, cleaning and security teams work different hours on different patterns. Tracking them all against one schedule doesn't reflect reality."
+          },
+          {
+            "title": "More than one campus",
+            "text": "For institutions with several buildings or campuses, collecting attendance and leave from each one separately doubles the work for central HR."
+          }
+        ]
+      },
+      "features": {
+        "title": "Key features for<br></br><accent>schools and colleges</accent>",
+        "text": "Set up campuses as branches and units as departments, and use staff groups to separate teaching and administrative staff.",
+        "items": {
+          "qrPdks": "Teachers and office staff scan the QR code at the building entrance with their own phone.",
+          "leaveManagement": "Leave requests arrive from mobile; managers approve with the balance in view and run leave reports.",
+          "timesheet": "Keep monthly timesheets per campus with day types such as public holidays and annual leave.",
+          "payroll": "Once the timesheet is complete, calculate and approve payroll for all staff automatically.",
+          "multiCompany": "Set up each campus as a branch and switch between them from the top bar.",
+          "hrDocuments": "Download ready templates such as employment contracts, paid leave request forms and timesheet forms."
+        }
+      },
+      "splits": [
+        {
+          "eyebrow": "Leave reports",
+          "title": "Who took how much leave,<br></br><accent>in one report.</accent>",
+          "text": "The leave usage report shows the leave each employee has taken, and the annual leave report shows each person's seniority, entitlement, used and remaining days. Export reports to Excel, PDF or Word and use them for term planning.",
+          "points": [
+            "Annual entitlement, used and remaining",
+            "Leave based on seniority",
+            "Excel, PDF and Word exports"
+          ]
+        },
+        {
+          "eyebrow": "Organisation structure",
+          "title": "Campuses and units<br></br><accent>in one structure.</accent>",
+          "text": "Build your institution with a Group, Company, Branch and Department hierarchy. Each campus is a branch and each unit a department, with location, person in charge and working hours stored on the department card. Give users a scope so they only see their own campus.",
+          "points": [
+            "Campuses as branches",
+            "Working hours on each department card",
+            "Branch-level user access"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "How do public holidays and term breaks show up in the timesheet?",
+          "a": "Public holidays and half days are defined in the yearly settings and shown on the calendar. On the timesheet grid you can mark day types such as public holiday, weekly rest and annual leave one by one or in bulk from the toolbar."
+        },
+        {
+          "q": "Teachers and office staff keep different hours. Is that supported?",
+          "a": "Yes. Use staff groups to separate teams and define different shifts per branch and department. Each person's working time is calculated against their own shift."
+        },
+        {
+          "q": "We have several campuses. Is each one managed separately?",
+          "a": "All campuses sit in the same panel as branches. Central managers see everything, while campus managers get a scope that shows only their own branch."
+        },
+        {
+          "q": "What do the ready-made document templates cover?",
+          "a": "Templates include fixed-term and permanent employment contracts, hiring and job application forms, paid leave request forms, annual paid leave records, monthly timesheet forms and absence reports. Search for a document and download it in one click."
+        }
+      ],
+      "cta": "Simplify staff attendance<br></br><accent>across your institution.</accent>",
+      "alts": {
+        "hero": [
+          "HR calendar: public holidays, half days and special days",
+          "Mobile app home screen: a teacher's clock-in for today"
+        ],
+        "splits": [
+          ["Annual leave report: entitlement, used and remaining leave per employee"],
+          ["Company and department management: campus and unit structure"]
+        ]
+      }
+    },
+    "multiBranch": {
+      "intro": "Multi-location workforce management starts with every branch in one panel. In QR Zaman you build your Group, Company, Branch and Department structure and give each branch its own QR check-in point. Branch managers see only their own branch, while timesheets and payroll are run centrally.",
+      "toast": {
+        "title": "QR point added",
+        "description": "New branch · Main entrance"
+      },
+      "problems": {
+        "title": "Why control slips<br></br><accent>as you add branches</accent>",
+        "text": "Once you open a second, third or tenth branch, people processes start to run differently in each one, and head office spends its time collecting data.",
+        "items": [
+          {
+            "title": "A different method in every branch",
+            "text": "If one branch uses a sign-in sheet, another a card reader and another a spreadsheet, central HR has to merge different formats every month and can't compare branches."
+          },
+          {
+            "title": "Everyone sees everything, or nothing",
+            "text": "Branch managers should see only their own people while head office sees every branch. Without proper access scopes, either privacy or day-to-day operations suffer."
+          },
+          {
+            "title": "Several companies, one payroll team",
+            "text": "When a group runs several legal entities, each company's payroll is calculated with its own settings. Using separate software for each adds cost and risk."
+          }
+        ]
+      },
+      "features": {
+        "title": "Key features for<br></br><accent>multi-branch businesses</accent>",
+        "text": "Opening a new branch is as simple as adding a branch record and a QR point in the panel.",
+        "items": {
+          "multiCompany": "Build your group, company, branch and department hierarchy and switch between them from the top bar.",
+          "rolesPermissions": "Give users a scope at group, company or branch level and keep track of their last sign-in.",
+          "locationTracking": "Create a separate QR point for each branch entrance and print it as an A4 poster.",
+          "dashboard": "The manager dashboard shows active staff, clock-ins and pending requests for the selected branch.",
+          "reporting": "Pick a branch from the top bar to run attendance, leave, advance and payroll reports and share them as Excel or PDF.",
+          "payroll": "Run payroll for every company centrally, using the same yearly settings."
+        }
+      },
+      "splits": [
+        {
+          "eyebrow": "Access scopes",
+          "title": "Each manager sees<br></br><accent>their own branch.</accent>",
+          "text": "In user management you add users, set their role and define their scope at group, company or branch level. A branch manager sees only their branch's staff, records and requests, while head office managers see the whole structure. Every user's last sign-in is listed in the same place.",
+          "points": [
+            "Group, company or branch-level access",
+            "Role-based menu access",
+            "Last sign-in tracking"
+          ]
+        },
+        {
+          "eyebrow": "Branch QR points",
+          "title": "Bring new branches<br></br><accent>online fast.</accent>",
+          "text": "When you add a new branch to your structure, define its department locations with latitude and longitude, or let the branch manager save their current spot in one tap from the mobile app. Download the QR code as a PNG or A4 PDF poster and put it up at the entrance; the branch team starts clocking in with their own phones.",
+          "points": [
+            "QR points linked to departments",
+            "Printable A4 QR poster",
+            "Set locations active or inactive"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can we manage different companies in the same account?",
+          "a": "Yes. QR Zaman works with a Group, Company, Branch and Department hierarchy. You can set up several companies under one group and manage each company's branches and departments separately."
+        },
+        {
+          "q": "Can a branch manager see other branches' data?",
+          "a": "Not unless you allow it. In user management you set each user's scope at group, company or branch level."
+        },
+        {
+          "q": "Can we compare branches?",
+          "a": "Pick a branch from the top bar to run its attendance, leave, advance and payroll reports. Export them to Excel, PDF or Word to compare branches side by side."
+        },
+        {
+          "q": "What do we do when an employee moves to another branch?",
+          "a": "Just update the branch and department on the employee's profile. They then clock in at the new branch's QR point."
+        }
+      ],
+      "cta": "Run every branch<br></br><accent>from one place.</accent>",
+      "alts": {
+        "hero": [
+          "Multi-company and branch management: group, company and branch hierarchy",
+          "Mobile app home screen: daily summary for a branch manager"
+        ],
+        "splits": [
+          ["User management: branch-level access scopes and last sign-in details"],
+          ["Location QR point setup: QR code and coordinates for a branch entrance"]
+        ]
+      }
+    }
   }
 }

@@ -13,10 +13,13 @@ import { cn } from "@/lib/utils";
 export async function ProductCard({
   product,
   headingLevel = "h3",
+  description,
   className,
 }: {
   product: Product;
   headingLevel?: "h3" | "h4";
+  /** Varsayılan açıklama yerine (ör. çözüm sayfasında "bu sektör için neden önemli") */
+  description?: string;
   className?: string;
 }) {
   const tp = await getTranslations("pages");
@@ -43,7 +46,7 @@ export async function ProductCard({
         </Link>
       </Heading>
       <p className="text-[15px] leading-relaxed text-muted-foreground">
-        {tp(`${product.id}.description`)}
+        {description ?? tp(`${product.id}.description`)}
       </p>
       <span
         aria-hidden="true"

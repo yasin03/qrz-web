@@ -1935,5 +1935,937 @@
         "steps": ["QR Zaman mobil uygulama ana sayfası: günün özeti"]
       }
     }
+  },
+  "solutionPage": {
+    "demo": "Demo Talep Et",
+    "pricing": "Fiyatları Gör",
+    "faqTitle": "Sıkça sorulan sorular",
+    "faqText": "{solution} için QR Zaman'ı değerlendirirken en çok sorulanlar. Aradığınız cevap burada yoksa demo görüşmesinde birlikte bakalım.",
+    "relatedTitle": "İlgili çözümler",
+    "relatedText": "QR Zaman tek bir platformdur; aynı kurulum farklı roller ve sektörler için de çalışır.",
+    "explore": "İncele"
+  },
+  "solutionsIndex": {
+    "jumpLabel": "Çözüm grupları",
+    "groups": {
+      "role": "Aynı platform, her rol için farklı bir ekran. Yönetici onay verir, İK bordroyu hazırlar, çalışan kendi kayıtlarını telefonundan görür.",
+      "sector": "QR noktaları, vardiya tanımları ve şube yapısı her sektörün çalışma düzenine göre kurulur. Sektörünüze özel kullanım örneklerini inceleyin."
+    },
+    "points": {
+      "managers": [
+        "Bugün gelenler ve izindekiler tek ekranda",
+        "İzin ve avans onayı mobilden",
+        "Bordroda toplam işveren maliyeti"
+      ],
+      "hrTeams": [
+        "PDKS'den puantaja otomatik aktarım",
+        "Yıl bazlı SGK ve vergi parametreleri",
+        "Excel, PDF ve Word çıktıları"
+      ],
+      "employees": [
+        "QR okutarak giriş-çıkış",
+        "İzin ve avans talebi telefondan",
+        "Bordro, puantaj ve kalan izin cepte"
+      ]
+    },
+    "other": {
+      "title": "Sektörünüz listede yok mu?",
+      "text": "QR Zaman belirli bir sektöre bağlı değildir. Personelin bir noktaya gelip gittiği, vardiyayla ya da sabit saatle çalıştığı her işletmede aynı modüller kullanılır: QR noktaları, vardiya tanımları, puantaj, izin, avans ve bordro. Grup, şirket, şube ve bölüm yapısı sizin organizasyonunuza göre kurulur. Çalışma düzeninizi anlatın, kurulumu birlikte planlayalım.",
+      "products": "Tüm ürünleri inceleyin",
+      "demo": "Kurulumu birlikte planlayalım"
+    },
+    "cta": "İşletmenize uygun kurulumu<br></br><accent>birlikte planlayalım.</accent>"
+  },
+  "solutionContent": {
+    "managers": {
+      "intro": "İşletme sahipleri ve yöneticiler için personel takibi, günün durumunu tek ekranda görmekle başlar. QR Zaman'da kimin geldiğini, kimin izinde olduğunu ve onayınızı bekleyen talepleri anlık izlersiniz. İzin ve avans taleplerini telefondan onaylarsınız; bordroda toplam işveren maliyetini görürsünüz.",
+      "toast": {
+        "title": "Onay bekliyor",
+        "description": "2 izin · 1 avans talebi"
+      },
+      "problems": {
+        "title": "Yönetici olarak<br></br><accent>neyi kaçırıyorsunuz?</accent>",
+        "text": "Yöneticinin zamanı, dağınık bilgiyi toplamakla geçmemeli. Aşağıdaki üç durum, personel takibi elle yapılan işletmelerde en sık karşılaşılan sorunlardır.",
+        "items": [
+          {
+            "title": "Günün durumu belirsiz",
+            "text": "Sabah kimin işe geldiğini, kimin geç kaldığını ya da izinde olduğunu öğrenmek için telefon açmanız gerekiyorsa, karar vermek için gereken bilgi her zaman bir adım geride kalır. Şube sayısı arttıkça bu tablo daha da bulanıklaşır."
+          },
+          {
+            "title": "Onaylar masada bekliyor",
+            "text": "Kâğıt dilekçeyle ya da mesajla gelen izin ve avans talepleri kaybolur, geç onaylanır ya da kimin neyi onayladığı belli olmaz. Çalışan cevap beklerken siz de hangi talebin açık kaldığını takip edemezsiniz."
+          },
+          {
+            "title": "Maliyet ay sonunda öğreniliyor",
+            "text": "Fazla mesai, prim ve kesintiler ancak bordro çıktığında görünür hale gelirse, personel maliyetini yönetmek yerine sadece sonucunu öğrenirsiniz. Toplam işveren maliyeti ise çoğu zaman ayrı bir tabloda hesaplanır."
+          }
+        ]
+      },
+      "features": {
+        "title": "Yöneticiler için<br></br><accent>öne çıkan özellikler</accent>",
+        "text": "Her rol yalnızca yetkili olduğu menüyü görür. Yönetici dashboard'u, onay akışları ve raporlar sizin için birlikte çalışır.",
+        "items": {
+          "dashboard": "Aktif personel, bugün gelenler, izindekiler ve onay bekleyen talepler açılışta önünüzde.",
+          "leaveManagement": "İzin taleplerini kalan izin bakiyesini görerek onaylayın ya da gerekçe yazarak reddedin.",
+          "advanceManagement": "Avans taleplerini tutar ve taksit bilgisiyle değerlendirin; taksitler bordrodan otomatik düşer.",
+          "payroll": "Bordro özetinde net ödenen tutarın yanında toplam işveren maliyetini de görün.",
+          "reporting": "Geç gelen, devamsız ve mesai yapan personeli raporlardan izleyin, Excel veya PDF alın.",
+          "multiCompany": "Birden fazla şirket ya da şubeniz varsa üst bardan seçerek hepsini aynı panelde yönetin."
+        }
+      },
+      "splits": [
+        {
+          "eyebrow": "Onay akışı",
+          "title": "Talepler masada değil,<br></br><accent>cebinizde.</accent>",
+          "text": "Personel izin ya da avans talebini mobil uygulamadan gönderir; talep anında onay listenize düşer. İzin talebinin detayında kıdem yılı, toplam hak, kullanılan ve kalan izin otomatik hesaplanmış olarak gelir. Onaylarsınız ya da gerekçesini yazarak reddedersiniz; çalışan sonucu kendi telefonunda görür.",
+          "points": [
+            "İzin ve avans taleplerini mobilden onaylama",
+            "Talep detayında otomatik izin bakiyesi",
+            "Gerekçeli ret ve talep geçmişi"
+          ]
+        },
+        {
+          "eyebrow": "Maliyet görünürlüğü",
+          "title": "Bordroda<br></br><accent>toplam işveren maliyeti.</accent>",
+          "text": "Bordro puantajdan otomatik hesaplanır. Brüt ve net ücretin yanında mesailer, yardımlar, SGK ve işsizlik primleri, vergiler ve kesintiler kalem kalem listelenir. En altta her personel için toplam işveren maliyetini görürsünüz; hesaplanan bordroyu onaylar ya da onayı kaldırırsınız.",
+          "points": [
+            "Personel bazında toplam işveren maliyeti",
+            "Bordro onaylama ve onayı kaldırma",
+            "Bordro log kayıtlarıyla işlem geçmişi"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Yönetici, personelin hangi bilgilerini görebilir?",
+          "a": "Yöneticiler yetki alanlarındaki grup, şirket ve şubelerin personel listesini, PDKS kayıtlarını, puantajını, izin ve avans taleplerini ve bordro özetini görür. Yetki alanı kullanıcı yönetiminden grup, şirket veya şube bazında tanımlanır."
+        },
+        {
+          "q": "Onayları bilgisayar başında mı vermem gerekiyor?",
+          "a": "Hayır. İzin ve avans taleplerini QR Zaman mobil uygulamasından onaylayabilir ya da gerekçe yazarak reddedebilirsiniz. Mobildeki yönetici dashboard'unda bugün gelenler, izindekiler ve onay bekleyen talepler de yer alır."
+        },
+        {
+          "q": "Birden fazla şirketim veya şubem var. Hepsini tek yerden görebilir miyim?",
+          "a": "Evet. QR Zaman Grup, Şirket, Şube ve Bölüm hiyerarşisiyle çalışır. Üst bardan grup, şirket, şube ve dönem seçerek istediğiniz birimin verisine geçersiniz."
+        },
+        {
+          "q": "Personel maliyetini nasıl takip ederim?",
+          "a": "Bordro hesaplandığında her personel için brüt ve net ücret, primler, vergiler ve toplam işveren maliyeti ayrı ayrı görünür. Bordro raporunu Excel, PDF veya Word olarak dışa aktarabilirsiniz."
+        }
+      ],
+      "cta": "Ekibinizin durumunu<br></br><accent>tek ekrandan yönetin.</accent>",
+      "alts": {
+        "hero": [
+          "QR Zaman yönetici dashboard'u: aktif personel, bugün gelenler ve onay bekleyen talepler",
+          "QR Zaman mobil uygulama ana sayfası: yönetici için günlük personel özeti"
+        ],
+        "splits": [
+          [
+            "Yönetici izin talebi onay ekranı: kalan izin bakiyesi ve onay/ret seçenekleri"
+          ],
+          [
+            "Bordro hesaplama detayı: brüt-net ücret, kesintiler ve toplam işveren maliyeti"
+          ]
+        ]
+      }
+    },
+    "hrTeams": {
+      "intro": "İK ve bordro ekipleri için QR Zaman, ay sonunu veri toplama işi olmaktan çıkarır. PDKS kayıtları puantaja, puantaj bordroya otomatik akar. Yıl bazlı SGK ve vergi parametreleri, toplu işlemler ve Excel, PDF, Word çıktılarıyla bordroyu daha az elle müdahaleyle hazırlarsınız.",
+      "toast": {
+        "title": "Bordro hesaplandı",
+        "description": "Seçili personel · Bu ay"
+      },
+      "problems": {
+        "title": "Ay sonu neden<br></br><accent>bu kadar yoruyor?</accent>",
+        "text": "Bordro ekiplerinin zamanının büyük kısmı hesaplamaya değil, veriyi toplamaya ve kontrol etmeye gider. QR Zaman bu üç noktada işi kısaltır.",
+        "items": [
+          {
+            "title": "Saatler elle toplanıyor",
+            "text": "Giriş-çıkış saatleri kâğıttan, farklı cihazlardan ya da mesajlardan toplanıp puantaj tablosuna elle işleniyorsa hem zaman kaybedilir hem de hata payı artar. Fazla mesai ve izin günleri ayrıca kontrol edilmek zorunda kalır."
+          },
+          {
+            "title": "Parametreler her yıl değişiyor",
+            "text": "Vergi dilimleri, SGK oranları, asgari ücret istisnası, kıdem ve ihbar tanımları her yıl güncellenir. Bu değerler bordro programı dışındaki tablolarda tutuluyorsa yanlış oranla hesap yapma riski hep vardır."
+          },
+          {
+            "title": "Aynı veri birçok yere giriliyor",
+            "text": "Prim, ikramiye, avans kesintisi ve izin bilgisi farklı kişilerden farklı formatlarda gelir. Her birini ayrı ayrı bordroya taşımak, çok sayıda personelde ciddi bir iş yükü oluşturur."
+          }
+        ]
+      },
+      "features": {
+        "title": "İK ve bordro için<br></br><accent>öne çıkan özellikler</accent>",
+        "text": "Personel kartından bordro raporuna kadar her modül aynı veriyi kullanır; bir bilgiyi bir kez girersiniz.",
+        "items": {
+          "timesheet": "PDKS kayıtlarını günlük veya aylık olarak puantaja aktarın, eksik günleri toplu girişle tamamlayın.",
+          "payroll": "Tüm personelin ya da seçtiklerinizin bordrosunu tek tıkla hesaplayın, kontrol edip onaylayın.",
+          "earningsDeductions": "Prim, ikramiye, mesai ve kesintileri tek kayıtta birden fazla personele ekleyin.",
+          "compliance": "Vergi dilimleri, katsayılar, kıdem ve ihbar tanımları yıl bazında tutulur, yeni yıla tek tıkla aktarılır.",
+          "employeeManagement": "Personeli Excel şablonuyla toplu içe aktarın; SGK ve bordro parametrelerini personel kartında tutun.",
+          "hrDocuments": "İş sözleşmesi, puantaj cetveli, tutanaklar gibi hazır İK belge şablonlarını tek tıkla indirin."
+        }
+      },
+      "splits": [
+        {
+          "eyebrow": "Otomatik bordro",
+          "title": "Puantajdan bordroya<br></br><accent>tek akış.</accent>",
+          "text": "Puantaj tamamlandığında bordroyu tüm personel ya da seçili personel için otomatik hesaplarsınız. Normal, gece, resmî tatil ve TİS mesaileri, yol ve yemek ödemeleri, aile ve çocuk yardımları, SGK primleri, gelir ve damga vergisi, asgari ücret istisnası ve BES kesintileri kalem kalem hesaplanır.",
+          "points": [
+            "Tümünü veya seçilenleri hesaplama, hesabı temizleme",
+            "Bordro onaylama ve onayı kaldırma",
+            "Bordro log kayıtlarıyla işlem geçmişi"
+          ]
+        },
+        {
+          "eyebrow": "Ek ödeme ve kesinti",
+          "title": "Prim ve kesintiler<br></br><accent>toplu olarak.</accent>",
+          "text": "Prim, ikramiye ve benzeri ek ödemeleri net veya brüt olarak, ödeme tarihiyle tanımlarsınız. Disiplin, hasar, fazla ödeme ya da kreş gibi kesintileri ve gün, saat veya tutar bazlı mesaileri de aynı ekrandan girersiniz. Tek kayıtla birden fazla personele ekleme yapabilirsiniz.",
+          "points": [
+            "Net veya brüt ek ödeme",
+            "Gün, saat veya tutar bazlı mesai",
+            "Avans taksitlerinin otomatik kesintisi"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "PDKS kayıtları puantaja nasıl aktarılıyor?",
+          "a": "QR ile yapılan giriş-çıkış kayıtları vardiya tanımlarına göre normal süre, mola ve mesai olarak hesaplanır. Bu kayıtları günlük veya aylık olarak puantaja aktarırsınız; puantaj çizelgesinde gün tiplerini düzeltebilir ya da toplu giriş yapabilirsiniz."
+        },
+        {
+          "q": "Yeni yılda SGK ve vergi parametrelerini nasıl güncelliyoruz?",
+          "a": "Vergi dilimleri, katsayılar, kıdem ve ihbar tanımları, engelli indirim oranları, izin limitleri ve resmî tatiller yıl bazında tutulur. Sonraki yıla aktar seçeneğiyle mevcut parametreleri yeni yıla kopyalar, değişen değerleri güncellersiniz."
+        },
+        {
+          "q": "Mevcut personel listemizi sisteme nasıl aktarırız?",
+          "a": "Hazır Excel şablonunu indirip personel bilgilerini doldurursunuz ve dosyayı içe aktarırsınız. İçe aktarma sonunda her satır için başarılı ya da hatalı sonucunu gösteren bir rapor alırsınız."
+        },
+        {
+          "q": "Bordro ve raporları hangi formatlarda alabiliriz?",
+          "a": "Listeler ve raporlar Excel (xlsx), PDF ve Word (docx) olarak dışa aktarılır. Belge çıktıları kurumsal başlıkla hazırlanır."
+        },
+        {
+          "q": "Personel kendi bordrosunu görebilir mi?",
+          "a": "Şirket ayarlarında izin verirseniz personel kendi bordrosunu, puantajını ve PDKS kayıtlarını mobil uygulamadan görür. Bu sayede bordro dönemindeki soruların bir kısmı İK'ya gelmeden yanıtlanır."
+        }
+      ],
+      "cta": "Ay sonunu<br></br><accent>birkaç tıklamaya indirin.</accent>",
+      "alts": {
+        "hero": [
+          "Aylık puantaj çizelgesi: tüm personel ve günler, gün tipleri ve toplamlar",
+          "QR Zaman mobil uygulamada personelin aylık puantaj takvimi"
+        ],
+        "splits": [
+          ["Bordro hesaplama detayı: mesailer, SGK primleri, vergiler ve net ödenen"],
+          ["Ek ödeme ve mesai eklentileri ekranı: prim ve kesintilerin toplu girişi"]
+        ]
+      }
+    },
+    "employees": {
+      "intro": "Çalışanlar için QR Zaman, iş yerindeki işlerin çoğunu telefona taşır. QR kodu okutarak giriş-çıkış yaparsınız; izin ve avans talebinizi mobil uygulamadan gönderirsiniz. Bordronuzu, puantajınızı ve kalan izninizi istediğiniz an telefonunuzdan görürsünüz.",
+      "toast": {
+        "title": "Mesai başladı",
+        "description": "Giriş kaydedildi · 08:54"
+      },
+      "problems": {
+        "title": "Çalışan olarak<br></br><accent>neyle uğraşıyorsunuz?</accent>",
+        "text": "Basit bir izin talebi ya da maaş sorusu, çoğu iş yerinde birkaç kişiyi ve birkaç günü bulur. QR Zaman bu soruların cevabını çalışanın kendi telefonuna koyar.",
+        "items": [
+          {
+            "title": "Kuyrukta beklenen giriş",
+            "text": "Kart okuyucunun ya da imza listesinin önünde sıra beklemek, kart unutulduğunda kaydın tutulmaması ya da elle düzeltilmesi her gün tekrar eden küçük ama yorucu sorunlardır."
+          },
+          {
+            "title": "Talepler kayboluyor",
+            "text": "İzin dilekçesi ya da avans isteği kâğıtla veya mesajla iletildiğinde nerede beklediği, onaylanıp onaylanmadığı ve reddedildiyse nedeni çoğu zaman belirsiz kalır."
+          },
+          {
+            "title": "Bilgiye ulaşmak zor",
+            "text": "Kaç gün izin hakkı kaldığını, bu ay kaç saat mesai yaptığını ya da bordroda hangi kesintinin yapıldığını öğrenmek için İK'ya sormak ve cevap beklemek gerekir."
+          }
+        ]
+      },
+      "features": {
+        "title": "Çalışanlar için<br></br><accent>öne çıkan özellikler</accent>",
+        "text": "QR Zaman mobil uygulaması iOS ve Android'de çalışır. Kullanıcı adınız veya telefon numaranızla giriş yaparsınız.",
+        "items": {
+          "mobileApp": "Bugünkü giriş-çıkış, anlık mesai süresi, son bordro ve kalan izin ana sayfada.",
+          "qrPdks": "Giriş veya Çıkış'ı seçip QR kodu okutun; konumunuz doğrulanır, kayıt anında oluşur.",
+          "leaveManagement": "İzin tipini ve tarihleri seçin, talep ekranında kalan izin bakiyenizi anında görün.",
+          "advanceManagement": "Avans tutarını ve taksit sayısını belirleyin, talebinizin durumunu takip edin.",
+          "employeeRecords": "Kimlik, adres, banka ve çalışma bilgilerinizi uygulamadaki özlük ekranında görün."
+        }
+      },
+      "splits": [
+        {
+          "eyebrow": "Talepler",
+          "title": "İzin ve avans talebi<br></br><accent>birkaç dokunuşla.</accent>",
+          "text": "İzin talebinde tip, tarih aralığı, izin adresi ve mesajınızı yazarsınız; ekranda kıdem yılınız, toplam hakkınız, kullandığınız ve kalan izniniz görünür. Avans talebinde tutarı, taksit sayısını, aylık ödemeyi ve başlangıç tarihini seçersiniz. Taleplerinizin bekliyor, onaylandı ya da reddedildi durumunu ve varsa ret gerekçesini aynı listede takip edersiniz.",
+          "points": [
+            "Talep ekranında anlık izin bakiyesi",
+            "Taksitli avans talebi",
+            "Durum takibi ve ret gerekçesi"
+          ]
+        },
+        {
+          "eyebrow": "Kayıtlarım",
+          "title": "Puantajınız ve mesainiz<br></br><accent>her an elinizde.</accent>",
+          "text": "Puantaj ekranında ayınızı takvim olarak görürsünüz: çalışılan gün ve saat, fazla mesai, izinler ve tatiller ay özetinde toplanır. PDKS Kayıtlarım ekranında her günün giriş-çıkış hareketlerini, normal, mesai, izin ve toplam sürelerini incelersiniz. Bu ekranların görünürlüğü şirketinizin yetki ayarlarına bağlıdır.",
+          "points": [
+            "Aylık puantaj takvimi ve ay özeti",
+            "Günlük normal, mesai ve toplam süre",
+            "Detaylı bordro dökümü"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Giriş-çıkış için hangi telefonu kullanabilirim?",
+          "a": "QR Zaman mobil uygulaması iOS ve Android telefonlarda çalışır. Hesabınız güvenlik için tek bir cihazla eşleşir; telefon değiştirdiğinizde yöneticiniz panelden cihaz eşleştirmesini sıfırlar."
+        },
+        {
+          "q": "QR okuturken kameram kayıt yapıyor mu?",
+          "a": "Hayır. Kamera yalnızca QR kodu okumak için kullanılır, görüntü kaydedilmez. Okutma anında telefonunuzun konumu alınır ve kayda eklenir."
+        },
+        {
+          "q": "Konumum kapalıysa ne olur?",
+          "a": "Uygulama giriş-çıkış kaydı için konum ister. Konum kapalıysa sizi telefonunuzun ayarlarına yönlendirir. Sahte konum uygulamalarıyla yapılan kayıtlar tespit edilir ve engellenir."
+        },
+        {
+          "q": "Bordromu ve kalan iznimi nereden görürüm?",
+          "a": "Ana sayfada son bordronuz (tutarı gizleyip gösterebilirsiniz), kalan izniniz ve sonraki izniniz yer alır. Bordrom ekranında detaylı bordro dökümünü görürsünüz. Bu ekranlar şirketinizin yetki ayarlarına göre açılır."
+        }
+      ],
+      "cta": "Giriş-çıkışı ve talepleri<br></br><accent>telefona taşıyın.</accent>",
+      "alts": {
+        "hero": [
+          "QR Zaman mobil uygulamada giriş veya çıkış seçimi ve QR kod okutma ekranı",
+          "QR Zaman mobil uygulama ana sayfası: bugünkü giriş-çıkış ve kalan izin"
+        ],
+        "splits": [
+          [
+            "Mobil uygulamada izin talepleri listesi ve talep durumları",
+            "Mobil uygulamada taksitli avans talebi formu"
+          ],
+          [
+            "Mobil uygulamada aylık puantaj takvimi ve ay özeti",
+            "Mobil uygulamada PDKS kayıtlarım: günlük giriş-çıkış hareketleri"
+          ]
+        ]
+      }
+    },
+    "retail": {
+      "intro": "Perakende ve mağazacılık için personel takibi, her mağazanın kapısında başlar. QR Zaman'da her mağazaya ayrı bir QR noktası asarsınız; mağaza personeli kendi telefonuyla okutarak giriş-çıkış yapar. Vardiyaları, geç gelenleri ve mesaileri tüm mağazalar için tek panelden izler, puantajı ve bordroyu şube bazında hazırlarsınız.",
+      "toast": {
+        "title": "Konum doğrulandı",
+        "description": "Mağaza girişi · 09:58"
+      },
+      "problems": {
+        "title": "Mağazada personel takibi<br></br><accent>neden zorlaşır?</accent>",
+        "text": "Perakendede çalışma saatleri mağazanın açılış ve kapanışına, kampanya dönemlerine ve hafta sonu yoğunluğuna göre şekillenir. Bu düzen, klasik personel takibini üç noktada zorlar.",
+        "items": [
+          {
+            "title": "Her mağaza ayrı bir ada",
+            "text": "Mağaza müdürleri giriş-çıkış saatlerini kendi yöntemleriyle tutuyorsa merkezdeki İK ekibi her ay farklı formatta tablolar toplar. Hangi mağazada kimin geç kaldığı ya da eksik çalıştığı ancak ay sonunda ortaya çıkar."
+          },
+          {
+            "title": "Personel mağazalar arasında dönüyor",
+            "text": "Yoğun günlerde bir mağazanın personeli başka mağazaya destek verir. Kayıt sabit bir cihaza bağlıysa bu çalışma ya hiç kaydedilmez ya da elle düzeltilir; şirket ayarında personelin her lokasyondan giriş-çıkış yapmasına izin vermek bu sorunu ortadan kaldırır."
+          },
+          {
+            "title": "Uzun ve bölünmüş vardiyalar",
+            "text": "Açılış, kapanış ve ara vardiyalar, hafta sonu çalışmaları ve değişen hafta tatili günleri perakendede olağandır. Mola süreleri ve fazla mesai her vardiya için doğru hesaplanmazsa puantaj ve bordro tartışma konusu olur."
+          }
+        ]
+      },
+      "features": {
+        "title": "Perakende için<br></br><accent>öne çıkan özellikler</accent>",
+        "text": "Kurulum için donanım gerekmez: her mağazaya basılabilir bir A4 QR afişi ve personelin kendi telefonu yeterlidir.",
+        "items": {
+          "qrPdks": "Mağaza personeli kendi telefonuyla QR okutur; konum doğrulanır, sahte GPS ile kayıt engellenir.",
+          "locationTracking": "Her mağazayı ayrı bir lokasyon olarak tanımlayın, QR kodunu A4 afiş olarak basıp girişe asın.",
+          "shiftManagement": "Açılış, kapanış ve ara vardiyalarını mola ve hafta tatiliyle şube bazında tanımlayın.",
+          "timesheet": "Mağaza bazında aylık puantaj ve mesai çizelgesini şube, bölüm ve ay filtresiyle görün.",
+          "multiCompany": "Tüm mağazaları şube olarak tek panelde toplayın, mağaza müdürlerine yalnızca kendi şubesini açın."
+        }
+      },
+      "splits": [
+        {
+          "eyebrow": "Mağaza QR noktaları",
+          "title": "Her mağazanın<br></br><accent>kendi QR noktası.</accent>",
+          "text": "Panelde her mağazayı bir lokasyon olarak enlem ve boylamıyla tanımlarsınız ya da mağaza müdürü sahada mobil uygulamadan bulunduğu noktayı tek dokunuşla kaydeder. Lokasyonun QR kodunu PNG ya da duvara asmaya hazır A4 PDF afiş olarak indirirsiniz. Kapanan ya da tadilata giren mağazayı pasife alırsınız.",
+          "points": [
+            "Mağaza başına QR kod ve A4 afiş",
+            "Mobil uygulamadan sahada lokasyon kaydı",
+            "Lokasyonları aktif veya pasif yapma"
+          ]
+        },
+        {
+          "eyebrow": "Mesai takibi",
+          "title": "Kampanya dönemlerinde<br></br><accent>mesai kontrol altında.</accent>",
+          "text": "Mesai çizelgesi, her personelin günlük mesaisini ve ay toplamını şube, bölüm ve ay filtresiyle gösterir. Yoğun dönemlerde hangi mağazada ne kadar fazla mesai yapıldığını anlık görür, mesaileri puantaja ve oradan bordroya otomatik aktarırsınız.",
+          "points": [
+            "Şube ve bölüm bazlı mesai çizelgesi",
+            "Geç gelen ve devamsız raporları",
+            "Excel, PDF ve Word çıktısı"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Her mağazaya kart okuyucu ya da cihaz almamız gerekiyor mu?",
+          "a": "Hayır. Her mağaza için panelden bir QR kod üretip A4 afiş olarak basmanız yeterlidir. Personel giriş-çıkışı kendi telefonundaki QR Zaman uygulamasıyla yapar."
+        },
+        {
+          "q": "Başka mağazaya destek veren personelin kaydı nasıl tutulur?",
+          "a": "Şirket ayarlarında personelin her lokasyondan giriş-çıkış yapabilmesine izin verebilirsiniz. Bu durumda personel destek verdiği mağazanın QR kodunu okutur; kayıtta hangi lokasyondan okutulduğu görünür."
+        },
+        {
+          "q": "Mağaza müdürü sadece kendi mağazasını görebilir mi?",
+          "a": "Evet. Kullanıcı yönetiminde her kullanıcıya grup, şirket veya şube bazında yetki alanı tanımlanır. Mağaza müdürü yalnızca kendi şubesinin personelini, kayıtlarını ve taleplerini görür."
+        },
+        {
+          "q": "Personel QR kodun fotoğrafını çekip evden okutabilir mi?",
+          "a": "Okutma anında telefonun konumu alınır ve kayda eklenir; kayıt detayında enlem ve boylam görünür. Sahte konum uygulamalarıyla yapılan kayıtlar engellenir ve hesap tek bir cihaza eşlendiği için başka telefondan kullanılamaz."
+        }
+      ],
+      "cta": "Tüm mağazalarınızı<br></br><accent>tek panelden izleyin.</accent>",
+      "alts": {
+        "hero": [
+          "Mağaza personelinin QR kodlu PDKS giriş-çıkış kayıtları listesi",
+          "Mobil uygulamada mağaza girişinde QR kayıt onayı"
+        ],
+        "splits": [
+          ["Lokasyon takibi ekranı: mağazaların QR noktaları ve konum bilgileri"],
+          ["Fazla mesai çizelgesi: personelin günlük mesaileri ve ay toplamları"]
+        ]
+      }
+    },
+    "manufacturing": {
+      "intro": "Üretim ve fabrikalar için vardiya ve PDKS takibi, vardiya değişiminde başlayıp bordroda biter. QR Zaman ile fabrika girişine asılan QR kodu okutan personelin giriş-çıkışı vardiya tanımına göre hesaplanır. Gece vardiyası, mola ve fazla mesai otomatik ayrılır; bölüm bazlı mesai çizelgesi ve puantaj ay sonunda hazır olur.",
+      "toast": {
+        "title": "Gece vardiyası",
+        "description": "Üretim · 22:00 – 06:00"
+      },
+      "problems": {
+        "title": "Fabrikada zaman takibinin<br></br><accent>zor tarafı</accent>",
+        "text": "Üretim, kesintisiz vardiyalar ve kalabalık ekiplerle çalışır. Zaman takibindeki küçük hatalar, yüzlerce personelde büyük bordro farklarına dönüşür.",
+        "items": [
+          {
+            "title": "Gece vardiyası ve gün değişimi",
+            "text": "Gece başlayıp sabah biten vardiyalarda çalışılan sürenin hangi güne yazılacağı, molanın düşülüp düşülmediği ve gece mesaisinin nasıl hesaplanacağı elle yapıldığında sürekli hata kaynağı olur."
+          },
+          {
+            "title": "Vardiya değişiminde yoğunluk",
+            "text": "Vardiya değişiminde aynı anda çok sayıda personelin giriş-çıkış yapması, tek bir cihazın önünde kuyruğa ve kayıtların sonradan elle düzeltilmesine yol açar."
+          },
+          {
+            "title": "Fazla mesai tartışmaları",
+            "text": "Sipariş yoğunluğunda yapılan fazla mesai, bölüm sorumlularının notlarıyla takip edildiğinde ay sonunda personel ile İK arasında saat farkı tartışması kaçınılmaz olur."
+          }
+        ]
+      },
+      "features": {
+        "title": "Üretim için<br></br><accent>öne çıkan özellikler</accent>",
+        "text": "Vardiya tanımları, PDKS kayıtları, puantaj ve bordro aynı veriyi kullanır; bölüm sorumlusu ve İK aynı rakama bakar.",
+        "items": {
+          "shiftManagement": "Bölüm bazında gece vardiyası, mola ve hafta tatiliyle vardiya tanımlayın; süreler otomatik hesaplanır.",
+          "qrPdks": "Herkes kendi telefonuyla okuttuğu için vardiya değişiminde tek cihaz önünde kuyruk oluşmaz.",
+          "timesheet": "Aylık puantaj ve mesai çizelgesini bölüm ve ay filtresiyle görün, toplu puantaj girişi yapın.",
+          "payroll": "Normal, gece ve resmî tatil mesaileri ile TİS mesaileri bordroda ayrı kalemler olarak hesaplanır.",
+          "earningsDeductions": "Üretim primi ya da hasar kesintisi gibi kalemleri tek kayıtla birden fazla personele ekleyin.",
+          "reporting": "Geç gelen, geç çıkan, devamsız ve mesai yapan personeli PDKS raporunda izleyin."
+        }
+      },
+      "splits": [
+        {
+          "eyebrow": "PDKS kayıtları",
+          "title": "Her vardiya<br></br><accent>dakikasıyla kayıtlı.</accent>",
+          "text": "Her giriş-çıkış kaydında saat, lokasyon ve okutulan konumun enlem ve boylamı tutulur. Kayıtlar vardiya tanımına göre normal süre, mola ve mesai olarak ayrılır. Bölüm ve tarih aralığıyla filtreler, hatalı bir saati düzeltir ya da kaydı temizlersiniz; aynı gün ikinci giriş gibi mükerrer kayıtlarda personel uyarılır.",
+          "points": [
+            "Gece vardiyasında otomatik süre hesabı",
+            "Saat düzeltme ve kayıt temizleme",
+            "Mükerrer giriş kontrolü"
+          ]
+        },
+        {
+          "eyebrow": "Puantaj",
+          "title": "Bölüm bazlı puantaj<br></br><accent>ay sonunda hazır.</accent>",
+          "text": "PDKS kayıtları günlük veya aylık olarak puantaja aktarılır. Puantaj çizelgesinde tüm personeli günlere göre görür; hafta tatili, genel tatil ve izin günlerini toolbar ile hızlıca işaretlersiniz. Birden fazla personel için toplu puantaj girişi yapabilir, her personelin günlük puantajını ve ay özetini ayrı ayrı inceleyebilirsiniz.",
+          "points": [
+            "PDKS'den günlük veya aylık aktarım",
+            "Toplu puantaj girişi",
+            "Personel bazlı ay özeti"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Gece vardiyasında çalışılan süre nasıl hesaplanıyor?",
+          "a": "Vardiya tanımında gece vardiyasını, mola süresini ve hafta tatilini belirlersiniz. QR Zaman giriş ve çıkış kayıtlarına göre toplam çalışma, mola ve mesai sürelerini otomatik hesaplar."
+        },
+        {
+          "q": "Vardiya değişiminde kalabalık personel için yeterli mi?",
+          "a": "Her personel giriş-çıkışı kendi telefonundan yaptığı için tek bir cihazın önünde sıra oluşmaz. Fabrika girişine ya da her bölüme ayrı QR noktası asabilirsiniz."
+        },
+        {
+          "q": "Farklı bölümler için farklı vardiyalar tanımlayabilir miyiz?",
+          "a": "Evet. Vardiya tanımları şube ve bölüm bazında yapılır. Üretim, depo ve idari bölümler için ayrı çalışma saatleri ve mola süreleri belirleyebilirsiniz."
+        },
+        {
+          "q": "Fazla mesai bordroya nasıl yansıyor?",
+          "a": "Mesai süreleri puantaja aktarılır ve bordroda normal, gece, resmî tatil ve TİS mesaileri olarak ayrı kalemlerde hesaplanır. Gün, saat ya da tutar bazlı ek mesai kayıtlarını da eklenti ekranından girebilirsiniz."
+        }
+      ],
+      "cta": "Vardiyadan bordroya<br></br><accent>tek bir akış kurun.</accent>",
+      "alts": {
+        "hero": [
+          "Fabrika personeli için fazla mesai çizelgesi: bölüm bazlı günlük mesai",
+          "Mobil uygulamada vardiyalı personelin PDKS kayıtları"
+        ],
+        "splits": [
+          ["PDKS giriş-çıkış detayı: saat, lokasyon ve okutulan konumun enlem-boylamı"],
+          ["Aylık puantaj çizelgesi: üretim personeli için gün tipleri ve toplamlar"]
+        ]
+      }
+    },
+    "construction": {
+      "intro": "İnşaat ve saha ekipleri için personel takibi, sabit bir giriş kapısı olmadan da çalışmalıdır. QR Zaman'da şantiyeye asılan QR kodu okutan personelin konumu kayda eklenir, sahte GPS ile yapılan kayıt engellenir. Yönetici yeni şantiyenin QR noktasını mobil uygulamadan, bulunduğu yerde tek dokunuşla kaydeder.",
+      "toast": {
+        "title": "Konum doğrulandı",
+        "description": "Şantiye girişi · 07:42"
+      },
+      "problems": {
+        "title": "Şantiyede ve sahada<br></br><accent>kim nerede çalıştı?</accent>",
+        "text": "İnşaat ve saha işlerinde ekipler sık yer değiştirir, iş yeri kalıcı değildir ve yöneticiler çoğu zaman sahada değildir. Bu durum, güvenilir bir devam kaydı tutmayı zorlaştırır.",
+        "items": [
+          {
+            "title": "Değişen çalışma noktaları",
+            "text": "Bir şantiye biter, diğeri başlar; saha ekipleri gün içinde birden fazla noktada çalışabilir. Her yeni noktaya cihaz kurmak ya da kablolama yapmak hem maliyetli hem de yavaştır."
+          },
+          {
+            "title": "Kaydın güvenilirliği",
+            "text": "Kâğıt imza listeleri ve ustabaşı notları, personelin gerçekten sahada olup olmadığını göstermez. Yerine imza atma ya da sonradan düzeltilen saatler bordroda doğrudan maliyete dönüşür."
+          },
+          {
+            "title": "Uzaktaki ekip, geciken bilgi",
+            "text": "Sahadaki giriş-çıkış bilgisi merkeze günler sonra ulaşıyorsa, hangi ekibin hangi şantiyede kaç saat çalıştığını zamanında görmek ve puantajı doğru kapatmak mümkün olmaz."
+          }
+        ]
+      },
+      "features": {
+        "title": "İnşaat ve saha için<br></br><accent>öne çıkan özellikler</accent>",
+        "text": "Donanım ya da kablolama gerektirmeden, yalnızca bir QR afişi ve personelin telefonuyla başlarsınız.",
+        "items": {
+          "qrPdks": "Okutma anındaki konum doğruluk bilgisiyle kayda eklenir; sahte GPS ile yapılan kayıt engellenir.",
+          "locationTracking": "Her şantiyeyi bölüme bağlı bir lokasyon olarak tanımlayın, iş bitince pasife alın.",
+          "mobileApp": "Yönetici yeni QR noktasını sahada, bulunduğu yerin konumunu tek dokunuşla kaydederek kurar.",
+          "timesheet": "Sahadaki kayıtlar puantaja aktarılır; ekiplerin aylık çalışma ve mesai süreleri tek çizelgede.",
+          "payroll": "Günlük veya saatlik ücretli saha personelinin bordrosu puantajdan otomatik hesaplanır."
+        }
+      },
+      "splits": [
+        {
+          "eyebrow": "Konumlu giriş-çıkış",
+          "title": "Sahada okut,<br></br><accent>konum kayda geçsin.</accent>",
+          "text": "Personel uygulamada Giriş veya Çıkış'ı seçip şantiyedeki QR kodu okutur. Telefonun konumu doğruluk bilgisiyle birlikte kayda eklenir, konum kapalıysa uygulama ayarlara yönlendirir. Hesap tek bir cihaza eşlendiği için başka bir telefondan kullanılamaz ve kamera görüntüsü kaydedilmez.",
+          "points": [
+            "Sahte konum (fake GPS) tespiti",
+            "Cihaz eşleştirme ile tek telefon",
+            "Mükerrer kayıt uyarısı"
+          ]
+        },
+        {
+          "eyebrow": "Kayıt detayı",
+          "title": "Her kaydın<br></br><accent>enlem ve boylamı.</accent>",
+          "text": "Panelde bir giriş-çıkış kaydını açtığınızda saati, lokasyonu ve QR kodun okutulduğu noktanın enlem ve boylamını görürsünüz. Bölüm ve tarih aralığına göre filtreleyerek her şantiyenin kayıtlarını ayrı ayrı inceler, gerekirse saati düzeltir ya da kaydı temizlersiniz.",
+          "points": [
+            "Okutulan konumun enlem-boylamı",
+            "Bölüm ve tarih aralığı filtreleri",
+            "Saat düzeltme ve kayıt temizleme"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Yeni bir şantiyeyi sisteme nasıl ekleriz?",
+          "a": "Yönetici şantiyeye gittiğinde mobil uygulamadan bölümü seçer ve bulunduğu noktanın konumunu tek dokunuşla kaydeder. Ardından lokasyonun QR kodunu PNG ya da A4 PDF afiş olarak indirip şantiye girişine asar."
+        },
+        {
+          "q": "Personel şantiyede değilken giriş yapabilir mi?",
+          "a": "Okutma anında telefonun konumu alınır ve kayda eklenir; kayıt detayında enlem ve boylam görünür. Sahte konum uygulamalarıyla yapılan kayıtlar tespit edilip engellenir, hesap da tek cihaza eşlendiği için başkası adına okutma yapılamaz."
+        },
+        {
+          "q": "Biten şantiyenin QR kodu ne olacak?",
+          "a": "İş bittiğinde lokasyonu silmek yerine pasife alırsınız. Böylece o şantiyede yapılmış geçmiş giriş-çıkış kayıtları PDKS kayıtlarında ve raporlarda yerinde kalır."
+        },
+        {
+          "q": "Saha personeli günlük ücretle çalışıyor. Bordro buna uygun mu?",
+          "a": "Evet. Personel kartında ücret tipini aylık, günlük ya da saatlik olarak; net veya brüt seçebilirsiniz. Bordro puantajdaki gün ve saatlere göre hesaplanır."
+        }
+      ],
+      "cta": "Sahadaki ekiplerinizi<br></br><accent>güvenle takip edin.</accent>",
+      "alts": {
+        "hero": [
+          "Lokasyon takibi: şantiye ve saha QR noktalarının listesi ve konumları",
+          "Mobil uygulamada şantiye girişinde Giriş/Çıkış seçimi ve QR okutma"
+        ],
+        "splits": [
+          [
+            "Mobil uygulamada konum doğrulamalı QR kayıt onayı",
+            "Mobil uygulamada saha personelinin PDKS kayıtları"
+          ],
+          ["PDKS kayıt detayı: okutulan konumun enlem ve boylamı"]
+        ]
+      }
+    },
+    "hospitality": {
+      "intro": "Restoran ve hizmet sektörü için vardiya takibi, değişken saatlere ayak uydurmalıdır. QR Zaman ile restoran, kafe ve otellerde personel QR kodu okutarak vardiyaya başlar; molalar ve fazla mesai vardiya tanımına göre hesaplanır. Saatlik, günlük ya da aylık ücretli personelin puantajı ve bordrosu aynı panelde hazırlanır.",
+      "toast": {
+        "title": "Mesai başladı",
+        "description": "Akşam vardiyası · 16:00"
+      },
+      "problems": {
+        "title": "Restoranda vardiya<br></br><accent>neden hiç sabit kalmaz?</accent>",
+        "text": "Restoran, kafe ve otellerde iş yükü saate, güne ve mevsime göre değişir. Personel planı da buna uyar; zaman takibi ise çoğu zaman bu hıza yetişemez.",
+        "items": [
+          {
+            "title": "Değişken ve bölünmüş vardiyalar",
+            "text": "Öğle ve akşam servisi için bölünmüş vardiyalar, hafta sonu yoğunluğu ve değişen hafta tatili günleri, sabit mesai saatine göre kurulmuş takip yöntemlerini hızla işlemez hale getirir."
+          },
+          {
+            "title": "Dakikası dakikasına mesai",
+            "text": "Servis uzadığında kapanış saati kayar. Fazla mesai ve molalar doğru kaydedilmezse hem personel hakkını alamadığını düşünür hem de işletme gerçek iş gücü maliyetini göremez."
+          },
+          {
+            "title": "Farklı ücret tipleri",
+            "text": "Aynı işletmede aylık ücretli kadro, günlük ya da saatlik çalışan yardımcı personel bir arada bulunur. Her grubun ücretini farklı tablolarda hesaplamak ay sonunu uzatır."
+          }
+        ]
+      },
+      "features": {
+        "title": "Restoran ve hizmet için<br></br><accent>öne çıkan özellikler</accent>",
+        "text": "Mutfak, salon ve kat hizmetleri gibi bölümler için ayrı vardiya tanımlar, hepsini aynı puantajda toplarsınız.",
+        "items": {
+          "shiftManagement": "Bölüm bazında vardiya, mola süresi ve hafta tatili tanımlayın; çalışma ve mesai süreleri otomatik hesaplanır.",
+          "qrPdks": "Personel servis girişindeki QR kodu kendi telefonuyla okutur; kart ya da cihaz gerekmez.",
+          "timesheet": "Mesai çizelgesinde günlük mesaileri ve ay toplamlarını bölüm bazında görün.",
+          "payroll": "Aylık, günlük ve saatlik ücretli personelin bordrosu aynı ekranda, puantajdan otomatik hesaplanır.",
+          "earningsDeductions": "Prim gibi ek ödemeleri ve kesintileri net veya brüt olarak, birden fazla personele tek kayıtta ekleyin.",
+          "leaveManagement": "Personel izin talebini mobilden gönderir; yönetici kalan izni görerek onaylar."
+        }
+      },
+      "splits": [
+        {
+          "eyebrow": "Mesai çizelgesi",
+          "title": "Servis uzadığında<br></br><accent>mesai kaybolmaz.</accent>",
+          "text": "QR ile alınan giriş-çıkış kayıtları vardiya tanımına göre normal süre, mola ve mesai olarak ayrılır ve mesai çizelgesine yansır. Şube, bölüm ve ay filtresiyle hangi bölümde ne kadar fazla mesai yapıldığını görür, kayıtları puantaja aktarırsınız.",
+          "points": [
+            "Vardiya bazlı mola ve mesai hesabı",
+            "Bölüm ve ay filtreli mesai çizelgesi",
+            "Geç gelen ve devamsız raporları"
+          ]
+        },
+        {
+          "eyebrow": "Ek ödemeler",
+          "title": "Prim ve ek ödemeler<br></br><accent>bordroda hazır.</accent>",
+          "text": "Prim ve ikramiye gibi ek ödemeleri net veya brüt olarak, ödeme tarihiyle tanımlarsınız; kesintileri ve gün, saat veya tutar bazlı mesaileri de aynı ekrandan girersiniz. Tek kayıtla birden fazla personele ekleme yapar, hepsinin bordroya otomatik yansımasını sağlarsınız.",
+          "points": [
+            "Net veya brüt ek ödeme",
+            "Toplu ekleme",
+            "Bordroya otomatik yansıma"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Bölünmüş vardiyaları takip edebilir miyiz?",
+          "a": "Personel her vardiya başında ve sonunda QR kodu okutarak giriş-çıkış yapar. Kayıtlar vardiya tanımınıza göre normal süre, mola ve mesai olarak hesaplanır ve puantaja aktarılır."
+        },
+        {
+          "q": "Saatlik ücretle çalışan personelin bordrosu hesaplanıyor mu?",
+          "a": "Evet. Personel kartında ücret tipini aylık, günlük ya da saatlik; net veya brüt olarak seçersiniz. Bordro puantajdaki gün ve saat ödemelerine göre otomatik hesaplanır."
+        },
+        {
+          "q": "Birden fazla restoranımız var. Hepsini aynı yerden yönetebilir miyiz?",
+          "a": "Evet. Her restoranı şube, mutfak ve salon gibi alanları bölüm olarak tanımlarsınız. Üst bardan şube seçerek istediğiniz restoranın verisine geçer, raporları şube bazında alırsınız."
+        },
+        {
+          "q": "Personel kendi mesai saatlerini görebilir mi?",
+          "a": "Şirket ayarlarında izin verirseniz personel PDKS kayıtlarını ve puantajını mobil uygulamadan görür. Ana sayfadaki bugünkü giriş-çıkış kartında anlık mesai süresi de yer alır."
+        }
+      ],
+      "cta": "Değişken vardiyaları<br></br><accent>kolayca yönetin.</accent>",
+      "alts": {
+        "hero": [
+          "Restoran personelinin QR kodlu PDKS giriş-çıkış kayıtları",
+          "Mobil uygulama ana sayfası: bugünkü vardiya ve anlık mesai süresi"
+        ],
+        "splits": [
+          ["Fazla mesai çizelgesi: bölüm bazlı günlük mesai ve toplamlar"],
+          ["Ek ödeme ve mesai eklentileri ekranı: prim ve kesinti kayıtları"]
+        ]
+      }
+    },
+    "healthcare": {
+      "intro": "Sağlık kuruluşları için vardiya ve PDKS takibi, günün her saatinde güvenilir olmalıdır. QR Zaman ile hastane, klinik ve sağlık kuruluşlarında personel kendi telefonuyla QR kodu okutarak giriş-çıkış yapar. Gece vardiyaları, izinler, puantaj ve bordro aynı panelde birlikte yönetilir.",
+      "toast": {
+        "title": "Gece vardiyası",
+        "description": "Acil servis · 20:00"
+      },
+      "problems": {
+        "title": "Sağlıkta personel takibi<br></br><accent>neden farklıdır?</accent>",
+        "text": "Sağlık kuruluşları kesintisiz hizmet verir. Bu nedenle vardiya düzeni, izin planlaması ve personel kayıtları diğer sektörlere göre daha fazla dikkat ister.",
+        "items": [
+          {
+            "title": "Kesintisiz vardiya düzeni",
+            "text": "Gece, hafta sonu ve resmî tatil vardiyaları sağlıkta olağandır. Gün değişimine sarkan vardiyalarda çalışma süresi, mola ve mesai elle hesaplandığında puantajda tutarsızlıklar oluşur."
+          },
+          {
+            "title": "Belgeli izinler",
+            "text": "Sağlık raporu gibi belgeli izinlerin talep edilmesi, belgesinin iletilmesi ve onaylanması farklı kanallardan yürüdüğünde hem belge kaybolur hem de izin bakiyesi yanlış hesaplanır."
+          },
+          {
+            "title": "Farklı birimler, farklı ekipler",
+            "text": "Acil servis, poliklinik, laboratuvar ve idari birimler farklı çalışma saatleriyle çalışır. Her birimin devam bilgisini ayrı ayrı toplamak, yönetimin toplu tabloyu görmesini geciktirir."
+          }
+        ]
+      },
+      "features": {
+        "title": "Sağlık kuruluşları için<br></br><accent>öne çıkan özellikler</accent>",
+        "text": "Birimleri bölüm olarak tanımlar, her bölüm için ayrı vardiya ve QR noktası kurarsınız. Tüm veriler aynı puantaj ve bordroda birleşir.",
+        "items": {
+          "shiftManagement": "Birim bazında gece vardiyası, mola ve hafta tatiliyle vardiya tanımlayın; süreler otomatik hesaplanır.",
+          "qrPdks": "Personel birim girişindeki QR kodu okutur; konum ve cihaz doğrulamasıyla kayıt güvenilir olur.",
+          "leaveManagement": "İzin talebine dosya eki (rapor vb.) eklenir; yönetici kalan izni görerek onaylar.",
+          "timesheet": "Genel tatil, yıllık izin ve mazeret gibi gün tipleriyle aylık puantajı birim bazında tutun.",
+          "employeeRecords": "Kimlik, eğitim ve sağlık bilgileri dahil personel özlük dosyasını tek yerde saklayın.",
+          "payroll": "Gece ve resmî tatil mesaileri bordroda ayrı kalemler olarak otomatik hesaplanır."
+        }
+      },
+      "splits": [
+        {
+          "eyebrow": "İzin yönetimi",
+          "title": "Belgeli izinler<br></br><accent>tek akışta.</accent>",
+          "text": "Personel izin talebini mobilden gönderir; saatlik izin, izin adresi, mesaj ve rapor gibi dosya ekleri talebe eklenebilir. Talep detayında kıdem yılı, toplam hak, kullanılan ve kalan izin otomatik hesaplanır. Yönetici talebi onaylar ya da gerekçesini yazarak reddeder; tüm izinler ve talepler ayrı sekmelerde listelenir.",
+          "points": ["İzin talebine dosya eki", "Saatlik izin", "Otomatik izin bakiyesi"]
+        },
+        {
+          "eyebrow": "Puantaj",
+          "title": "Birim bazlı puantaj<br></br><accent>her ay hazır.</accent>",
+          "text": "PDKS kayıtları günlük veya aylık olarak puantaja aktarılır. Puantaj çizelgesinde iş günü, hafta tatili, genel tatil, yıllık izin ve mazeret gibi gün tiplerini görür, toolbar ile hızlıca işaretlersiniz. Mesai çizelgesinde ise birim ve ay bazında günlük mesaileri izlersiniz.",
+          "points": [
+            "Gün tipleriyle aylık puantaj",
+            "Toplu puantaj girişi",
+            "Birim ve ay filtreli mesai çizelgesi"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Nöbet ve gece vardiyaları nasıl hesaplanıyor?",
+          "a": "Vardiya tanımında gece vardiyasını, mola süresini ve hafta tatilini belirlersiniz. QR ile alınan giriş-çıkış kayıtlarından toplam çalışma, mola ve mesai süreleri otomatik hesaplanır; bordroda gece ve resmî tatil mesaileri ayrı kalemlerde yer alır."
+        },
+        {
+          "q": "Sağlık raporu gibi belgeler izin talebine eklenebilir mi?",
+          "a": "Evet. İzin talebine dosya eki eklenebilir. Yönetici talebi incelerken eki görür ve talebi onaylar ya da gerekçeli olarak reddeder."
+        },
+        {
+          "q": "Her birim için ayrı QR noktası kurabilir miyiz?",
+          "a": "Evet. Lokasyonlar bölümlere bağlı tanımlanır. Acil servis, poliklinik ya da laboratuvar gibi her birim için ayrı bir QR noktası oluşturup girişine asabilirsiniz."
+        },
+        {
+          "q": "Personel bilgileri nasıl korunuyor?",
+          "a": "Her kullanıcı yalnızca rolüne ve yetki alanına tanımlı menüleri ve verileri görür. Mobil uygulamada oturum bilgileri şifreli cihaz depolamasında tutulur ve QR okutma sırasında kamera görüntüsü kaydedilmez."
+        }
+      ],
+      "cta": "Kesintisiz vardiyaları<br></br><accent>güvenle yönetin.</accent>",
+      "alts": {
+        "hero": [
+          "Sağlık personelinin QR kodlu PDKS giriş-çıkış kayıtları",
+          "Mobil uygulamada vardiyalı personelin aylık puantaj takvimi"
+        ],
+        "splits": [
+          ["İzin yönetimi ekranı: tüm izinler ve izin talepleri listesi"],
+          ["Aylık puantaj çizelgesi: birim bazlı gün tipleri ve toplamlar"]
+        ]
+      }
+    },
+    "education": {
+      "intro": "Eğitim kurumları için personel devam takibi, okulun akademik takvimine uymalıdır. QR Zaman ile okul, kurs ve eğitim kurumlarında öğretmen ve idari personel QR kodu okutarak giriş-çıkış yapar. İzin, puantaj ve bordroyu her kampüs için şube bazında, tek panelde yönetirsiniz.",
+      "toast": {
+        "title": "Giriş kaydedildi",
+        "description": "Ana bina · 08:12"
+      },
+      "problems": {
+        "title": "Okulda personel takibinin<br></br><accent>kendine özgü yanları</accent>",
+        "text": "Eğitim kurumlarında çalışma düzeni ders programına, dönemlere ve tatillere göre değişir. Personel takibi de bu ritme uyum sağlamak zorundadır.",
+        "items": [
+          {
+            "title": "Takvime bağlı çalışma",
+            "text": "Resmî tatiller, arifeler ve dönem araları, öğretmen ve idari personelin çalışma günlerini değiştirir. Bu günler puantajda doğru işaretlenmezse ay sonunda çalışılan gün sayısı tutmaz."
+          },
+          {
+            "title": "Farklı personel grupları",
+            "text": "Öğretmenler, idari kadro, temizlik ve güvenlik personeli farklı saatlerde ve farklı düzenlerle çalışır. Hepsini tek bir mesai saatine göre takip etmek gerçeği yansıtmaz."
+          },
+          {
+            "title": "Birden fazla kampüs",
+            "text": "Birden fazla binası ya da şubesi olan kurumlarda her kampüsün devam ve izin bilgisini ayrı ayrı toplamak, merkezdeki İK ekibinin işini ikiye katlar."
+          }
+        ]
+      },
+      "features": {
+        "title": "Eğitim kurumları için<br></br><accent>öne çıkan özellikler</accent>",
+        "text": "Kampüsleri şube, birimleri bölüm olarak tanımlar; personel gruplarıyla öğretmen ve idari kadroyu ayırırsınız.",
+        "items": {
+          "qrPdks": "Öğretmen ve idari personel bina girişindeki QR kodu kendi telefonuyla okutur.",
+          "leaveManagement": "İzin talepleri mobilden gelir; yönetici kalan izni görerek onaylar, izin raporlarını alır.",
+          "timesheet": "Resmî tatil ve yıllık izin gibi gün tipleriyle aylık puantajı kampüs bazında tutun.",
+          "payroll": "Puantaj tamamlandığında tüm personelin bordrosunu otomatik hesaplayıp onaylayın.",
+          "multiCompany": "Her kampüsü şube olarak tanımlayın, üst bardan seçerek aralarında geçiş yapın.",
+          "hrDocuments": "İş sözleşmesi, ücretli izin istek formu ve puantaj cetveli gibi şablonları hazır indirin."
+        }
+      },
+      "splits": [
+        {
+          "eyebrow": "İzin raporları",
+          "title": "Kim ne kadar izin kullandı,<br></br><accent>raporda.</accent>",
+          "text": "Genel izin kullanımları raporunda personelin aldığı izinleri, yıllık toplam izin kullanımları raporunda ise her personelin kıdemini, hakkını, kullandığı ve kalan iznini görürsünüz. Raporları Excel, PDF veya Word olarak dışa aktarıp dönem planlamasında kullanırsınız.",
+          "points": [
+            "Yıllık izin hak, kullanılan ve kalan",
+            "Kıdeme göre izin hesabı",
+            "Excel, PDF ve Word çıktısı"
+          ]
+        },
+        {
+          "eyebrow": "Kurumsal yapı",
+          "title": "Kampüsler ve birimler<br></br><accent>tek yapıda.</accent>",
+          "text": "Kurumunuzu Grup, Şirket, Şube ve Bölüm hiyerarşisiyle kurarsınız. Her kampüs bir şube, her birim bir bölüm olur; bölüm kartında lokasyon, sorumlu ve çalışma saati bilgileri tutulur. Kullanıcılara yalnızca kendi kampüsünü görebilecekleri yetki alanları tanımlarsınız.",
+          "points": [
+            "Kampüs bazında şube yapısı",
+            "Bölüm kartında çalışma saatleri",
+            "Şube bazlı kullanıcı yetkisi"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Resmî tatiller ve dönem araları puantaja nasıl yansıyor?",
+          "a": "Resmî tatiller ve arifeler yıl bazlı parametrelerde tanımlıdır ve takvimde görünür. Puantaj çizelgesinde genel tatil, hafta tatili ve yıllık izin gibi gün tiplerini toolbar ile tek tek ya da toplu olarak işaretleyebilirsiniz."
+        },
+        {
+          "q": "Öğretmenler ve idari personel farklı saatlerde çalışıyor. Bu desteklenir mi?",
+          "a": "Evet. Personel gruplarıyla kadroları ayırır, şube ve bölüm bazında farklı vardiya tanımları yaparsınız. Her personelin çalışma süresi kendi vardiyasına göre hesaplanır."
+        },
+        {
+          "q": "Birden fazla kampüsümüz var. Her biri ayrı mı yönetilir?",
+          "a": "Tüm kampüsler aynı panelde şube olarak yer alır. Merkezdeki yöneticiler hepsini görürken, kampüs yöneticilerine yalnızca kendi şubelerini görebilecekleri yetki alanı tanımlanır."
+        },
+        {
+          "q": "Hazır belge şablonları neleri kapsıyor?",
+          "a": "Belirli ve belirsiz süreli iş sözleşmesi, işe alım ve iş başvuru formu, ücretli izin istek formu, yıllık ücretli izin cetveli, aylık puantaj cetveli ve işe gelmeme tutanağı gibi şablonlar bulunur. Belgeleri arayıp tek tıkla indirirsiniz."
+        }
+      ],
+      "cta": "Kurumunuzun personel takibini<br></br><accent>sadeleştirin.</accent>",
+      "alts": {
+        "hero": [
+          "İK takvimi: resmî tatiller, arifeler ve özel günler",
+          "Mobil uygulama ana sayfası: öğretmen için bugünkü giriş-çıkış"
+        ],
+        "splits": [
+          ["Yıllık izin raporu: personel bazında hak, kullanılan ve kalan izin"],
+          ["Şirket ve bölüm yönetimi: kampüs ve birim yapısı"]
+        ]
+      }
+    },
+    "multiBranch": {
+      "intro": "Çok şubeli işletmeler için merkezi PDKS, tüm şubeleri tek panelde toplamakla başlar. QR Zaman'da Grup, Şirket, Şube ve Bölüm yapınızı kurar, her şubeye kendi QR noktasını tanımlarsınız. Şube yöneticilerine yalnızca kendi şubelerini açar; puantajı ve bordroyu merkezden hesaplarsınız.",
+      "toast": {
+        "title": "QR noktası eklendi",
+        "description": "Yeni şube · Ana giriş"
+      },
+      "problems": {
+        "title": "Şube sayısı arttıkça<br></br><accent>kontrol neden azalır?</accent>",
+        "text": "İkinci, üçüncü ya da onuncu şube açıldığında personel süreçleri her şubede farklı yürümeye başlar. Merkez, şubelerin verisini toplamakla uğraşır.",
+        "items": [
+          {
+            "title": "Her şubede farklı yöntem",
+            "text": "Bir şube imza listesi, diğeri kart okuyucu, bir diğeri tablo kullanıyorsa merkezdeki İK her ay farklı formatlardaki veriyi birleştirmek zorunda kalır ve şubeleri birbiriyle karşılaştıramaz."
+          },
+          {
+            "title": "Herkes her şeyi görüyor ya da hiçbir şeyi",
+            "text": "Şube yöneticisinin yalnızca kendi personelini görmesi, merkezin ise tüm şubeleri izlemesi gerekir. Yetkiler doğru ayrılmazsa ya bilgi gizliliği ya da şubelerin işleyişi zarar görür."
+          },
+          {
+            "title": "Birden fazla şirket, tek bordro ekibi",
+            "text": "Aynı grup altında farklı şirketlerle çalışan işletmelerde her şirketin bordrosu ayrı parametrelerle hesaplanır. Bunun için ayrı programlar kullanmak hem maliyeti hem de hata riskini artırır."
+          }
+        ]
+      },
+      "features": {
+        "title": "Çok şubeli işletmeler için<br></br><accent>öne çıkan özellikler</accent>",
+        "text": "Yeni şube açmak, panelde bir şube kaydı ve bir QR noktası eklemek kadar kolaydır.",
+        "items": {
+          "multiCompany": "Grup, şirket, şube ve bölüm hiyerarşisini kurun; üst bardan seçerek aralarında geçiş yapın.",
+          "rolesPermissions": "Kullanıcılara grup, şirket veya şube bazında yetki alanı tanımlayın, son girişlerini takip edin.",
+          "locationTracking": "Her şubenin girişleri için ayrı QR noktası tanımlayın, A4 afiş olarak basın.",
+          "dashboard": "Yönetici dashboard'unda seçili şubenin aktif personeli, gelenler ve bekleyen talepler.",
+          "reporting": "Üst bardan şube seçerek PDKS, izin, avans ve bordro raporlarını alın, Excel veya PDF olarak paylaşın.",
+          "payroll": "Her şirketin bordrosunu merkezden, aynı yıl bazlı parametrelerle hesaplayın."
+        }
+      },
+      "splits": [
+        {
+          "eyebrow": "Yetki alanları",
+          "title": "Her yönetici<br></br><accent>kendi şubesini görür.</accent>",
+          "text": "Kullanıcı yönetiminde yeni kullanıcı ekler, rolünü belirler ve grup, şirket ya da şube bazında yetki alanını tanımlarsınız. Şube yöneticisi yalnızca kendi şubesinin personelini, kayıtlarını ve taleplerini görür; merkezdeki yöneticiler ise tüm yapıyı izler. Her kullanıcının son girişini aynı listeden takip edersiniz.",
+          "points": [
+            "Grup, şirket veya şube bazlı yetki",
+            "Rol bazlı menü erişimi",
+            "Son giriş takibi"
+          ]
+        },
+        {
+          "eyebrow": "Şube QR noktaları",
+          "title": "Yeni şubeyi<br></br><accent>hızla devreye alın.</accent>",
+          "text": "Yeni şubeyi kurumsal yapıya eklediğinizde bölümlerine bağlı lokasyonları enlem ve boylamla tanımlarsınız ya da şube yöneticisi mobil uygulamadan bulunduğu noktayı tek dokunuşla kaydeder. QR kodu PNG ya da A4 PDF afiş olarak indirilip girişe asılır; şubenin personeli kendi telefonuyla giriş-çıkış yapmaya başlar.",
+          "points": [
+            "Bölümlere bağlı QR noktaları",
+            "Basılabilir A4 QR afişi",
+            "Lokasyonları aktif veya pasif yapma"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Farklı şirketlerimizi aynı hesapta yönetebilir miyiz?",
+          "a": "Evet. QR Zaman Grup, Şirket, Şube ve Bölüm hiyerarşisiyle çalışır. Aynı grup altında birden fazla şirket tanımlar, her şirketin şube ve bölümlerini ayrı ayrı yönetirsiniz."
+        },
+        {
+          "q": "Şube yöneticisi diğer şubelerin verisini görebilir mi?",
+          "a": "Hayır, yetki vermediğiniz sürece göremez. Kullanıcı yönetiminde her kullanıcının yetki alanını grup, şirket veya şube bazında belirlersiniz."
+        },
+        {
+          "q": "Şubeleri birbiriyle karşılaştırabilir miyiz?",
+          "a": "Üst bardan şube seçerek her şubenin PDKS, izin, avans ve bordro raporlarını alırsınız. Raporları Excel, PDF veya Word olarak dışa aktarıp şubeleri yan yana karşılaştırabilirsiniz."
+        },
+        {
+          "q": "Personel başka bir şubeye geçtiğinde ne yapmamız gerekir?",
+          "a": "Personel kartında şube ve bölüm bilgisini güncellemeniz yeterlidir. Personel yeni şubesinin QR noktasından giriş-çıkış yapmaya başlar."
+        }
+      ],
+      "cta": "Tüm şubelerinizi<br></br><accent>tek merkezden yönetin.</accent>",
+      "alts": {
+        "hero": [
+          "Çoklu şirket ve şube yönetimi: grup, şirket ve şube hiyerarşisi",
+          "Mobil uygulama ana sayfası: şube yöneticisi için günlük özet"
+        ],
+        "splits": [
+          ["Kullanıcı yönetimi: şube bazlı yetki alanları ve son giriş bilgileri"],
+          ["Lokasyon QR noktası tanımı: şube girişi için QR kod ve konum"]
+        ]
+      }
+    }
   }
 }
