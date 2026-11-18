@@ -41,6 +41,9 @@ export const CONTACT = {
   },
 } as const;
 
+/** Destek ekibinin çalışma saatleri (ör. "Hafta içi 09:00–18:00"). TODO: bilinmiyor, yer tutucu gösterilir. */
+export const SUPPORT_HOURS = { tr: "", en: "" } as const;
+
 export const SOCIAL_LINKS = {
   linkedin: "", // TODO: LinkedIn
   instagram: "", // TODO: Instagram

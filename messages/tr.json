@@ -649,7 +649,7 @@
       "short": "Fazla Mesai",
       "description": "Saatlik fazla mesai ücreti",
       "title": "Fazla Mesai Hesaplama: Saatlik Fazla Mesai Ücreti",
-      "metaDescription": "Brüt maaşınıza ve fazla çalışma saatinize göre fazla mesai ücretinizi hesaplayın. Hafta içi, hafta tatili ve resmî tatil mesaileri için ayrı ayrı sonuç alın.",
+      "metaDescription": "Brüt maaşınıza ve mesai saatinize göre fazla mesai ücretinizi hesaplayın. Fazla çalışma, fazla sürelerle çalışma ve resmî tatil mesaisi ayrı hesaplanır.",
       "h1": "Fazla Mesai Ücreti Hesaplama"
     },
     "employerCostCalc": {
@@ -2871,5 +2871,695 @@
         ]
       }
     }
+  },
+  "calculatorUi": {
+    "formTitle": "Bilgilerinizi girin",
+    "calculate": "Hesapla",
+    "resultTitle": "Sonuç",
+    "emptyResult": "Bilgileri girip Hesapla'ya bastığınızda sonuç burada görünür.",
+    "units": {
+      "currency": "₺",
+      "hours": "saat",
+      "days": "gün"
+    },
+    "months": {
+      "1": "Ocak",
+      "2": "Şubat",
+      "3": "Mart",
+      "4": "Nisan",
+      "5": "Mayıs",
+      "6": "Haziran",
+      "7": "Temmuz",
+      "8": "Ağustos",
+      "9": "Eylül",
+      "10": "Ekim",
+      "11": "Kasım",
+      "12": "Aralık"
+    },
+    "duration": {
+      "years": "{count} yıl",
+      "months": "{count} ay",
+      "days": "{count} gün"
+    },
+    "errors": {
+      "required": "Bu alan zorunlu.",
+      "invalid": "Geçerli bir sayı girin (ör. 25.000 veya 25000,50).",
+      "negative": "Değer sıfırdan küçük olamaz.",
+      "tooLarge": "Girilen tutar çok büyük.",
+      "rateRange": "Oran 0 ile 100 arasında olmalı.",
+      "bracketOrder": "Dilim üst sınırı bir önceki dilimden büyük olmalı.",
+      "invalidDate": "Geçerli bir tarih seçin.",
+      "invalidDates": "Geçerli bir tarih seçin.",
+      "endBeforeStart": "Çıkış tarihi işe giriş tarihinden önce olamaz.",
+      "calcBeforeStart": "Hesap tarihi işe giriş tarihinden önce olamaz.",
+      "invalidBirthDate": "Doğum tarihi hesap tarihinden önce olmalı.",
+      "noHours": "En az bir mesai saati girin.",
+      "belowMinWage": "Asgari ücretin altındaki tutarlar hesaplanamaz."
+    },
+    "params": {
+      "title": "Hesap parametreleri ({year})",
+      "summary": "Oranlar, tavanlar ve vergi dilimleri",
+      "hint": "Hesap bu değerlerle yapılır. Güncel tutar ve oranları resmî kaynaklardan (GİB, SGK) kontrol edip gerekirse değiştirin. Oranları yüzde olarak girin: %14 için 14, binde 7,59 için 0,759.",
+      "fields": {
+        "minWage": "Brüt asgari ücret (aylık)",
+        "sgkCeiling": "SGK prime esas kazanç tavanı (aylık)",
+        "severanceCeiling": "Kıdem tazminatı tavanı",
+        "sgkEmployeeRate": "SGK işçi payı",
+        "unemploymentEmployeeRate": "İşsizlik sigortası işçi payı",
+        "sgkEmployerRate": "SGK işveren payı",
+        "unemploymentEmployerRate": "İşsizlik sigortası işveren payı",
+        "employerDiscountPoints": "Genel prim indirimi (puan)",
+        "manufacturingDiscountPoints": "İmalat sektörü prim indirimi (puan)",
+        "stampTaxRate": "Damga vergisi oranı"
+      },
+      "taxBrackets": "Gelir vergisi dilimleri (yıllık kümülatif matrah)",
+      "bracketLimit": "{n}. dilim üst sınırı",
+      "bracketRate": "Oran",
+      "bracketLast": "5. dilim",
+      "bracketLastText": "4. dilimin üzerindeki tutar",
+      "disabilityTitle": "Engellilik indirimi (aylık)",
+      "disabilityDegree": "{degree}. derece"
+    },
+    "salary": {
+      "direction": "Maaş türü",
+      "grossToNet": "Brütten nete",
+      "netToGross": "Netten brüte",
+      "amount": "Maaş miktarı",
+      "amountHint": "Brütten nete hesapta brüt ücreti, netten brüte hesapta ele geçen net ücreti yazın.",
+      "startMonth": "Başlangıç ayı",
+      "disability": "Engellilik durumu",
+      "disabilityOptions": {
+        "0": "Yok",
+        "1": "1. derece",
+        "2": "2. derece",
+        "3": "3. derece"
+      },
+      "submit": "Sonuçları hesapla",
+      "tableGrossToNet": "Brütten nete maaş hesabı",
+      "tableNetToGross": "Netten brüte maaş hesabı",
+      "discount": {
+        "label": "Prim indirimi",
+        "none": "Prim indirimi olmadan",
+        "general": "%{points} prim indirimi uygulansın",
+        "manufacturing": "%{points} prim indirimi uygulansın (imalat sektörü)"
+      },
+      "rowInput": "{month} {type}",
+      "cols": {
+        "month": "Ay",
+        "gross": "Brüt ücret",
+        "net": "Net ücret",
+        "sgkEmployee": "İşçi SGK primi",
+        "unemploymentEmployee": "İşçi işsizlik sigortası",
+        "taxBase": "Vergi matrahı",
+        "stampTax": "Damga vergisi",
+        "incomeTax": "Gelir vergisi",
+        "cumulativeTaxBase": "KGVM*",
+        "incomeTaxExemption": "Asgari ücret gelir vergisi indirimi",
+        "sgkEmployer": "İşveren SGK payı",
+        "unemploymentEmployer": "İşveren işsizlik payı",
+        "employerCost": "Toplam maliyet",
+        "total": "Toplam",
+        "average": "Ort."
+      },
+      "editHint": "Ay ay farklı ücret için tablodaki tutarları değiştirebilirsiniz; tablo anında yeniden hesaplanır.",
+      "note": "Bilgi amaçlı tahmini hesaptır, kanuni geçerliliği yoktur. Asgari ücretin altındaki tutarlar hesaplanmaz. *KGVM: kümülatif gelir vergisi matrahı, yıl içinde (başlangıç ayından itibaren) oluşan gelir vergisi matrahlarının toplamıdır. Gelir ve damga vergisi sütunları asgari ücret istisnası düşüldükten sonra ödenecek tutarlardır."
+    },
+    "employerCost": {
+      "direction": "Başlangıç tutarı",
+      "fromGross": "Brüt ücretten",
+      "fromNet": "Net ücretten",
+      "amount": "Aylık ücret",
+      "month": "Hesap ayı",
+      "discount": {
+        "label": "Prim indirimi",
+        "none": "Prim indirimi olmadan",
+        "general": "%{points} prim indirimi uygulansın",
+        "manufacturing": "%{points} prim indirimi uygulansın (imalat sektörü)"
+      },
+      "highlight": "{month} ayı toplam işveren maliyeti",
+      "rows": {
+        "gross": "Brüt ücret",
+        "sgkEmployer": "SGK işveren primi (%{rate})",
+        "ceilingNote": "Prime esas kazanç tavanla sınırlandı: {base}",
+        "unemploymentEmployer": "İşsizlik sigortası işveren primi (%{rate})",
+        "total": "Toplam işveren maliyeti",
+        "net": "Çalışanın net ücreti",
+        "netNote": "Bilgi amaçlı, maliyete dahil değildir",
+        "year": "Yıllık toplam maliyet (12 ay)"
+      },
+      "note": "İşveren maliyeti; brüt ücret ile SGK ve işsizlik sigortası işveren paylarının toplamıdır. Sektöre veya istihdam türüne özel diğer teşvikler hesaba katılmaz."
+    },
+    "severance": {
+      "startDate": "İşe giriş tarihi",
+      "endDate": "İşten çıkış tarihi",
+      "grossSalary": "Son brüt ücret (aylık)",
+      "grossSalaryHint": "Çıkıştan önceki son aylık brüt ücret.",
+      "extraPayments": "Düzenli ek ödemeler (aylık, brüt)",
+      "extraPaymentsHint": "Yemek, yol, düzenli prim gibi her ay ödenen tutarlar. Yoksa boş bırakın.",
+      "highlight": "Net kıdem tazminatı",
+      "rows": {
+        "service": "Hizmet süresi",
+        "dressed": "Giydirilmiş brüt ücret",
+        "base": "Hesaba esas ücret",
+        "ceilingApplied": "Giydirilmiş ücret tavanı aştığı için tavan esas alındı.",
+        "gross": "Brüt kıdem tazminatı",
+        "stampTax": "Damga vergisi",
+        "net": "Net kıdem tazminatı"
+      },
+      "note": "Kıdem tazminatı gelir vergisinden istisnadır; yalnızca damga vergisi kesilir. İşe giriş ve çıkış günü hizmet süresine dahildir.",
+      "notEligible": "Hizmet süresi 1 yıldan az olduğu için kıdem tazminatı hakkı doğmaz."
+    },
+    "notice": {
+      "startDate": "İşe giriş tarihi",
+      "endDate": "Bildirim (çıkış) tarihi",
+      "grossSalary": "Brüt ücret (aylık)",
+      "extraPayments": "Düzenli ek ödemeler (aylık, brüt)",
+      "extraPaymentsHint": "Yemek, yol, düzenli prim gibi tutarlar. Yoksa boş bırakın.",
+      "previousTaxBase": "Bu yılki önceki gelir vergisi matrahı",
+      "previousTaxBaseHint": "Yıl başından bu yana oluşan kümülatif matrah (bordronuzda yazar). Bilmiyorsanız boş bırakın; ilk dilimden hesaplanır.",
+      "highlight": "Net ihbar tazminatı",
+      "rows": {
+        "service": "Hizmet süresi",
+        "period": "İhbar süresi",
+        "periodValue": "{weeks} hafta ({days} gün)",
+        "daily": "Günlük giydirilmiş brüt ücret",
+        "gross": "Brüt ihbar tazminatı",
+        "incomeTax": "Gelir vergisi",
+        "stampTax": "Damga vergisi",
+        "net": "Net ihbar tazminatı"
+      },
+      "note": "İhbar tazminatından SGK primi kesilmez; gelir vergisi ve damga vergisi kesilir. İhbar süresi İş Kanunu'nun 17. maddesine göre belirlenir."
+    },
+    "overtime": {
+      "grossSalary": "Brüt ücret (aylık)",
+      "overtimeHours": "Fazla çalışma",
+      "extraHours": "Fazla sürelerle çalışma",
+      "holidayHours": "Resmî tatil çalışması",
+      "hoursHint": "Fazla çalışma: haftalık 45 saati aşan süre. Fazla sürelerle çalışma: sözleşmede 45 saatten az haftalık süre varsa, o süreyi aşıp 45 saate kadar olan çalışma. Resmî tatil: ulusal bayram ve genel tatil günleri. Hafta tatilinde yapılan çalışma, haftalık 45 saati aştığı için fazla çalışma olarak girilir.",
+      "month": "Hesap ayı (tahmini net için)",
+      "highlight": "Brüt fazla mesai ücreti",
+      "rows": {
+        "hourly": "Saatlik brüt ücret (aylık / 225)",
+        "overtime": "Fazla çalışma (%{rate} zamlı)",
+        "extraHours": "Fazla sürelerle çalışma (%{rate} zamlı)",
+        "holiday": "Resmî tatil çalışması (%{rate} zamlı)",
+        "lineNote": "{hours} saat × {hourly}",
+        "gross": "Toplam brüt mesai",
+        "net": "Tahmini net mesai",
+        "netNote": "Mesai, seçilen ayın maaşına eklenerek kesintiler hesaplandı",
+        "netMissing": "Tahmini net için hesap parametrelerini doldurun"
+      },
+      "note": "Zam oranları İş Kanunu'nun 41. ve 47. maddelerine göredir. Tahmini net, her ay aynı maaşın alındığı varsayımıyla hesaplanır."
+    },
+    "annualLeave": {
+      "startDate": "İşe giriş tarihi",
+      "calcDate": "Hesap tarihi",
+      "birthDate": "Doğum tarihi (isteğe bağlı)",
+      "birthDateHint": "18 yaş ve altı ile 50 yaş ve üstü çalışanlar en az 20 gün izin alır.",
+      "usedDays": "Bu izin yılında kullanılan gün",
+      "usedDaysHint": "Yoksa boş bırakın.",
+      "highlight": "Yıllık izin hakkı",
+      "notEligibleShort": "Henüz hak doğmadı",
+      "rows": {
+        "service": "Çalışma süresi",
+        "seniority": "Kıdem yılı",
+        "age": "Yaş",
+        "yearsValue": "{count} yıl",
+        "entitlement": "Yıllık izin hakkı",
+        "ageRule": "Yaş kuralı nedeniyle en az 20 gün uygulandı.",
+        "daysValue": "{count} gün",
+        "remaining": "Kalan izin",
+        "next": "Sonraki izin hakkının doğacağı tarih"
+      },
+      "note": "İzin süreleri İş Kanunu'nun 53. maddesine göredir. Toplu sözleşme veya iş sözleşmesiyle daha uzun izin verilebilir.",
+      "notEligible": "Yıllık izin hakkı, işe girişten itibaren 1 tam yıl dolunca doğar."
+    }
+  },
+  "calculatorPage": {
+    "calculatorLabel": "Hesaplayıcı",
+    "disclaimer": "Sonuçlar bilgilendirme amaçlıdır. Kesin tutarlar iş sözleşmenize, toplu sözleşmeye ve güncel mevzuata göre değişebilir.",
+    "relatedTitle": "Bordronuzu otomatik hazırlayın",
+    "otherTools": "Diğer hesaplama araçları",
+    "allTools": "Tüm hesaplama araçlarını görün",
+    "faqTitle": "Sıkça sorulan sorular",
+    "faqText": "Bu hesapla ilgili en çok sorulanlar. Aradığınız cevap burada yoksa SSS sayfamıza göz atın."
+  },
+  "calculatorContent": {
+    "salaryCalc": {
+      "howTo": {
+        "title": "Net brüt maaş nasıl hesaplanır?",
+        "paragraphs": [
+          "Brüt maaş, işverenin çalışan için belirlediği kesintiler öncesi ücrettir. Net maaş ise SGK primi, işsizlik sigortası primi, gelir vergisi ve damga vergisi düşüldükten sonra çalışanın eline geçen tutardır. Net brüt maaş hesaplama aracı bu kesintileri tek tek gösterir.",
+          "Gelir vergisi artan oranlıdır ve yıl içindeki kümülatif matraha göre hesaplanır. Bu yüzden aynı brüt maaşın neti, yılın ilerleyen aylarında üst vergi dilimine geçildikçe azalabilir. Asgari ücrete isabet eden gelir ve damga vergisi ise istisna kapsamındadır; bu tutar her çalışanın vergisinden düşülür."
+        ],
+        "steps": [
+          "SGK primi ve işsizlik sigortası primi, prime esas kazanç tavanını aşmamak kaydıyla brüt ücret üzerinden hesaplanır.",
+          "Brüt ücretten bu primler (ve varsa engellilik indirimi) düşülerek gelir vergisi matrahı bulunur.",
+          "Matrah, yıl başından bu yana biriken kümülatif matraha eklenir ve ilgili vergi dilimlerine göre gelir vergisi hesaplanır.",
+          "Asgari ücretin aynı aydaki gelir vergisi ve damga vergisi tutarı istisna olarak düşülür.",
+          "Brüt ücretten tüm kesintiler çıkarılır ve net ücret bulunur. Netten brüte hesapta bu işlem tersten çözülür."
+        ],
+        "exampleTitle": "Örnek hesap (örnek oranlarla)",
+        "example": "Brüt ücret 30.000 ₺, SGK işçi payı %14, işsizlik %1 olsun.\nSGK primi: 4.200 ₺, işsizlik primi: 300 ₺\nGelir vergisi matrahı: 30.000 − 4.500 = 25.500 ₺\nİlk dilim %15 ise hesaplanan vergi 3.825 ₺ olur; asgari ücret istisnası bu tutardan düşülür.\nSonuç oranlara ve aya göre değişir. Güncel değerleri formdaki parametre alanından girin."
+      },
+      "related": "QR Zaman, PDKS ve puantaj verisinden her ay bordroyu otomatik hesaplar. Kümülatif matrahı, asgari ücret istisnasını ve yıl bazlı parametreleri sizin yerinize takip eder.",
+      "faq": [
+        {
+          "q": "Brüt maaş ile net maaş arasındaki fark nedir?",
+          "a": "Brüt maaş kesintiler öncesi ücrettir. Net maaş, brüt ücretten SGK işçi primi, işsizlik sigortası işçi primi, gelir vergisi ve damga vergisi düşüldükten sonra çalışanın eline geçen tutardır."
+        },
+        {
+          "q": "Aynı brüt maaşın neti neden aydan aya değişiyor?",
+          "a": "Gelir vergisi yıl içindeki kümülatif matraha göre hesaplanır. Matrah biriktikçe bir üst vergi dilimine geçilir ve kesilen vergi artar; bu yüzden yılın son aylarında net maaş düşebilir."
+        },
+        {
+          "q": "Asgari ücret istisnası nasıl uygulanır?",
+          "a": "Asgari ücrete isabet eden gelir vergisi ve damga vergisi, ücreti asgari ücretin üzerinde olan çalışanlar dahil herkesin vergisinden düşülür. Asgari ücretli bir çalışan bu nedenle gelir ve damga vergisi ödemez."
+        },
+        {
+          "q": "Engellilik indirimi neti nasıl etkiler?",
+          "a": "Engellilik derecesine göre belirlenen aylık indirim tutarı gelir vergisi matrahından düşülür. Matrah azaldığı için gelir vergisi azalır ve net ücret artar."
+        },
+        {
+          "q": "Hesaplamada kullanılan oranları nereden bulabilirim?",
+          "a": "Formdaki hesap parametreleri bölümünde tüm oran, tavan ve vergi dilimleri görünür. Güncel değerleri Gelir İdaresi Başkanlığı ve SGK'nın yayımladığı duyurulardan kontrol edip değiştirebilirsiniz."
+        }
+      ],
+      "cta": "Bordroyu her ay<br></br><accent>otomatik hesaplayın.</accent>"
+    },
+    "severanceCalc": {
+      "howTo": {
+        "title": "Kıdem tazminatı nasıl hesaplanır?",
+        "paragraphs": [
+          "Kıdem tazminatı, en az 1 yıl çalışmış ve kanunda sayılan hallerden biriyle iş sözleşmesi sona eren çalışana ödenir. Her tam çalışma yılı için 30 günlük brüt ücret tutarında hesaplanır; 1 yıldan artan ay ve günler için de orantılı ödeme yapılır.",
+          "Hesapta yalnızca çıplak brüt ücret değil, yemek, yol ve düzenli prim gibi sürekli ödemelerin eklendiği giydirilmiş brüt ücret esas alınır. Bu ücret, her dönem için belirlenen kıdem tazminatı tavanını aşamaz. Kıdem tazminatı gelir vergisinden istisnadır; yalnızca damga vergisi kesilir."
+        ],
+        "steps": [
+          "İşe giriş ve çıkış tarihleri arasındaki hizmet süresi yıl, ay ve gün olarak hesaplanır.",
+          "Son brüt ücrete düzenli ek ödemeler eklenerek giydirilmiş brüt ücret bulunur.",
+          "Giydirilmiş ücret kıdem tazminatı tavanını aşıyorsa tavan esas alınır.",
+          "Esas ücret tam yıl sayısıyla çarpılır; artan aylar için ücret × ay / 12, artan günler için ücret × gün / 365 eklenir.",
+          "Brüt tazminattan damga vergisi düşülerek net kıdem tazminatı bulunur."
+        ],
+        "exampleTitle": "Örnek hesap",
+        "example": "Hizmet süresi 5 yıl 6 ay, giydirilmiş brüt ücret 35.000 ₺ (tavanın altında) olsun.\n5 yıl için: 35.000 × 5 = 175.000 ₺\n6 ay için: 35.000 × 6 / 12 = 17.500 ₺\nBrüt kıdem tazminatı: 192.500 ₺\nDamga vergisi binde 7,59 alınırsa 1.461,08 ₺ kesilir; net tutar 191.038,92 ₺ olur."
+      },
+      "related": "QR Zaman, personelin işe giriş tarihini, ücret ve ek ödeme bilgilerini personel kartında saklar. Kıdem ve ihbar tanımları yıl bazında tutulur.",
+      "faq": [
+        {
+          "q": "Kıdem tazminatı almak için ne kadar çalışmak gerekir?",
+          "a": "Aynı işverene bağlı olarak en az 1 yıl çalışmış olmak gerekir. 1 yıldan kısa çalışmalarda kıdem tazminatı hakkı doğmaz."
+        },
+        {
+          "q": "Kıdem tazminatına hangi ödemeler dahil edilir?",
+          "a": "Son brüt ücrete ek olarak yemek, yol, düzenli ödenen prim ve ikramiye gibi süreklilik gösteren ödemeler eklenir. Bu toplam giydirilmiş brüt ücret olarak adlandırılır."
+        },
+        {
+          "q": "Kıdem tazminatı tavanı nedir?",
+          "a": "Kıdem tazminatında esas alınabilecek en yüksek aylık tutardır ve yılda iki kez güncellenir. Giydirilmiş ücret tavanı aşarsa hesap tavan üzerinden yapılır. Güncel tavanı formdaki parametre alanına girebilirsiniz."
+        },
+        {
+          "q": "Kıdem tazminatından hangi kesintiler yapılır?",
+          "a": "Kıdem tazminatı gelir vergisinden ve SGK priminden istisnadır. Yalnızca damga vergisi kesilir."
+        }
+      ],
+      "cta": "Personel kayıtlarınızı<br></br><accent>tek yerde tutun.</accent>"
+    },
+    "noticeCalc": {
+      "howTo": {
+        "title": "İhbar tazminatı nasıl hesaplanır?",
+        "paragraphs": [
+          "İhbar tazminatı, iş sözleşmesini feshetmek isteyen tarafın kanundaki bildirim sürelerine uymaması halinde karşı tarafa ödediği tazminattır. Bildirim süresi, çalışanın o işyerindeki hizmet süresine göre 2 ile 8 hafta arasında değişir.",
+          "Tazminat, bildirim süresine karşılık gelen günlerin giydirilmiş brüt ücreti kadardır. Kıdem tazminatından farklı olarak ihbar tazminatı gelir vergisine tabidir; vergi, çalışanın yıl içindeki kümülatif matrahına eklenerek hesaplanır. Ayrıca damga vergisi kesilir, SGK primi kesilmez."
+        ],
+        "steps": [
+          "Hizmet süresi bulunur: 6 aydan az ise 2 hafta, 6 aydan 1,5 yıla kadar 4 hafta, 1,5 yıldan 3 yıla kadar 6 hafta, 3 yıldan fazla ise 8 hafta.",
+          "Brüt ücrete düzenli ek ödemeler eklenir ve 30'a bölünerek günlük giydirilmiş ücret bulunur.",
+          "Günlük ücret, bildirim süresinin gün sayısıyla (hafta × 7) çarpılarak brüt ihbar tazminatı hesaplanır.",
+          "Brüt tutar, yıl içindeki önceki matraha eklenerek gelir vergisi hesaplanır; damga vergisi de kesilir.",
+          "Kesintiler düşülerek net ihbar tazminatı bulunur."
+        ],
+        "exampleTitle": "Örnek hesap (örnek oranlarla)",
+        "example": "4 yıl çalışmış, brüt ücreti 30.000 ₺ olan çalışanın ihbar süresi 8 haftadır (56 gün).\nGünlük ücret: 30.000 / 30 = 1.000 ₺\nBrüt ihbar tazminatı: 1.000 × 56 = 56.000 ₺\nGelir vergisi, yıl içindeki önceki matraha ve dilim oranlarına göre hesaplanır; damga vergisi binde 7,59 alınırsa 425,04 ₺ kesilir."
+      },
+      "related": "QR Zaman bordrosu, gelir vergisini her ay kümülatif matraha göre hesaplar. Personelin yıl içindeki matrahı bordro raporunda her an görünür.",
+      "faq": [
+        {
+          "q": "İhbar süreleri ne kadardır?",
+          "a": "İş Kanunu'nun 17. maddesine göre hizmet süresi 6 aydan az olanlar için 2 hafta, 6 aydan 1,5 yıla kadar olanlar için 4 hafta, 1,5 yıldan 3 yıla kadar olanlar için 6 hafta, 3 yıldan fazla olanlar için 8 haftadır."
+        },
+        {
+          "q": "İhbar tazminatını kim öder?",
+          "a": "Sözleşmeyi bildirim süresine uymadan fesheden taraf öder. İşveren ihbar süresi vermeden çalışanı çıkarırsa işveren, çalışan bildirim yapmadan işi bırakırsa çalışan ihbar tazminatı öder."
+        },
+        {
+          "q": "İhbar tazminatından vergi kesilir mi?",
+          "a": "Evet. İhbar tazminatından gelir vergisi ve damga vergisi kesilir. Gelir vergisi, çalışanın yıl içindeki kümülatif matrahına göre ilgili dilimden hesaplanır. SGK primi kesilmez."
+        },
+        {
+          "q": "Önceki gelir vergisi matrahımı nereden öğrenirim?",
+          "a": "Aylık bordronuzda kümülatif gelir vergisi matrahı yazar. Bilmiyorsanız alanı boş bırakabilirsiniz; bu durumda vergi ilk dilimden hesaplanır ve gerçek tutardan düşük çıkabilir."
+        }
+      ],
+      "cta": "Bordro ve tazminat süreçlerini<br></br><accent>tek panelden yönetin.</accent>"
+    },
+    "overtimeCalc": {
+      "howTo": {
+        "title": "Fazla mesai ücreti nasıl hesaplanır?",
+        "paragraphs": [
+          "İş Kanunu'na göre haftalık çalışma süresi en fazla 45 saattir. Bu süreyi aşan her saat fazla çalışmadır ve normal saatlik ücretin yüzde elli fazlasıyla ödenir. Sözleşmede haftalık süre 45 saatten az belirlenmişse, bu süreyi aşıp 45 saate kadar yapılan çalışmalar fazla sürelerle çalışmadır ve yüzde yirmi beş zamlı ödenir.",
+          "Ulusal bayram ve genel tatil günlerinde çalışılırsa, o günün ücretine ek olarak çalışılan her gün için bir günlük ücret daha ödenir; bu yüzden saatlik ücretin iki katı esas alınır. Hafta tatilinde yapılan çalışma ise haftalık 45 saati aştığından fazla çalışma olarak ücretlendirilir. Saatlik ücret, aylık brüt ücretin 225'e bölünmesiyle bulunur."
+        ],
+        "steps": [
+          "Aylık brüt ücret 225'e bölünerek saatlik brüt ücret bulunur (30 gün × 7,5 saat).",
+          "Haftalık 45 saati aşan fazla çalışma saatleri, saatlik ücretin 1,5 katıyla çarpılır.",
+          "Fazla sürelerle çalışma saatleri saatlik ücretin 1,25 katıyla çarpılır.",
+          "Ulusal bayram ve genel tatil günlerindeki çalışma saatleri saatlik ücretin 2 katıyla çarpılır.",
+          "Tutarlar toplanarak brüt fazla mesai ücreti bulunur; tahmini net için mesai o ayın bordrosuna eklenir."
+        ],
+        "exampleTitle": "Örnek hesap",
+        "example": "Brüt ücret 22.500 ₺ ise saatlik ücret 22.500 / 225 = 100 ₺ olur.\n10 saat fazla çalışma: 10 × 150 = 1.500 ₺\n4 saat fazla sürelerle çalışma: 4 × 125 = 500 ₺\n8 saat resmî tatil çalışması: 8 × 200 = 1.600 ₺\nToplam brüt fazla mesai: 3.600 ₺"
+      },
+      "related": "QR Zaman, QR ile alınan giriş-çıkış kayıtlarından vardiyaya göre mesai süresini otomatik hesaplar ve mesai çizelgesine aktarır. Ay sonunda saatleri elle toplamanız gerekmez.",
+      "faq": [
+        {
+          "q": "Fazla mesai saatlik ücreti nasıl bulunur?",
+          "a": "Aylık brüt ücret 225'e bölünerek saatlik ücret bulunur. Fazla çalışmada bu ücretin yüzde elli fazlası, fazla sürelerle çalışmada yüzde yirmi beş fazlası ödenir."
+        },
+        {
+          "q": "Yıllık fazla mesai sınırı var mı?",
+          "a": "Evet. İş Kanunu'na göre fazla çalışma süresi yılda 270 saati aşamaz. Fazla çalışma için çalışanın onayı da gereklidir."
+        },
+        {
+          "q": "Resmî tatilde çalışma nasıl ücretlendirilir?",
+          "a": "Ulusal bayram ve genel tatil günlerinde çalışan işçiye o günün ücretine ek olarak çalışılan her gün için bir günlük ücret daha ödenir. Bu hesapta saatlik ücretin iki katı esas alınır."
+        },
+        {
+          "q": "Fazla mesai ücreti yerine serbest zaman verilebilir mi?",
+          "a": "Çalışan isterse fazla çalışma ücreti yerine, fazla çalıştığı her saat için bir saat otuz dakika, fazla sürelerle çalıştığı her saat için bir saat on beş dakika serbest zaman kullanabilir."
+        }
+      ],
+      "cta": "Mesaileri QR ile<br></br><accent>otomatik kaydedin.</accent>"
+    },
+    "employerCostCalc": {
+      "howTo": {
+        "title": "İşveren maliyeti nasıl hesaplanır?",
+        "paragraphs": [
+          "Bir çalışanın işverene toplam maliyeti, brüt ücretin üzerine işverenin ödediği SGK ve işsizlik sigortası primlerinin eklenmesiyle bulunur. Çalışanın eline geçen net ücret bu maliyetin yalnızca bir parçasıdır.",
+          "İşveren primleri, prime esas kazanç tavanını aşmamak kaydıyla brüt ücret üzerinden hesaplanır. Primlerini düzenli ödeyen işverenler, Hazine desteği olarak bilinen prim indirimiyle SGK işveren payını birkaç puan daha az öder. İşveren maliyeti hesaplama aracı, indirimli ve indirimsiz maliyeti ayrı ayrı görmenizi sağlar."
+        ],
+        "steps": [
+          "Brüt ücretten başlanır. Net ücret biliniyorsa önce netten brüte hesap yapılır.",
+          "SGK işveren primi, prime esas kazanç (tavanla sınırlı) üzerinden işveren oranıyla hesaplanır; indirim varsa oran o kadar puan düşürülür.",
+          "İşsizlik sigortası işveren primi aynı kazanç üzerinden hesaplanır.",
+          "Brüt ücret ile işveren primleri toplanarak aylık toplam işveren maliyeti bulunur.",
+          "Aylık maliyet 12 ay için toplanarak yıllık personel maliyeti görülür."
+        ],
+        "exampleTitle": "Örnek hesap (örnek oranlarla)",
+        "example": "Brüt ücret 30.000 ₺, SGK işveren payı %20, işsizlik işveren payı %2 olsun.\nSGK işveren primi: 6.000 ₺\nİşsizlik işveren primi: 600 ₺\nToplam işveren maliyeti: 36.600 ₺\n5 puan indirimle SGK işveren primi 4.500 ₺, toplam maliyet 35.100 ₺ olur."
+      },
+      "related": "QR Zaman bordrosu her personel için toplam işveren maliyetini kalem kalem gösterir; yönetici dashboard'unda bordro özeti olarak izlenir.",
+      "faq": [
+        {
+          "q": "İşveren maliyetine neler dahildir?",
+          "a": "Brüt ücret, SGK işveren primi ve işsizlik sigortası işveren primi. Bu hesapta yemek kartı, servis veya sektöre özel teşvikler gibi diğer giderler yer almaz."
+        },
+        {
+          "q": "Hazine desteği (prim indirimi) nedir?",
+          "a": "Primlerini zamanında ödeyen ve borcu bulunmayan işverenlerin SGK işveren payından belirli puan indirim yapılmasıdır. Formdaki onay kutusunu işaretleyerek indirimi hesaba katabilirsiniz."
+        },
+        {
+          "q": "Yüksek ücretlerde işveren primi neden sabit kalıyor?",
+          "a": "SGK primleri prime esas kazanç tavanına kadar hesaplanır. Brüt ücret tavanı aştığında primler tavan üzerinden alınır; tavanı aşan kısım için prim ödenmez."
+        },
+        {
+          "q": "Net maaştan işveren maliyetini hesaplayabilir miyim?",
+          "a": "Evet. Başlangıç tutarı olarak net ücreti seçtiğinizde araç önce brüt ücreti bulur, ardından işveren primlerini ekleyerek toplam maliyeti hesaplar."
+        }
+      ],
+      "cta": "Personel maliyetinizi<br></br><accent>her ay net görün.</accent>"
+    },
+    "annualLeaveCalc": {
+      "howTo": {
+        "title": "Yıllık izin hakkı nasıl hesaplanır?",
+        "paragraphs": [
+          "Yıllık ücretli izin hakkı, işe başladığınız günden itibaren deneme süresi dahil en az 1 yıl çalıştıktan sonra doğar. İzin süresi, aynı işverendeki kıdem yılına göre belirlenir ve İş Kanunu'nun 53. maddesindeki en az sürelerin altında olamaz.",
+          "18 yaş ve altındaki çalışanlar ile 50 yaş ve üstündeki çalışanlara kıdemlerinden bağımsız olarak en az 20 gün izin verilir. İş sözleşmesi veya toplu sözleşmeyle bu süreler artırılabilir, azaltılamaz."
+        ],
+        "steps": [
+          "İşe giriş tarihinden hesap tarihine kadar geçen süre bulunur.",
+          "Tamamlanan yıl sayısı kıdem yılıdır; 1 yıl dolmamışsa izin hakkı henüz doğmamıştır.",
+          "1 yıldan 5 yıla kadar (5 dahil) 14 gün, 5 yıldan fazla 15 yıldan az 20 gün, 15 yıl ve fazlası için 26 gün izin verilir.",
+          "Çalışan 18 yaş ve altında ya da 50 yaş ve üstündeyse izin en az 20 gün olur.",
+          "Bu izin yılında kullanılan günler düşülerek kalan izin bulunur."
+        ],
+        "exampleTitle": "Örnek hesap",
+        "example": "1 Mart 2020'de işe başlayan bir çalışan, 17 Kasım 2026 itibarıyla 6 yıllık kıdeme sahiptir ve 20 gün yıllık izin hakkı vardır.\nBu yıl 5 gün izin kullandıysa kalan izni 15 gündür.\n3 yıllık kıdemi olan 50 yaşındaki bir çalışan ise 14 yerine en az 20 gün izin alır."
+      },
+      "related": "QR Zaman, izin talebi ekranında kıdem yılını, toplam hakkı, kullanılan ve kalan izni otomatik hesaplar; personel izin bakiyesini mobilden görür.",
+      "faq": [
+        {
+          "q": "Yıllık izin hakkı ne zaman başlar?",
+          "a": "İşe başladığınız günden itibaren deneme süresi dahil en az 1 yıl çalıştıktan sonra yıllık ücretli izne hak kazanırsınız."
+        },
+        {
+          "q": "Kıdeme göre kaç gün izin hakkım var?",
+          "a": "1 yıldan 5 yıla kadar (5 dahil) 14 gün, 5 yıldan fazla 15 yıldan az 20 gün, 15 yıl (dahil) ve daha fazla kıdemde 26 gün yıllık izin hakkınız vardır."
+        },
+        {
+          "q": "Yaşa göre izin süresi değişir mi?",
+          "a": "Evet. 18 yaş ve altındaki ile 50 yaş ve üstündeki çalışanlara verilecek yıllık izin 20 günden az olamaz."
+        },
+        {
+          "q": "Hafta tatili ve resmî tatiller izinden sayılır mı?",
+          "a": "Hayır. Yıllık izin süresine rastlayan hafta tatili, ulusal bayram ve genel tatil günleri izin süresinden sayılmaz."
+        },
+        {
+          "q": "Kullanılmayan yıllık izin ne olur?",
+          "a": "Çalışırken kullanılmayan izin sonraki yıllara devreder. İş sözleşmesi sona erdiğinde kullanılmayan izin günlerinin ücreti çalışana ödenir."
+        }
+      ],
+      "cta": "İzin bakiyelerini<br></br><accent>otomatik takip edin.</accent>"
+    }
+  },
+  "calculatorsIndex": {
+    "listTitle": "Hesaplama araçları",
+    "open": "Hesapla",
+    "cards": {
+      "salaryCalc": "Brüt maaştan nete veya netten brüte; SGK primi, gelir vergisi, damga vergisi ve asgari ücret istisnasıyla 12 aylık döküm.",
+      "severanceCalc": "Hizmet sürenize ve giydirilmiş brüt ücretinize göre kıdem tazminatı; tavan kontrolü ve damga vergisi dahil.",
+      "noticeCalc": "Çalışma sürenize göre 2 ile 8 hafta arasındaki ihbar süresi ve gelir vergisi düşülmüş net ihbar tazminatı.",
+      "overtimeCalc": "Saatlik ücretinize göre %50, %25 ve %100 zamlı fazla mesai ücreti ve tahmini net tutar.",
+      "employerCostCalc": "Brüt veya net ücretten, SGK ve işsizlik işveren paylarıyla toplam aylık ve yıllık işveren maliyeti.",
+      "annualLeaveCalc": "İşe giriş tarihinize ve yaşınıza göre İş Kanunu'ndaki yıllık izin hakkı ve kalan izin."
+    },
+    "payroll": {
+      "title": "Bu hesapları her ay elle yapmayın",
+      "text": "QR Zaman, QR ile alınan giriş-çıkış kayıtlarını puantaja, puantajı bordroya otomatik aktarır. SGK primleri, gelir vergisi, asgari ücret istisnası, mesai, izin ve avans kesintileri her personel için tek tıkla hesaplanır; yıl bazlı parametreler bir sonraki yıla tek tıkla aktarılır.",
+      "link": "Bordro hesaplamayı inceleyin"
+    },
+    "cta": "Bordronuzu<br></br><accent>tek tıkla hesaplayın.</accent>"
+  },
+  "faqPage": {
+    "jumpLabel": "Soru kategorileri",
+    "categories": [
+      {
+        "id": "genel",
+        "title": "Genel",
+        "items": [
+          {
+            "q": "QR Zaman nedir?",
+            "a": "QR Zaman; personel, zaman, bordro ve müşteri süreçlerini tek platformda yöneten bir yazılımdır. Personel iş yerindeki QR kodu telefonundan okutarak giriş-çıkış yapar, bu kayıtlar puantaja ve bordroya otomatik aktarılır."
+          },
+          {
+            "q": "QR Zaman hangi modüllerden oluşur?",
+            "a": "Bordro Yönetimi ve CRM modüllerinden oluşur. Bordro Yönetimi; personel, lokasyon ve QR, PDKS ve vardiya, puantaj, bordro, eklenti ve kesinti, izin, avans, özlük, İK belgeleri ve raporları kapsar. CRM ise kişiler, satışlar, teklifler ve görevlerden oluşur."
+          },
+          {
+            "q": "Hangi cihazlardan kullanılır?",
+            "a": "Yönetim paneli tarayıcı üzerinden çalışır. Personel ve yöneticiler için iOS ve Android'de QR Zaman mobil uygulaması bulunur."
+          },
+          {
+            "q": "Birden fazla şirketi ve şubeyi yönetebilir miyim?",
+            "a": "Evet. QR Zaman Grup, Şirket, Şube ve Bölüm hiyerarşisiyle çalışır. Üst bardan seçim yaparak birimler arasında geçiş yapar, kullanıcılara şube bazında yetki verirsiniz."
+          },
+          {
+            "q": "Mevcut personel listemizi nasıl aktarırız?",
+            "a": "Hazır Excel şablonunu indirip doldurduktan sonra içe aktarırsınız. İçe aktarma sonunda her satırın sonucunu gösteren bir rapor alırsınız."
+          }
+        ]
+      },
+      {
+        "id": "qr-ve-pdks",
+        "title": "QR ve PDKS",
+        "items": [
+          {
+            "q": "QR kodlu giriş-çıkış için donanım gerekir mi?",
+            "a": "Hayır. Her lokasyon için panelden QR kod üretip PNG ya da A4 PDF afiş olarak basmanız yeterlidir. Personel giriş-çıkışı kendi telefonundaki QR Zaman uygulamasıyla yapar."
+          },
+          {
+            "q": "Personel QR kodun fotoğrafıyla başka yerden okutabilir mi?",
+            "a": "Okutma anında telefonun konumu alınır ve kayda eklenir; kayıt detayında enlem ve boylam görünür. Sahte konum uygulamalarıyla yapılan kayıtlar engellenir ve hesap tek cihaza eşlendiği için başka telefondan kullanılamaz."
+          },
+          {
+            "q": "Aynı gün iki kez giriş yapılırsa ne olur?",
+            "a": "Mükerrer kayıt kontrolü vardır; aynı gün ikinci giriş gibi durumlarda personel uyarılır."
+          },
+          {
+            "q": "Yeni bir lokasyonu nasıl tanımlarız?",
+            "a": "Panelde lokasyonu enlem ve boylamıyla tanımlayabilir ya da yönetici olarak sahada mobil uygulamadan bulunduğunuz noktayı tek dokunuşla kaydedebilirsiniz."
+          },
+          {
+            "q": "Vardiyaları nasıl tanımlarız?",
+            "a": "Vardiyalar şube ve bölüm bazında tanımlanır. Gece vardiyası, mola süresi ve hafta tatili belirlenir; toplam çalışma, mola ve mesai süreleri otomatik hesaplanır."
+          }
+        ]
+      },
+      {
+        "id": "puantaj-ve-bordro",
+        "title": "Puantaj ve bordro",
+        "items": [
+          {
+            "q": "PDKS kayıtları puantaja nasıl aktarılır?",
+            "a": "QR ile alınan kayıtları günlük veya aylık olarak puantaja aktarırsınız. Puantaj çizelgesinde gün tiplerini düzeltebilir, birden fazla personel için toplu giriş yapabilirsiniz."
+          },
+          {
+            "q": "Bordro nasıl hesaplanır?",
+            "a": "Puantaj tamamlandığında tüm personelin ya da seçtiklerinizin bordrosunu tek tıkla hesaplarsınız. Mesailer, yardımlar, SGK primleri, gelir ve damga vergisi, asgari ücret istisnası ve kesintiler kalem kalem hesaplanır; sonucu onaylar ya da onayı kaldırırsınız."
+          },
+          {
+            "q": "Yeni yılın SGK ve vergi parametreleri nasıl güncellenir?",
+            "a": "Vergi dilimleri, katsayılar, kıdem ve ihbar tanımları ve diğer parametreler yıl bazında tutulur. Sonraki yıla aktar seçeneğiyle değerleri yeni yıla kopyalar, değişenleri güncellersiniz."
+          },
+          {
+            "q": "Bordro ve raporları hangi formatlarda alabilirim?",
+            "a": "Listeler ve raporlar Excel (xlsx), PDF ve Word (docx) olarak dışa aktarılır."
+          },
+          {
+            "q": "Prim ve kesintileri nasıl ekleriz?",
+            "a": "Eklenti ve kesinti ekranından prim, ikramiye, mesai ve kesintileri net veya brüt olarak tanımlarsınız. Tek kayıtla birden fazla personele ekleme yapabilirsiniz."
+          }
+        ]
+      },
+      {
+        "id": "izin-ve-avans",
+        "title": "İzin ve avans",
+        "items": [
+          {
+            "q": "İzin talepleri nasıl işler?",
+            "a": "Personel izin talebini mobil uygulamadan gönderir. Yönetici talebi panelden veya mobilden onaylar ya da gerekçe yazarak reddeder; personel sonucu kendi telefonunda görür."
+          },
+          {
+            "q": "Kalan izin nasıl hesaplanır?",
+            "a": "Talep detayında kıdem yılı, toplam hak, bu yıl ve geçmiş yıllarda kullanılan ve kalan izin otomatik hesaplanır."
+          },
+          {
+            "q": "Avans taksitleri bordroya yansır mı?",
+            "a": "Evet. Avans tanımlanırken tutar, taksit sayısı ve ödeme başlangıç tarihi girilir; taksitler bordroya otomatik kesinti olarak yansır."
+          },
+          {
+            "q": "İzin talebine belge eklenebilir mi?",
+            "a": "Evet. İzin talebine rapor gibi dosya ekleri eklenebilir; saatlik izin, izin adresi ve mesaj da girilebilir."
+          }
+        ]
+      },
+      {
+        "id": "mobil-uygulama",
+        "title": "Mobil uygulama",
+        "items": [
+          {
+            "q": "Mobil uygulamaya nasıl giriş yapılır?",
+            "a": "Personel, yöneticinin panelde belirlediği kullanıcı adı veya telefon numarası ve şifreyle giriş yapar."
+          },
+          {
+            "q": "Telefonumu değiştirdim, ne yapmalıyım?",
+            "a": "Hesabınız güvenlik için tek cihaza eşlenir. Yöneticiniz panelden cihaz eşleştirmesini sıfırladığında yeni telefonunuzla giriş yapabilirsiniz."
+          },
+          {
+            "q": "Personel mobilde neleri görebilir?",
+            "a": "Bugünkü giriş-çıkış, izin ve avans talepleri, kalan izin ve özlük bilgileri görünür. Şirket ayarlarında izin verilirse bordro, puantaj ve PDKS kayıtları da görüntülenir."
+          },
+          {
+            "q": "Yöneticiler mobilde ne yapabilir?",
+            "a": "Bugün gelenleri, izindekileri ve onay bekleyen talepleri görür; izin ve avans taleplerini onaylar veya reddeder. Sahada yeni QR noktası da kaydedebilir."
+          }
+        ]
+      },
+      {
+        "id": "guvenlik-ve-kvkk",
+        "title": "Güvenlik ve KVKK",
+        "items": [
+          {
+            "q": "QR okuturken kamera görüntüsü kaydedilir mi?",
+            "a": "Hayır. Kamera yalnızca QR kodu okumak için kullanılır, görüntü kaydedilmez."
+          },
+          {
+            "q": "Kullanıcılar tüm verileri görebilir mi?",
+            "a": "Hayır. Her kullanıcı rolüne göre yalnızca yetkili olduğu menüleri görür. Yöneticilere grup, şirket veya şube bazında yetki alanı tanımlanır."
+          },
+          {
+            "q": "Mobil uygulamada oturum nasıl korunur?",
+            "a": "Oturum bilgileri cihazın şifreli depolama alanında tutulur ve hesap tek cihaza eşlenir."
+          },
+          {
+            "q": "Hesabımı nasıl silebilirim?",
+            "a": "Mobil uygulamanın profil ekranından veya web sitemizdeki hesap silme sayfasından hesap silme talebi oluşturabilirsiniz."
+          }
+        ]
+      }
+    ],
+    "more": {
+      "title": "Cevabını bulamadınız mı?",
+      "text": "QR Zaman kullanıcısıysanız panelden destek talebi açabilirsiniz. Ürünü değerlendiriyorsanız bize yazın, sorunuzu birlikte yanıtlayalım.",
+      "support": "Destek kanallarını görün",
+      "contact": "Bize ulaşın"
+    }
+  },
+  "supportPage": {
+    "channels": {
+      "title": "Destek kanalları",
+      "panel": {
+        "title": "Panelden destek talebi",
+        "text": "Konu, öncelik ve şirket seçerek talep açın, dosya ekleyin. Destek ekibiyle talep üzerinden mesajlaşın, talebinizin durumunu takip edin.",
+        "cta": "Panele gidin"
+      },
+      "phone": {
+        "title": "Telefon",
+        "text": "Kurulum ve kullanım sorularınız için destek ekibimizi arayabilirsiniz."
+      },
+      "email": {
+        "title": "E-posta",
+        "text": "Ekran görüntüsü veya dosya göndermeniz gereken durumlarda bize e-posta ile yazabilirsiniz."
+      }
+    },
+    "placeholders": {
+      "phone": "[Telefon]",
+      "email": "[E-posta]",
+      "hours": "[Destek saatleri]"
+    },
+    "steps": {
+      "title": "Panelden destek talebi<br></br><accent>nasıl açılır?</accent>",
+      "text": "QR Zaman kullanıcıları destek taleplerini doğrudan panelden açar. Talepler tek ekranda listelenir; açık, kapalı ve okunmamış talep sayılarını her an görürsünüz.",
+      "items": [
+        "Panelde Destek menüsünü açın ve yeni talep oluşturun.",
+        "Konuyu, önceliği ve ilgili şirketi seçin; gerekirse ekran görüntüsü veya dosya ekleyin.",
+        "Destek ekibiyle talep üzerinden mesajlaşın. Sorun çözülünce talebi kapatın, gerekirse yeniden açın."
+      ],
+      "alts": {
+        "list": "QR Zaman destek talepleri listesi: açık, kapalı ve okunmamış talepler",
+        "chat": "Destek talebi mesajlaşma ekranı: dosya ekleme ve okundu bilgisi"
+      }
+    },
+    "resources": {
+      "title": "Yardımcı kaynaklar",
+      "items": {
+        "faq": "Kurulum, güvenlik ve bordro hakkında sık sorulanlar",
+        "calculators": "Net-brüt maaş, tazminat, mesai ve izin hesaplama",
+        "mobileApp": "Mobil uygulamanın özellikleri",
+        "security": "Veri güvenliği ve KVKK",
+        "deleteAccount": "Mobil hesap silme talebi"
+      }
+    },
+    "cta": "Sorularınızı<br></br><accent>demoda yanıtlayalım.</accent>"
   }
 }

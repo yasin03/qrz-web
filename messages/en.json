@@ -655,7 +655,7 @@
       "short": "Overtime Pay",
       "description": "Hourly overtime pay",
       "title": "Overtime Pay Calculator: Hourly Overtime Rates",
-      "metaDescription": "Calculate overtime pay from your gross salary and extra hours worked. Get separate results for weekday overtime, weekly rest day work and public holiday work.",
+      "metaDescription": "Calculate overtime pay in Turkey from your gross salary and hours worked. Get separate results for overtime, extra hours and work on public holidays.",
       "h1": "Overtime Pay Calculator"
     },
     "employerCostCalc": {
@@ -2885,5 +2885,695 @@
         ]
       }
     }
+  },
+  "calculatorUi": {
+    "formTitle": "Enter your details",
+    "calculate": "Calculate",
+    "resultTitle": "Result",
+    "emptyResult": "Enter your details and press Calculate to see the result here.",
+    "units": {
+      "currency": "₺",
+      "hours": "hrs",
+      "days": "days"
+    },
+    "months": {
+      "1": "January",
+      "2": "February",
+      "3": "March",
+      "4": "April",
+      "5": "May",
+      "6": "June",
+      "7": "July",
+      "8": "August",
+      "9": "September",
+      "10": "October",
+      "11": "November",
+      "12": "December"
+    },
+    "duration": {
+      "years": "{count, plural, one {# year} other {# years}}",
+      "months": "{count, plural, one {# month} other {# months}}",
+      "days": "{count, plural, one {# day} other {# days}}"
+    },
+    "errors": {
+      "required": "This field is required.",
+      "invalid": "Enter a valid number (e.g. 25,000 or 25000.50).",
+      "negative": "The value can't be negative.",
+      "tooLarge": "The amount is too large.",
+      "rateRange": "The rate must be between 0 and 100.",
+      "bracketOrder": "Each bracket limit must be higher than the previous one.",
+      "invalidDate": "Choose a valid date.",
+      "invalidDates": "Choose a valid date.",
+      "endBeforeStart": "The end date can't be before the start date.",
+      "calcBeforeStart": "The calculation date can't be before the start date.",
+      "invalidBirthDate": "The date of birth must be before the calculation date.",
+      "noHours": "Enter at least one overtime hour.",
+      "belowMinWage": "Amounts below the minimum wage can't be calculated."
+    },
+    "params": {
+      "title": "Calculation parameters ({year})",
+      "summary": "Rates, ceilings and tax brackets",
+      "hint": "The calculation uses these values. Check the current amounts and rates with the official sources (Turkish Revenue Administration, SGK) and change them if needed. Enter rates as percentages: 14 for 14%, 0.759 for 7.59 per mille.",
+      "fields": {
+        "minWage": "Gross minimum wage (monthly)",
+        "sgkCeiling": "Social security earnings ceiling (monthly)",
+        "severanceCeiling": "Severance pay ceiling",
+        "sgkEmployeeRate": "Social security, employee share",
+        "unemploymentEmployeeRate": "Unemployment insurance, employee share",
+        "sgkEmployerRate": "Social security, employer share",
+        "unemploymentEmployerRate": "Unemployment insurance, employer share",
+        "employerDiscountPoints": "General contribution discount (points)",
+        "manufacturingDiscountPoints": "Manufacturing contribution discount (points)",
+        "stampTaxRate": "Stamp duty rate"
+      },
+      "taxBrackets": "Income tax brackets (annual cumulative base)",
+      "bracketLimit": "Bracket {n} upper limit",
+      "bracketRate": "Rate",
+      "bracketLast": "Bracket 5",
+      "bracketLastText": "Everything above bracket 4",
+      "disabilityTitle": "Disability allowance (monthly)",
+      "disabilityDegree": "Degree {degree}"
+    },
+    "salary": {
+      "direction": "Salary type",
+      "grossToNet": "Gross to net",
+      "netToGross": "Net to gross",
+      "amount": "Salary amount",
+      "amountHint": "Enter the gross salary for gross to net, or the take-home pay for net to gross.",
+      "startMonth": "Start month",
+      "disability": "Disability status",
+      "disabilityOptions": {
+        "0": "None",
+        "1": "Degree 1",
+        "2": "Degree 2",
+        "3": "Degree 3"
+      },
+      "submit": "Calculate results",
+      "tableGrossToNet": "Gross to net salary breakdown",
+      "tableNetToGross": "Net to gross salary breakdown",
+      "discount": {
+        "label": "Contribution discount",
+        "none": "No contribution discount",
+        "general": "Apply the {points}% contribution discount",
+        "manufacturing": "Apply the {points}% contribution discount (manufacturing)"
+      },
+      "rowInput": "{type} for {month}",
+      "cols": {
+        "month": "Month",
+        "gross": "Gross salary",
+        "net": "Net salary",
+        "sgkEmployee": "Employee SSC",
+        "unemploymentEmployee": "Employee UI",
+        "taxBase": "Tax base",
+        "stampTax": "Stamp duty",
+        "incomeTax": "Income tax",
+        "cumulativeTaxBase": "Cum. tax base*",
+        "incomeTaxExemption": "Minimum wage income tax relief",
+        "sgkEmployer": "Employer SSC",
+        "unemploymentEmployer": "Employer UI",
+        "employerCost": "Total cost",
+        "total": "Total",
+        "average": "Avg."
+      },
+      "editHint": "To use a different salary for some months, edit the amounts in the table; it recalculates instantly.",
+      "note": "This is an estimate for information only and has no legal standing. Amounts below the minimum wage are not calculated. *Cumulative tax base: the total income tax base built up during the year (from the start month). The income tax and stamp duty columns show the amounts payable after the minimum wage exemption."
+    },
+    "employerCost": {
+      "direction": "Start from",
+      "fromGross": "Gross salary",
+      "fromNet": "Net salary",
+      "amount": "Monthly salary",
+      "month": "Month",
+      "discount": {
+        "label": "Contribution discount",
+        "none": "No contribution discount",
+        "general": "Apply the {points}% contribution discount",
+        "manufacturing": "Apply the {points}% contribution discount (manufacturing)"
+      },
+      "highlight": "Total employer cost for {month}",
+      "rows": {
+        "gross": "Gross salary",
+        "sgkEmployer": "Social security, employer ({rate}%)",
+        "ceilingNote": "Contribution base capped at the ceiling: {base}",
+        "unemploymentEmployer": "Unemployment insurance, employer ({rate}%)",
+        "total": "Total employer cost",
+        "net": "Employee's net salary",
+        "netNote": "For reference, not part of the cost",
+        "year": "Annual total cost (12 months)"
+      },
+      "note": "Employer cost is the gross salary plus the employer's social security and unemployment insurance contributions. Sector-specific or hiring incentives are not included."
+    },
+    "severance": {
+      "startDate": "Start date",
+      "endDate": "End date",
+      "grossSalary": "Last gross salary (monthly)",
+      "grossSalaryHint": "The last monthly gross salary before leaving.",
+      "extraPayments": "Regular extra payments (monthly, gross)",
+      "extraPaymentsHint": "Meal, travel or regular bonus payments made every month. Leave empty if none.",
+      "highlight": "Net severance pay",
+      "rows": {
+        "service": "Length of service",
+        "dressed": "Gross pay incl. benefits",
+        "base": "Pay used in the calculation",
+        "ceilingApplied": "Pay exceeded the ceiling, so the ceiling was used.",
+        "gross": "Gross severance pay",
+        "stampTax": "Stamp duty",
+        "net": "Net severance pay"
+      },
+      "note": "Severance pay is exempt from income tax; only stamp duty is deducted. Both the start and end dates count as days of service.",
+      "notEligible": "Service is shorter than 1 year, so there is no right to severance pay."
+    },
+    "notice": {
+      "startDate": "Start date",
+      "endDate": "Notice (end) date",
+      "grossSalary": "Gross salary (monthly)",
+      "extraPayments": "Regular extra payments (monthly, gross)",
+      "extraPaymentsHint": "Meal, travel or regular bonus payments. Leave empty if none.",
+      "previousTaxBase": "Income tax base so far this year",
+      "previousTaxBaseHint": "The cumulative base since January (shown on your payslip). Leave empty if unknown; tax is then calculated from the first bracket.",
+      "highlight": "Net notice pay",
+      "rows": {
+        "service": "Length of service",
+        "period": "Notice period",
+        "periodValue": "{weeks} weeks ({days} days)",
+        "daily": "Daily gross pay incl. benefits",
+        "gross": "Gross notice pay",
+        "incomeTax": "Income tax",
+        "stampTax": "Stamp duty",
+        "net": "Net notice pay"
+      },
+      "note": "No social security contributions are deducted from notice pay; income tax and stamp duty are. The notice period follows Article 17 of the Turkish Labour Law."
+    },
+    "overtime": {
+      "grossSalary": "Gross salary (monthly)",
+      "overtimeHours": "Overtime",
+      "extraHours": "Extra hours",
+      "holidayHours": "Public holiday work",
+      "hoursHint": "Overtime: hours above 45 a week. Extra hours: if your contract sets fewer than 45 weekly hours, the hours between that limit and 45. Public holiday: national and public holidays. Work on your weekly rest day goes beyond 45 hours, so enter it as overtime.",
+      "month": "Month (for the net estimate)",
+      "highlight": "Gross overtime pay",
+      "rows": {
+        "hourly": "Gross hourly pay (monthly / 225)",
+        "overtime": "Overtime (+{rate}%)",
+        "extraHours": "Extra hours (+{rate}%)",
+        "holiday": "Public holiday work (+{rate}%)",
+        "lineNote": "{hours} hrs × {hourly}",
+        "gross": "Total gross overtime",
+        "net": "Estimated net overtime",
+        "netNote": "Overtime added to the selected month's salary before deductions",
+        "netMissing": "Fill in the calculation parameters for a net estimate"
+      },
+      "note": "Premium rates follow Articles 41 and 47 of the Turkish Labour Law. The net estimate assumes the same salary every month."
+    },
+    "annualLeave": {
+      "startDate": "Start date",
+      "calcDate": "Calculation date",
+      "birthDate": "Date of birth (optional)",
+      "birthDateHint": "Employees aged 18 or under, or 50 and over, get at least 20 days.",
+      "usedDays": "Days used this leave year",
+      "usedDaysHint": "Leave empty if none.",
+      "highlight": "Annual leave entitlement",
+      "notEligibleShort": "Not yet eligible",
+      "rows": {
+        "service": "Length of service",
+        "seniority": "Completed years",
+        "age": "Age",
+        "yearsValue": "{count, plural, one {# year} other {# years}}",
+        "entitlement": "Annual leave entitlement",
+        "ageRule": "The age rule applies, so at least 20 days.",
+        "daysValue": "{count, plural, one {# day} other {# days}}",
+        "remaining": "Remaining leave",
+        "next": "Next entitlement date"
+      },
+      "note": "Leave periods follow Article 53 of the Turkish Labour Law. Employment or collective agreements may grant more.",
+      "notEligible": "The right to annual leave starts after 1 full year of service."
+    }
+  },
+  "calculatorPage": {
+    "calculatorLabel": "Calculator",
+    "disclaimer": "Results are for information only. Exact amounts depend on your employment contract, any collective agreement and current legislation.",
+    "relatedTitle": "Let payroll run itself",
+    "otherTools": "Other calculators",
+    "allTools": "See all calculators",
+    "faqTitle": "Frequently asked questions",
+    "faqText": "The questions we hear most about this calculation. Can't find yours? Check our FAQ page."
+  },
+  "calculatorContent": {
+    "salaryCalc": {
+      "howTo": {
+        "title": "How is gross to net salary calculated in Turkey?",
+        "paragraphs": [
+          "Gross salary is the pay agreed before deductions. Net salary is what the employee takes home after social security, unemployment insurance, income tax and stamp duty are deducted. This gross to net salary calculator shows each deduction line by line.",
+          "Turkish income tax is progressive and based on the cumulative tax base for the year. As the base grows, later months can fall into a higher bracket, so the same gross salary can produce a lower net pay towards the end of the year. The income tax and stamp duty on the minimum wage are exempt and are deducted from every employee's tax."
+        ],
+        "steps": [
+          "Social security and unemployment insurance contributions are calculated on the gross salary, up to the monthly earnings ceiling.",
+          "These contributions (and any disability allowance) are deducted from gross pay to find the income tax base.",
+          "The base is added to the cumulative base since January and income tax is calculated using the brackets.",
+          "The income tax and stamp duty on the minimum wage for the same month are deducted as exemptions.",
+          "All deductions are subtracted from gross pay to get net pay. Net to gross works the same calculation in reverse."
+        ],
+        "exampleTitle": "Worked example (sample rates)",
+        "example": "Take a gross salary of ₺30,000 with a 14% employee social security share and 1% unemployment insurance.\nSocial security: ₺4,200, unemployment insurance: ₺300\nIncome tax base: 30,000 − 4,500 = ₺25,500\nAt a 15% first bracket the tax is ₺3,825, before the minimum wage exemption is deducted.\nResults depend on the rates and the month. Enter current values in the parameters section of the form."
+      },
+      "related": "QR Zaman calculates payroll every month from attendance and timesheet data, keeping track of the cumulative tax base, the minimum wage exemption and yearly parameters for you.",
+      "faq": [
+        {
+          "q": "What is the difference between gross and net salary?",
+          "a": "Gross salary is pay before deductions. Net salary is what remains after the employee's social security, unemployment insurance, income tax and stamp duty are deducted."
+        },
+        {
+          "q": "Why does net pay change from month to month on the same gross salary?",
+          "a": "Income tax is based on the cumulative tax base for the year. As the base grows, it moves into a higher bracket and more tax is withheld, so net pay can drop in the later months of the year."
+        },
+        {
+          "q": "How does the minimum wage exemption work?",
+          "a": "The income tax and stamp duty on the minimum wage are deducted from everyone's tax, including employees who earn more. A minimum wage earner therefore pays no income tax or stamp duty."
+        },
+        {
+          "q": "How does the disability allowance affect net pay?",
+          "a": "A monthly allowance set by disability degree is deducted from the income tax base. A lower base means less income tax and higher net pay."
+        },
+        {
+          "q": "Where do the rates in the calculation come from?",
+          "a": "All rates, ceilings and tax brackets are visible in the parameters section of the form. Check the current values in announcements from the Turkish Revenue Administration and SGK and change them if needed."
+        }
+      ],
+      "cta": "Calculate payroll<br></br><accent>automatically every month.</accent>"
+    },
+    "severanceCalc": {
+      "howTo": {
+        "title": "How is severance pay calculated in Turkey?",
+        "paragraphs": [
+          "Severance pay (kıdem tazminatı) is paid to employees who have worked for at least one year and whose contract ends for one of the reasons set out in the law. It equals 30 days of gross pay for every full year of service, with a proportional amount for any additional months and days.",
+          "The calculation uses gross pay including regular benefits such as meal, travel and recurring bonuses, not just the base salary. This amount can't exceed the severance pay ceiling set for each period. Severance pay is exempt from income tax; only stamp duty is deducted."
+        ],
+        "steps": [
+          "The length of service between the start and end dates is worked out in years, months and days.",
+          "Regular extra payments are added to the last gross salary to get gross pay including benefits.",
+          "If that pay exceeds the severance ceiling, the ceiling is used instead.",
+          "The pay is multiplied by the number of full years; pay × months / 12 and pay × days / 365 are added for the remainder.",
+          "Stamp duty is deducted from the gross amount to get net severance pay."
+        ],
+        "exampleTitle": "Worked example",
+        "example": "Take 5 years and 6 months of service and gross pay including benefits of ₺35,000 (below the ceiling).\nFor 5 years: 35,000 × 5 = ₺175,000\nFor 6 months: 35,000 × 6 / 12 = ₺17,500\nGross severance pay: ₺192,500\nAt a stamp duty rate of 7.59 per mille, ₺1,461.08 is deducted, leaving ₺191,038.92 net."
+      },
+      "related": "QR Zaman keeps each employee's start date, salary and extra payments on their profile, and stores severance and notice rules per year.",
+      "faq": [
+        {
+          "q": "How long do you need to work to get severance pay?",
+          "a": "At least one year with the same employer. Employment shorter than one year doesn't create a right to severance pay."
+        },
+        {
+          "q": "Which payments are included in severance pay?",
+          "a": "Recurring payments such as meal, travel, regular bonuses and premiums are added to the last gross salary. The total is known as gross pay including benefits."
+        },
+        {
+          "q": "What is the severance pay ceiling?",
+          "a": "It is the highest monthly amount that can be used for severance pay and is updated twice a year. If pay including benefits is higher, the ceiling is used. You can enter the current ceiling in the parameters section."
+        },
+        {
+          "q": "What is deducted from severance pay?",
+          "a": "Severance pay is exempt from income tax and social security contributions. Only stamp duty is deducted."
+        }
+      ],
+      "cta": "Keep employee records<br></br><accent>in one place.</accent>"
+    },
+    "noticeCalc": {
+      "howTo": {
+        "title": "How is notice pay calculated in Turkey?",
+        "paragraphs": [
+          "Notice pay (ihbar tazminatı) is owed by the party that ends an employment contract without giving the notice period required by law. The notice period ranges from 2 to 8 weeks depending on how long the employee has worked at the workplace.",
+          "Notice pay equals gross pay including benefits for the days in the notice period. Unlike severance pay, notice pay is subject to income tax, which is calculated on top of the employee's cumulative tax base for the year. Stamp duty is also deducted, but social security contributions are not."
+        ],
+        "steps": [
+          "Find the length of service: under 6 months is 2 weeks, 6 months to 1.5 years is 4 weeks, 1.5 to 3 years is 6 weeks and over 3 years is 8 weeks.",
+          "Add regular extra payments to the gross salary and divide by 30 to get daily pay including benefits.",
+          "Multiply the daily pay by the days in the notice period (weeks × 7) to get gross notice pay.",
+          "Add the gross amount to the year's previous tax base to calculate income tax, and deduct stamp duty.",
+          "Subtract the deductions to get net notice pay."
+        ],
+        "exampleTitle": "Worked example (sample rates)",
+        "example": "An employee with 4 years of service and a gross salary of ₺30,000 has an 8-week (56-day) notice period.\nDaily pay: 30,000 / 30 = ₺1,000\nGross notice pay: 1,000 × 56 = ₺56,000\nIncome tax depends on the year's previous tax base and the brackets; at 7.59 per mille, stamp duty is ₺425.04."
+      },
+      "related": "QR Zaman payroll calculates income tax each month on the cumulative base, so every employee's tax base for the year is always visible in the payroll report.",
+      "faq": [
+        {
+          "q": "How long are notice periods in Turkey?",
+          "a": "Under Article 17 of the Labour Law: 2 weeks for service under 6 months, 4 weeks from 6 months to 1.5 years, 6 weeks from 1.5 to 3 years and 8 weeks for more than 3 years."
+        },
+        {
+          "q": "Who pays notice pay?",
+          "a": "The party that ends the contract without giving notice. If the employer dismisses without notice the employer pays; if the employee quits without notice the employee pays."
+        },
+        {
+          "q": "Is notice pay taxed?",
+          "a": "Yes. Income tax and stamp duty are deducted. Income tax is calculated from the bracket that matches the employee's cumulative tax base for the year. No social security contributions are deducted."
+        },
+        {
+          "q": "Where do I find my income tax base so far this year?",
+          "a": "Your monthly payslip shows the cumulative income tax base. If you don't know it, leave the field empty; tax will be calculated from the first bracket and may come out lower than the real amount."
+        }
+      ],
+      "cta": "Run payroll and severance<br></br><accent>from one panel.</accent>"
+    },
+    "overtimeCalc": {
+      "howTo": {
+        "title": "How is overtime pay calculated in Turkey?",
+        "paragraphs": [
+          "Under the Turkish Labour Law the working week is at most 45 hours. Every hour above that is overtime and is paid at 50% above the normal hourly rate. If the contract sets fewer than 45 weekly hours, the hours between that limit and 45 are extra hours, paid at 25% above the hourly rate.",
+          "If an employee works on a national or public holiday, they receive an extra day's pay for each day worked on top of the pay for the holiday itself, so the hourly rate is doubled. Work on the weekly rest day goes beyond 45 hours and is paid as overtime. The hourly rate is the monthly gross salary divided by 225."
+        ],
+        "steps": [
+          "Divide the monthly gross salary by 225 to get the gross hourly rate (30 days × 7.5 hours).",
+          "Multiply overtime hours above 45 a week by 1.5 times the hourly rate.",
+          "Multiply extra hours by 1.25 times the hourly rate.",
+          "Multiply hours worked on national and public holidays by twice the hourly rate.",
+          "Add them up for gross overtime pay; for a net estimate, the overtime is added to that month's payroll."
+        ],
+        "exampleTitle": "Worked example",
+        "example": "With a gross salary of ₺22,500 the hourly rate is 22,500 / 225 = ₺100.\n10 hours of overtime: 10 × 150 = ₺1,500\n4 extra hours: 4 × 125 = ₺500\n8 hours on a public holiday: 8 × 200 = ₺1,600\nTotal gross overtime: ₺3,600"
+      },
+      "related": "QR Zaman calculates overtime automatically from QR clock-ins based on each shift and moves it to the overtime sheet, so nobody adds up hours by hand at month end.",
+      "faq": [
+        {
+          "q": "How is the hourly overtime rate worked out?",
+          "a": "Divide the monthly gross salary by 225 to get the hourly rate. Overtime is paid at 50% above that rate, and extra hours at 25% above it."
+        },
+        {
+          "q": "Is there an annual overtime limit?",
+          "a": "Yes. Under the Labour Law overtime can't exceed 270 hours a year, and the employee's consent is required."
+        },
+        {
+          "q": "How is work on public holidays paid?",
+          "a": "An employee who works on a national or public holiday receives an extra day's pay for each day worked on top of the holiday pay, so the hourly rate is doubled."
+        },
+        {
+          "q": "Can time off be given instead of overtime pay?",
+          "a": "If the employee prefers, they can take 1 hour 30 minutes off for each overtime hour, or 1 hour 15 minutes for each extra hour, instead of being paid."
+        }
+      ],
+      "cta": "Record overtime<br></br><accent>automatically with QR.</accent>"
+    },
+    "employerCostCalc": {
+      "howTo": {
+        "title": "How is employer cost calculated in Turkey?",
+        "paragraphs": [
+          "The total cost of an employee is the gross salary plus the employer's social security and unemployment insurance contributions. The employee's take-home pay is only one part of that cost.",
+          "Employer contributions are calculated on gross pay up to the monthly earnings ceiling. Employers who pay their contributions on time receive a discount of a few points on the employer social security share, known as Treasury support. This employer cost calculator shows the cost with and without that discount."
+        ],
+        "steps": [
+          "Start from the gross salary. If you only know the net salary, it is converted to gross first.",
+          "Employer social security is calculated on the contribution base (capped at the ceiling) at the employer rate, reduced by the discount points if they apply.",
+          "Employer unemployment insurance is calculated on the same base.",
+          "Gross salary and employer contributions are added up to get the monthly employer cost.",
+          "The monthly cost is added up over 12 months to show the annual cost."
+        ],
+        "exampleTitle": "Worked example (sample rates)",
+        "example": "Take a gross salary of ₺30,000 with a 20% employer social security share and 2% employer unemployment insurance.\nEmployer social security: ₺6,000\nEmployer unemployment insurance: ₺600\nTotal employer cost: ₺36,600\nWith a 5-point discount, employer social security drops to ₺4,500 and the total to ₺35,100."
+      },
+      "related": "QR Zaman payroll shows the total employer cost for every employee line by line, and managers follow it in the payroll summary on their dashboard.",
+      "faq": [
+        {
+          "q": "What is included in employer cost?",
+          "a": "Gross salary, employer social security and employer unemployment insurance. Other expenses such as meal cards, shuttles or sector-specific incentives are not included."
+        },
+        {
+          "q": "What is Treasury support (the contribution discount)?",
+          "a": "A discount of a set number of points on the employer social security share for employers who pay on time and have no outstanding debt. Tick the box in the form to include it."
+        },
+        {
+          "q": "Why do employer contributions stop rising on high salaries?",
+          "a": "Contributions are calculated up to the monthly earnings ceiling. Above that, they are based on the ceiling and nothing is paid on the excess."
+        },
+        {
+          "q": "Can I calculate employer cost from a net salary?",
+          "a": "Yes. Choose net salary as the starting point and the calculator first finds the gross salary, then adds the employer contributions."
+        }
+      ],
+      "cta": "See your labour cost<br></br><accent>clearly every month.</accent>"
+    },
+    "annualLeaveCalc": {
+      "howTo": {
+        "title": "How is annual leave calculated in Turkey?",
+        "paragraphs": [
+          "The right to paid annual leave starts after at least one year of service, including the probation period. The number of days depends on completed years with the same employer and can't be lower than the minimums in Article 53 of the Turkish Labour Law.",
+          "Employees aged 18 or under, and those aged 50 or over, get at least 20 days regardless of their length of service. Employment or collective agreements can increase these periods but not reduce them."
+        ],
+        "steps": [
+          "Work out the time from the start date to the calculation date.",
+          "The number of completed years is the seniority; under 1 year there is no entitlement yet.",
+          "1 to 5 years (inclusive) gives 14 days, more than 5 but under 15 years gives 20 days, and 15 years or more gives 26 days.",
+          "If the employee is 18 or under, or 50 or over, the entitlement is at least 20 days.",
+          "Subtract the days already used this leave year to get the remaining leave."
+        ],
+        "exampleTitle": "Worked example",
+        "example": "An employee who started on 1 March 2020 has 6 completed years on 17 November 2026 and is entitled to 20 days.\nIf they have used 5 days this year, 15 days remain.\nA 50-year-old employee with 3 years of service gets at least 20 days instead of 14."
+      },
+      "related": "QR Zaman calculates seniority, total entitlement, used and remaining leave on every leave request, and employees see their balance on mobile.",
+      "faq": [
+        {
+          "q": "When does annual leave entitlement start?",
+          "a": "After at least one year of service with the employer, including the probation period."
+        },
+        {
+          "q": "How many days of annual leave do I get?",
+          "a": "14 days for 1 to 5 years (inclusive), 20 days for more than 5 but under 15 years, and 26 days for 15 years or more."
+        },
+        {
+          "q": "Does age affect annual leave?",
+          "a": "Yes. Employees aged 18 or under and those aged 50 or over can't receive fewer than 20 days."
+        },
+        {
+          "q": "Do weekly rest days and public holidays count as leave?",
+          "a": "No. Weekly rest days and national or public holidays that fall within annual leave are not counted as leave days."
+        },
+        {
+          "q": "What happens to unused annual leave?",
+          "a": "Unused leave carries over while employed. When the contract ends, the employee is paid for any unused leave days."
+        }
+      ],
+      "cta": "Track leave balances<br></br><accent>automatically.</accent>"
+    }
+  },
+  "calculatorsIndex": {
+    "listTitle": "Calculators",
+    "open": "Calculate",
+    "cards": {
+      "salaryCalc": "Gross to net or net to gross, with social security, income tax, stamp duty and the minimum wage exemption in a 12-month breakdown.",
+      "severanceCalc": "Severance pay based on your service and gross pay including benefits, with the ceiling check and stamp duty.",
+      "noticeCalc": "Your 2 to 8-week notice period and net notice pay after income tax.",
+      "overtimeCalc": "Overtime pay at 50%, 25% and 100% premiums based on your hourly rate, with an estimated net amount.",
+      "employerCostCalc": "Monthly and annual employer cost from gross or net salary, including employer social security and unemployment insurance.",
+      "annualLeaveCalc": "Your annual leave entitlement and remaining days under the Turkish Labour Law, based on your start date and age."
+    },
+    "payroll": {
+      "title": "Stop doing these calculations by hand",
+      "text": "QR Zaman moves QR clock-ins into the timesheet and the timesheet into payroll automatically. Social security, income tax, the minimum wage exemption, overtime, leave and advance deductions are calculated for every employee in one click, and yearly parameters carry over to the next year in one click.",
+      "link": "Explore payroll"
+    },
+    "cta": "Calculate payroll<br></br><accent>in one click.</accent>"
+  },
+  "faqPage": {
+    "jumpLabel": "Question categories",
+    "categories": [
+      {
+        "id": "general",
+        "title": "General",
+        "items": [
+          {
+            "q": "What is QR Zaman?",
+            "a": "QR Zaman is software that brings people, time, payroll and customer processes into one platform. Employees clock in and out by scanning the QR code at their workplace with their phone, and the records flow into timesheets and payroll automatically."
+          },
+          {
+            "q": "Which modules does QR Zaman include?",
+            "a": "Payroll Management and CRM. Payroll Management covers employees, locations and QR codes, attendance and shifts, timesheets, payroll, earnings and deductions, leave, salary advances, employee files, HR documents and reports. CRM covers contacts, sales, quotes and tasks."
+          },
+          {
+            "q": "Which devices does it run on?",
+            "a": "The management panel runs in the browser. Employees and managers also have the QR Zaman mobile app on iOS and Android."
+          },
+          {
+            "q": "Can I manage several companies and branches?",
+            "a": "Yes. QR Zaman uses a Group, Company, Branch and Department hierarchy. Switch between units from the top bar and give users access per branch."
+          },
+          {
+            "q": "How do we bring in our existing staff list?",
+            "a": "Download the Excel template, fill it in and import it. You get a report showing the result for each row."
+          }
+        ]
+      },
+      {
+        "id": "qr-and-attendance",
+        "title": "QR and attendance",
+        "items": [
+          {
+            "q": "Do I need hardware for QR clock-ins?",
+            "a": "No. Generate a QR code for each location in the panel and print it as a PNG or A4 PDF poster. Employees clock in and out with the QR Zaman app on their own phones."
+          },
+          {
+            "q": "Can someone scan a photo of the QR code from somewhere else?",
+            "a": "The phone's location is captured at the moment of the scan and stored with the record, down to latitude and longitude. Clock-ins from fake GPS apps are blocked, and each account is paired to one device so it can't be used from another phone."
+          },
+          {
+            "q": "What happens if someone clocks in twice on the same day?",
+            "a": "There is a duplicate check; employees get a warning on cases such as a second clock-in on the same day."
+          },
+          {
+            "q": "How do we set up a new location?",
+            "a": "Define the location with its latitude and longitude in the panel, or as a manager save your current spot in one tap from the mobile app on site."
+          },
+          {
+            "q": "How are shifts set up?",
+            "a": "Shifts are defined per branch and department with night shifts, break lengths and weekly rest days; total working time, breaks and overtime are calculated automatically."
+          }
+        ]
+      },
+      {
+        "id": "timesheets-and-payroll",
+        "title": "Timesheets and payroll",
+        "items": [
+          {
+            "q": "How do attendance records get into the timesheet?",
+            "a": "Transfer QR records to the timesheet daily or monthly. On the timesheet grid you can adjust day types and use bulk entry for several employees."
+          },
+          {
+            "q": "How is payroll calculated?",
+            "a": "Once the timesheet is complete, calculate payroll for everyone or a selection in one click. Overtime, allowances, social security, income tax, stamp duty, the minimum wage exemption and deductions are calculated line by line; then approve the result or withdraw the approval."
+          },
+          {
+            "q": "How are tax and social security parameters updated for a new year?",
+            "a": "Tax brackets, coefficients, severance and notice rules and other parameters are stored per year. The carry-to-next-year option copies them to the new year so you only update what changed."
+          },
+          {
+            "q": "Which formats can I export payroll and reports to?",
+            "a": "Lists and reports export to Excel (xlsx), PDF and Word (docx)."
+          },
+          {
+            "q": "How do we add bonuses and deductions?",
+            "a": "On the earnings and deductions screen, define bonuses, overtime and deductions as net or gross amounts. One entry can cover several employees."
+          }
+        ]
+      },
+      {
+        "id": "leave-and-advances",
+        "title": "Leave and advances",
+        "items": [
+          {
+            "q": "How do leave requests work?",
+            "a": "Employees send leave requests from the mobile app. Managers approve them in the panel or on mobile, or decline with a reason, and the employee sees the outcome on their phone."
+          },
+          {
+            "q": "How is remaining leave calculated?",
+            "a": "Each request shows seniority, total entitlement, leave used this year and in previous years, and remaining leave, all calculated automatically."
+          },
+          {
+            "q": "Are salary advance instalments deducted in payroll?",
+            "a": "Yes. When an advance is set up with an amount, number of instalments and start date, the instalments are deducted in payroll automatically."
+          },
+          {
+            "q": "Can documents be attached to leave requests?",
+            "a": "Yes. Files such as medical certificates can be attached, and hourly leave, a leave address and a message can be added."
+          }
+        ]
+      },
+      {
+        "id": "mobile-app",
+        "title": "Mobile app",
+        "items": [
+          {
+            "q": "How do employees sign in to the app?",
+            "a": "With the username or phone number and password their manager sets in the panel."
+          },
+          {
+            "q": "I changed my phone. What should I do?",
+            "a": "For security, your account is paired with one device. Once your manager resets the pairing in the panel, you can sign in on your new phone."
+          },
+          {
+            "q": "What can employees see on mobile?",
+            "a": "Today's clock-in, leave and advance requests, remaining leave and personal details. If the company allows it, payslips, timesheets and attendance records are also available."
+          },
+          {
+            "q": "What can managers do on mobile?",
+            "a": "See who is in, who is on leave and which requests are pending; approve or decline leave and advance requests; and save a new QR point on site."
+          }
+        ]
+      },
+      {
+        "id": "security-and-privacy",
+        "title": "Security and privacy",
+        "items": [
+          {
+            "q": "Is a camera image saved when scanning the QR code?",
+            "a": "No. The camera is only used to read the QR code and no image is saved."
+          },
+          {
+            "q": "Can every user see all the data?",
+            "a": "No. Each user sees only the menus their role allows. Managers are given a scope at group, company or branch level."
+          },
+          {
+            "q": "How is the mobile session protected?",
+            "a": "Session data is kept in the device's encrypted storage and each account is paired to one device."
+          },
+          {
+            "q": "How can I delete my account?",
+            "a": "Send an account deletion request from the profile screen of the mobile app or from the account deletion page on our website."
+          }
+        ]
+      }
+    ],
+    "more": {
+      "title": "Didn't find your answer?",
+      "text": "If you already use QR Zaman, open a support request in the panel. If you're evaluating the product, write to us and we'll answer your question together.",
+      "support": "See support channels",
+      "contact": "Contact us"
+    }
+  },
+  "supportPage": {
+    "channels": {
+      "title": "Support channels",
+      "panel": {
+        "title": "Support request in the panel",
+        "text": "Open a request with a subject, priority and company, and attach files. Chat with the support team on the request and follow its status.",
+        "cta": "Go to the panel"
+      },
+      "phone": {
+        "title": "Phone",
+        "text": "Call our support team with setup and usage questions."
+      },
+      "email": {
+        "title": "Email",
+        "text": "Write to us by email when you need to send screenshots or files."
+      }
+    },
+    "placeholders": {
+      "phone": "[Phone]",
+      "email": "[Email]",
+      "hours": "[Support hours]"
+    },
+    "steps": {
+      "title": "How to open a support request<br></br><accent>in the panel</accent>",
+      "text": "QR Zaman users open support requests directly in the panel. Requests are listed on one screen with counts for open, closed and unread requests.",
+      "items": [
+        "Open the Support menu in the panel and create a new request.",
+        "Choose the subject, priority and company, and attach a screenshot or file if needed.",
+        "Chat with the support team on the request. Close it once the issue is solved, or reopen it if needed."
+      ],
+      "alts": {
+        "list": "QR Zaman support requests list: open, closed and unread requests",
+        "chat": "Support request chat: file attachments and read receipts"
+      }
+    },
+    "resources": {
+      "title": "Helpful resources",
+      "items": {
+        "faq": "Common questions on setup, security and payroll",
+        "calculators": "Salary, severance, overtime and leave calculators",
+        "mobileApp": "What the mobile app can do",
+        "security": "Data security and privacy",
+        "deleteAccount": "Mobile account deletion request"
+      }
+    },
+    "cta": "Let's answer your questions<br></br><accent>in a demo.</accent>"
   }
 }
