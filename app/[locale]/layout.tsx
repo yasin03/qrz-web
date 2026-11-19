@@ -8,6 +8,7 @@ import { Header } from "@/components/layout/header";
 import { SkipLink } from "@/components/layout/skip-link";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { SiteSchema } from "@/components/seo/site-schema";
+import { Toaster } from "@/components/ui/toaster";
 import { routing } from "@/i18n/routing";
 import { SITE_NAME, SITE_URL } from "@/config/site";
 import { robotsFor } from "@/lib/seo";
@@ -85,6 +86,7 @@ export default async function LocaleLayout({
             </main>
             <Footer locale={locale} />
             <SiteSchema locale={locale} />
+            <Toaster />
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>

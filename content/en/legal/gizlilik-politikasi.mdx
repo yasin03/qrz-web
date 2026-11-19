@@ -1,0 +1,69 @@
+import { LEGAL_ENTITY } from "@/config/legal";
+import { CONTACT } from "@/config/site";
+
+This privacy policy explains what information is collected when you use the **QR Zaman** website (qrzaman.com.tr), the web management panel (app.qrzaman.com.tr) and the QR Zaman mobile app for iOS and Android (together, the "Service"), how it is used and how it is protected. For details on personal data processing and your rights, see the [Data Protection Notice](/en/legal/data-protection-notice).
+
+## Scope and parties
+
+The Service is provided by {LEGAL_ENTITY.title} ("QR Zaman"). Accounts in the panel and the mobile app are created by the organisation you work for ("your Employer"). Your Employer is the data controller for employee data, and QR Zaman processes that data on your Employer's behalf.
+
+## Information we collect
+
+- **Panel and mobile app:** employee, personnel file, payroll, leave, advance and CRM records entered by your Employer, plus the requests and clock-in/out records you create.
+- **Website forms:** the details you enter in the demo request, contact, partner application and account deletion forms (name, company, email, phone, province, message).
+- **Technical logs:** IP address, request time and browser information, used for security and abuse prevention.
+
+## Camera, location and device permissions
+
+- **Camera:** used only to scan the QR code at your workplace to record a clock-in or clock-out. Camera images are never recorded, stored or sent to our servers; only the content of the scanned QR code is processed.
+- **Location:** captured only while the app is open and at the moment you scan a QR code, to verify that the clock-in or clock-out happens at the defined workplace. There is no background location tracking. Records created with fake GPS apps are blocked. Users with manager permissions can save their current location when defining a workplace location.
+- **Device information:** on first launch the app generates a random ID unique to your device. This ID and the device model are used to verify that clock-ins come from your registered device and to prevent records on behalf of someone else. IMEI, serial number and advertising IDs are never collected.
+
+You can turn camera and location permissions off at any time in your device settings. QR clock-ins will then not be possible, but the rest of the app can still be used.
+
+## How we use information
+
+- To deliver the Service: time and attendance, timesheets, payroll, leave, advances and CRM,
+- To verify clock-in records by location and device,
+- To respond to your demo, contact and partner requests,
+- To keep accounts secure, fix errors and improve the Service,
+- To meet legal obligations.
+
+Your information is not used for advertising, profiling or sale, and is never sold to third parties.
+
+## Sharing
+
+Your information is shared only with your Employer and users it authorises, with the authorised QR Zaman dealer in your region to handle your request, with public authorities entitled by law, and with the hosting and email providers needed to deliver the Service. Our servers are located in {LEGAL_ENTITY.serverLocation.en}.
+
+## Security
+
+- All traffic between the app, the panel, the website and our servers is encrypted with HTTPS (TLS).
+- Session data is stored encrypted in your operating system's secure storage (iOS Keychain / Android Keystore).
+- Access is limited by role-based permissions: employees see only their own data, and managers see only the groups, companies and branches they are authorised for.
+- Server access is logged, and administrative and technical measures are in place against unauthorised access.
+
+## Data stored on your device
+
+The mobile app stores only your session data and device ID (encrypted) and your theme (light/dark) preference on your device. Session data is removed when you sign out, and everything stored on the device is removed when you uninstall the app. For cookies used on the website and in the panel, see the [Cookie Policy](/en/legal/cookie-policy).
+
+## Retention
+
+Information is kept for as long as its purpose requires and the law prescribes. Payroll, timesheet and clock-in/out records are kept as required by labour and social security legislation (generally 10 years), and website form records for up to 2 years. Details are in the [Data Protection Notice](/en/legal/data-protection-notice).
+
+## Account and data deletion
+
+You can request deletion of your mobile app account and related personal data through the [Account Deletion Request](/en/delete-account) form, which is also available in the mobile app under Profile > Account Deletion Request. Once your request is approved:
+
+- your mobile app access is closed and your device registration and account details are deleted,
+- personal data that does not have to be kept by law is deleted or anonymised,
+- data your Employer must keep by law, such as payroll, timesheet, clock-in/out and SGK records, is kept with restricted access only for the legal retention period and deleted afterwards.
+
+## Children's privacy
+
+The Service is designed for employers and their employees. It is not intended for anyone under 18, and we do not knowingly collect data from people under 18. Records of an employed minor are processed only within your Employer's legal obligations.
+
+## Changes and contact
+
+This policy may be updated as legislation or the Service changes. The current version is always published on this page and the "Last updated" date at the top is changed.
+
+If you have questions, contact us at <a href={`mailto:${LEGAL_ENTITY.kvkkEmail}`}>{LEGAL_ENTITY.kvkkEmail}</a> or <a href={`tel:${CONTACT.phone}`}>{CONTACT.phoneDisplay}</a>.

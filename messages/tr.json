@@ -3561,5 +3561,564 @@
       }
     },
     "cta": "Sorularınızı<br></br><accent>demoda yanıtlayalım.</accent>"
+  },
+  "forms": {
+    "optional": "isteğe bağlı",
+    "select": "Seçin",
+    "consent": "<kvkk>KVKK Aydınlatma Metni</kvkk>'ni ve <privacy>Gizlilik Politikası</privacy>'nı okudum; bilgilerimin talebimi yanıtlamak amacıyla işlenmesini kabul ediyorum.",
+    "deleteConsent": "Bilgilerimin doğru olduğunu ve yasal saklama yükümlülüğü bulunan verilerin süre sonuna kadar saklanacağını okudum, anladım.",
+    "deleteMessageLabel": "Açıklama",
+    "submit": {
+      "demo": "Demo Talebini Gönder",
+      "contact": "Mesajı Gönder",
+      "partner": "Başvuruyu Gönder",
+      "deleteAccount": "Silme Talebini Gönder"
+    },
+    "fields": {
+      "name": {
+        "label": "Ad soyad",
+        "placeholder": "Adınız ve soyadınız"
+      },
+      "company": {
+        "label": "Şirket",
+        "placeholder": "Şirketinizin adı"
+      },
+      "email": {
+        "label": "E-posta",
+        "placeholder": "ornek@sirket.com"
+      },
+      "phone": {
+        "label": "Telefon",
+        "placeholder": "05xx xxx xx xx"
+      },
+      "employees": {
+        "label": "Personel sayısı"
+      },
+      "modules": {
+        "label": "İlgilendiğiniz modüller"
+      },
+      "message": {
+        "label": "Mesajınız",
+        "placeholder": "Eklemek istediklerinizi yazın"
+      },
+      "subject": {
+        "label": "Konu"
+      },
+      "province": {
+        "label": "İl"
+      },
+      "business": {
+        "label": "Faaliyet alanınız",
+        "placeholder": "Ör. yazılım satışı, mali müşavirlik"
+      },
+      "username": {
+        "label": "Kullanıcı adı veya telefon",
+        "placeholder": "Uygulamaya giriş bilginiz"
+      }
+    },
+    "options": {
+      "employees": {
+        "1-10": "1–10 personel",
+        "11-50": "11–50 personel",
+        "51-200": "51–200 personel",
+        "201-500": "201–500 personel",
+        "500+": "500'den fazla personel"
+      },
+      "modules": {
+        "pdks": "QR kodlu PDKS ve puantaj",
+        "hr": "İzin, avans ve özlük",
+        "payroll": "Bordro ve raporlama",
+        "crm": "CRM (müşteri, satış, teklif)"
+      },
+      "subject": {
+        "sales": "Satış ve paketler",
+        "support": "Teknik destek",
+        "partnership": "İş ortaklığı ve bayilik",
+        "other": "Diğer"
+      }
+    },
+    "errors": {
+      "required": "Bu alan zorunlu.",
+      "email": "Geçerli bir e-posta adresi girin.",
+      "phone": "Geçerli bir telefon numarası girin (ör. 0532 123 45 67).",
+      "consent": "Devam etmek için onay vermelisiniz.",
+      "tooLong": "Girdiğiniz metin çok uzun.",
+      "tooShort": "Lütfen biraz daha ayrıntı yazın.",
+      "invalid": "Bu alanı kontrol edin."
+    },
+    "status": {
+      "sending": "Gönderiliyor…",
+      "invalid": "Lütfen işaretli alanları kontrol edin.",
+      "rateLimited": "Kısa sürede çok fazla gönderim yaptınız. Lütfen birkaç dakika sonra tekrar deneyin.",
+      "server": "Formunuz şu anda gönderilemedi. Lütfen daha sonra tekrar deneyin ya da bizi telefonla arayın.",
+      "again": "Yeni bir form gönder",
+      "success": {
+        "demo": {
+          "title": "Demo talebiniz alındı",
+          "text": "Ekibimiz en kısa sürede sizinle iletişime geçerek işletmenize uygun demo saatini planlayacak."
+        },
+        "contact": {
+          "title": "Mesajınız bize ulaştı",
+          "text": "Teşekkür ederiz. Mesajınızı inceleyip en kısa sürede size dönüş yapacağız."
+        },
+        "partner": {
+          "title": "Bayilik başvurunuz alındı",
+          "text": "Başvurunuzu inceledikten sonra iş ortaklığı ekibimiz sizinle görüşme planlamak için iletişime geçecek."
+        },
+        "deleteAccount": {
+          "title": "Hesap silme talebiniz alındı",
+          "text": "Talebiniz kimliğiniz ve işvereninizle doğrulandıktan sonra en geç 30 gün içinde sonuçlandırılır ve size e-postayla bilgi verilir."
+        }
+      }
+    },
+    "mail": {
+      "consent": "KVKK onayı",
+      "consentGiven": "Verildi",
+      "language": "Dil",
+      "subjects": {
+        "demo": "Demo talebi",
+        "contact": "İletişim formu",
+        "partner": "Bayilik başvurusu",
+        "deleteAccount": "Hesap silme talebi"
+      }
+    }
+  },
+  "pricingPage": {
+    "plansTitle": "Paketler",
+    "popular": "En çok tercih edilen",
+    "perEmployee": "/ personel / ay",
+    "vatNote": "KDV hariç, yıllık faturalandırma",
+    "planCta": "Demo Talep Et",
+    "includes": "Pakete dahil olanlar:",
+    "includesPrevious": "{plan} paketindeki her şey, artı:",
+    "note": "Fiyatlar personel başına aylık olarak gösterilir. Personel sayınıza ve ihtiyacınıza özel teklif için demo talep edin.",
+    "plans": {
+      "starter": {
+        "name": "Başlangıç",
+        "description": "QR kodlu giriş-çıkış, vardiya ve puantajla personel takibine hızlı başlangıç.",
+        "limit": "1 şirket, 1 şube"
+      },
+      "professional": {
+        "name": "Profesyonel",
+        "description": "Puantajdan bordroya, izinden avansa tüm İK ve bordro süreçleri tek panelde.",
+        "limit": "1 şirket, sınırsız şube"
+      },
+      "enterprise": {
+        "name": "Kurumsal",
+        "description": "Çok şirketli gruplar için CRM, yetki alanları ve öncelikli destekle eksiksiz platform.",
+        "limit": "Sınırsız şirket ve şube"
+      }
+    },
+    "groups": {
+      "time": "Zaman & Devam Takibi",
+      "hr": "İnsan Kaynakları",
+      "payroll": "Bordro & Raporlama",
+      "crm": "CRM",
+      "platform": "Platform",
+      "support": "Destek"
+    },
+    "features": {
+      "qrPdks": "QR kodla giriş-çıkış (PDKS)",
+      "locationVerify": "Konum doğrulama ve sahte GPS tespiti",
+      "shifts": "Vardiya tanımları",
+      "timesheet": "Puantaj ve fazla mesai çizelgesi",
+      "locations": "Lokasyon ve QR noktası yönetimi",
+      "employees": "Personel kartı ve Excel ile içe aktarım",
+      "leave": "İzin talebi ve onay akışı",
+      "advance": "Avans talebi ve onay akışı",
+      "records": "Özlük dosyası",
+      "hrDocuments": "İK belgeleri",
+      "payroll": "Bordro hesaplama",
+      "earnings": "Ek ödeme ve kesintiler",
+      "compliance": "Yıl bazlı SGK ve vergi parametreleri",
+      "reporting": "PDKS, izin, avans ve bordro raporları",
+      "crmContacts": "Müşteri ve kişi yönetimi",
+      "crmSales": "Satış takibi",
+      "crmQuotes": "Teklif yönetimi",
+      "crmTasks": "Görev yönetimi",
+      "mobileApp": "iOS ve Android mobil uygulama",
+      "dashboard": "Rol bazlı dashboard ve takvim",
+      "export": "Excel, PDF ve Word dışa aktarma",
+      "branches": "Çoklu şube ve bölüm",
+      "multiCompany": "Grup ve çoklu şirket yönetimi",
+      "scopes": "Grup, şirket ve şube bazlı yetki alanları",
+      "supportTickets": "Panelden destek talebi",
+      "phoneSupport": "Telefon desteği",
+      "onboarding": "Öncelikli destek ve kurulum eğitimi"
+    },
+    "compare": {
+      "title": "Paketleri <accent>karşılaştırın</accent>",
+      "text": "Her paketin içerdiği modülleri ve özellikleri yan yana görün. İhtiyacınız değiştikçe paketinizi yükseltebilirsiniz.",
+      "caption": "QR Zaman paketlerinin özellik karşılaştırması",
+      "feature": "Özellik",
+      "included": "Dahil",
+      "notIncluded": "Dahil değil"
+    },
+    "faq": {
+      "title": "Fiyatlandırma hakkında <accent>sık sorulanlar</accent>",
+      "text": "Paketler, faturalandırma ve paket değişikliği hakkında merak ettikleriniz.",
+      "items": [
+        {
+          "q": "Fiyatlar nasıl hesaplanıyor?",
+          "a": "Paket fiyatları aktif personel başına aylık olarak hesaplanır ve yıllık faturalandırılır. Fiyatlara KDV dahil değildir. Personel sayınıza özel teklif için demo talep edebilirsiniz."
+        },
+        {
+          "q": "Paketimi daha sonra değiştirebilir miyim?",
+          "a": "Evet. İhtiyacınız büyüdükçe Başlangıç paketinden Profesyonel veya Kurumsal pakete geçebilirsiniz. Mevcut personel, PDKS ve puantaj kayıtlarınız yeni pakette olduğu gibi kalır."
+        },
+        {
+          "q": "Mobil uygulama ücretli mi?",
+          "a": "Hayır. QR Zaman mobil uygulaması tüm paketlere dahildir; personeliniz App Store veya Google Play'den ücretsiz indirerek QR kodla giriş-çıkış yapar."
+        },
+        {
+          "q": "Bordro hesaplama hangi pakette var?",
+          "a": "Bordro hesaplama, ek ödeme ve kesintiler ile yıl bazlı SGK ve vergi parametreleri Profesyonel ve Kurumsal paketlerde yer alır."
+        },
+        {
+          "q": "Birden fazla şirketim var, hangi paket uygun?",
+          "a": "Grup → şirket → şube hiyerarşisiyle birden fazla şirketi tek panelden yönetmek ve kullanıcılara şirket bazlı yetki vermek için Kurumsal paket uygundur."
+        }
+      ]
+    },
+    "cta": "Size uygun paketi<br></br><accent>birlikte seçelim.</accent>"
+  },
+  "demoPage": {
+    "form": {
+      "title": "Demo talep formu",
+      "text": "Formu doldurun; ekibimiz sizi arayarak işletmenize özel demo saatini planlasın."
+    },
+    "includes": {
+      "title": "Demoda neler göreceksiniz?",
+      "items": [
+        "QR kodla giriş-çıkışın mobil uygulamada nasıl çalıştığı",
+        "Konum doğrulama ve sahte GPS tespiti",
+        "Vardiya, puantaj ve fazla mesai çizelgesi",
+        "İzin ve avans taleplerinin onay akışı",
+        "Bordro hesaplama ve raporlar",
+        "Size uygun paket ve kurulum adımları"
+      ]
+    },
+    "alt": "QR Zaman yönetici paneli: bugün gelenler, izinde olanlar ve onay bekleyen talepler",
+    "direct": "Hemen görüşmek isterseniz",
+    "placeholders": {
+      "phone": "[Telefon]",
+      "email": "[E-posta]"
+    }
+  },
+  "contactPage": {
+    "schemaName": "QR Zaman İletişim",
+    "channels": {
+      "title": "İletişim bilgileri",
+      "phone": {
+        "title": "Telefon",
+        "text": "Ürünler, paketler ve kurulum hakkında satış ekibimizle görüşün."
+      },
+      "email": {
+        "title": "E-posta",
+        "text": "Sorularınızı ve teklif taleplerinizi bize e-postayla iletin."
+      },
+      "address": {
+        "title": "Adres"
+      }
+    },
+    "placeholders": {
+      "phone": "[Telefon]",
+      "email": "[E-posta]",
+      "address": "[Adres]"
+    },
+    "form": {
+      "title": "Bize yazın",
+      "text": "Formu doldurun, konunuza göre ilgili ekibimiz size dönüş yapsın."
+    },
+    "shortcuts": {
+      "title": "Size nasıl yardımcı olabiliriz?",
+      "dealers": {
+        "title": "Size en yakın bayiyi bulun",
+        "text": "Kurulum ve yerinde destek için ilinizdeki QR Zaman bayisine ulaşın.",
+        "link": "Bayi haritasını açın"
+      },
+      "support": {
+        "title": "Teknik destek",
+        "text": "QR Zaman kullanıcısıysanız destek talebini panelden açarak hızlıca çözüm alın.",
+        "link": "Destek sayfasına gidin"
+      },
+      "demo": {
+        "title": "Ücretsiz demo",
+        "text": "QR kodlu PDKS, puantaj ve bordroyu ekibimizle birlikte inceleyin.",
+        "link": "Demo talep edin"
+      }
+    }
+  },
+  "aboutPage": {
+    "story": {
+      "eyebrow": "Hikayemiz",
+      "title": "Personel takibini <accent>sadeleştirmek</accent> için yola çıktık.",
+      "paragraphs": [
+        "QR Zaman, işletmelerin her gün uğraştığı bir soruya cevap aramak için doğdu: Kim, ne zaman, nerede çalıştı ve bu emek bordroya nasıl doğru yansır? Kağıt imza föyleri, Excel tabloları ve pahalı parmak izi cihazları bu soruyu çoğu zaman zorlaştırıyordu.",
+        "Afyonkarahisar'daki Ar-Ge Tasarım Merkezi'nde geliştirdiğimiz QR Zaman'da personel, iş yerindeki QR kodu kendi telefonuyla okutarak giriş-çıkış yapar. Konum ve cihaz doğrulamasıyla kayıt güvenle alınır; puantaj, izin, avans ve bordro bu kayıtlardan kendiliğinden hazırlanır.",
+        "Bugün QR Zaman; PDKS'den bordroya, İK belgelerinden CRM'e uzanan modülleriyle tek bir şubesi olan işletmelerden çok şirketli gruplara kadar her ölçekte ekibin işini kolaylaştırıyor. Yeni ihtiyaçları müşterilerimizi ve bayilerimizi dinleyerek ürüne ekliyoruz."
+      ],
+      "alt": "QR Zaman yönetici paneli: personel, giriş-çıkış ve onay bekleyen talepler tek ekranda"
+    },
+    "values": {
+      "eyebrow": "Değerlerimiz",
+      "title": "Her özelliği <accent>dört ilkeyle</accent> geliştiriyoruz.",
+      "items": {
+        "simple": {
+          "title": "Sadelik",
+          "text": "Personel bir okutmayla giriş yapar, yönetici tek ekranda onaylar. Eğitim gerektirmeyen, herkesin kullanabileceği ekranlar tasarlıyoruz."
+        },
+        "compliance": {
+          "title": "Mevzuata uyum",
+          "text": "SGK ve vergi parametrelerini yıl bazında güncel tutuyor, bordro ve kıdem hesaplarını yürürlükteki kurallara göre yapıyoruz."
+        },
+        "security": {
+          "title": "Güvenlik",
+          "text": "Rol bazlı yetki, cihaz eşleştirme ve şifreli iletişimle personel verilerini koruyor, kamera görüntüsü saklamıyoruz."
+        },
+        "support": {
+          "title": "Yakın destek",
+          "text": "Panelden açılan destek talepleri ve il il bayi ağımızla kurulumdan günlük kullanıma kadar yanınızdayız."
+        }
+      }
+    },
+    "cta": "QR Zaman'ı<br></br><accent>yakından tanıyın.</accent>"
+  },
+  "securityPage": {
+    "intro": {
+      "eyebrow": "Veri güvenliği",
+      "title": "Personel verileriniz <accent>güvende.</accent>",
+      "text": "QR Zaman, bordro ve özlük gibi hassas verileri işler. Bu yüzden güvenliği bir ek özellik değil, ürünün temeli olarak ele alıyoruz.",
+      "items": [
+        "Sunucular Türkiye'de, veriler yurt dışına aktarılmaz",
+        "Tüm iletişim HTTPS (TLS) ile şifreli",
+        "Reklam veya takip aracı yok, veriler satılmaz"
+      ],
+      "alt": "Kullanıcı yetki alanları formu: grup, şirket ve şube bazlı erişim tanımı"
+    },
+    "layers": {
+      "title": "Güvenlik <accent>katman katman</accent>",
+      "text": "Hesaptan cihaza, konumdan veri iletimine kadar her adımda kötüye kullanıma karşı önlem alınır.",
+      "items": {
+        "roles": {
+          "title": "Rol bazlı erişim ve yetki alanları",
+          "text": "Admin, Yönetici, Personel ve Bayi rolleri yalnızca yetkili oldukları menüyü görür. Yöneticilere grup, şirket ve şube bazında yetki alanı tanımlanır."
+        },
+        "device": {
+          "title": "Cihaz eşleştirme",
+          "text": "Mobil hesap personelin kendi telefonuyla eşleşir. Hesap başka bir cihazdan kullanılamaz, başkası adına giriş-çıkış yapılamaz."
+        },
+        "location": {
+          "title": "Konum doğrulama ve sahte GPS tespiti",
+          "text": "Konum yalnızca QR okutulduğu anda alınır ve tanımlı lokasyonla karşılaştırılır. Sahte konum uygulamalarıyla yapılan kayıtlar engellenir."
+        },
+        "camera": {
+          "title": "Kamera görüntüsü saklanmaz",
+          "text": "Kamera yalnızca QR kodu okumak için açılır. Görüntü kaydedilmez ve sunucuya gönderilmez; yalnızca QR kod içeriği işlenir."
+        },
+        "encryption": {
+          "title": "Şifreli iletişim ve güvenli oturum",
+          "text": "Uygulama ve panel trafiği TLS ile şifrelenir. Oturum bilgileri cihazda iOS Keychain ve Android Keystore içinde şifreli tutulur."
+        },
+        "noTracking": {
+          "title": "Reklam ve takip yok",
+          "text": "Hizmet reklam kimliği veya takip aracı kullanmaz, arka planda konum izlemez. Kişisel veriler hiçbir amaçla satılmaz."
+        }
+      }
+    },
+    "kvkk": {
+      "eyebrow": "KVKK",
+      "title": "KVKK'ya uygun <accent>veri işleme</accent>",
+      "paragraphs": [
+        "Personel verileri bakımından veri sorumlusu işverenin kendisidir; QR Zaman bu verileri işveren adına ve onun talimatlarıyla işleyen veri işleyendir. Hangi verinin hangi amaçla ve hangi hukuki sebeple işlendiği KVKK Aydınlatma Metni'nde ayrıntılı olarak yer alır.",
+        "Bordro, puantaj ve giriş-çıkış kayıtları iş ve sosyal güvenlik mevzuatının öngördüğü süre boyunca saklanır; süresi dolan veriler silinir veya anonim hale getirilir. Mobil uygulama kullanıcıları hesaplarının silinmesini her zaman talep edebilir."
+      ],
+      "rightsTitle": "KVKK kapsamındaki haklarınız",
+      "rights": [
+        "Verilerinizin işlenip işlenmediğini öğrenme ve bilgi isteme",
+        "İşlenme amacını ve aktarıldığı kişileri öğrenme",
+        "Eksik veya yanlış verinin düzeltilmesini isteme",
+        "Verilerinizin silinmesini veya yok edilmesini isteme",
+        "Kanuna aykırı işleme nedeniyle zararın giderilmesini talep etme"
+      ],
+      "linksTitle": "Yasal metinler"
+    },
+    "faq": {
+      "title": "Güvenlik hakkında <accent>sık sorulanlar</accent>",
+      "items": [
+        {
+          "q": "Verilerimiz nerede saklanıyor?",
+          "a": "QR Zaman sunucuları Türkiye'dedir ve kişisel veriler yurt dışına aktarılmaz. Uygulama, panel ve sunucular arasındaki tüm iletişim HTTPS (TLS) ile şifrelenir."
+        },
+        {
+          "q": "Personelin konumu sürekli takip ediliyor mu?",
+          "a": "Hayır. Konum yalnızca uygulama açıkken ve QR kod okutulduğu anda, giriş-çıkışın tanımlı lokasyonda yapıldığını doğrulamak için alınır. Arka planda konum takibi yapılmaz."
+        },
+        {
+          "q": "Başka biri personel adına giriş yapabilir mi?",
+          "a": "Mobil hesap personelin kendi cihazıyla eşleştiği için başka bir telefondan kullanılamaz. Sahte konum uygulamaları tespit edilir ve bu kayıtlar engellenir."
+        },
+        {
+          "q": "Yöneticiler tüm şirketlerin verilerini görebilir mi?",
+          "a": "Hayır. Her kullanıcı yalnızca rolüne ve kendisine tanımlanan grup, şirket ve şube yetki alanına giren verileri görür. Personel yalnızca kendi kayıtlarına erişir."
+        }
+      ]
+    },
+    "cta": "Güvenli personel takibini<br></br><accent>hemen deneyin.</accent>"
+  },
+  "partnersPage": {
+    "benefits": {
+      "eyebrow": "Neden QR Zaman bayisi?",
+      "title": "Bölgenizde <accent>birlikte büyüyelim.</accent>",
+      "text": "QR Zaman bayileri, bölgelerindeki işletmelere PDKS, puantaj ve bordro çözümü sunar; satıştan kuruluma kadar müşterinin ilk temas noktası olur.",
+      "items": {
+        "panel": {
+          "title": "Size özel bayi paneli",
+          "text": "Bayi rolüyle panele girer, yalnızca kendi müşterilerinizi ve size açılan ekranları görürsünüz."
+        },
+        "crm": {
+          "title": "CRM ile satış takibi",
+          "text": "Müşteri ve potansiyel müşteri kartlarını, satış fırsatlarını, teklifleri ve görevleri CRM modülünde yönetin."
+        },
+        "region": {
+          "title": "Haritada görünür olun",
+          "text": "Bayilerimiz sayfasında ilinizle birlikte listelenir, bölgenizden gelen talepler size yönlendirilir."
+        },
+        "recurring": {
+          "title": "Sürekli gelir modeli",
+          "text": "Abonelik tabanlı ürün sayesinde müşterileriniz büyüdükçe iş ortaklığınız da büyür."
+        }
+      }
+    },
+    "panel": {
+      "title": "Bayi paneliyle <accent>müşterilerinizi yönetin</accent>",
+      "text": "QR Zaman'ın CRM modülü satış ekipleri ve iş ortakları için tasarlandı. Müşterilerinizi, tekliflerinizi ve satışlarınızı tek yerden takip edersiniz.",
+      "items": [
+        "Müşteri ve kişi kartları, iletişim bilgileri",
+        "Satış fırsatları ve satış süreci takibi",
+        "Teklif hazırlama ve takibi",
+        "Ekip görevleri ve hatırlatmalar",
+        "Satış ve performans raporları"
+      ],
+      "alt": "Çoklu şirket ve şube yönetimi: müşteri şirketlerinin ve şubelerinin listesi",
+      "link": "CRM ile müşteri yönetimini inceleyin"
+    },
+    "steps": {
+      "title": "Bayilik süreci <accent>4 adımda</accent>",
+      "items": [
+        {
+          "title": "Başvuru",
+          "text": "Formu doldurun; şirketinizi, ilinizi ve faaliyet alanınızı bize iletin."
+        },
+        {
+          "title": "Tanışma görüşmesi",
+          "text": "İş ortaklığı ekibimiz sizi arayarak bölgenizi ve hedeflerinizi konuşur."
+        },
+        {
+          "title": "Anlaşma ve eğitim",
+          "text": "Anlaşmanın ardından ürün, satış ve kurulum eğitimiyle hazırlanırsınız."
+        },
+        {
+          "title": "Satış ve kurulum",
+          "text": "Bayi panelinizle müşterilerinizi yönetir, kurulumlarını birlikte tamamlarız."
+        }
+      ]
+    },
+    "form": {
+      "title": "Bayilik <accent>başvurusu</accent>",
+      "text": "Bilgilerinizi bırakın, başvurunuzu inceleyip sizinle iletişime geçelim."
+    },
+    "dealers": {
+      "title": "Mevcut bayilerimiz",
+      "text": "Hangi illerde bayimiz olduğunu Türkiye haritası üzerinde görün.",
+      "link": "Bayilerimizi inceleyin"
+    }
+  },
+  "deleteAccountPage": {
+    "process": {
+      "title": "Talebiniz nasıl işlenir?",
+      "paragraphs": [
+        "QR Zaman mobil uygulama hesabınızın ve ilişkili kişisel verilerinizin silinmesini bu formla talep edebilirsiniz. Forma mobil uygulamada Profil > Hesap Silme Talebi adımından da ulaşabilirsiniz.",
+        "Talebiniz kimliğiniz ve işvereninizle doğrulandıktan sonra en geç 30 gün içinde sonuçlandırılır ve size e-postayla bilgi verilir."
+      ]
+    },
+    "deleted": {
+      "title": "Silinecek veriler",
+      "items": [
+        "Mobil uygulama erişiminiz ve hesap bilgileriniz",
+        "Cihaz kaydınız ve cihaz bilgileriniz",
+        "Saklanmasında yasal zorunluluk bulunmayan diğer kişisel verileriniz (silinir veya anonim hale getirilir)"
+      ]
+    },
+    "retained": {
+      "title": "Yasal süre boyunca saklananlar",
+      "items": [
+        "Bordro ve ücret kayıtları",
+        "Puantaj ve giriş-çıkış (PDKS) kayıtları",
+        "SGK ve özlük kayıtları"
+      ],
+      "note": "Bu kayıtlar işvereninizin kanuni yükümlülüğü gereği erişimi kısıtlanarak saklanır ve süre sonunda silinir."
+    },
+    "form": {
+      "title": "Hesap silme formu"
+    },
+    "more": "Ayrıntılı bilgi için <privacy>Gizlilik Politikası</privacy>'nı inceleyebilir veya <email></email> adresine yazabilirsiniz."
+  },
+  "dealersPage": {
+    "schemaName": "QR Zaman Bayileri",
+    "card": {
+      "headquarters": "Bölge merkezi",
+      "directions": "Yol tarifi al",
+      "website": "Web sitesi"
+    },
+    "map": {
+      "title": "Türkiye bayi haritası",
+      "text": "Haritadan ya da arama kutusundan ilinizi seçin; o ildeki bayilerimizin adres ve iletişim bilgilerini görün.",
+      "svgLabel": "Türkiye illeri haritası: bayisi olan iller farklı renkte gösterilir",
+      "search": "İl seçin",
+      "searchPlaceholder": "İl seçin veya arayın",
+      "noResult": "Bu adla bir il bulunamadı.",
+      "clear": "Seçimi temizle",
+      "countOne": "1 bayi",
+      "countOther": "{count} bayi",
+      "noDealer": "Bayi yok",
+      "panelIntro": "Bayi bilgilerini görmek için haritadan bir il seçin.",
+      "emptyTitle": "Şu anda listelenen bir bayimiz yok",
+      "emptyText": "Satış, kurulum ve destek için doğrudan bizimle iletişime geçebilirsiniz. Bölgenizde QR Zaman bayisi olmak isterseniz başvurunuzu bekliyoruz.",
+      "noDealerInProvince": "Bu ilde henüz bayimiz yok.",
+      "nearest": "En yakın bayiler",
+      "allInfo": "Tüm bilgiler",
+      "becomeDealer": "Bayimiz olun",
+      "contact": "Bizimle iletişime geçin",
+      "legend": {
+        "label": "Harita lejantı",
+        "dealer": "Bayi var",
+        "served": "Bayi hizmet veriyor",
+        "none": "Bayi yok"
+      }
+    },
+    "list": {
+      "title": "İl il <accent>bayilerimiz</accent>",
+      "empty": "Bayi listemiz bu bölümde il il yayımlanır. O zamana kadar tüm talepleriniz için merkez ekibimiz size yardımcı olur.",
+      "provinceHeading": "{province} bayileri"
+    },
+    "partner": {
+      "title": "Bölgenizde QR Zaman bayisi olun",
+      "text": "Bayi paneli ve CRM modülüyle müşterilerinizi, tekliflerinizi ve satışlarınızı yönetin.",
+      "link": "İş ortaklığı başvurusu yapın"
+    },
+    "province": {
+      "title": "{province} QR Zaman Bayileri ve İletişim",
+      "h1": "{province} QR Zaman Bayileri",
+      "description": "{province} ilindeki {count} QR Zaman bayisinin adres, telefon ve e-posta bilgileri. PDKS, puantaj ve bordro kurulumu ve destek için bayinizle görüşün.",
+      "listTitle": "{province} bayileri",
+      "allDealers": "Tüm bayileri haritada görün"
+    },
+    "cta": "QR Zaman'ı işletmenizde<br></br><accent>ücretsiz deneyin.</accent>"
+  },
+  "legalPage": {
+    "toc": "İçindekiler",
+    "updated": "Son güncelleme: {date}",
+    "others": "Diğer yasal metinler"
   }
 }

@@ -65,7 +65,22 @@ Bu sayede dil seçici, breadcrumb ve sitemap ek eşleme bilmeden doğru adresi �
   `messages/*.json` → `pages.<id>` metinleri. Menü, footer, breadcrumb, sitemap ve route otomatik güncellenir.
   Meta kuralları: title (marka eki dahil) 50–60, description 140–160 karakter.
 - **Yeni statik sayfa:** `app/[locale]/<tr-yol>/page.tsx` + `i18n/routing.ts` → `pathnames` + `config/navigation.ts` → `PAGES`.
+- **Yeni bayi:** `config/dealers.ts` → `DEALERS`'a kayıt (`provinceCode` = plaka kodu). Haritada boyama,
+  `/bayiler/[il]` sayfası ve sitemap kaydı otomatik oluşur. Bilinmeyen alan boş bırakılır.
+- **Fiyatlar / paketler:** `config/pricing.ts` (fiyat, paket içerikleri) + `messages/*.json` → `pricingPage`.
+- **Yasal metinler:** `content/{tr,en}/legal/<tr-slug>.mdx`; şirket bilgileri `config/legal.ts` → `LEGAL_ENTITY`
+  (son güncelleme tarihi `updatedAt`). İçindekiler H2 başlıklarından üretilir.
+- **Formlar (demo, iletişim, bayilik, hesap silme):** `lib/forms/` (zod şemaları, Server Action, SMTP). E-posta
+  `CONTACT_TO`'ya, hesap silme talepleri `LEGAL_ENTITY.kvkkEmail`'e gider. SMTP tanımlı değilse geliştirmede
+  e-posta konsola yazılır, production'da form hata döner. JS kapalıyken de çalışır.
 - **Staging:** `NEXT_PUBLIC_SITE_ENV=staging` → tüm sayfalar `noindex`, robots.txt `Disallow: /`, sitemap boş.
+
+## Üçüncü taraf lisansları
+
+- **Türkiye illeri haritası** (`components/dealers/turkey-map-data.ts`): path verisi
+  [turkey-map-react](https://github.com/erdigokce/turkey-map-react) 2.4.3 paketinden alındı
+  (MIT, © 2020 Erdi Gökçe; path'ler [dnomak/svg-turkiye-haritasi](https://github.com/dnomak/svg-turkiye-haritasi), MIT).
+  Paket bağımlılık olarak eklenmedi; yalnızca veri kopyalandı, noktalar tam sayıya yuvarlandı.
 
 ## Yayın
 

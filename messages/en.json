@@ -3575,5 +3575,564 @@
       }
     },
     "cta": "Let's answer your questions<br></br><accent>in a demo.</accent>"
+  },
+  "forms": {
+    "optional": "optional",
+    "select": "Select",
+    "consent": "I have read the <kvkk>Data Protection Notice</kvkk> and the <privacy>Privacy Policy</privacy>, and I agree that my details are processed to respond to my request.",
+    "deleteConsent": "I confirm that my details are correct and I understand that data subject to legal retention will be kept until the end of that period.",
+    "deleteMessageLabel": "Details",
+    "submit": {
+      "demo": "Send Demo Request",
+      "contact": "Send Message",
+      "partner": "Send Application",
+      "deleteAccount": "Send Deletion Request"
+    },
+    "fields": {
+      "name": {
+        "label": "Full name",
+        "placeholder": "Your first and last name"
+      },
+      "company": {
+        "label": "Company",
+        "placeholder": "Your company name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "name@company.com"
+      },
+      "phone": {
+        "label": "Phone",
+        "placeholder": "05xx xxx xx xx"
+      },
+      "employees": {
+        "label": "Number of employees"
+      },
+      "modules": {
+        "label": "Modules you are interested in"
+      },
+      "message": {
+        "label": "Your message",
+        "placeholder": "Anything you would like to add"
+      },
+      "subject": {
+        "label": "Subject"
+      },
+      "province": {
+        "label": "Province"
+      },
+      "business": {
+        "label": "Line of business",
+        "placeholder": "e.g. software reseller, accounting firm"
+      },
+      "username": {
+        "label": "Username or phone",
+        "placeholder": "The details you sign in to the app with"
+      }
+    },
+    "options": {
+      "employees": {
+        "1-10": "1–10 employees",
+        "11-50": "11–50 employees",
+        "51-200": "51–200 employees",
+        "201-500": "201–500 employees",
+        "500+": "More than 500 employees"
+      },
+      "modules": {
+        "pdks": "QR code attendance and timesheets",
+        "hr": "Leave, advances and personnel files",
+        "payroll": "Payroll and reporting",
+        "crm": "CRM (contacts, sales, quotes)"
+      },
+      "subject": {
+        "sales": "Sales and plans",
+        "support": "Technical support",
+        "partnership": "Partnership and reselling",
+        "other": "Other"
+      }
+    },
+    "errors": {
+      "required": "This field is required.",
+      "email": "Enter a valid email address.",
+      "phone": "Enter a valid Turkish phone number (e.g. 0532 123 45 67).",
+      "consent": "Please give your consent to continue.",
+      "tooLong": "The text you entered is too long.",
+      "tooShort": "Please add a little more detail.",
+      "invalid": "Please check this field."
+    },
+    "status": {
+      "sending": "Sending…",
+      "invalid": "Please check the highlighted fields.",
+      "rateLimited": "You have sent too many requests in a short time. Please try again in a few minutes.",
+      "server": "Your form could not be sent right now. Please try again later or give us a call.",
+      "again": "Send another form",
+      "success": {
+        "demo": {
+          "title": "We have received your demo request",
+          "text": "Our team will contact you shortly to schedule a demo that suits your business."
+        },
+        "contact": {
+          "title": "Your message has reached us",
+          "text": "Thank you. We will review your message and get back to you as soon as possible."
+        },
+        "partner": {
+          "title": "We have received your partner application",
+          "text": "After reviewing your application, our partnerships team will contact you to arrange a call."
+        },
+        "deleteAccount": {
+          "title": "We have received your account deletion request",
+          "text": "Once your identity and employer are verified, your request is completed within 30 days at the latest and you are notified by email."
+        }
+      }
+    },
+    "mail": {
+      "consent": "KVKK consent",
+      "consentGiven": "Given",
+      "language": "Language",
+      "subjects": {
+        "demo": "Demo request",
+        "contact": "Contact form",
+        "partner": "Partner application",
+        "deleteAccount": "Account deletion request"
+      }
+    }
+  },
+  "pricingPage": {
+    "plansTitle": "Plans",
+    "popular": "Most popular",
+    "perEmployee": "/ employee / month",
+    "vatNote": "Excluding VAT, billed annually",
+    "planCta": "Request a Demo",
+    "includes": "What's included:",
+    "includesPrevious": "Everything in {plan}, plus:",
+    "note": "Prices are shown per employee per month. Request a demo for a quote tailored to your headcount and needs.",
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "description": "Get started with QR code clock-in, shifts and timesheets.",
+        "limit": "1 company, 1 branch"
+      },
+      "professional": {
+        "name": "Professional",
+        "description": "Every HR and payroll process, from timesheets to payroll and leave to advances, in one panel.",
+        "limit": "1 company, unlimited branches"
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "description": "The complete platform for multi-company groups, with CRM, access scopes and priority support.",
+        "limit": "Unlimited companies and branches"
+      }
+    },
+    "groups": {
+      "time": "Time & Attendance",
+      "hr": "Human Resources",
+      "payroll": "Payroll & Reporting",
+      "crm": "CRM",
+      "platform": "Platform",
+      "support": "Support"
+    },
+    "features": {
+      "qrPdks": "QR code clock-in and clock-out",
+      "locationVerify": "Location verification and fake GPS detection",
+      "shifts": "Shift definitions",
+      "timesheet": "Timesheets and overtime schedule",
+      "locations": "Location and QR point management",
+      "employees": "Employee records and Excel import",
+      "leave": "Leave requests and approval flow",
+      "advance": "Salary advance requests and approval flow",
+      "records": "Personnel files",
+      "hrDocuments": "HR documents",
+      "payroll": "Payroll calculation",
+      "earnings": "Additional earnings and deductions",
+      "compliance": "Yearly SGK and tax parameters",
+      "reporting": "Attendance, leave, advance and payroll reports",
+      "crmContacts": "Customer and contact management",
+      "crmSales": "Sales tracking",
+      "crmQuotes": "Quote management",
+      "crmTasks": "Task management",
+      "mobileApp": "iOS and Android mobile app",
+      "dashboard": "Role-based dashboard and calendar",
+      "export": "Export to Excel, PDF and Word",
+      "branches": "Multiple branches and departments",
+      "multiCompany": "Group and multi-company management",
+      "scopes": "Group, company and branch access scopes",
+      "supportTickets": "Support tickets from the panel",
+      "phoneSupport": "Phone support",
+      "onboarding": "Priority support and onboarding training"
+    },
+    "compare": {
+      "title": "Compare <accent>plans</accent>",
+      "text": "See the modules and features in each plan side by side. You can upgrade your plan as your needs grow.",
+      "caption": "Feature comparison of QR Zaman plans",
+      "feature": "Feature",
+      "included": "Included",
+      "notIncluded": "Not included"
+    },
+    "faq": {
+      "title": "Pricing <accent>FAQ</accent>",
+      "text": "Answers to common questions about plans, billing and switching plans.",
+      "items": [
+        {
+          "q": "How are prices calculated?",
+          "a": "Plan prices are calculated per active employee per month and billed annually. Prices exclude VAT. Request a demo for a quote tailored to your headcount."
+        },
+        {
+          "q": "Can I change my plan later?",
+          "a": "Yes. As your needs grow, you can move from Starter to Professional or Enterprise. Your existing employee, attendance and timesheet records stay exactly as they are."
+        },
+        {
+          "q": "Is the mobile app charged separately?",
+          "a": "No. The QR Zaman mobile app is included in every plan. Your employees download it free from the App Store or Google Play and clock in by scanning a QR code."
+        },
+        {
+          "q": "Which plan includes payroll?",
+          "a": "Payroll calculation, additional earnings and deductions, and yearly SGK and tax parameters are included in the Professional and Enterprise plans."
+        },
+        {
+          "q": "I run several companies. Which plan fits?",
+          "a": "The Enterprise plan lets you manage several companies from one panel with a group → company → branch hierarchy and give users company-level access."
+        }
+      ]
+    },
+    "cta": "Let's choose the right plan<br></br><accent>together.</accent>"
+  },
+  "demoPage": {
+    "form": {
+      "title": "Demo request form",
+      "text": "Fill in the form and our team will call you to schedule a demo for your business."
+    },
+    "includes": {
+      "title": "What you will see in the demo",
+      "items": [
+        "How QR code clock-in works in the mobile app",
+        "Location verification and fake GPS detection",
+        "Shifts, timesheets and the overtime schedule",
+        "The approval flow for leave and advance requests",
+        "Payroll calculation and reports",
+        "The right plan and setup steps for you"
+      ]
+    },
+    "alt": "QR Zaman manager dashboard: who is in today, who is on leave and pending requests",
+    "direct": "Prefer to talk right away?",
+    "placeholders": {
+      "phone": "[Phone]",
+      "email": "[Email]"
+    }
+  },
+  "contactPage": {
+    "schemaName": "Contact QR Zaman",
+    "channels": {
+      "title": "Contact details",
+      "phone": {
+        "title": "Phone",
+        "text": "Talk to our sales team about products, plans and setup."
+      },
+      "email": {
+        "title": "Email",
+        "text": "Send us your questions and quote requests by email."
+      },
+      "address": {
+        "title": "Address"
+      }
+    },
+    "placeholders": {
+      "phone": "[Phone]",
+      "email": "[Email]",
+      "address": "[Address]"
+    },
+    "form": {
+      "title": "Write to us",
+      "text": "Fill in the form and the right team will get back to you."
+    },
+    "shortcuts": {
+      "title": "How can we help?",
+      "dealers": {
+        "title": "Find your nearest dealer",
+        "text": "Contact the QR Zaman dealer in your province for setup and on-site support.",
+        "link": "Open the dealer map"
+      },
+      "support": {
+        "title": "Technical support",
+        "text": "Already a QR Zaman user? Open a support ticket from the panel for a quick answer.",
+        "link": "Go to the support page"
+      },
+      "demo": {
+        "title": "Free demo",
+        "text": "Explore QR code attendance, timesheets and payroll with our team.",
+        "link": "Request a demo"
+      }
+    }
+  },
+  "aboutPage": {
+    "story": {
+      "eyebrow": "Our story",
+      "title": "We set out to make employee tracking <accent>simple</accent>.",
+      "paragraphs": [
+        "QR Zaman was born from a question businesses face every day: who worked when and where, and how does that work end up correctly on the payroll? Paper sign-in sheets, Excel files and expensive fingerprint devices often made that question harder to answer.",
+        "With QR Zaman, developed at the R&D Design Center in Afyonkarahisar, employees clock in by scanning the QR code at their workplace with their own phone. Location and device checks keep each record trustworthy, and timesheets, leave, advances and payroll are prepared from those records automatically.",
+        "Today QR Zaman's modules, from time and attendance to payroll and from HR documents to CRM, help teams of every size, from single-branch businesses to multi-company groups. We add new features by listening to our customers and dealers."
+      ],
+      "alt": "QR Zaman manager dashboard: employees, clock-ins and pending requests on one screen"
+    },
+    "values": {
+      "eyebrow": "Our values",
+      "title": "Every feature is built on <accent>four principles</accent>.",
+      "items": {
+        "simple": {
+          "title": "Simplicity",
+          "text": "Employees clock in with one scan, managers approve on one screen. We design screens anyone can use without training."
+        },
+        "compliance": {
+          "title": "Compliance",
+          "text": "We keep SGK and tax parameters up to date every year and calculate payroll and severance under the rules in force."
+        },
+        "security": {
+          "title": "Security",
+          "text": "Role-based access, device pairing and encrypted traffic protect employee data, and camera images are never stored."
+        },
+        "support": {
+          "title": "Support close to you",
+          "text": "From setup to daily use, we are with you through support tickets in the panel and our dealer network across Türkiye."
+        }
+      }
+    },
+    "cta": "Get to know<br></br><accent>QR Zaman.</accent>"
+  },
+  "securityPage": {
+    "intro": {
+      "eyebrow": "Data security",
+      "title": "Your employee data <accent>stays safe.</accent>",
+      "text": "QR Zaman handles sensitive data such as payroll and personnel files. That is why security is not an add-on for us but the foundation of the product.",
+      "items": [
+        "Servers in Türkiye, no data transferred abroad",
+        "All traffic encrypted with HTTPS (TLS)",
+        "No advertising or tracking tools, data is never sold"
+      ],
+      "alt": "User access scope form: defining access by group, company and branch"
+    },
+    "layers": {
+      "title": "Security <accent>layer by layer</accent>",
+      "text": "From accounts and devices to location and data transfer, every step is protected against misuse.",
+      "items": {
+        "roles": {
+          "title": "Role-based access and scopes",
+          "text": "Admin, Manager, Employee and Dealer roles see only the menus they are allowed to. Managers get access scopes by group, company and branch."
+        },
+        "device": {
+          "title": "Device pairing",
+          "text": "The mobile account is paired with the employee's own phone. It cannot be used from another device, so nobody can clock in for someone else."
+        },
+        "location": {
+          "title": "Location checks and fake GPS detection",
+          "text": "Location is captured only at the moment of a QR scan and compared with the defined location. Records made with fake GPS apps are blocked."
+        },
+        "camera": {
+          "title": "No camera images stored",
+          "text": "The camera opens only to read the QR code. Images are never saved or sent to our servers; only the QR code content is processed."
+        },
+        "encryption": {
+          "title": "Encrypted traffic and secure sessions",
+          "text": "App and panel traffic is encrypted with TLS. Session data is stored encrypted on the device in iOS Keychain and Android Keystore."
+        },
+        "noTracking": {
+          "title": "No ads, no tracking",
+          "text": "The service uses no advertising IDs or tracking tools and does not track location in the background. Personal data is never sold."
+        }
+      }
+    },
+    "kvkk": {
+      "eyebrow": "KVKK",
+      "title": "Data processing that complies with <accent>KVKK</accent>",
+      "paragraphs": [
+        "For employee data, the employer is the data controller; QR Zaman is the data processor that processes this data on the employer's behalf and instructions. Which data is processed, for what purpose and on what legal ground is set out in detail in the Data Protection Notice.",
+        "Payroll, timesheet and clock-in records are kept for the periods required by labour and social security legislation, after which they are deleted or anonymised. Mobile app users can request deletion of their account at any time."
+      ],
+      "rightsTitle": "Your rights under KVKK",
+      "rights": [
+        "Learn whether your data is processed and request information",
+        "Learn the purpose of processing and who it is shared with",
+        "Request correction of incomplete or inaccurate data",
+        "Request deletion or destruction of your data",
+        "Claim compensation for damage caused by unlawful processing"
+      ],
+      "linksTitle": "Legal documents"
+    },
+    "faq": {
+      "title": "Security <accent>FAQ</accent>",
+      "items": [
+        {
+          "q": "Where is our data stored?",
+          "a": "QR Zaman servers are located in Türkiye and personal data is not transferred abroad. All traffic between the app, the panel and the servers is encrypted with HTTPS (TLS)."
+        },
+        {
+          "q": "Is employee location tracked all the time?",
+          "a": "No. Location is captured only while the app is open and at the moment a QR code is scanned, to confirm the clock-in happens at the defined location. There is no background tracking."
+        },
+        {
+          "q": "Can someone clock in on behalf of an employee?",
+          "a": "The mobile account is paired with the employee's own device, so it cannot be used from another phone. Fake GPS apps are detected and those records are blocked."
+        },
+        {
+          "q": "Can managers see data from every company?",
+          "a": "No. Each user sees only the data within their role and the group, company and branch scope assigned to them. Employees can access only their own records."
+        }
+      ]
+    },
+    "cta": "Try secure employee tracking<br></br><accent>today.</accent>"
+  },
+  "partnersPage": {
+    "benefits": {
+      "eyebrow": "Why become a QR Zaman dealer?",
+      "title": "Let's grow <accent>together in your region.</accent>",
+      "text": "QR Zaman dealers offer time and attendance, timesheet and payroll software to businesses in their region and are the customer's first point of contact from sale to setup.",
+      "items": {
+        "panel": {
+          "title": "Your own dealer panel",
+          "text": "Sign in with the Dealer role and see only your own customers and the screens opened to you."
+        },
+        "crm": {
+          "title": "Sales tracking with CRM",
+          "text": "Manage customer and prospect cards, sales opportunities, quotes and tasks in the CRM module."
+        },
+        "region": {
+          "title": "Get listed on the map",
+          "text": "You are listed with your province on our Dealers page, and requests from your region are sent to you."
+        },
+        "recurring": {
+          "title": "Recurring revenue",
+          "text": "With a subscription-based product, your partnership grows as your customers grow."
+        }
+      }
+    },
+    "panel": {
+      "title": "Manage your customers with the <accent>dealer panel</accent>",
+      "text": "QR Zaman's CRM module is built for sales teams and partners. Track your customers, quotes and sales in one place.",
+      "items": [
+        "Customer and contact cards with contact details",
+        "Sales opportunities and pipeline tracking",
+        "Preparing and tracking quotes",
+        "Team tasks and reminders",
+        "Sales and performance reports"
+      ],
+      "alt": "Multi-company and branch management: list of customer companies and branches",
+      "link": "Explore contact management with CRM"
+    },
+    "steps": {
+      "title": "Becoming a dealer <accent>in 4 steps</accent>",
+      "items": [
+        {
+          "title": "Apply",
+          "text": "Fill in the form and tell us about your company, province and line of business."
+        },
+        {
+          "title": "Intro call",
+          "text": "Our partnerships team calls you to discuss your region and goals."
+        },
+        {
+          "title": "Agreement and training",
+          "text": "After the agreement, product, sales and setup training gets you ready."
+        },
+        {
+          "title": "Sell and set up",
+          "text": "Manage your customers in your dealer panel and complete setups together with us."
+        }
+      ]
+    },
+    "form": {
+      "title": "Dealer <accent>application</accent>",
+      "text": "Leave your details and we will review your application and get in touch."
+    },
+    "dealers": {
+      "title": "Our current dealers",
+      "text": "See which provinces have a QR Zaman dealer on the map of Türkiye.",
+      "link": "View our dealers"
+    }
+  },
+  "deleteAccountPage": {
+    "process": {
+      "title": "How is your request handled?",
+      "paragraphs": [
+        "Use this form to request deletion of your QR Zaman mobile app account and related personal data. You can also reach this form in the mobile app under Profile > Account Deletion Request.",
+        "Once your identity and employer are verified, your request is completed within 30 days at the latest and you are notified by email."
+      ]
+    },
+    "deleted": {
+      "title": "Data that will be deleted",
+      "items": [
+        "Your mobile app access and account details",
+        "Your device registration and device information",
+        "Any other personal data that does not have to be kept by law (deleted or anonymised)"
+      ]
+    },
+    "retained": {
+      "title": "Data kept for the legal period",
+      "items": [
+        "Payroll and salary records",
+        "Timesheet and clock-in/out records",
+        "SGK and personnel file records"
+      ],
+      "note": "These records are kept with restricted access because your employer is legally required to keep them, and are deleted at the end of that period."
+    },
+    "form": {
+      "title": "Account deletion form"
+    },
+    "more": "For more information, read our <privacy>Privacy Policy</privacy> or write to <email></email>."
+  },
+  "dealersPage": {
+    "schemaName": "QR Zaman Dealers",
+    "card": {
+      "headquarters": "Regional office",
+      "directions": "Get directions",
+      "website": "Website"
+    },
+    "map": {
+      "title": "Dealer map of Türkiye",
+      "text": "Choose your province on the map or in the search box to see the address and contact details of our dealers there.",
+      "svgLabel": "Map of Turkish provinces: provinces with a dealer are shown in a different colour",
+      "search": "Choose a province",
+      "searchPlaceholder": "Choose or search for a province",
+      "noResult": "No province found with that name.",
+      "clear": "Clear selection",
+      "countOne": "1 dealer",
+      "countOther": "{count} dealers",
+      "noDealer": "No dealer",
+      "panelIntro": "Choose a province on the map to see dealer details.",
+      "emptyTitle": "No dealers are listed at the moment",
+      "emptyText": "You can contact us directly for sales, setup and support. If you would like to become a QR Zaman dealer in your region, we look forward to your application.",
+      "noDealerInProvince": "We don't have a dealer in this province yet.",
+      "nearest": "Nearest dealers",
+      "allInfo": "Full details",
+      "becomeDealer": "Become a dealer",
+      "contact": "Contact us",
+      "legend": {
+        "label": "Map legend",
+        "dealer": "Dealer",
+        "served": "Served by a dealer",
+        "none": "No dealer"
+      }
+    },
+    "list": {
+      "title": "Dealers <accent>by province</accent>",
+      "empty": "Our dealers are listed here province by province. Until then, our head office team will help you with every request.",
+      "provinceHeading": "Dealers in {province}"
+    },
+    "partner": {
+      "title": "Become a QR Zaman dealer in your region",
+      "text": "Manage your customers, quotes and sales with the dealer panel and the CRM module.",
+      "link": "Apply for partnership"
+    },
+    "province": {
+      "title": "QR Zaman Dealers in {province}: Contact Details",
+      "h1": "QR Zaman Dealers in {province}",
+      "description": "Address, phone and email details of {count} QR Zaman dealers in {province}. Contact your dealer for attendance, timesheet and payroll setup and support.",
+      "listTitle": "Dealers in {province}",
+      "allDealers": "See all dealers on the map"
+    },
+    "cta": "Try QR Zaman in your business<br></br><accent>for free.</accent>"
+  },
+  "legalPage": {
+    "toc": "Contents",
+    "updated": "Last updated: {date}",
+    "others": "Other legal documents"
   }
 }

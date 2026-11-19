@@ -1,5 +1,6 @@
 import { defineRouting } from "next-intl/routing";
 import { CALCULATORS } from "@/config/calculators";
+import { getDealerProvinces } from "@/config/dealers";
 import { LEGAL_PAGES } from "@/config/legal";
 import { PRODUCTS } from "@/config/products";
 import { SOLUTIONS } from "@/config/solutions";
@@ -32,6 +33,8 @@ export const routing = defineRouting({
   // Tarayıcı diline göre otomatik yönlendirme yok: her URL'nin tek ve sabit
   // bir dili olur (SEO). Dil değişimi footer'daki seçiciyle yapılır.
   localeDetection: false,
+  // Dil algılama kapalı olduğu için NEXT_LOCALE çerezine gerek yok (Çerez Politikası: site çerez yazmaz)
+  localeCookie: false,
   pathnames: {
     "/": "/",
     "/bilesenler": "/bilesenler",
@@ -56,6 +59,12 @@ export const routing = defineRouting({
     // Kurumsal
     "/hakkimizda": { tr: "/hakkimizda", en: "/about" },
     "/bayiler": { tr: "/bayiler", en: "/dealers" },
+    // İl sayfaları yalnızca bayisi olan iller için (4.7); il slug'ı iki dilde aynı
+    ...slugPaths(
+      "/bayiler",
+      "/dealers",
+      getDealerProvinces().map((p) => ({ slug: { tr: p.slug, en: p.slug } })),
+    ),
     "/is-ortakligi": { tr: "/is-ortakligi", en: "/partners" },
     "/iletisim": { tr: "/iletisim", en: "/contact" },
     "/guvenlik": { tr: "/guvenlik", en: "/security" },

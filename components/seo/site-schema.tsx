@@ -5,7 +5,7 @@ import { CONTACT, SITE_NAME, SITE_URL, SOCIAL_LINKS, STORE_LINKS } from "@/confi
 import { absoluteUrl } from "@/lib/seo";
 import { JsonLd } from "./json-ld";
 
-const ORG_ID = `${SITE_URL}/#organization`;
+export const ORG_ID = `${SITE_URL}/#organization`;
 
 /** Tanımlı (boş olmayan) değerler; bilinmeyen bilgi şemaya yazılmaz. */
 const defined = (values: string[]) => values.filter(Boolean);

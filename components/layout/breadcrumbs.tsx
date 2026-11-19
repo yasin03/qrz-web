@@ -7,6 +7,7 @@ import type { BreadcrumbList } from "schema-dts";
 import { JsonLd } from "@/components/seo/json-ld";
 import { getBreadcrumbTrail, PAGES, type PageId } from "@/config/navigation";
 import { Link } from "@/i18n/navigation";
+import type { AppPathname } from "@/i18n/routing";
 import { absoluteUrl } from "@/lib/seo";
 import { cn } from "@/lib/utils";
 
@@ -18,6 +19,7 @@ export async function Breadcrumbs({
   id,
   locale,
   section,
+  current,
   className,
 }: {
   id: PageId;
@@ -27,6 +29,8 @@ export async function Breadcrumbs({
    * Ayrı bir sayfa olmadığı için JSON-LD'ye eklenmez.
    */
   section?: { label: string; href: string };
+  /** Kayıtlı sayfanın altındaki son adım (ör. /bayiler › İstanbul). JSON-LD'ye de eklenir. */
+  current?: { label: string; href: AppPathname };
   className?: string;
 }) {
   const t = await getTranslations({ locale, namespace: "pages" });
@@ -41,7 +45,7 @@ export async function Breadcrumbs({
       <nav aria-label={tb("label")} className={cn("text-sm", className)}>
         <ol className="flex flex-wrap items-center gap-x-1.5 gap-y-1 text-muted-foreground">
           {trail.map((crumb, index) => {
-            const last = index === trail.length - 1;
+            const last = index === trail.length - 1 && !current;
             return (
               <Fragment key={crumb}>
                 {last && section ? (
@@ -67,18 +71,38 @@ export async function Breadcrumbs({
               </Fragment>
             );
           })}
+          {current ? (
+            <li className="flex items-center gap-1.5">
+              {separator}
+              <span aria-current="page" className="font-semibold text-foreground">
+                {current.label}
+              </span>
+            </li>
+          ) : null}
         </ol>
       </nav>
       <JsonLd<BreadcrumbList>
         data={{
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
-          itemListElement: trail.map((crumb, index) => ({
-            "@type": "ListItem",
-            position: index + 1,
-            name: t(`${crumb}.label`),
-            item: absoluteUrl(locale, PAGES[crumb].href),
-          })),
+          itemListElement: [
+            ...trail.map((crumb, index) => ({
+              "@type": "ListItem" as const,
+              position: index + 1,
+              name: t(`${crumb}.label`),
+              item: absoluteUrl(locale, PAGES[crumb].href),
+            })),
+            ...(current
+              ? [
+                  {
+                    "@type": "ListItem" as const,
+                    position: trail.length + 1,
+                    name: current.label,
+                    item: absoluteUrl(locale, current.href),
+                  },
+                ]
+              : []),
+          ],
         }}
       />
     </>

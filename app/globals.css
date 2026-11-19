@@ -432,6 +432,64 @@
   }
 }
 
+/*
+ * Bayi haritası (4.7). Renkler yalnızca token'larla. Sınıflar her path'e değil
+ * SVG köküne yazılır (81 il × uzun sınıf listesi HTML'i şişirmesin).
+ * data-status: dealer | served | none · data-selected: seçili il
+ */
+.qz-map path {
+  stroke: var(--border);
+  stroke-width: 0.8;
+  vector-effect: non-scaling-stroke;
+  cursor: pointer;
+  transition: fill 150ms;
+}
+.qz-map path[data-status="none"] {
+  fill: var(--muted);
+}
+.dark .qz-map path[data-status="none"] {
+  fill: var(--card);
+}
+.qz-map path[data-status="served"] {
+  fill: color-mix(in oklch, var(--primary) 35%, transparent);
+}
+.qz-map path[data-status="dealer"] {
+  fill: var(--primary);
+}
+/* Hover / klavye odağı: bir ton koyu + kontur */
+.qz-map path:hover,
+.qz-map a:focus-visible > path {
+  stroke: var(--foreground);
+  stroke-width: 1.6;
+}
+.qz-map path[data-status="none"]:hover {
+  fill: color-mix(in oklch, var(--muted), var(--foreground) 10%);
+}
+.dark .qz-map path[data-status="none"]:hover {
+  fill: color-mix(in oklch, var(--card), var(--foreground) 12%);
+}
+.qz-map path[data-status="served"]:hover {
+  fill: color-mix(in oklch, var(--primary) 55%, transparent);
+}
+.qz-map path[data-status="dealer"]:hover,
+.qz-map a:focus-visible > path[data-status="dealer"] {
+  fill: color-mix(in oklch, var(--primary), black 22%);
+}
+.qz-map a:focus-visible {
+  outline: none;
+}
+/* Seçili il: yalnızca kalın kontur */
+.qz-map path[data-selected="true"] {
+  /* Dolgu değişmez (bayi durumu okunur kalır), yalnızca kalın kontur */
+  stroke: var(--foreground);
+  stroke-width: 2.5;
+}
+@media (prefers-reduced-motion: reduce) {
+  .qz-map path {
+    transition: none;
+  }
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
