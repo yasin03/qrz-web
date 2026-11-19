@@ -39,7 +39,7 @@ config/site.ts       Site URL, panel URL, mağaza/iletişim/sosyal (bilinmeyenle
 i18n/routing.ts      next-intl pathnames: config'teki slug'lardan üretilir
 lib/seo.ts           buildMetadata / pageMetadata (canonical, hreflang, OG, robots)
 messages/            tr.json / en.json — sayfa metinleri pages.<id>.{label, short?, description, title, metaDescription, h1}
-proxy.ts             next-intl locale yönlendirmesi (Next 16'da middleware → proxy)
+i18n/url-rules.ts    dil yönlendirmesi: next.config rewrites/redirects (proxy yok)
 public/logos         logo-pri (açık zemin), logo-sec (koyu zemin)
 public/screenshots   Maskeli ekran görüntüleri (admin, mobile)
 ```
@@ -85,3 +85,5 @@ Bu sayede dil seçici, breadcrumb ve sitemap ek eşleme bilmeden doğru adresi �
 ## Yayın
 
 `npm run build` → `.next/standalone` + `.next/static` + `public` sunucuya kopyalanır, pm2 ile `node server.js` (detaylar Faz 9).
+
+> **Dil yönlendirmesi neden proxy'de değil:** next-intl proxy'si iç rewrite'ı mutlak URL olarak yazar; standalone `server.js` sunucu adı ya da `127.0.0.1` ile başlatıldığında bu dış istek sayılır ve `ERR_TOO_MANY_REDIRECTS` oluşur. Bu yüzden eşlemeler `i18n/url-rules.ts` ile `next.config.ts` içinde yapılır; sunucuda `HOSTNAME` ayarı gerekmez. `proxy.ts` geri eklenmemeli. `i18n/routing.ts` next.config tarafından da yüklendiği için içindeki importlar göreli olmalı (`@/` takma adı orada çözülmez). Örnek pm2 ayarı: `ecosystem.config.cjs` (port 3002).

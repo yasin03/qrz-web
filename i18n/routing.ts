@@ -1,9 +1,10 @@
 import { defineRouting } from "next-intl/routing";
-import { CALCULATORS } from "@/config/calculators";
-import { getDealerProvinces } from "@/config/dealers";
-import { LEGAL_PAGES } from "@/config/legal";
-import { PRODUCTS } from "@/config/products";
-import { SOLUTIONS } from "@/config/solutions";
+// next.config.ts (i18n/url-rules.ts) de bu dosyayı yükler; orada "@/" çözülmediği için göreli import
+import { CALCULATORS } from "../config/calculators";
+import { getDealerProvinces } from "../config/dealers";
+import { LEGAL_PAGES } from "../config/legal";
+import { PRODUCTS } from "../config/products";
+import { SOLUTIONS } from "../config/solutions";
 
 type Localized = { tr: string; en: string };
 
