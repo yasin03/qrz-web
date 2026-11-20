@@ -38,7 +38,7 @@ export const DEALERS: Dealer[] = [
     name: "Destekpark Bilişim",
     provinceCode: 3,
     district: "Merkez",
-    address: "Kasımpaşa Mah. Gazlıgöl Cad. No:115/B",
+    address: "Kasımpaşa, Gazlıgöl Cd. 115/B, 03200",
     phone: "+902722121505",
     phoneDisplay: "0272 212 15 05",
     mobile: "+905555186025",

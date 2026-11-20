@@ -35,6 +35,7 @@ export async function SiteSchema({ locale }: { locale: Locale }) {
                 address: {
                   "@type": "PostalAddress",
                   streetAddress: street,
+                  postalCode: CONTACT.address.postalCode,
                   addressLocality: CONTACT.address.locality,
                   addressRegion: CONTACT.address.region,
                   addressCountry: CONTACT.address.country,

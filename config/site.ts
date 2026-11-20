@@ -28,13 +28,12 @@ export const CONTACT = {
   address: {
     /** Ekranda satır satır gösterilir */
     lines: [
-      "Ar-Ge Tasarım Merkezi",
-      "Osmangazi Mah. C. Dudayev Cad. No: 10 Kat: 2 Ofis: 11",
-      "Merkez/Afyonkarahisar",
+      "Kasımpaşa, Gazlıgöl Cd. 115/B",
+      "03200 Afyonkarahisar Merkez/Afyonkarahisar",
     ],
-    // JSON-LD PostalAddress alanları (posta kodu bilinmiyor, eklenmedi)
-    street:
-      "Ar-Ge Tasarım Merkezi, Osmangazi Mah. C. Dudayev Cad. No: 10 Kat: 2 Ofis: 11",
+    // JSON-LD PostalAddress alanları
+    street: "Kasımpaşa, Gazlıgöl Cd. 115/B",
+    postalCode: "03200",
     locality: "Merkez",
     region: "Afyonkarahisar",
     country: "TR",

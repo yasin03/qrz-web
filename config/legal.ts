@@ -26,7 +26,7 @@ export function getLegalBySlug(slug: string) {
  */
 export const LEGAL_ENTITY = {
   title: "DESTEKPARK BİLİŞİM MUTLU YILMAZ",
-  address: "Kasımpaşa Mah. Gazlıgöl Cad. No:115/B Merkez/Afyonkarahisar",
+  address: "Kasımpaşa, Gazlıgöl Cd. 115/B, 03200 Afyonkarahisar Merkez/Afyonkarahisar",
   mersis: "2180545357000011",
   /** KVKK başvuruları ve hesap silme talepleri bu adrese gider */
   kvkkEmail: "kvkk@destekpark.com.tr",
