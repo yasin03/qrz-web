@@ -2,7 +2,7 @@ import type { MDXComponents } from "mdx/types";
 import type { ComponentProps } from "react";
 import { cn } from "@/lib/utils";
 
-// MDX içeriğinin (yasal metinler) görünümü. Başlık id'leri rehype-slug'dan gelir.
+// MDX içeriğinin (yasal metinler, blog yazıları) görünümü. Başlık id'leri rehype-slug'dan gelir.
 const components: MDXComponents = {
   h2: ({ className, ...props }: ComponentProps<"h2">) => (
     <h2
@@ -50,6 +50,16 @@ const components: MDXComponents = {
     <a
       className={cn(
         "font-semibold break-words text-primary underline-offset-2 hover:underline focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none dark:text-accent",
+        className,
+      )}
+      {...props}
+    />
+  ),
+  // Blog: bilgilendirme notu
+  blockquote: ({ className, ...props }: ComponentProps<"blockquote">) => (
+    <blockquote
+      className={cn(
+        "mt-8 rounded-2xl border border-border bg-surface px-5 py-1 text-muted-foreground [&>p]:mt-3 [&>p]:mb-3 [&>p]:text-sm md:[&>p]:text-[15px]",
         className,
       )}
       {...props}

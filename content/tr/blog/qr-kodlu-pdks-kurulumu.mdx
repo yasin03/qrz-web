@@ -1,0 +1,107 @@
+export const meta = {
+  title: "QR Kodlu PDKS Kurulumu: 6 Adımda Rehber",
+  h1: "QR Kodlu PDKS Kurulumu: QR Zaman'ı 6 Adımda Hazırlayın",
+  description:
+    "QR kodlu PDKS kurulumu adım adım: şirket yapısı, personel, vardiya, QR lokasyonları ve mobil uygulama. QR Zaman'da ilk giriş-çıkış kaydını almak için okuyun.",
+  excerpt:
+    "Şirket yapısını kurmaktan ilk QR okutmasına kadar QR Zaman'ı kullanıma hazırlamanın altı adımını anlattık. Cihaz kurulumu gerekmez; afişi asıp personeli tanımlamanız yeterli.",
+  coverAlt: "QR kodlu PDKS kurulumu: QR Zaman giriş-çıkış afişi ve mobil uygulama giriş ekranı",
+  keyword: "QR kodlu PDKS kurulumu",
+  faq: [
+    {
+      q: "QR kodlu PDKS kurulumu için cihaz gerekir mi?",
+      a: "Hayır. Giriş-çıkış noktasına QR afişi asılır, personel kendi telefonundaki QR Zaman uygulamasıyla okutur. Turnike, kart okuyucu veya parmak izi cihazı gerekmez.",
+    },
+    {
+      q: "Mevcut personel listemi sisteme aktarabilir miyim?",
+      a: "Evet. Hazır Excel şablonunu indirip personel bilgilerinizi doldurarak toplu içe aktarabilirsiniz. İçe aktarma sonunda her satır için sonuç raporu gösterilir.",
+    },
+    {
+      q: "Personel telefonunu değiştirirse ne olur?",
+      a: "Personel hesabı tek bir cihazla eşleşir. Telefon değiştiğinde yönetici panelden cihaz eşleştirmesini sıfırlar, personel yeni telefonundan giriş yaparak hesabını yeniden eşleştirir.",
+    },
+    {
+      q: "Personel her lokasyondan giriş-çıkış yapabilir mi?",
+      a: "Bu, şirket ayarlarındaki personel yetki ayarlarına bağlıdır. Personelin her lokasyondan giriş-çıkış yapıp yapamayacağını siz belirlersiniz.",
+    },
+  ],
+};
+
+QR kodlu PDKS'nin en büyük avantajı kurulumunun hızlı olmasıdır: duvara bir afiş asmak ve personeli tanımlamak yeterlidir. Ancak kayıtların doğru şubeye, doğru vardiyaya ve doğru puantaja düşmesi için birkaç temel tanımı baştan doğru yapmak gerekir.
+
+Bu rehberde **QR kodlu PDKS kurulumu** için QR Zaman'da izlemeniz gereken altı adımı sırasıyla anlatıyoruz. PDKS kavramına yabancıysanız önce [PDKS nedir?](/blog/pdks-nedir) yazımıza göz atabilirsiniz.
+
+## 1. Şirket yapısını kurun
+
+QR Zaman'da kurumsal yapı **Grup → Şirket → Şube → Bölüm** hiyerarşisiyle kurulur. Tek şubeli bir işletmeyseniz tek şirket ve tek şube yeterlidir. Birden fazla şirketiniz veya şubeniz varsa hepsini aynı panelde tanımlayabilirsiniz.
+
+- Şirket ve şube kartlarına vergi bilgileri, işyeri SGK sicil numarası gibi resmî bilgileri girin.
+- Bölüm kartında bölümün lokasyonunu, sorumlusunu ve çalışma saatlerini belirleyin.
+- Yönetici kullanıcılarınızı ekleyin ve her birine grup, şirket veya şube bazında yetki alanı verin.
+
+Ayrıntılar için [çoklu şirket ve şube yönetimi](/urunler/coklu-sirket-sube) sayfamıza bakabilirsiniz.
+
+## 2. Personeli ekleyin
+
+Personeli tek tek personel kartından ekleyebilir ya da **Excel ile toplu içe aktarabilirsiniz**. Toplu aktarım için panelden hazır şablonu indirip doldurmanız yeterlidir. Aktarım sonunda her satır için başarılı veya hatalı sonucu gösteren bir rapor alırsınız.
+
+Personel kartında giriş-çıkış takibini doğrudan etkileyen alanlara özellikle dikkat edin:
+
+- Bağlı olduğu şube ve bölüm
+- Hafta tatili günü
+- Vardiyalı çalışıp çalışmadığı
+- Ücret tipi (aylık, günlük veya saatlik)
+
+## 3. Vardiyaları tanımlayın
+
+Giriş-çıkış kayıtlarının geç kalma, erken çıkma ve mesai olarak doğru değerlendirilmesi vardiya tanımlarına bağlıdır. [Vardiya yönetimi](/urunler/vardiya-yonetimi) ekranında şube ve bölüm bazında vardiyalarınızı oluşturun:
+
+- Başlangıç ve bitiş saatleri
+- Gece vardiyası
+- Mola süresi
+- Hafta tatili
+
+Toplam çalışma, mola ve mesai süreleri vardiya tanımlarına göre otomatik hesaplanır.
+
+## 4. Lokasyonları ve QR afişlerini hazırlayın
+
+Her giriş-çıkış noktası QR Zaman'da bir **lokasyon** olarak tanımlanır ve bir bölüme bağlanır. Lokasyonun enlem ve boylamını panelden girebilirsiniz. Daha pratik yöntem ise yönetici olarak mobil uygulamayla o noktaya gidip **bulunduğunuz konumu tek dokunuşla kaydetmektir**.
+
+Lokasyon kaydedildikten sonra:
+
+1. Lokasyon için QR kodu oluşturun.
+2. QR kodu PNG olarak ya da duvara asılmaya hazır **A4 afiş (PDF)** olarak indirin.
+3. Afişi bastırıp giriş-çıkış noktasına, personelin kolayca görebileceği bir yere asın.
+
+Kullanılmayan bir noktayı silmek yerine pasif hale getirebilirsiniz. Lokasyonların nasıl yönetildiğini [lokasyon takibi](/urunler/lokasyon-takibi) sayfamızda görebilirsiniz.
+
+## 5. Personeli mobil uygulamaya alın
+
+Personelin QR okutabilmesi için mobil uygulamaya giriş yapması gerekir:
+
+- Personel kullanıcı ayarlarından her personel için **telefon numarası ve şifre** belirleyin.
+- Personel QR Zaman uygulamasını iOS veya Android telefonuna yükler, kullanıcı adı ya da telefon numarasıyla giriş yapar.
+- İlk girişte hesap o telefonla **eşleşir**. Böylece hesap başka bir telefondan kullanılamaz.
+
+Şirket ayarlarındaki **personel yetki ayarlarından** personelin her lokasyondan giriş-çıkış yapıp yapamayacağını, kendi PDKS, puantaj ve bordro bilgilerini görüp göremeyeceğini belirleyin. Uygulamanın diğer özellikleri için [mobil uygulama](/urunler/mobil-uygulama) sayfamıza bakabilirsiniz.
+
+## 6. İlk kayıtları kontrol edin ve puantaja aktarın
+
+Personel uygulamada giriş veya çıkışı seçip QR kodu okuttuğunda kayıt oluşur. Okutma anında telefonun konumu alınır; sahte konumla yapılan okutmalar engellenir, aynı gün ikinci giriş gibi mükerrer kayıtlarda uyarı verilir.
+
+İlk günlerde şunları kontrol etmenizi öneririz:
+
+- PDKS ekranında kayıtları bölüm ve tarih aralığına göre filtreleyin. Kayıt detayında saati, lokasyonu ve okutulan konumu görün.
+- Hatalı bir kayıt varsa saat düzeltme veya kayıt temizleme ile düzeltin.
+- PDKS raporundan geç gelenleri, devamsızlıkları ve mesaileri inceleyin.
+- Kayıtları günlük veya aylık olarak puantaja aktarın.
+
+Puantaj kesinleştiğinde bordro hesabına hazırsınız. [QR kodlu PDKS](/urunler/qr-kodlu-pdks) sayfamızda giriş-çıkıştan bordroya kadar akışın tamamını görebilirsiniz.
+
+## Kurulumdan sonra
+
+- **Personele kısa bir bilgilendirme yapın:** Giriş ve çıkışta yön seçmeyi, konum iznini açık tutmayı ve QR kodu okutmayı gösterin. Konum kapalıysa uygulama personeli telefon ayarlarına yönlendirir.
+- **Telefon değişikliklerini yönetin:** Personel telefonunu değiştirdiğinde panelden cihaz eşleştirmesini sıfırlayın.
+- **Destek alın:** Kurulum sırasında takıldığınız bir adım olursa panel içinden destek talebi oluşturabilir, ekibimizle talep üzerinden mesajlaşabilirsiniz.
+
+QR Zaman'ı kendi işletmenizde görmek için [ücretsiz demo talep edebilirsiniz](/demo-talep).

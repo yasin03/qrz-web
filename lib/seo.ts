@@ -14,10 +14,13 @@ export function absoluteUrl(locale: Locale, href: AppPathname) {
   return `${SITE_URL}${path === "/" ? "" : path}` || SITE_URL;
 }
 
-/** hreflang alternatifleri: tr, en ve x-default (TR). */
-export function languageAlternates(href: AppPathname) {
+/** hreflang alternatifleri: tr, en ve x-default (TR). `locales` verilirse yalnızca o diller. */
+export function languageAlternates(
+  href: AppPathname,
+  locales: readonly Locale[] = routing.locales,
+) {
   const languages: Record<string, string> = {};
-  for (const locale of routing.locales) languages[locale] = absoluteUrl(locale, href);
+  for (const locale of locales) languages[locale] = absoluteUrl(locale, href);
   languages["x-default"] = absoluteUrl(routing.defaultLocale, href);
   return languages;
 }
@@ -30,7 +33,19 @@ type BuildMetadataArgs = {
   /** true ise "%s | QR Zaman" şablonu uygulanmaz (ana sayfa) */
   absoluteTitle?: boolean;
   noindex?: boolean;
+  /** Sayfanın bulunduğu diller (varsayılan: hepsi). Yalnızca TR blog yazıları için daraltılır. */
+  locales?: readonly Locale[];
+  /** Open Graph türü: yazılarda "article" */
+  ogType?: "website" | "article";
 };
+
+/**
+ * Sayfanın paylaşım görseli (1200×630): app/og/[locale]/[...path]/route.tsx build sırasında
+ * üretir. Yol iç yoldur (TR slug): /og/en/urunler/bordro.png, ana sayfa /og/tr/index.png.
+ */
+export function ogImagePath(locale: Locale, href: AppPathname) {
+  return `/og/${locale}${href === "/" ? "/index" : href}.png`;
+}
 
 /** 6.2: title, description, canonical, hreflang, Open Graph, Twitter, robots. */
 export function buildMetadata({
@@ -40,25 +55,40 @@ export function buildMetadata({
   description,
   absoluteTitle = false,
   noindex = false,
+  locales,
+  ogType = "website",
 }: BuildMetadataArgs): Metadata {
   const url = absoluteUrl(locale, href);
   const fullTitle = absoluteTitle ? title : `${title} | ${SITE_NAME}`;
+  const image = {
+    url: ogImagePath(locale, href),
+    width: 1200,
+    height: 630,
+    alt: fullTitle,
+    type: "image/png",
+  };
   return {
     title: absoluteTitle ? { absolute: title } : title,
     description,
-    alternates: { canonical: url, languages: languageAlternates(href) },
+    alternates: { canonical: url, languages: languageAlternates(href, locales) },
     openGraph: {
-      type: "website",
+      type: ogType,
       siteName: SITE_NAME,
       locale: OG_LOCALES[locale],
-      alternateLocale: routing.locales
+      alternateLocale: (locales ?? routing.locales)
         .filter((l) => l !== locale)
         .map((l) => OG_LOCALES[l]),
       url,
       title: fullTitle,
       description,
+      images: [image],
     },
-    twitter: { card: "summary_large_image", title: fullTitle, description },
+    twitter: {
+      card: "summary_large_image",
+      title: fullTitle,
+      description,
+      images: [image],
+    },
     robots: robotsFor(noindex),
   };
 }

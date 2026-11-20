@@ -11,6 +11,8 @@ import type { AppPathname } from "@/i18n/routing";
 import { absoluteUrl } from "@/lib/seo";
 import { cn } from "@/lib/utils";
 
+type Crumb = { label: string; href: AppPathname };
+
 /**
  * Görsel breadcrumb + BreadcrumbList JSON-LD (6.4).
  * Zincir config/navigation.ts → PAGES[*].parent'tan üretilir.
@@ -29,13 +31,17 @@ export async function Breadcrumbs({
    * Ayrı bir sayfa olmadığı için JSON-LD'ye eklenmez.
    */
   section?: { label: string; href: string };
-  /** Kayıtlı sayfanın altındaki son adım (ör. /bayiler › İstanbul). JSON-LD'ye de eklenir. */
-  current?: { label: string; href: AppPathname };
+  /**
+   * Kayıtlı sayfanın altındaki adım(lar) (ör. /bayiler › İstanbul, /blog › Kategori › Yazı).
+   * Sonuncusu geçerli sayfadır, öncekiler link olur. JSON-LD'ye de eklenir.
+   */
+  current?: Crumb | Crumb[];
   className?: string;
 }) {
   const t = await getTranslations({ locale, namespace: "pages" });
   const tb = await getTranslations({ locale, namespace: "breadcrumb" });
   const trail = getBreadcrumbTrail(id);
+  const extra = current ? (Array.isArray(current) ? current : [current]) : [];
   const linkClass =
     "rounded transition-colors hover:text-primary focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none";
   const separator = <ChevronRight className="size-3.5 shrink-0" aria-hidden="true" />;
@@ -45,7 +51,7 @@ export async function Breadcrumbs({
       <nav aria-label={tb("label")} className={cn("text-sm", className)}>
         <ol className="flex flex-wrap items-center gap-x-1.5 gap-y-1 text-muted-foreground">
           {trail.map((crumb, index) => {
-            const last = index === trail.length - 1 && !current;
+            const last = index === trail.length - 1 && extra.length === 0;
             return (
               <Fragment key={crumb}>
                 {last && section ? (
@@ -71,14 +77,20 @@ export async function Breadcrumbs({
               </Fragment>
             );
           })}
-          {current ? (
-            <li className="flex items-center gap-1.5">
+          {extra.map((crumb, index) => (
+            <li key={crumb.href} className="flex items-center gap-1.5">
               {separator}
-              <span aria-current="page" className="font-semibold text-foreground">
-                {current.label}
-              </span>
+              {index === extra.length - 1 ? (
+                <span aria-current="page" className="font-semibold text-foreground">
+                  {crumb.label}
+                </span>
+              ) : (
+                <Link href={crumb.href} className={linkClass}>
+                  {crumb.label}
+                </Link>
+              )}
             </li>
-          ) : null}
+          ))}
         </ol>
       </nav>
       <JsonLd<BreadcrumbList>
@@ -92,16 +104,12 @@ export async function Breadcrumbs({
               name: t(`${crumb}.label`),
               item: absoluteUrl(locale, PAGES[crumb].href),
             })),
-            ...(current
-              ? [
-                  {
-                    "@type": "ListItem" as const,
-                    position: trail.length + 1,
-                    name: current.label,
-                    item: absoluteUrl(locale, current.href),
-                  },
-                ]
-              : []),
+            ...extra.map((crumb, index) => ({
+              "@type": "ListItem" as const,
+              position: trail.length + index + 1,
+              name: crumb.label,
+              item: absoluteUrl(locale, crumb.href),
+            })),
           ],
         }}
       />

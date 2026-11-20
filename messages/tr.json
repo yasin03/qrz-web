@@ -19,6 +19,7 @@
       "label": "Referanslar ve rakamlar",
       "title": "Farklı sektörlerden işletmeler QR Zaman kullanıyor",
       "logoPlaceholder": "[Logo]",
+      "statsLabel": "QR Zaman rakamlarla",
       "stats": {
         "companies": {
           "label": "Şirket",
@@ -4120,5 +4121,56 @@
     "toc": "İçindekiler",
     "updated": "Son güncelleme: {date}",
     "others": "Diğer yasal metinler"
+  },
+  "blogPage": {
+    "categoriesLabel": "Blog kategorileri",
+    "all": "Tüm yazılar",
+    "latestHeading": "Son yazılar",
+    "readingTime": "{minutes} dk okuma",
+    "author": "Yazar",
+    "published": "Yayın tarihi",
+    "updated": "Güncellendi: {date}",
+    "readPost": "{title} yazısını okuyun",
+    "toc": "İçindekiler",
+    "faqHeading": "Sık sorulan sorular",
+    "relatedLinksHeading": "Bu yazıyla ilgili sayfalar",
+    "relatedPostsHeading": "İlgili yazılar",
+    "cta": "Giriş-çıkıştan bordroya tüm süreci tek platformda yönetin",
+    "postCount": "{count, plural, one {# yazı} other {# yazı}}",
+    "languageNotice": "Yazılarımız şu an Türkçe yayınlanıyor.",
+    "rssTitle": "QR Zaman Blog",
+    "rssLink": "RSS ile takip edin",
+    "photoCredit": "Fotoğraf: <photographer>{name}</photographer> / <unsplash>Unsplash</unsplash>",
+    "authors": {
+      "team": {
+        "name": "QR Zaman Ekibi"
+      }
+    },
+    "categories": {
+      "attendance": {
+        "label": "PDKS & Puantaj",
+        "title": "PDKS ve Puantaj Rehberleri ve Yazıları",
+        "h1": "PDKS ve Puantaj Yazıları",
+        "metaDescription": "PDKS, giriş-çıkış takibi, vardiya ve puantaj üzerine pratik rehberler. Personel devam takibini kolaylaştıracak yazıları QR Zaman blogda okuyun."
+      },
+      "payroll": {
+        "label": "Bordro & Mevzuat",
+        "title": "Bordro ve Mevzuat Rehberleri: Mesai, Kıdem",
+        "h1": "Bordro ve Mevzuat Yazıları",
+        "metaDescription": "Fazla mesai, kıdem tazminatı, bordro ve SGK mevzuatı üzerine örnekli rehberler. Hesaplamaları doğru yapmak için QR Zaman blogdaki yazıları okuyun."
+      },
+      "hr": {
+        "label": "İK Yönetimi",
+        "title": "İK Yönetimi Rehberleri ve Yazıları",
+        "h1": "İK Yönetimi Yazıları",
+        "metaDescription": "İzin, avans, özlük ve personel yönetimi üzerine pratik İK rehberleri. İnsan kaynakları süreçlerinizi kolaylaştıracak yazıları QR Zaman blogda okuyun."
+      },
+      "guides": {
+        "label": "Ürün Rehberleri",
+        "title": "QR Zaman Ürün Rehberleri ve Kullanım İpuçları",
+        "h1": "Ürün Rehberleri",
+        "metaDescription": "QR Zaman'ı kurmak ve verimli kullanmak için adım adım ürün rehberleri. PDKS, puantaj ve bordro modüllerinden en iyi şekilde yararlanmayı öğrenin."
+      }
+    }
   }
 }

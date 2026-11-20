@@ -4,7 +4,7 @@ import { Features } from "@/components/sections/home/features";
 import { Hero } from "@/components/sections/home/hero";
 import { MobileGallery } from "@/components/sections/home/mobile-gallery";
 import { Platform } from "@/components/sections/home/platform";
-import { Proof } from "@/components/sections/home/proof";
+import { Proof, ReferenceLogos } from "@/components/sections/home/proof";
 import { Steps } from "@/components/sections/home/steps";
 import { ToolsFaq } from "@/components/sections/home/tools-faq";
 import { Marquee } from "@/components/sections/marquee";
@@ -39,16 +39,19 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
   return (
     <>
       <Hero />
-      <Marquee
-        label={mq("label")}
-        items={MARQUEE_KEYS.map((key) => mq(`items.${key}`))}
-      />
       <Proof />
       <Platform />
+      <ReferenceLogos />
       <Features />
       <MobileGallery />
       <Steps />
       <ToolsFaq />
+      {/* Kayan özellik şeridi: sayfanın en altında, footer'ın hemen üstünde */}
+      <Marquee
+        label={mq("label")}
+        items={MARQUEE_KEYS.map((key) => mq(`items.${key}`))}
+        className="border-t border-b-0"
+      />
       <SoftwareAppSchema locale={locale as Locale} description={tp("metaDescription")} />
     </>
   );

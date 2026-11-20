@@ -19,6 +19,7 @@
       "label": "Customers and numbers",
       "title": "Businesses across industries use QR Zaman",
       "logoPlaceholder": "[Logo]",
+      "statsLabel": "QR Zaman in numbers",
       "stats": {
         "companies": {
           "label": "Companies",
@@ -4134,5 +4135,56 @@
     "toc": "Contents",
     "updated": "Last updated: {date}",
     "others": "Other legal documents"
+  },
+  "blogPage": {
+    "categoriesLabel": "Blog categories",
+    "all": "All articles",
+    "latestHeading": "Latest articles",
+    "readingTime": "{minutes} min read",
+    "author": "Author",
+    "published": "Published",
+    "updated": "Updated: {date}",
+    "readPost": "Read the article: {title}",
+    "toc": "Contents",
+    "faqHeading": "Frequently asked questions",
+    "relatedLinksHeading": "Pages related to this article",
+    "relatedPostsHeading": "Related articles",
+    "cta": "Manage everything from clock-in to payroll on one platform",
+    "postCount": "{count, plural, one {# article} other {# articles}}",
+    "languageNotice": "Our articles are currently published in Turkish.",
+    "rssTitle": "QR Zaman Blog",
+    "rssLink": "Follow via RSS",
+    "photoCredit": "Photo: <photographer>{name}</photographer> / <unsplash>Unsplash</unsplash>",
+    "authors": {
+      "team": {
+        "name": "QR Zaman Team"
+      }
+    },
+    "categories": {
+      "attendance": {
+        "label": "Attendance & Timesheets",
+        "title": "Attendance and Timesheet Guides and Articles",
+        "h1": "Attendance and Timesheet Articles",
+        "metaDescription": "Practical guides on time and attendance, clock-in tracking, shifts and timesheets. Read the QR Zaman blog to make employee attendance tracking easier."
+      },
+      "payroll": {
+        "label": "Payroll & Compliance",
+        "title": "Payroll & Compliance Guides: Overtime, Severance",
+        "h1": "Payroll and Compliance Articles",
+        "metaDescription": "Guides with worked examples on overtime, severance pay, payroll and Turkish social security rules. Read the QR Zaman blog to get your calculations right."
+      },
+      "hr": {
+        "label": "HR Management",
+        "title": "HR Management Guides and Articles",
+        "h1": "HR Management Articles",
+        "metaDescription": "Practical HR guides on leave, salary advances, employee records and staff management. Read the QR Zaman blog for tips that simplify your HR processes."
+      },
+      "guides": {
+        "label": "Product Guides",
+        "title": "QR Zaman Product Guides and Usage Tips",
+        "h1": "Product Guides",
+        "metaDescription": "Step-by-step product guides for setting up and using QR Zaman. Learn how to get the most from the attendance, timesheet and payroll modules."
+      }
+    }
   }
 }

@@ -1,5 +1,6 @@
 import { defineRouting } from "next-intl/routing";
 // next.config.ts (i18n/url-rules.ts) de bu dosyayı yükler; orada "@/" çözülmediği için göreli import
+import { BLOG_POSTS, getActiveCategories, postPath } from "../config/blog";
 import { CALCULATORS } from "../config/calculators";
 import { getDealerProvinces } from "../config/dealers";
 import { LEGAL_PAGES } from "../config/legal";
@@ -52,6 +53,13 @@ export const routing = defineRouting({
 
     // Kaynaklar
     "/blog": "/blog",
+    // Blog kategorileri (yalnızca yazısı olanlar) ve yazılar. Yazılar yalnızca TR'dir;
+    // EN karşılığı üretilmez (/en/blog/<slug> 404, bkz. config/blog.ts).
+    ...slugPaths("/blog/kategori", "/blog/category", getActiveCategories()),
+    ...(Object.fromEntries(BLOG_POSTS.map((p) => [postPath(p.slug), postPath(p.slug)])) as Record<
+      `/blog/${(typeof BLOG_POSTS)[number]["slug"]}`,
+      string
+    >),
     "/sss": { tr: "/sss", en: "/faq" },
     "/destek": { tr: "/destek", en: "/support" },
     "/hesaplama": { tr: "/hesaplama", en: "/calculators" },

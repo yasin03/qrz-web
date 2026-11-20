@@ -59,11 +59,19 @@ export const STATS: Record<
   "companies" | "employees" | "dailyScans" | "provinces",
   number | null
 > = {
-  companies: null,
-  employees: null,
-  dailyScans: null,
-  provinces: null,
+  companies: 12,
+  employees: 245,
+  dailyScans: 1280,
+  provinces: 2,
 };
 
-/** Müşteri logoları. TODO: gerçek logolar gelene kadar boş; yerine 5 yer tutucu kutu gösterilir. */
-export const CUSTOMER_LOGOS: { name: string; src: string }[] = [];
+/**
+ * Müşteri (referans) logoları: ana sayfa "Referanslar" bandı. Dosyalar public/referances/ altında.
+ * width/height dosyanın kendi oranıdır; logo sabit yükseklikte, oranı korunarak gösterilir.
+ * Liste boşsa yerine 5 yer tutucu kutu gösterilir.
+ */
+export const CUSTOMER_LOGOS: { name: string; src: string; width: number; height: number }[] = [
+  { name: "Alko", src: "/referances/alko.avif", width: 280, height: 128 },
+  { name: "Destekpark", src: "/referances/destekpark.png", width: 466, height: 80 },
+  { name: "Kumartaşlı", src: "/referances/kumartasli.svg", width: 598, height: 114 },
+];

@@ -2,6 +2,7 @@
 
 import { useParams } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
+import { blogLocaleFallback } from "@/config/blog";
 import { getPathname, usePathname } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
@@ -11,6 +12,7 @@ import { cn } from "@/lib/utils";
  * (next-intl pathnames). Arama motorları dil sürümlerini hreflang'den bulur.
  * href doğrudan kanonik adrestir (TR öneksiz: /urunler/bordro, EN: /en/products/payroll);
  * next-intl Link'in varsayılan /tr önekli yönlendirmeli adresi kullanılmaz.
+ * Hedef dilde karşılığı olmayan sayfalar (yalnızca TR blog yazıları) o dilin blog ana sayfasına gider.
  */
 export function LocaleSwitcher({
   onDark = false,
@@ -42,9 +44,11 @@ export function LocaleSwitcher({
               <a
                 href={getPathname({
                   locale,
-                  // Dinamik segmentli sayfalarda parametreler korunur
-                  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                  href: { pathname, params } as any,
+                  href:
+                    blogLocaleFallback(pathname, locale) ??
+                    // Dinamik segmentli sayfalarda parametreler korunur
+                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                    ({ pathname, params } as any),
                 })}
                 hrefLang={locale}
                 lang={locale}
